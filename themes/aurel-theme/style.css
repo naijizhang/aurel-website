@@ -628,7 +628,9 @@ object {
               align-items: center; }
       .site-header .container .logo-link .site-logo {
         -o-object-fit: contain;
-           object-fit: contain; }
+           object-fit: contain;
+        -webkit-filter: drop-shadow(5px 5px 5px #bbb);
+                filter: drop-shadow(5px 5px 5px #bbb); }
 
 #primary-menu {
   display: -webkit-box;

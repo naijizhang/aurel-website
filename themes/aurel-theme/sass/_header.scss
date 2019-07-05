@@ -11,6 +11,7 @@
       align-items: center;
       .site-logo {
         object-fit: contain;
+        filter: drop-shadow(5px 5px 5px #bbb)
       }
     }
     .site-navigation {

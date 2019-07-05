@@ -1,6 +1,6 @@
 .site-header {
-    box-shadow: 0px 5px 15px #bbbbbb;
-    height:70px;
+  box-shadow: 0px 5px 15px #bbbbbb;
+  height: 70px;
   .container {
     width: 100%;
     display: flex;
@@ -11,26 +11,28 @@
       align-items: center;
       .site-logo {
         object-fit: contain;
-        filter: drop-shadow(5px 5px 5px #bbb)
+        filter: drop-shadow(5px 5px 5px #bbb);
       }
     }
     .site-navigation {
-       
     }
   }
 }
 #primary-menu {
   display: flex;
-  height:70px;
+  height: 70px;
   list-style-type: none;
   justify-content: center;
   align-items: center;
   margin-top: auto;
   margin-bottom: auto;
   li {
-    width: 100px;
+    margin-right: 20px;
     a {
       text-decoration: none;
+      font-family: 'Lalezar';
+      font-size: 18px;
+      letter-spacing: 1px
     }
   }
 }

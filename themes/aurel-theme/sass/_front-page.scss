@@ -1,0 +1,91 @@
+.content-home-page{
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+
+    box-shadow: 5px 0 15px -4px #bbb, -5px 0 8px -4px #bbb;
+}
+
+.slides-container {
+  z-index: 1;
+  .each-slide-item {
+    width: 100%;
+    height: 80vh;
+    min-height: 500px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .slide-item1 {
+    background: linear-gradient(
+        270deg,
+        rgba(255, 255, 255, 0) 0.52%,
+        rgba(22, 66, 125, 0.6) 99.11%
+      ),
+      linear-gradient(0deg, rgba(0, 0, 0, 0.29), rgba(0, 0, 0, 0.29)),
+      url('../../assets/images/CogenPipesBackground2.jpg');
+    background-size: cover cover cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .slide1-hook {
+      margin-top: 7%;
+      p {
+        width: 50%;
+        color: #fff;
+        font-family: 'Poiret One';
+        font-size: 25px;
+        margin-left: 20%;
+      }
+    }
+    .slide1-bottom-content {
+      display: flex;
+      flex-direction: row;
+      height: 100px;
+      justify-content: flex-end;
+      align-items: center;
+      p {
+        color: #fff;
+        margin-bottom: 0px;
+        margin-right: 20px;
+        font-family: 'Noto Sans';
+        font-size: 30px;
+        letter-spacing: 2px;
+      }
+      a {
+        margin-right: 20%;
+        .software-logo {
+          width: 200px;
+          height: auto;
+          object-fit: contain;
+          border-radius: 15px;
+          border: 10px solid #fff;
+          transition: 0.3s;
+          &:hover {
+            box-shadow: 0px 0px 15px #bbbbbb;
+          }
+        }
+      }
+    }
+  }
+}
+
+.polygon1 {
+  float: left;
+  shape-outside: polygon(0 0, 0 100px, 50% 50px, 100% 100px, 100% 0px);
+  clip-path: polygon(0 0, 0 100px, 50% 50px, 100% 100px, 100% 0px);
+  height: 100px;
+  width: 100%;
+  background-color: $color__light_blue;
+}
+
+.polygon2 {
+  float: left;
+  shape-outside: polygon(0 0, 50% 100px, 100% 0px);
+  clip-path: polygon(0 0, 50% 100px, 100% 0px);
+  height: 100px;
+  width: 100%;
+  background-color: $color__light_blue;
+}

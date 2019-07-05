@@ -4,6 +4,10 @@
   flex-direction: row;
   justify-content: space-between;
   height: 250px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 5px 0 15px 0px #bbb, -5px 0 8px 0px #bbb;
   #footer-navigation {
     width: 20%;
     height: 100%;
@@ -39,7 +43,7 @@
       letter-spacing: 1px;
       font-size: 12px;
     }
-    .footer-brief-description{
+    .footer-brief-description {
       font-size: 15px;
       margin-top: 20px;
       color: rgb(218, 217, 217);

@@ -1147,7 +1147,9 @@ object {
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  -webkit-box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.25); }
   .polygon-container:before {
     content: '';
     position: absolute;

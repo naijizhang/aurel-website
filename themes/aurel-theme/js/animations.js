@@ -14,6 +14,12 @@
     //   $('nav').addClass('half-transparent');
     // }
    
+      if(jQuery('body').hasClass('logged-in')){
+      $('.site-header').addClass('fixed-header-logged');
+     }else{
+      $('.site-header').addClass('fixed-header-unlog');
+     }
+   
   
   })(jQuery);
   

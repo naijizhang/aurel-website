@@ -567,6 +567,9 @@ a {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+.site-content {
+  margin-top: 70px; }
+
 /* Posts and pages */
 .sticky {
   display: block; }
@@ -666,11 +669,23 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.fixed-header-logged {
+  top: 32px; }
+  @media screen and (max-width: 782px) {
+    .fixed-header-logged {
+      top: 46px; } }
+
+.fixed-header-unlog {
+  top: 0px; }
+
 .site-header {
   -webkit-box-shadow: 0px 5px 15px #bbbbbb;
           box-shadow: 0px 5px 15px #bbbbbb;
   height: 70px;
-  z-index: 9999; }
+  width: 100vw;
+  z-index: 9999;
+  position: fixed;
+  background: #fff; }
   .site-header .header-container {
     -webkit-box-flex: 1;
         -ms-flex: 1;

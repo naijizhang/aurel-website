@@ -24,6 +24,9 @@
           font-family: 'Noto Sans';
           font-size: 15px;
           color: #fff;
+          &:hover {
+            color: $color__light_blue;
+          }
         }
       }
     }

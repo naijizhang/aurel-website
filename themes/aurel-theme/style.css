@@ -733,6 +733,10 @@ object {
       font-family: 'Lalezar';
       font-size: 18px;
       letter-spacing: 1px; }
+      #primary-menu li a:hover {
+        color: #397C46;
+        -webkit-filter: drop-shadow(5px 5px 10px #397C46);
+                filter: drop-shadow(5px 5px 10px #397C46); }
 
 #myFooter {
   background-color: #23447F;
@@ -771,6 +775,8 @@ object {
           font-family: 'Noto Sans';
           font-size: 15px;
           color: #fff; }
+          #myFooter #footer-navigation ul li a:hover {
+            color: #DFE9F6; }
   #myFooter #footer-middle-column {
     width: 30%;
     display: -webkit-box;

@@ -48,6 +48,10 @@
       font-family: 'Lalezar';
       font-size: 18px;
       letter-spacing: 1px;
+      &:hover {
+        color: $color__green;
+        filter: drop-shadow(5px 5px 10px $color__green);
+      }
     }
   }
 }

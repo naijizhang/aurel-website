@@ -671,8 +671,10 @@ object {
           box-shadow: 0px 5px 15px #bbbbbb;
   height: 70px;
   z-index: 9999; }
-  .site-header .container {
-    width: 100%;
+  .site-header .header-container {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -682,14 +684,14 @@ object {
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
-    .site-header .container .logo-link {
+    .site-header .header-container .logo-link {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-      .site-header .container .logo-link .site-logo {
+      .site-header .header-container .logo-link .site-logo {
         -o-object-fit: contain;
            object-fit: contain;
         -webkit-filter: drop-shadow(5px 5px 5px #bbb);
@@ -1014,8 +1016,8 @@ object {
             -ms-flex-align: center;
                 align-items: center;
         border-radius: 50%;
-        -webkit-transition: 0.3s;
-        transition: 0.3s; }
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out; }
         .what-we-do-container .hexagon .industry-link .industry-logo-container .industry-logo {
           width: 50px;
           height: 50px;
@@ -1067,7 +1069,7 @@ object {
         font-size: 1.5vw;
         letter-spacing: 1px;
         background: #DFE9F6;
-        padding: 3px;
+        padding: 10px;
         border-radius: 20px;
         opacity: 0.7; }
   .what-we-do-container .right-column {

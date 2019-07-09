@@ -1,9 +1,9 @@
-.content-home-page{
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
+.content-home-page {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
 
-    box-shadow: 5px 0 15px -4px #bbb, -5px 0 8px -4px #bbb;
+  box-shadow: 5px 0 15px -4px #bbb, -5px 0 8px -4px #bbb;
 }
 
 .slides-container {
@@ -50,7 +50,8 @@
         color: #fff;
         margin-bottom: 0px;
         margin-right: 20px;
-        font-family: 'Noto Sans';
+        //font-family: 'Noto Sans';
+        font-family: 'Poiret One';
         font-size: 30px;
         letter-spacing: 2px;
       }
@@ -73,7 +74,6 @@
 }
 
 .polygon1 {
-  float: left;
   shape-outside: polygon(0 0, 0 100px, 50% 50px, 100% 100px, 100% 0px);
   clip-path: polygon(0 0, 0 100px, 50% 50px, 100% 100px, 100% 0px);
   height: 100px;
@@ -82,10 +82,145 @@
 }
 
 .polygon2 {
-  float: left;
   shape-outside: polygon(0 0, 50% 100px, 100% 0px);
   clip-path: polygon(0 0, 50% 100px, 100% 0px);
   height: 100px;
   width: 100%;
   background-color: $color__light_blue;
+}
+.what-we-do {
+  text-align: center;
+  font-family: 'Lalezar';
+  letter-spacing: 1px;
+  color: $color__blue;
+}
+.what-we-do-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 50px auto;
+  .hexagon {
+    width: 25vw;
+    height: 25vw;
+    max-width: 300px;
+    max-height: 300px;
+    min-width: 200px;
+    min-height: 200px;
+    background: url('../../assets/images/hexagon.png');
+    background-size: 150%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+    .hexagon-industry-container1 {
+      height: 21%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: -10%;
+    }
+    .hexagon-industry-container2 {
+      height: 29%;
+      width: 130%;
+      display: flex;
+      justify-content: space-between;
+      margin-left: -15%;
+      margin-top: -3%;
+    }
+    .hexagon-industry-container3 {
+      height: 29%;
+      width: 130%;
+      display: flex;
+      justify-content: space-between;
+      margin-left: -15%;
+      margin-top: 30%;
+    }
+    .hexagon-industry-container4 {
+      height: 21%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: -10%;
+    }
+    .industry-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .industry-logo-container {
+        width: 80px;
+        height: 80px;
+        background: $color__blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        .industry-logo {
+          width: 50px;
+          height: 50px;
+          filter: invert(1);
+        }
+        p {
+          display: none;
+          color: #fff;
+          font-family: 'Lalezar';
+          margin-top: auto;
+          margin-bottom: auto;
+        }
+        transition: 0.3s;
+        &:hover {
+          width: 180px;
+          border-radius: 40px;
+          z-index: 9999;
+          box-shadow: 0px 0px 15px #4d4d4d;
+          .industry-logo {
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+            margin-right: 5px;
+          }
+          p {
+            display: inline;
+          }
+        }
+      }
+    }
+    .position-helper-container {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 25vw;
+      height: 25vw;
+      max-width: 300px;
+      max-height: 300px;
+      min-width: 200px;
+      min-height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        margin: 0;
+        margin-left: -10px;
+        color: $color__blue;
+        font-family: 'Lalezar';
+        font-size:1.5vw;
+        letter-spacing: 1px;
+        background: $color__light_blue;
+        padding:3px;
+        border-radius: 20px;
+        opacity: 0.6
+      }
+    }
+  }
+
+  .right-column {
+    width: 30vw;
+    max-width: 500px;
+  }
+}
+
+.front-page-linear-background {
+  width: 100%;
+  //height:
 }

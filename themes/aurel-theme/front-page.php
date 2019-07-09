@@ -41,6 +41,69 @@ get_header(); ?>
             </a> -->
         </div>
         <div class="polygon1"></div>
+        <h1 class="what-we-do">What we do?</h1>
+        <div class="what-we-do-container">
+
+            <div class="hexagon" data-aos="fade-right">
+                <div class="hexagon-industry-container1">
+                    <a class="industry-link" href="<?php echo get_home_url(); ?>">
+                        <div class="industry-logo-container">
+                            <img class="industry-logo" alt="industry logo" src='<?php echo get_template_directory_uri() . '/assets/icons/paper.svg'; ?>'>
+                            <p class="industry-title">Pulp & Paper</p>
+                        </div>
+
+                    </a>
+                </div>
+                <div class="hexagon-industry-container2">
+                    <a class="industry-link" href="<?php echo get_home_url(); ?>">
+                        <div class="industry-logo-container">
+                            <img class="industry-logo" alt="industry logo" src='<?php echo get_template_directory_uri() . '/assets/icons/rose.svg'; ?>'>
+                            <p class="industry-title">Forest Products</p>
+                        </div>
+                    </a>
+                    <a class="industry-link" href="<?php echo get_home_url(); ?>">
+                        <div class="industry-logo-container">
+                            <img class="industry-logo" alt="industry logo" src='<?php echo get_template_directory_uri() . '/assets/icons/pizza.svg'; ?>'>
+                            <p class="industry-title">Food Processing</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="hexagon-industry-container3">
+                    <a class="industry-link" href="<?php echo get_home_url(); ?>">
+                        <div class="industry-logo-container">
+                            <img class="industry-logo" alt="industry logo" src='<?php echo get_template_directory_uri() . '/assets/icons/water.svg'; ?>'>
+                            <p class="industry-title">Water & Waste Water</p>
+                        </div>
+                    </a>
+                    <a class="industry-link" href="<?php echo get_home_url(); ?>">
+                        <div class="industry-logo-container">
+                            <img class="industry-logo" alt="industry logo" src='<?php echo get_template_directory_uri() . '/assets/icons/hammer.svg'; ?>'>
+                            <p class="industry-title">Mineral Processing</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="hexagon-industry-container4">
+                    <a class="industry-link" href="<?php echo get_home_url(); ?>">
+                        <div class="industry-logo-container">
+                            <img class="industry-logo" alt="industry logo" src='<?php echo get_template_directory_uri() . '/assets/icons/book.svg'; ?>'>
+                            <p class="industry-title">Research & learning</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="position-helper-container">
+                    <p>Industries</p>
+            </div>
+            </div>
+
+            <div class="right-column" data-aos="fade-left">
+                <p>Aurel Systems has been providing dynamic chemical process simulation software tools and services to chemical engineers for 30+ years.</p>
+                <p>Our CADSIM Plus process simulation tools and services can help you design, investigate, improve, operate and optimize a new or existing process.</p>
+                <p>Save money and time by using the right tools to validate your design before you invest in a capital project.</p>
+            </div>
+           
+
+        </div>
+        <div class="front-page-linear-background"></div>
 
         <div class="polygon2"></div>
 

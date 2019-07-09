@@ -107,18 +107,44 @@ get_header(); ?>
         <div class="polygon2"></div>
 
 
+        <div class="front-page-bottom-banner">
+            <div class="row-first">
+                <a>
+                    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="polygon-container">
+                        <h3>CADSIM Plus</h3>
+                        <h3>software</h3>
+                    </div>
+                </a>
+                <img class="cadsim-logo" alt="cadsim logo" src='<?php echo get_template_directory_uri() . '/assets/images/cp(blue3black).bmp'; ?>'>
+                <a>
+                    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500" class="polygon-container">
+                        <h3>CADSIM Plus</h3>
+                        <h3>training</h3>
+                    </div>
+                </a>
 
-      
+            </div>
+            <div class="row-second">
+                <a>
+                    <div data-aos="flip-left" data-aos-easing="ease-out-cub ic" data-aos-duration="1500" class="polygon-container">
+                        <h3>Moduling</h3>
+                        <h3>services</h3>
+                    </div>
+                </a>
+                <a>
+                    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="polygon-container">
+                        <h3>Online</h3>
+                        <h3>application</h3>
+                    </div>
+                </a>
 
-        <?php /* Start the Loop */ ?>
-        <?php while (have_posts()) : the_post(); ?>
+            </div>
+        </div>
 
-            <?php get_template_part('template-parts/content'); ?>
 
-        <?php endwhile; ?>
 
         <div class="front-page-linear-background"></div>
-       
+
     </main><!-- #main -->
 </div><!-- #primary -->
 

@@ -1037,7 +1037,7 @@ object {
             width: 40px;
             height: 40px;
             margin-left: 10px;
-            margin-right: 5px; }
+            margin-right: 10px; }
           .what-we-do-container .hexagon .industry-link .industry-logo-container:hover p {
             display: inline; }
     .what-we-do-container .hexagon .position-helper-container {
@@ -1069,7 +1069,7 @@ object {
         background: #DFE9F6;
         padding: 3px;
         border-radius: 20px;
-        opacity: 0.6; }
+        opacity: 0.7; }
   .what-we-do-container .right-column {
     width: 30vw;
     max-width: 500px; }
@@ -1081,7 +1081,8 @@ object {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), white), url("../../assets/images/Pumps1.jpg");
   background-size: cover;
   background-position: center, 50% 18%;
-  background-repeat: no-repeat no-repeat; }
+  background-repeat: no-repeat no-repeat;
+  opacity: 0.5; }
 
 .front-page-linear-background {
   width: 100%;
@@ -1091,3 +1092,85 @@ object {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
+
+.front-page-bottom-banner {
+  margin-top: 10vh;
+  margin-bottom: 0px; }
+  .front-page-bottom-banner .row-first {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    .front-page-bottom-banner .row-first img {
+      width: 20%;
+      -o-object-fit: contain;
+         object-fit: contain; }
+  .front-page-bottom-banner .row-second {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 3vh; }
+    .front-page-bottom-banner .row-second .polygon-container {
+      margin-left: 5vw;
+      margin-right: 5vw; }
+
+.polygon-container {
+  width: 150px;
+  height: 82.5px;
+  background: #23447F;
+  position: relative;
+  margin: 37.5px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .polygon-container:before {
+    content: '';
+    position: absolute;
+    top: -37.5px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 37.5px solid #23447F; }
+  .polygon-container:after {
+    content: '';
+    position: absolute;
+    bottom: -37.5px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-top: 37.5px solid #23447F; }
+  .polygon-container h3 {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Lalezar';
+    letter-spacing: 1px;
+    margin: 5px; }

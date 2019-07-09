@@ -92,7 +92,7 @@ get_header(); ?>
                 </div>
                 <div class="position-helper-container">
                     <p>Industries</p>
-            </div>
+                </div>
             </div>
 
             <div class="right-column" data-aos="fade-left">
@@ -100,12 +100,15 @@ get_header(); ?>
                 <p>Our CADSIM Plus process simulation tools and services can help you design, investigate, improve, operate and optimize a new or existing process.</p>
                 <p>Save money and time by using the right tools to validate your design before you invest in a capital project.</p>
             </div>
-           
+
 
         </div>
-        <div class="front-page-linear-background"></div>
-
+        <div class="front-page-linear-background-picture"></div>
         <div class="polygon2"></div>
+
+
+
+      
 
         <?php /* Start the Loop */ ?>
         <?php while (have_posts()) : the_post(); ?>
@@ -114,8 +117,8 @@ get_header(); ?>
 
         <?php endwhile; ?>
 
-
-        <div class="polygon1"></div>
+        <div class="front-page-linear-background"></div>
+       
     </main><!-- #main -->
 </div><!-- #primary -->
 

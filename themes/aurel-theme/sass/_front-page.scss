@@ -93,6 +93,8 @@
   font-family: 'Lalezar';
   letter-spacing: 1px;
   color: $color__blue;
+  margin-top: 8vh;
+  margin-bottom: 2vh;
 }
 .what-we-do-container {
   display: flex;
@@ -204,12 +206,12 @@
         margin-left: -10px;
         color: $color__blue;
         font-family: 'Lalezar';
-        font-size:1.5vw;
+        font-size: 1.5vw;
         letter-spacing: 1px;
         background: $color__light_blue;
-        padding:3px;
+        padding: 3px;
         border-radius: 20px;
-        opacity: 0.6
+        opacity: 0.6;
       }
     }
   }
@@ -220,7 +222,27 @@
   }
 }
 
+.front-page-linear-background-picture {
+  width: 100%;
+  height: 20vh;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 1)
+    ),
+    url('../../assets/images/Pumps1.jpg');
+  background-size: cover;
+  background-position: center, 50% 18%;
+
+  background-repeat: no-repeat no-repeat;
+}
+
 .front-page-linear-background {
   width: 100%;
-  //height:
+  height: 20vh;
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%),
+    #dfe9f6;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

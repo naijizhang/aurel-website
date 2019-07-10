@@ -973,6 +973,8 @@ object {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-left: 30px; }
+    .what-we-do-container .hexagon a {
+      text-decoration: none; }
     .what-we-do-container .hexagon .hexagon-industry-container1 {
       height: 21%;
       width: 100%;

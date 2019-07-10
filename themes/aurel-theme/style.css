@@ -1198,6 +1198,8 @@ object {
           -ms-flex-align: center;
               align-items: center; }
       .what-we-do-container .hexagon .position-helper-container p {
+        width: 50%;
+        text-align: center;
         margin: 0;
         margin-left: -10px;
         color: #16427D;

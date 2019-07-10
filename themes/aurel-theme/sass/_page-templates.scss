@@ -16,3 +16,22 @@
 
   
 /* About page */
+
+
+// widget-area
+.widget-area{
+  position: fixed;
+  top:20vh;
+  background: red;
+  ul{
+    list-style-type: none;
+    padding:0px;
+    margin: 0px;
+  }
+}
+.toggle-widget{
+position:fixed;
+top:20vh;
+left: 0px;
+
+}

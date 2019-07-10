@@ -1,0 +1,101 @@
+.content-company-history {
+  background: $color__blue;
+  h2 {
+    text-align: center;
+    font-family: 'Lalezar';
+    color: #fff;
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+}
+
+.company-history-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 150px;
+  p {
+    transition: font-size 1s;
+    color: inherit;
+    a {
+      color: #79b3fa;
+    }
+  }
+  .helper-block.circle {
+    transition: 1s ease-in-out !important;
+  }
+  //   .helper-block.circle::after {
+  //     transition: all 1s ease-in-out;
+  //   }
+  //   .helper-block.circle::before {
+  //     transition: all 1s ease-in-out;
+  //   }
+  p {
+    margin: 0px;
+    width: 50%;
+    color: #fff;
+    padding-left: 50px;
+    padding-right: 50px;
+    &:nth-child(even) {
+      padding-left: 30px;
+      border-left: 5px solid #fff;
+    }
+    &:nth-child(odd) {
+      padding-right: 30px;
+    }
+  }
+  .helper-block {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &:nth-child(1) {
+      align-items: flex-start;
+    }
+    &:last-child {
+      align-items: flex-end;
+    }
+    &:nth-child(even) {
+      border-left: 5px solid #fff;
+      justify-content: flex-start;
+      .circle {
+        margin-left: -28px;
+      }
+    }
+    &:nth-child(odd) {
+      justify-content: flex-end;
+      .circle {
+        margin-right: -28px;
+      }
+    }
+    .circle {
+      z-index: 100;
+      background: $color__blue;
+      width: 50px;
+      height: 50px;
+      border: 3px solid #c4c4c4;
+      border-radius: 50%;
+    }
+  }
+}
+p.is-active {
+  //background: #000;
+  font-size: 20px;
+}
+@keyframes circlebackground {
+  from {
+    background-color: $color__blue;
+  }
+  to {
+    background-color: $color__light_blue;
+  }
+}
+.is-active {
+  .circle {
+    background: $color__light_blue !important;
+    animation-name: circlebackground;
+    animation-duration: 1s;
+    border-color: $color__blue;
+    box-shadow: 0 0 11px 0 #ffffff;
+  }
+}

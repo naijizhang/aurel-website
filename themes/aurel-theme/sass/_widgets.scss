@@ -25,6 +25,7 @@ $widget_width: 180px;
   left: 0px;
   display: flex;
   align-items: flex-end;
+  z-index: 99999;
   .toggle-widget-button {
     height: 30px;
     width: 70px;
@@ -43,7 +44,6 @@ $widget_width: 180px;
   }
 }
 .search-form {
-  z-index: 99999;
   width: $widget_width;
   fieldset {
     border: none;
@@ -68,6 +68,7 @@ $widget_width: 180px;
   box-shadow: 0 0 11px 0 #bbb;
   opacity: 0.8;
   transition: all 0.5s ease-in-out;
+  z-index: 99999;
   .widget-title {
     color: $color__light_blue;
     margin-left: 15%;

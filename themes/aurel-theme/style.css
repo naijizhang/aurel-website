@@ -675,7 +675,8 @@ a {
   display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: flex-end; }
+          align-items: flex-end;
+  z-index: 99999; }
   .toggle-widget .toggle-widget-button {
     height: 30px;
     width: 70px;
@@ -694,7 +695,6 @@ a {
       outline: 0; }
 
 .search-form {
-  z-index: 99999;
   width: 180px; }
   .search-form fieldset {
     border: none;
@@ -721,7 +721,8 @@ a {
           box-shadow: 0 0 11px 0 #bbb;
   opacity: 0.8;
   -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out; }
+  transition: all 0.5s ease-in-out;
+  z-index: 99999; }
   .widget-area .widget-title {
     color: #dfe9f6;
     margin-left: 15%;

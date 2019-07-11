@@ -10,3 +10,10 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+//break points
+  @mixin mobile {
+	@media (max-width: 740px) {
+	  @content;
+	}
+  }

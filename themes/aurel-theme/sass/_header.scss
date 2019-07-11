@@ -10,20 +10,32 @@
 
 .site-header {
   box-shadow: 0px 5px 15px #bbbbbb;
+  @include mobile {
+    box-shadow: 0px 0px 5px $color__grey;
+  }
   height: 70px;
   width: 100vw;
   z-index: 9999;
   position: fixed;
-  //top:0px;
+  right: 0px;
   background: #fff;
+  transition: right 0.5s ease-in-out;
   .header-container {
     flex: 1;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    @include mobile {
+      justify-content: flex-start;
+      padding-left: 20px;
+    }
     .logo-link {
       display: flex;
       align-items: center;
+      width: 230px;
+      height: 40px;
       .site-logo {
         object-fit: contain;
         filter: drop-shadow(5px 5px 5px #bbb);
@@ -33,7 +45,7 @@
     }
   }
 }
-#primary-menu {
+.menu-primary-container ul {
   display: flex;
   height: 70px;
   list-style-type: none;
@@ -41,6 +53,9 @@
   align-items: center;
   margin-top: auto;
   margin-bottom: auto;
+  @include mobile {
+    display: none;
+  }
   li {
     margin-right: 20px;
     a {
@@ -55,4 +70,92 @@
       }
     }
   }
+}
+#mobile-menu {
+  position: fixed;
+  top: 155px;
+  right: 0px;
+  width: 180px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s 0.1s;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom-width: 2px;
+    border-bottom-color: #fff;
+    border-bottom-style: solid;
+    width:100%;
+    margin-right: 0px;
+    
+    a {
+      color: #fff;
+      font-size: 20px;
+      letter-spacing: 2px;
+      font-family: 'Noto Sans';
+      font-weight: bold;
+      &:hover {
+        color: $color__light_green;
+        filter: none;
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+
+/*----stylize nav-trigger actions and looks-----*/
+/*hide the checkbox*/
+.nav-trigger {
+  display: none;
+  @include mobile {
+    display: block;
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    z-index: 99999;
+  }
+}
+
+label[for='nav-trigger'] {
+  display: none;
+  @include mobile {
+    display: block;
+    /*nav stays in the same spot as user scrolls*/
+    position: fixed;
+    /*position hamburger menu*/
+    top: 21px;
+    right: 15px;
+    /*z-index needs to be 1 higher than site-wrap*/
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    /*changing to pointer indicates interactivity*/
+    cursor: pointer;
+    color: #111111;
+    .hamburger-menu-logo{
+      
+    }
+  }
+}
+
+/*the following lines make the effect work*/
+/*below styling controls label position when menu opens- add 15px, because we did left:15px in label[for="nav-trigger"]*/
+/*uses adjacent sibling selector (+)--> nav-trigger:checked must come first so label moves after checkbox is activated*/
+.nav-trigger:checked + label {
+  right: 200px;
+}
+
+/*add slight transition to effect*/
+
+.nav-trigger + label {
+  transition: right 0.5s ease-in-out;
 }

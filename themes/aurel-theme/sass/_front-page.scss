@@ -4,6 +4,9 @@
   margin-right: auto;
 
   box-shadow: 5px 0 15px -4px #bbb, -5px 0 8px -4px #bbb;
+  @include mobile {
+    box-shadow: none ;
+  }
 }
 
 .slides-container {

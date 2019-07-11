@@ -338,7 +338,8 @@ html {
 
 body {
   min-width: 100%;
-  min-height: 100vh; }
+  min-height: 100vh;
+  overflow-x: hidden; }
 
 #page {
   min-width: 100%;
@@ -364,6 +365,9 @@ body {
 body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */ }
+  @media (max-width: 740px) {
+    body {
+      background: #16427d; } }
 
 blockquote,
 q {
@@ -763,7 +767,14 @@ a {
 # Content
 --------------------------------------------------------------*/
 .site-content {
-  margin-top: 70px; }
+  margin-top: 70px;
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  right: 0;
+  -webkit-transition: right 0.5s ease-in-out;
+  transition: right 0.5s ease-in-out;
+  background: #ffffff; }
 
 /* Posts and pages */
 .sticky {
@@ -869,6 +880,10 @@ object {
   margin-right: auto;
   -webkit-box-shadow: 5px 0 15px -4px #bbb, -5px 0 8px -4px #bbb;
           box-shadow: 5px 0 15px -4px #bbb, -5px 0 8px -4px #bbb; }
+  @media (max-width: 740px) {
+    .site-content {
+      -webkit-box-shadow: 5px 0 15px -4px #000, -5px 0 8px -4px #000;
+              box-shadow: 5px 0 15px -4px #000, -5px 0 8px -4px #000; } }
 
 /* Front page */
 /* About page */
@@ -888,11 +903,19 @@ object {
   width: 100vw;
   z-index: 9999;
   position: fixed;
-  background: #fff; }
+  right: 0px;
+  background: #fff;
+  -webkit-transition: right 0.5s ease-in-out;
+  transition: right 0.5s ease-in-out; }
+  @media (max-width: 740px) {
+    .site-header {
+      -webkit-box-shadow: 0px 0px 5px #2b2b2b;
+              box-shadow: 0px 0px 5px #2b2b2b; } }
   .site-header .header-container {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -901,21 +924,32 @@ object {
         -ms-flex-direction: row;
             flex-direction: row;
     -ms-flex-pack: distribute;
-        justify-content: space-around; }
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    @media (max-width: 740px) {
+      .site-header .header-container {
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        padding-left: 20px; } }
     .site-header .header-container .logo-link {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center; }
+              align-items: center;
+      width: 230px;
+      height: 40px; }
       .site-header .header-container .logo-link .site-logo {
         -o-object-fit: contain;
            object-fit: contain;
         -webkit-filter: drop-shadow(5px 5px 5px #bbb);
                 filter: drop-shadow(5px 5px 5px #bbb); }
 
-#primary-menu {
+.menu-primary-container ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -929,19 +963,111 @@ object {
           align-items: center;
   margin-top: auto;
   margin-bottom: auto; }
-  #primary-menu li {
+  @media (max-width: 740px) {
+    .menu-primary-container ul {
+      display: none; } }
+  .menu-primary-container ul li {
     margin-right: 20px; }
-    #primary-menu li a {
+    .menu-primary-container ul li a {
       text-decoration: none;
       font-family: 'Lalezar';
       font-size: 18px;
       letter-spacing: 1px;
       -webkit-transition: 0.5s;
       transition: 0.5s; }
-      #primary-menu li a:hover {
+      .menu-primary-container ul li a:hover {
         color: #397c46;
         -webkit-filter: drop-shadow(5px 5px 10px #397c46);
                 filter: drop-shadow(5px 5px 10px #397c46); }
+
+#mobile-menu {
+  position: fixed;
+  top: 155px;
+  right: 0px;
+  width: 180px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s 0.1s;
+  transition: opacity 0.3s 0.1s;
+  margin: 0px;
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style-type: none; }
+  #mobile-menu li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom-width: 2px;
+    border-bottom-color: #fff;
+    border-bottom-style: solid;
+    width: 100%;
+    margin-right: 0px; }
+    #mobile-menu li a {
+      color: #fff;
+      font-size: 20px;
+      letter-spacing: 2px;
+      font-family: 'Noto Sans';
+      font-weight: bold; }
+      #mobile-menu li a:hover {
+        color: #79ff93;
+        -webkit-filter: none;
+                filter: none;
+        opacity: 0.8; }
+
+/*----stylize nav-trigger actions and looks-----*/
+/*hide the checkbox*/
+.nav-trigger {
+  display: none; }
+  @media (max-width: 740px) {
+    .nav-trigger {
+      display: block;
+      position: absolute;
+      clip: rect(0, 0, 0, 0);
+      z-index: 99999; } }
+
+label[for='nav-trigger'] {
+  display: none; }
+  @media (max-width: 740px) {
+    label[for='nav-trigger'] {
+      display: block;
+      /*nav stays in the same spot as user scrolls*/
+      position: fixed;
+      /*position hamburger menu*/
+      top: 21px;
+      right: 15px;
+      /*z-index needs to be 1 higher than site-wrap*/
+      z-index: 2;
+      width: 30px;
+      height: 30px;
+      /*changing to pointer indicates interactivity*/
+      cursor: pointer;
+      color: #111111; } }
+
+/*the following lines make the effect work*/
+/*below styling controls label position when menu opens- add 15px, because we did left:15px in label[for="nav-trigger"]*/
+/*uses adjacent sibling selector (+)--> nav-trigger:checked must come first so label moves after checkbox is activated*/
+.nav-trigger:checked + label {
+  right: 200px; }
+
+/*add slight transition to effect*/
+.nav-trigger + label {
+  -webkit-transition: right 0.5s ease-in-out;
+  transition: right 0.5s ease-in-out; }
 
 #myFooter {
   background-color: #23447f;
@@ -1047,6 +1173,10 @@ object {
   margin-right: auto;
   -webkit-box-shadow: 5px 0 15px -4px #bbb, -5px 0 8px -4px #bbb;
           box-shadow: 5px 0 15px -4px #bbb, -5px 0 8px -4px #bbb; }
+  @media (max-width: 740px) {
+    .content-home-page {
+      -webkit-box-shadow: none;
+              box-shadow: none; } }
 
 .slides-container {
   z-index: 1; }

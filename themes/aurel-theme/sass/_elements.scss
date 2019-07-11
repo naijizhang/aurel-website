@@ -11,6 +11,7 @@ html {
 body {
   min-width: 100%;
   min-height: 100vh;
+  overflow-x:hidden;
 }
 #page {
   min-width: 100%;
@@ -29,6 +30,9 @@ body {
 
 body {
   background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+  @include mobile {
+    background: $color__blue
+  }
 }
 
 blockquote,

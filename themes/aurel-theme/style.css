@@ -666,6 +666,20 @@ a {
 .widget_search .search-submit {
   display: none; }
 
+.widget-area {
+  position: fixed;
+  top: 20vh;
+  background: red; }
+  .widget-area ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px; }
+
+.toggle-widget {
+  position: fixed;
+  top: 20vh;
+  left: 0px; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -779,20 +793,6 @@ object {
 
 /* Front page */
 /* About page */
-.widget-area {
-  position: fixed;
-  top: 20vh;
-  background: red; }
-  .widget-area ul {
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px; }
-
-.toggle-widget {
-  position: fixed;
-  top: 20vh;
-  left: 0px; }
-
 .fixed-header-logged {
   top: 32px; }
   @media screen and (max-width: 782px) {

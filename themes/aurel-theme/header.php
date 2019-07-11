@@ -36,6 +36,10 @@
 					<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
 				</nav><!-- #site-navigation -->
 			</div>
+			<input type="checkbox" id="nav-trigger" class="nav-trigger " />
+			<label for="nav-trigger"> <img class="hamburger-menu-logo" alt="menu logo" src='<?php echo get_template_directory_uri() . '/assets/icons/menu.svg'; ?>'></label>
 		</header><!-- #masthead -->
+
+		<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'mobile-menu')); ?>
 
 		<div id="content" class="site-content">

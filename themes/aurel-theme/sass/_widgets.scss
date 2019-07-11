@@ -3,33 +3,98 @@
 --------------------------------------------------------------*/
 
 .widget {
-	margin: 0 0 $base__space-unit;
+  margin: 0 0 $base__space-unit;
 
-	/* Make sure select elements fit in widgets. */
-	select {
-		max-width: 100%;
-	}
+  /* Make sure select elements fit in widgets. */
+  select {
+    max-width: 100%;
+  }
 }
 
 /* Search widget. */
 .widget_search .search-submit {
-	display: none;
+  display: none;
 }
 
 // widget-area
-.widget-area{
-	position: fixed;
-	top:20vh;
-	background: red;
-	ul{
-	  list-style-type: none;
-	  padding:0px;
-	  margin: 0px;
+$widget_width:180px;
+.toggle-widget {
+  position: fixed;
+  height: 5vh;
+  top: 20vh;
+  left: 0px;
+  display: flex;
+  align-items: flex-end;
+  .toggle-widget-button {
+    height: 30px;
+    width: 70px;
+    box-shadow: none;
+    border-radius: 4px;
+    background-color: $color__green;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    transition: all 0.5s;
+	padding: 5px;
+	&:focus{
+		outline: 0; 
 	}
   }
-  .toggle-widget{
-  position:fixed;
-  top:20vh;
+}
+.search-form{
+	z-index: 99999;
+	width:$widget_width;
+	fieldset{
+		border:none;
+		margin-top: 20px;
+		padding-bottom: 0px;
+		label{
+			display: flex;
+			justify-content: center;
+			.search-field{
+				width:80%;
+			}
+		}
+		
+	}
+}
+.widget-area {
+  position: fixed;
+  top: 25vh;
   left: 0px;
-  
+  background: $color__blue;
+  border: 3px solid $color__light_blue;
+  border-radius: 20px;
+  box-shadow: 0 0 11px 0 #bbb;
+  opacity: 0.8;
+  transition: all 0.5s ease-in-out;
+  .widget-title {
+    color: $color__light_blue;
+	margin-left: 15%;
+	font-size: 20px;
   }
+  ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    li {
+	  width: 70%;
+	  margin-bottom: 10px;
+      a {
+		color: #fff;
+		border: 1px solid $color__light_blue;
+		padding: 3px;
+		text-decoration: none;
+		font-size: 12px;
+        &:hover {
+		  color: $color__light_green;
+		  border: 1px solid $color__light_green;
+        }
+      }
+    }
+  }
+}

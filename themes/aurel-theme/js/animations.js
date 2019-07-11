@@ -10,11 +10,28 @@
     //   });
 
     //widget menu toggle
-    $('.widget-area').after("<button class='toggle-widget'>Click</button>");
+    $('.widget-area').after(
+      "<div class='toggle-widget'><button class='toggle-widget-button'><div>HIDE</div></button></div>"
+    );
     $('.toggle-widget').click(function() {
-      if ($('.widget-area').css('display') !== 'none')
-        $('.widget-area').css('display', 'none');
-      else $('.widget-area').css('display', 'block');
+      if ($('.widget-area').css('visibility') !== 'hidden'){
+        $('.widget-area').css('visibility', 'hidden');
+        $('.widget-area').css('opacity', '0');
+        $('.toggle-widget br').css('display', 'block');
+        $('.toggle-widget-button').css('height', '70px');
+        $('.toggle-widget-button').css('width', '30px');
+        $('.toggle-widget-button').css('margin-left', '0px');
+        $('.toggle-widget-button div').html("M<br>E<br>N<br>U");
+      }
+      else {
+        $('.widget-area').css('visibility', 'visible');
+        $('.widget-area').css('opacity', '0.8');
+        $('.toggle-widget br').css('display', 'none');
+        $('.toggle-widget-button').css('height', '30px');
+        $('.toggle-widget-button').css('width', '70px');
+        $('.toggle-widget-button').css('margin-left', '5px');
+        $('.toggle-widget-button div').html("HIDE");
+      }
     });
 
     //company history animation

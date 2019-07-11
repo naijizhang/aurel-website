@@ -689,7 +689,8 @@ a {
     text-align: center;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-    padding: 5px; }
+    padding: 5px;
+    margin-left: 5px; }
     .toggle-widget .toggle-widget-button:focus {
       outline: 0; }
 

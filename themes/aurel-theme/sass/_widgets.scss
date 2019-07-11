@@ -17,7 +17,7 @@
 }
 
 // widget-area
-$widget_width:180px;
+$widget_width: 180px;
 .toggle-widget {
   position: fixed;
   height: 5vh;
@@ -30,34 +30,33 @@ $widget_width:180px;
     width: 70px;
     box-shadow: none;
     border-radius: 4px;
-    background-color: $color__green;
+    background-color: rgb(40, 117, 218);
     border: none;
     color: #ffffff;
     text-align: center;
     transition: all 0.5s;
-	padding: 5px;
-	margin-left: 5px;
-	&:focus{
-		outline: 0; 
-	}
+    padding: 5px;
+    margin-left: 5px;
+    &:focus {
+      outline: 0;
+    }
   }
 }
-.search-form{
-	z-index: 99999;
-	width:$widget_width;
-	fieldset{
-		border:none;
-		margin-top: 20px;
-		padding-bottom: 0px;
-		label{
-			display: flex;
-			justify-content: center;
-			.search-field{
-				width:80%;
-			}
-		}
-		
-	}
+.search-form {
+  z-index: 99999;
+  width: $widget_width;
+  fieldset {
+    border: none;
+    margin-top: 20px;
+    padding-bottom: 0px;
+    label {
+      display: flex;
+      justify-content: center;
+      .search-field {
+        width: 80%;
+      }
+    }
+  }
 }
 .widget-area {
   position: fixed;
@@ -71,8 +70,8 @@ $widget_width:180px;
   transition: all 0.5s ease-in-out;
   .widget-title {
     color: $color__light_blue;
-	margin-left: 15%;
-	font-size: 20px;
+    margin-left: 15%;
+    font-size: 20px;
   }
   ul {
     list-style-type: none;
@@ -83,17 +82,18 @@ $widget_width:180px;
     justify-content: center;
     align-items: center;
     li {
-	  width: 70%;
-	  margin-bottom: 10px;
+      width: 70%;
+      margin-bottom: 10px;
       a {
-		color: #fff;
-		border: 1px solid $color__light_blue;
-		padding: 3px;
-		text-decoration: none;
-		font-size: 12px;
+        color: #fff;
+        border: 1px solid $color__light_blue;
+        padding: 3px;
+        text-decoration: none;
+        font-size: 12px;
+        transition: 0.5s;
         &:hover {
-		  color: $color__light_green;
-		  border: 1px solid $color__light_green;
+          color: $color__light_green;
+          border: 1px solid $color__light_green;
         }
       }
     }

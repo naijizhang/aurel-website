@@ -495,7 +495,7 @@ blockquote {
 
 h3 {
   text-align: center;
-  color: #16427D;
+  color: #16427d;
   font-family: 'Lalezar';
   margin: 50px auto;
   letter-spacing: 2px; }
@@ -584,11 +584,11 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: #16427D; }
+  color: #16427d; }
   a:visited {
-    color: #16427D; }
+    color: #16427d; }
   a:hover, a:focus, a:active {
-    color: #16427D; }
+    color: #16427d; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -683,7 +683,7 @@ a {
     -webkit-box-shadow: none;
             box-shadow: none;
     border-radius: 4px;
-    background-color: #397C46;
+    background-color: #2875da;
     border: none;
     color: #ffffff;
     text-align: center;
@@ -715,8 +715,8 @@ a {
   position: fixed;
   top: 25vh;
   left: 0px;
-  background: #16427D;
-  border: 3px solid #DFE9F6;
+  background: #16427d;
+  border: 3px solid #dfe9f6;
   border-radius: 20px;
   -webkit-box-shadow: 0 0 11px 0 #bbb;
           box-shadow: 0 0 11px 0 #bbb;
@@ -724,7 +724,7 @@ a {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out; }
   .widget-area .widget-title {
-    color: #DFE9F6;
+    color: #dfe9f6;
     margin-left: 15%;
     font-size: 20px; }
   .widget-area ul {
@@ -749,10 +749,12 @@ a {
       margin-bottom: 10px; }
       .widget-area ul li a {
         color: #fff;
-        border: 1px solid #DFE9F6;
+        border: 1px solid #dfe9f6;
         padding: 3px;
         text-decoration: none;
-        font-size: 12px; }
+        font-size: 12px;
+        -webkit-transition: 0.5s;
+        transition: 0.5s; }
         .widget-area ul li a:hover {
           color: #79ff93;
           border: 1px solid #79ff93; }
@@ -933,14 +935,16 @@ object {
       text-decoration: none;
       font-family: 'Lalezar';
       font-size: 18px;
-      letter-spacing: 1px; }
+      letter-spacing: 1px;
+      -webkit-transition: 0.5s;
+      transition: 0.5s; }
       #primary-menu li a:hover {
-        color: #397C46;
-        -webkit-filter: drop-shadow(5px 5px 10px #397C46);
-                filter: drop-shadow(5px 5px 10px #397C46); }
+        color: #397c46;
+        -webkit-filter: drop-shadow(5px 5px 10px #397c46);
+                filter: drop-shadow(5px 5px 10px #397c46); }
 
 #myFooter {
-  background-color: #23447F;
+  background-color: #23447f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -977,7 +981,7 @@ object {
           font-size: 15px;
           color: #fff; }
           #myFooter #footer-navigation ul li a:hover {
-            color: #DFE9F6; }
+            color: #dfe9f6; }
   #myFooter #footer-middle-column {
     width: 30%;
     display: -webkit-box;
@@ -1122,7 +1126,7 @@ object {
           clip-path: polygon(0 0, 0 100px, 50% 50px, 100% 100px, 100% 0px);
   height: 100px;
   width: 100%;
-  background-color: #DFE9F6; }
+  background-color: #dfe9f6; }
 
 .polygon2 {
   shape-outside: polygon(0 0, 50% 100px, 100% 0px);
@@ -1130,13 +1134,13 @@ object {
           clip-path: polygon(0 0, 50% 100px, 100% 0px);
   height: 100px;
   width: 100%;
-  background-color: #DFE9F6; }
+  background-color: #dfe9f6; }
 
 .what-we-do {
   text-align: center;
   font-family: 'Lalezar';
   letter-spacing: 1px;
-  color: #16427D;
+  color: #16427d;
   margin-top: 8vh;
   margin-bottom: 2vh; }
 
@@ -1232,7 +1236,7 @@ object {
       .what-we-do-container .hexagon .industry-link .industry-logo-container {
         width: 80px;
         height: 80px;
-        background: #16427D;
+        background: #16427d;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -1293,11 +1297,11 @@ object {
         text-align: center;
         margin: 0;
         margin-left: -10px;
-        color: #16427D;
+        color: #16427d;
         font-family: 'Lalezar';
         font-size: 1.5vw;
         letter-spacing: 1px;
-        background: #DFE9F6;
+        background: #dfe9f6;
         padding: 10px;
         border-radius: 20px;
         opacity: 0.7; }
@@ -1363,7 +1367,7 @@ object {
 .polygon-container {
   width: 150px;
   height: 82.5px;
-  background: #23447F;
+  background: #23447f;
   position: relative;
   margin: 37.5px auto;
   display: -webkit-box;
@@ -1390,7 +1394,7 @@ object {
     height: 0;
     border-left: 75px solid transparent;
     border-right: 75px solid transparent;
-    border-bottom: 37.5px solid #23447F; }
+    border-bottom: 37.5px solid #23447f; }
   .polygon-container:after {
     content: '';
     position: absolute;
@@ -1400,7 +1404,7 @@ object {
     height: 0;
     border-left: 75px solid transparent;
     border-right: 75px solid transparent;
-    border-top: 37.5px solid #23447F; }
+    border-top: 37.5px solid #23447f; }
   .polygon-container h3 {
     color: #fff;
     font-size: 20px;
@@ -1409,7 +1413,7 @@ object {
     margin: 5px; }
 
 .content-company-history {
-  background: #16427D; }
+  background: #16427d; }
   .content-company-history h2 {
     text-align: center;
     font-family: 'Lalezar';
@@ -1417,7 +1421,7 @@ object {
     padding-top: 150px;
     padding-bottom: 150px; }
   .content-company-history h4 {
-    color: #DFE9F6;
+    color: #dfe9f6;
     margin-top: 100px; }
 
 .company-history-container {
@@ -1487,7 +1491,7 @@ object {
         margin-right: -28px; }
     .company-history-container .helper-block .circle {
       z-index: 100;
-      background: #16427D;
+      background: #16427d;
       width: 50px;
       height: 50px;
       border: 3px solid #c4c4c4;
@@ -1500,22 +1504,22 @@ p.is-active {
 
 @-webkit-keyframes circlebackground {
   from {
-    background-color: #16427D; }
+    background-color: #16427d; }
   to {
-    background-color: #DFE9F6; } }
+    background-color: #dfe9f6; } }
 
 @keyframes circlebackground {
   from {
-    background-color: #16427D; }
+    background-color: #16427d; }
   to {
-    background-color: #DFE9F6; } }
+    background-color: #dfe9f6; } }
 
 .is-active .circle {
-  background: #DFE9F6 !important;
+  background: #dfe9f6 !important;
   -webkit-animation-name: circlebackground;
           animation-name: circlebackground;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  border-color: #16427D;
+  border-color: #16427d;
   -webkit-box-shadow: 0 0 11px 0 #ffffff;
           box-shadow: 0 0 11px 0 #ffffff; }

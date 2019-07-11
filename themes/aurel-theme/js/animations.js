@@ -34,7 +34,7 @@
       let yPos = $(window).scrollTop();
 
       $.each(elemInView, function(index, value) {
-        if (yPos > value.offsetTop - 400 && yPos < value.offsetTop - 250) {
+        if (yPos > value.offsetTop - 400 && yPos < value.offsetTop - 210) {
           console.log(value.offsetTop);
           $(this).addClass('is-active');
         } else {

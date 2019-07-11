@@ -1350,11 +1350,14 @@ object {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-bottom: 150px; }
+  padding-bottom: 200px; }
   .company-history-container p {
     -webkit-transition: font-size 1s;
     transition: font-size 1s;
     color: inherit; }
+    .company-history-container p strong {
+      -webkit-transition: font-size 1s;
+      transition: font-size 1s; }
     .company-history-container p a {
       color: #79b3fa; }
   .company-history-container .helper-block.circle {
@@ -1365,7 +1368,9 @@ object {
     width: 50%;
     color: #fff;
     padding-left: 50px;
-    padding-right: 50px; }
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
     .company-history-container p:nth-child(even) {
       padding-left: 30px;
       border-left: 5px solid #fff; }
@@ -1387,10 +1392,6 @@ object {
       -webkit-box-align: start;
           -ms-flex-align: start;
               align-items: flex-start; }
-    .company-history-container .helper-block:last-child {
-      -webkit-box-align: end;
-          -ms-flex-align: end;
-              align-items: flex-end; }
     .company-history-container .helper-block:nth-child(even) {
       border-left: 5px solid #fff;
       -webkit-box-pack: start;
@@ -1414,6 +1415,8 @@ object {
 
 p.is-active {
   font-size: 20px; }
+  p.is-active strong {
+    font-size: 30px; }
 
 @-webkit-keyframes circlebackground {
   from {

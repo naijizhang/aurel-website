@@ -13,10 +13,13 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-bottom: 150px;
+  padding-bottom: 200px;
   p {
     transition: font-size 1s;
     color: inherit;
+    strong {
+      transition: font-size 1s;
+    }
     a {
       color: #79b3fa;
     }
@@ -36,6 +39,8 @@
     color: #fff;
     padding-left: 50px;
     padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     &:nth-child(even) {
       padding-left: 30px;
       border-left: 5px solid #fff;
@@ -52,9 +57,7 @@
     &:nth-child(1) {
       align-items: flex-start;
     }
-    &:last-child {
-      align-items: flex-end;
-    }
+
     &:nth-child(even) {
       border-left: 5px solid #fff;
       justify-content: flex-start;
@@ -81,6 +84,9 @@
 p.is-active {
   //background: #000;
   font-size: 20px;
+  strong {
+    font-size: 30px;
+  }
 }
 @keyframes circlebackground {
   from {

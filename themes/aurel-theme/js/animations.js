@@ -18,10 +18,15 @@
     });
 
     //company history animation
-    $('.company-history-container p:odd').after("<div class='helper-block in-view'><div class='circle'></div></div>");
-    $('.company-history-container p:even').before("<div class='helper-block in-view'><div class='circle'></div></div>");
-
-
+    $('.company-history-container p:odd').after(
+      "<div class='helper-block in-view'><div class='circle'></div></div>"
+    );
+    $('.company-history-container p:even').before(
+      "<div class='helper-block in-view'><div class='circle'></div></div>"
+    );
+    $('.helper-block')
+      .last()
+      .css('align-items', 'flex-end');
 
     //start of scroll function.
     const elemInView = $('.in-view');

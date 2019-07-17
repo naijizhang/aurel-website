@@ -115,7 +115,9 @@ get_header(); ?>
                         <h3>software</h3>
                     </div>
                 </a>
-                <img class="cadsim-logo" alt="cadsim logo" src='<?php echo get_template_directory_uri() . '/assets/images/cp(blue3black).bmp'; ?>'>
+                <div class="cadsim-logo-container">
+                    <img class="cadsim-logo" alt="cadsim logo" src='<?php echo get_template_directory_uri() . '/assets/images/cp(blue3black).bmp'; ?>'>
+                </div>
                 <a>
                     <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500" class="polygon-container" id="polygon-block2">
                         <h3>CADSIM Plus</h3>

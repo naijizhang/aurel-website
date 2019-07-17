@@ -90,7 +90,16 @@
       }
     });
    
-
+    if (
+      navigator.userAgent.indexOf('Safari') != -1 && 
+      navigator.userAgent.indexOf('Chrome') == -1 && 
+      navigator.userAgent.indexOf('CriOS/') == -1
+  )  { 
+    $("#polygon-block1").attr("data-aos","none");
+    $("#polygon-block2").attr("data-aos","none");
+    $("#polygon-block3").attr("data-aos","none");
+    $("#polygon-block4").attr("data-aos","none");
+  }
 
     // if (jQuery('body').hasClass('single-university')) {
     //   $('nav').addClass('half-transparent');

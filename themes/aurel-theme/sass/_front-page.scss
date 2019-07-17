@@ -5,7 +5,7 @@
 
   box-shadow: 5px 0 15px -4px #bbb, -5px 0 8px -4px #bbb;
   @include mobile {
-    box-shadow: none ;
+    box-shadow: none;
   }
 }
 
@@ -15,6 +15,10 @@
     width: 100%;
     height: 50vh;
     min-height: 500px;
+    @include mobile {
+      height: 100vw;
+      min-height: 0px;
+    }
     img {
       width: 100%;
       height: 100%;
@@ -35,12 +39,19 @@
     justify-content: space-around;
     .slide1-hook {
       margin-top: 7%;
+      @include mobile {
+        margin-top: 15%;
+      }
       p {
         width: 50%;
         color: #fff;
         font-family: 'Poiret One';
         font-size: 25px;
         margin-left: 20%;
+        @include mobile {
+          width: 65%;
+          font-size: 20px;
+        }
       }
     }
     .slide1-bottom-content {
@@ -49,6 +60,12 @@
       height: 100px;
       justify-content: flex-end;
       align-items: center;
+      @include mobile {
+        height: 50%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+      }
       p {
         color: #fff;
         margin-bottom: 0px;
@@ -57,9 +74,18 @@
         font-size: 30px;
         letter-spacing: 2px;
         text-align: end;
+        @include mobile {
+          margin: 0px;
+          margin-top: 12%;
+          text-align: center;
+          font-size: 20px;
+        }
       }
       a {
         margin-right: 20%;
+        @include mobile {
+          margin: 0px;
+        }
         .software-logo {
           width: 200px;
           height: auto;
@@ -67,6 +93,10 @@
           border-radius: 15px;
           border: 10px solid #fff;
           transition: 0.3s;
+          @include mobile {
+            width: 150px;
+            margin-top: 5px;
+          }
           &:hover {
             box-shadow: 0px 0px 15px #bbbbbb;
           }
@@ -74,9 +104,8 @@
       }
     }
   }
-  .slide-item2{
+  .slide-item2 {
     background: red;
-
   }
 }
 
@@ -94,6 +123,9 @@
   height: 100px;
   width: 100%;
   background-color: $color__light_blue;
+  @include mobile {
+    display: none;
+  }
 }
 .what-we-do {
   text-align: center;
@@ -102,6 +134,9 @@
   color: $color__blue;
   margin-top: 8vh;
   margin-bottom: 2vh;
+  @include mobile {
+    margin-top: 2vh;
+  }
 }
 .what-we-do-container {
   display: flex;
@@ -109,6 +144,9 @@
   justify-content: space-around;
   align-items: center;
   margin: 50px auto;
+  @include mobile {
+    flex-direction: column;
+  }
   .hexagon {
     width: 25vw;
     height: 25vw;
@@ -123,7 +161,16 @@
     flex-direction: column;
     justify-content: space-between;
     margin-left: 30px;
-    a{
+    z-index: 3;
+    @include mobile {
+      background: none;
+      width: 100%;
+      max-width: 1280px;
+      margin-left: 0px;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    a {
       text-decoration: none;
     }
     .hexagon-industry-container1 {
@@ -132,6 +179,16 @@
       display: flex;
       justify-content: center;
       margin-top: -10%;
+      @include mobile {
+        order: 1;
+        height: 50px;
+        width: 50%;
+        margin: 0px;
+        justify-content: flex-start;
+        padding-left: 4vw;
+        .industry1-container {
+        }
+      }
     }
     .hexagon-industry-container2 {
       height: 29%;
@@ -140,6 +197,20 @@
       justify-content: space-between;
       margin-left: -15%;
       margin-top: -3%;
+      @include mobile {
+        order: 3;
+        height: 50px;
+        width: 100%;
+        margin: 0px;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        .industry2-container {
+          background: #3e6ba8 !important;
+        }
+        .industry3-container {
+          background: #5f799b !important;
+        }
+      }
     }
     .hexagon-industry-container3 {
       height: 29%;
@@ -148,6 +219,19 @@
       justify-content: space-between;
       margin-left: -15%;
       margin-top: 30%;
+      @include mobile {
+        order: 4;
+        height: 50px;
+        width: 100%;
+        margin: 0px;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        .industry4-container {
+          background: #5f799b !important;
+        }
+        .industry5-container {
+        }
+      }
     }
     .hexagon-industry-container4 {
       height: 21%;
@@ -155,6 +239,17 @@
       display: flex;
       justify-content: center;
       margin-bottom: -10%;
+      @include mobile {
+        order: 2;
+        height: 50px;
+        width: 50%;
+        margin: 0px;
+        justify-content: flex-end;
+        padding-right: 4vw;
+        .industry6-container {
+          background: #3e6ba8 !important;
+        }
+      }
     }
     .industry-link {
       display: flex;
@@ -196,6 +291,56 @@
             display: inline;
           }
         }
+        @include mobile {
+          width: 45vw;
+          height: 50px;
+          border-radius: 40px;
+          z-index: 9999;
+          box-shadow: 0px 0px 15px #4d4d4d;
+
+          .industry-logo {
+            width: 40px;
+            height: 40px;
+            margin-left: 10px;
+            margin-right: 10px;
+            @include mobile {
+              width: 30px;
+              height: 30px;
+            }
+          }
+          p {
+            display: inline;
+            @include mobile {
+              font-family: 'Noto Sans';
+              font-size: 16px;
+            }
+          }
+          &:hover {
+            width: 45vw;
+            height: 50px;
+            border-radius: 40px;
+            z-index: 9999;
+            box-shadow: 0px 0px 15px #4d4d4d;
+
+            .industry-logo {
+              width: 40px;
+              height: 40px;
+              margin-left: 10px;
+              margin-right: 10px;
+              @include mobile {
+                width: 30px;
+                height: 30px;
+              }
+            }
+            p {
+              display: inline;
+              @include mobile {
+                font-family: 'Noto Sans';
+                font-size: 16px;
+              }
+            }
+          }
+        }
       }
     }
     .position-helper-container {
@@ -211,8 +356,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      @include mobile {
+        display: none;
+      }
       p {
-        width:50%;
+        width: 50%;
         text-align: center;
         margin: 0;
         margin-left: -10px;
@@ -231,6 +379,12 @@
   .right-column {
     width: 30vw;
     max-width: 500px;
+    z-index: 3;
+    @include mobile {
+      width: 100vw;
+      max-width: 1280px;
+      margin-top: 30px;
+    }
   }
 }
 
@@ -247,6 +401,10 @@
   background-position: center, 50% 18%;
   background-repeat: no-repeat no-repeat;
   opacity: 0.5;
+  margin-top: -10vh;
+  @include mobile {
+    display: none;
+  }
 }
 
 .front-page-linear-background {
@@ -257,18 +415,50 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  @include mobile {
+    margin-top:-430px; 
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(
+        0deg,
+        rgba(223, 233, 246, 0.7),
+        rgba(223, 233, 246, 0.7)
+      ),
+      url('../../assets/images/Pumps1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 .front-page-bottom-banner {
   margin-top: 10vh;
   margin-bottom: 0px;
+  @include mobile {
+    margin-top: 100px;
+  }
   .row-first {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    @include mobile {
+      position: relative;
+      justify-content: center;
+    }
     img {
       width: 20%;
       object-fit: contain;
+      @include mobile {
+        position: absolute;
+        top: 50%;
+        width: 35vw;
+        height: 35vw;
+        padding: 10px;
+        background: #fff;
+        border-radius: 50%;
+        z-index: 100;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+      }
     }
   }
   .row-second {
@@ -277,10 +467,38 @@
     justify-content: center;
     align-items: center;
     margin-top: 3vh;
+    @include mobile {
+      margin-top: 0px;
+      position: relative;
+      justify-content: center;
+    }
     .polygon-container {
       margin-left: 5vw;
       margin-right: 5vw;
+      @include mobile {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin: 10px;
+      }
     }
+  }
+}
+@include mobile {
+  #polygon-block1 {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  #polygon-block2 {
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  #polygon-block3 {
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  #polygon-block4 {
+    justify-content: flex-end;
+    align-items: flex-end;
   }
 }
 
@@ -296,6 +514,20 @@ $unite-length: 150px;
   justify-content: center;
   align-items: center;
   box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.25);
+  @include mobile {
+    margin: 10px;
+   
+    width: 40vw;
+    height: 31vw;
+    box-shadow: none;
+    padding: 5px;
+    &:before {
+      border: none !important;
+    }
+    &:after {
+      border: none !important;
+    }
+  }
   &:before {
     content: '';
     position: absolute;
@@ -324,5 +556,10 @@ $unite-length: 150px;
     font-family: 'Lalezar';
     letter-spacing: 1px;
     margin: 5px;
+    @include mobile {
+      font-size: 25px;
+      margin: 10px;
+      letter-spacing: 1px;
+    }
   }
 }

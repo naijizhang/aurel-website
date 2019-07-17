@@ -20,3 +20,11 @@ function red_starter_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
+
+//display the all the team members
+function soc_get_members()
+{
+	$args = array('post_type' => 'aurel-team', 'posts_per_page' => -1, 'orderby' => 'date');
+	$members = get_posts($args);
+	return $members;
+}

@@ -1355,7 +1355,8 @@ label[for='nav-trigger'] {
   margin-bottom: 2vh; }
   @media (max-width: 740px) {
     .what-we-do {
-      margin-top: 2vh; } }
+      margin-top: 2vh;
+      font-size: 30px; } }
 
 .what-we-do-container {
   display: -webkit-box;
@@ -1560,7 +1561,7 @@ label[for='nav-trigger'] {
         @media (max-width: 740px) {
           .what-we-do-container .hexagon .industry-link .industry-logo-container {
             width: 45vw;
-            height: 50px;
+            height: 55px;
             border-radius: 40px;
             z-index: 9999;
             -webkit-box-shadow: 0px 0px 15px #4d4d4d;
@@ -1573,7 +1574,9 @@ label[for='nav-trigger'] {
     @media (max-width: 740px) and (max-width: 740px) {
       .what-we-do-container .hexagon .industry-link .industry-logo-container .industry-logo {
         width: 30px;
-        height: 30px; } }
+        height: 30px;
+        margin-left: 15px;
+        margin-right: 15px; } }
         @media (max-width: 740px) {
             .what-we-do-container .hexagon .industry-link .industry-logo-container p {
               display: inline; } }
@@ -1674,7 +1677,7 @@ label[for='nav-trigger'] {
   background-repeat: no-repeat; }
   @media (max-width: 740px) {
     .front-page-linear-background {
-      margin-top: -430px;
+      margin-top: -40vh;
       width: 100%;
       height: 500px;
       background: -webkit-gradient(linear, left bottom, left top, from(rgba(223, 233, 246, 0.7)), to(rgba(223, 233, 246, 0.7))), url("../../assets/images/Pumps1.jpg");
@@ -1688,7 +1691,10 @@ label[for='nav-trigger'] {
   margin-bottom: 0px; }
   @media (max-width: 740px) {
     .front-page-bottom-banner {
-      margin-top: 100px; } }
+      margin-top: 0px;
+      height: 40vh;
+      padding-top: 10vh;
+      padding-bottom: 10vh; } }
   .front-page-bottom-banner .row-first {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1807,7 +1813,7 @@ label[for='nav-trigger'] {
     .polygon-container {
       margin: 10px;
       width: 40vw;
-      height: 31vw;
+      height: 18vh;
       -webkit-box-shadow: none;
               box-shadow: none;
       padding: 5px; }
@@ -1843,7 +1849,7 @@ label[for='nav-trigger'] {
     margin: 5px; }
     @media (max-width: 740px) {
       .polygon-container h3 {
-        font-size: 25px;
+        font-size: 20px;
         margin: 10px;
         letter-spacing: 1px; } }
 

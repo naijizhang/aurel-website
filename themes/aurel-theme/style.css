@@ -515,6 +515,11 @@ h4 {
   width: 80%;
   margin: 10px auto; }
 
+.search-field {
+  border-radius: 10px !important; }
+  .search-field:focus {
+    outline: none !important; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/

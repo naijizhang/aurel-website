@@ -221,3 +221,24 @@
     width: 400%;
   }
 }
+
+.team-content{
+
+    #team-top-banner-container{
+        .wp-block-image{
+            width:40%;
+            height:auto;
+            object-fit: contain;
+            margin:80px auto;
+        }
+        #team-page-title{
+            color: $color__blue;
+            border-bottom: 1px solid #c4c4c4;
+            width:80%;
+            padding-bottom: 30px;
+        }
+
+    }
+    
+
+}

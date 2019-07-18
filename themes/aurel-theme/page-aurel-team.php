@@ -8,14 +8,20 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area">
+<div id="primary" class="content-area team-content">
     <main id="main" class="site-main" role="main">
 
         <?php while (have_posts()) : the_post(); ?>
-            <?php get_template_part('template-parts/content-page'); ?>
+            <article id="team-top-banner-container" <?php post_class(); ?>>
+                <div class="entry-content">
+                    <?php the_content(); ?>
+                </div><!-- .entry-content -->
+                <header class="entry-header">
+                    <?php the_title('<h1 id="team-page-title">', '</h1>'); ?>
+                </header><!-- .entry-header -->
+            </article><!-- #post-## -->
         <?php endwhile; // End of the loop. 
         ?>
-
 
         <div class="team-member-container">
             <div class="row">
@@ -26,7 +32,7 @@ get_header(); ?>
                         <div class="card--basic">
                             <a href="#expand-jump-" id="expand-jump-1">
                                 <div class="card__img-container">
-                                    <img height="106" id="expand-jump-1" class="card__img" src="<?php echo get_the_post_thumbnail_url();?>" alt="Fashion 1" />
+                                    <img height="106" id="expand-jump-1" class="card__img" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Fashion 1" />
                                 </div>
                                 <div class="card__text-container">
                                     <!-- <span class="card__text"> -->

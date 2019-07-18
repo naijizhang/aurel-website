@@ -11,7 +11,7 @@ html {
 body {
   min-width: 100%;
   min-height: 100vh;
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 #page {
   min-width: 100%;
@@ -31,7 +31,7 @@ body {
 body {
   background: $color__background-body; /* Fallback for when there is no custom background color defined. */
   @include mobile {
-    background: $color__blue
+    background: $color__blue;
   }
 }
 
@@ -62,9 +62,11 @@ ul {
   width: 80%;
   margin: 10px auto;
   padding-left: 20px;
-  li{
-   
-    margin-bottom: 20px;
+  li {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -110,7 +112,7 @@ h1 {
   letter-spacing: 5px;
   font-size: 50px;
 }
-.entry-header{
+.entry-header {
   .entry-title {
     width: 100vw;
     max-width: 1280px;
@@ -210,10 +212,9 @@ h4 {
   margin: 10px auto;
 }
 
-
-.search-field{
+.search-field {
   border-radius: 10px !important;
-  &:focus{
+  &:focus {
     outline: none !important;
   }
 }

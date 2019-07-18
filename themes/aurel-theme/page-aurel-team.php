@@ -52,9 +52,14 @@ get_header(); ?>
                         <div class="card--expand">
                             <div class="card--expand__container">
                                 <a href="#close-jump-1" class="expand__close"></a>
-                                <?php if (has_post_thumbnail()) : ?>
-                                    <?php the_post_thumbnail('large'); ?>
-                                <?php endif; ?>
+                                <div id="profile-large-image">
+                                    <?php if (has_post_thumbnail()) : ?>
+                                        <?php the_post_thumbnail('large'); ?>
+                                    <?php endif; ?>
+                                    <p class="member-role-expanded">
+                                        <?php echo CFS()->get('role_or_title'); ?>
+                                    </p>
+                                </div>
                                 <div class="member-detail-content">
                                     <?php the_content(); ?>
                                 </div>

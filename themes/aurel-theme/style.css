@@ -394,7 +394,9 @@ ul {
   margin: 10px auto;
   padding-left: 20px; }
   ul li {
-    margin-bottom: 20px; }
+    margin-bottom: 10px; }
+    ul li:last-child {
+      margin-bottom: 20px; }
 
 ol {
   list-style: decimal; }
@@ -969,6 +971,8 @@ object {
                 filter: drop-shadow(5px 5px 5px #bbb); }
 
 .menu-primary-container ul {
+  width: auto;
+  padding: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -986,7 +990,10 @@ object {
     .menu-primary-container ul {
       display: none; } }
   .menu-primary-container ul li {
+    margin: 0px;
     margin-right: 20px; }
+    .menu-primary-container ul li:last-child {
+      margin-bottom: 0px; }
     .menu-primary-container ul li a {
       text-decoration: none;
       font-family: 'Lalezar';
@@ -2079,7 +2086,8 @@ p.is-active {
     font-size: 18px;
     margin: 0px;
     margin-top: 10px;
-    color: #fff; }
+    color: #fff;
+    letter-spacing: 1px; }
   .card__text-container .member-brief-text .member-role {
     font-size: 12px; }
 
@@ -2218,15 +2226,52 @@ p.is-active {
   .card--expand {
     width: 400%; } }
 
-.team-content #team-top-banner-container .wp-block-image {
-  width: 40%;
-  height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
-  margin: 80px auto; }
-
-.team-content #team-top-banner-container #team-page-title {
-  color: #16427d;
-  border-bottom: 1px solid #c4c4c4;
-  width: 80%;
-  padding-bottom: 30px; }
+.team-content {
+  padding-bottom: 80px; }
+  .team-content #team-top-banner-container .wp-block-image {
+    width: 40%;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin: 80px auto; }
+  .team-content #team-top-banner-container #team-page-title {
+    color: #16427d;
+    border-bottom: 1px solid #c4c4c4;
+    width: 80%;
+    padding-bottom: 30px; }
+  .team-content h4 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    color: #16427d; }
+  .team-content #profile-large-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 20px auto; }
+    .team-content #profile-large-image img {
+      width: 20vw;
+      max-width: 200px;
+      height: 20vw;
+      max-height: 200px;
+      -o-object-fit: cover;
+         object-fit: cover;
+      -o-object-position: center;
+         object-position: center;
+      border-radius: 50%;
+      -webkit-box-shadow: 0px 0px 10px #bbb;
+              box-shadow: 0px 0px 10px #bbb;
+      margin: 0 auto; }
+    .team-content #profile-large-image .member-role-expanded {
+      font-size: 15px;
+      font-style: italic;
+      color: #454545;
+      text-align: center;
+      margin: 20px auto; }

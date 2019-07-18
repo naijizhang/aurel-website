@@ -444,29 +444,6 @@ h1 {
   color: #16427d;
   z-index: 100; }
 
-.hero-title {
-  position: absolute;
-  top: 20vh;
-  width: 100vw;
-  max-width: 1280px;
-  text-align: center;
-  color: #16427d;
-  z-index: 100; }
-
-.hero-image {
-  margin: 0px auto;
-  margin-top: -30px; }
-  .hero-image img {
-    z-index: -1;
-    width: 100%;
-    max-width: 1280px;
-    height: 50vh;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: center;
-       object-position: center;
-    opacity: 0.2; }
-
 figure .wp-block-image img {
   width: 500px; }
 
@@ -529,11 +506,6 @@ h4 {
   font-style: italic;
   width: 80%;
   margin: 10px auto; }
-
-.search-field {
-  border-radius: 10px !important; }
-  .search-field:focus {
-    outline: none !important; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -701,6 +673,9 @@ a {
       -ms-flex-align: end;
           align-items: flex-end;
   z-index: 99999; }
+  @media (max-width: 740px) {
+    .toggle-widget {
+      display: none; } }
   .toggle-widget .toggle-widget-button {
     height: 30px;
     width: 70px;
@@ -718,39 +693,99 @@ a {
     .toggle-widget .toggle-widget-button:focus {
       outline: 0; }
 
+.widget_search {
+  width: 250px;
+  position: fixed;
+  top: 26vh;
+  left: 0px; }
+
 .search-form {
   width: 180px; }
+  @media (max-width: 740px) {
+    .search-form {
+      display: none; } }
   .search-form fieldset {
     border: none;
-    margin-top: 20px;
-    padding-bottom: 0px; }
+    margin: 0px;
+    padding: 0px; }
     .search-form fieldset label {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      margin-left: 5px; }
       .search-form fieldset label .search-field {
-        width: 80%; }
+        width: 80%;
+        border-top-right-radius: 10px; }
+        .search-form fieldset label .search-field:focus {
+          outline: none; }
+
+.widget {
+  margin: 0px;
+  padding-bottom: 10px;
+  width: 180px;
+  border-right: 1px solid #fff;
+  border-bottom: none; }
+  .widget:first-child {
+    border-right: none; }
+  .widget:last-child {
+    border-right: none; }
+  @media (max-width: 740px) {
+    .widget {
+      width: 100%;
+      border-bottom: 1px solid #fff;
+      border-right: none; }
+      .widget:first-child {
+        border-bottom: none; }
+      .widget:last-child {
+        border-bottom: none; } }
 
 .widget-area {
   position: fixed;
-  top: 25vh;
+  top: 30vh;
   left: 0px;
   background: #16427d;
   border: 3px solid #dfe9f6;
   border-radius: 20px;
+  border-top-left-radius: 0px;
   -webkit-box-shadow: 0 0 11px 0 #bbb;
           box-shadow: 0 0 11px 0 #bbb;
   opacity: 0.8;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  z-index: 99999; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  @media (max-width: 740px) {
+    .widget-area {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      position: relative;
+      top: 0px;
+      z-index: 3;
+      width: 100vw;
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      border-bottom: 2px solid #dfe9f6;
+      border-radius: 0px; } }
   .widget-area .widget-title {
     color: #dfe9f6;
     margin-left: 15%;
-    font-size: 20px; }
+    font-size: 20px;
+    padding-top: 10px; }
+    @media (max-width: 740px) {
+      .widget-area .widget-title {
+        margin-left: 0%;
+        padding-left: 20px; } }
   .widget-area ul {
     width: auto;
     padding: 0px;
@@ -770,10 +805,27 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    @media (max-width: 740px) {
+      .widget-area ul {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        padding-left: 20px;
+        padding-right: 20px; } }
     .widget-area ul li {
       width: 70%;
       margin: 0px;
       margin-bottom: 10px; }
+      @media (max-width: 740px) {
+        .widget-area ul li {
+          width: auto;
+          margin-right: 10px; } }
       .widget-area ul li a {
         color: #fff;
         border: 1px solid #dfe9f6;
@@ -2276,7 +2328,7 @@ p.is-active {
     width: 430%; } }
 
 .team-content {
-  padding-bottom: 80px; }
+  padding-bottom: 50px; }
   .team-content #team-top-banner-container .wp-block-image {
     width: 40%;
     height: auto;
@@ -2328,3 +2380,33 @@ p.is-active {
       color: #454545;
       text-align: center;
       margin: 20px auto; }
+
+@media (max-width: 740px) {
+  .member-detail-content ul, .member-detail-content h1, .member-detail-content h2, .member-detail-content h3, .member-detail-content h4, .member-detail-content p {
+    width: 100%; } }
+
+.content-about-page {
+  position: relative; }
+
+.hero-title {
+  position: absolute;
+  top: 19vh;
+  width: 100vw;
+  max-width: 1280px;
+  text-align: center;
+  color: #16427d;
+  z-index: 100; }
+
+.hero-image {
+  margin: 0px auto;
+  margin-top: -30px; }
+  .hero-image img {
+    z-index: -1;
+    width: 100%;
+    max-width: 1280px;
+    height: 50vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    opacity: 0.2; }

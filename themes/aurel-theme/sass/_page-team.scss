@@ -268,7 +268,7 @@
 }
 
 .team-content {
-  padding-bottom: 80px;
+  padding-bottom: 50px;
   #team-top-banner-container {
     .wp-block-image {
       width: 40%;
@@ -316,6 +316,14 @@
       color: #454545;
       text-align: center;
       margin: 20px auto;
+    }
+  }
+}
+
+.member-detail-content{
+  @include mobile {
+    ul,h1,h2,h3,h4,p{
+      width:100%;
     }
   }
 }

@@ -119,6 +119,7 @@
 
 .card--expand__container {
   padding: 40px;
+ 
 }
 
 // Arrow Down
@@ -205,21 +206,31 @@
   box-sizing: border-box;
 }
 
+
+
 @media only screen and (max-width: 991px) {
-  .card__cell:nth-of-type(2n + 3) {
+  .card__cell:nth-of-type(4n + 5) {
     clear: left;
   }
   .card--expand {
-    width: 200%;
+    width: 430%;
   }
 }
+@media only screen and (max-width: 768px) {
+    .card__cell:nth-of-type(2n + 3) {
+      clear: left;
+    }
+    .card--expand {
+      width: 210%;
+    }
+  }
 
 @media only screen and (min-width: 992px) {
   .card__cell:nth-of-type(4n + 5) {
     clear: left;
   }
   .card--expand {
-    width: 400%;
+    width: 430%;
   }
 }
 

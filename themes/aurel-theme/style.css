@@ -1134,6 +1134,8 @@ label[for='nav-trigger'] {
       #myFooter #footer-navigation {
         display: none; } }
     #myFooter #footer-navigation ul {
+      width: auto;
+      padding: 0px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1143,8 +1145,11 @@ label[for='nav-trigger'] {
       padding: 0;
       height: 80%; }
       #myFooter #footer-navigation ul li {
+        margin: 0px;
         width: 100px;
         margin-top: 5px; }
+        #myFooter #footer-navigation ul li:last-child {
+          margin-bottom: 0px; }
         #myFooter #footer-navigation ul li a {
           font-family: 'Noto Sans';
           font-size: 15px;

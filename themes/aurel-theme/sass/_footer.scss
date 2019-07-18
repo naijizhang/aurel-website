@@ -12,7 +12,7 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
-    height:100px;
+    height: 100px;
   }
   #footer-navigation {
     width: 20%;
@@ -21,12 +21,18 @@
       display: none;
     }
     ul {
+      width: auto;
+      padding: 0px;
       display: flex;
       flex-wrap: wrap;
       margin-top: 20px;
       padding: 0;
       height: 80%;
       li {
+        margin: 0px;
+        &:last-child {
+          margin-bottom: 0px;
+        }
         width: 100px;
         margin-top: 5px;
         a {
@@ -49,7 +55,7 @@
     align-items: center;
     @include mobile {
       order: 10;
-      width:80%;
+      width: 80%;
     }
     p {
       margin: 0px;

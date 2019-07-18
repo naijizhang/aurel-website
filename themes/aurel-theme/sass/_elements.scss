@@ -122,29 +122,6 @@ h1 {
   }
 }
 
-.hero-title {
-  position: absolute;
-  top: 20vh;
-  width: 100vw;
-  max-width: 1280px;
-  text-align: center;
-  color: $color__blue;
-  z-index: 100;
-}
-.hero-image {
-  margin: 0px auto;
-  margin-top: -30px;
-  img {
-    z-index: -1;
-    width: 100%;
-    max-width: 1280px;
-    height: 50vh;
-    object-fit: cover;
-    object-position: center;
-    opacity: 0.2;
-  }
-}
-
 figure .wp-block-image {
   img {
     width: 500px;
@@ -210,11 +187,4 @@ h4 {
   font-style: italic;
   width: 80%;
   margin: 10px auto;
-}
-
-.search-field {
-  border-radius: 10px !important;
-  &:focus {
-    outline: none !important;
-  }
 }

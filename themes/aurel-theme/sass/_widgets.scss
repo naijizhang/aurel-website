@@ -4,7 +4,6 @@
 
 .widget {
   margin: 0 0 $base__space-unit;
-
   /* Make sure select elements fit in widgets. */
   select {
     max-width: 100%;
@@ -113,6 +112,7 @@ $widget_width: 180px;
   transition: all 0.5s ease-in-out;
   display: flex;
   flex-direction: row;
+  z-index: 99999;
   @include mobile {
     flex-direction: column;
     position: relative;

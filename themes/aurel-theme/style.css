@@ -450,7 +450,8 @@ h1 {
   width: 90%; }
   @media (max-width: 740px) {
     .entry-header .entry-title {
-      letter-spacing: 1px; } }
+      letter-spacing: 1px;
+      font-size: 30px; } }
 
 figure .wp-block-image img {
   width: 500px; }
@@ -2480,6 +2481,10 @@ p.is-active {
   position: relative; }
   .content-about-page .hero-title {
     color: #16427d; }
+    @media (max-width: 740px) {
+      .content-about-page .hero-title {
+        letter-spacing: 1px;
+        font-size: 40px; } }
   .content-about-page .hero-image img {
     opacity: 0.2;
     -webkit-filter: none;
@@ -2493,6 +2498,10 @@ p.is-active {
   text-align: center;
   color: #fff;
   z-index: 100; }
+  @media (max-width: 740px) {
+    .hero-title {
+      letter-spacing: 1px;
+      font-size: 40px; } }
 
 .hero-image {
   margin: 0px auto;
@@ -2542,3 +2551,51 @@ p.is-active {
       width: 90%; } }
   .content-client-comments .wp-block-quote p {
     width: 85%; }
+
+.content-conference .entry-title {
+  border-bottom: none; }
+
+.content-conference p {
+  margin-left: 11%; }
+
+.content-conference .card-header {
+  padding: 0px; }
+  .content-conference .card-header h2 {
+    background: #fff; }
+    .content-conference .card-header h2 button {
+      width: 100%;
+      height: 100%;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      border-radius: 0px;
+      text-decoration: none;
+      border: none;
+      background: #fff; }
+      .content-conference .card-header h2 button:hover {
+        outline: none;
+        border: none; }
+      .content-conference .card-header h2 button:focus {
+        outline: none;
+        border: none; }
+      .content-conference .card-header h2 button p {
+        width: 80%;
+        text-align: start;
+        margin: 10px auto; }
+
+.content-conference .card-body h4 {
+  font-style: normal;
+  font-size: 20px;
+  font-weight: bold; }
+  @media (max-width: 740px) {
+    .content-conference .card-body h4 {
+      width: 90%;
+      margin-left: 5%;
+      margin-right: auto; } }
+
+.content-conference .card-body p {
+  font-size: 18px; }
+  @media (max-width: 740px) {
+    .content-conference .card-body p {
+      font-size: 16px;
+      width: 90%;
+      margin-left: auto; } }

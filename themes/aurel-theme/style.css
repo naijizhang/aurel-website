@@ -442,7 +442,8 @@ h1 {
   max-width: 1280px;
   text-align: center;
   color: #16427d;
-  z-index: 100; }
+  z-index: 100;
+  margin: 80px auto; }
 
 figure .wp-block-image img {
   width: 500px; }
@@ -761,7 +762,8 @@ a {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
-          flex-direction: row; }
+          flex-direction: row;
+  z-index: 99999; }
   @media (max-width: 740px) {
     .widget-area {
       -webkit-box-orient: vertical;
@@ -885,6 +887,9 @@ a {
 
 .bypostauthor {
   display: block; }
+
+.content-area {
+  padding-bottom: 50px; }
 
 /*--------------------------------------------------------------
 # Media
@@ -1292,6 +1297,7 @@ label[for='nav-trigger'] {
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 0px;
   -webkit-box-shadow: 5px 0 15px -4px #bbb, -5px 0 8px -4px #bbb;
           box-shadow: 5px 0 15px -4px #bbb, -5px 0 8px -4px #bbb; }
   @media (max-width: 740px) {
@@ -1964,7 +1970,8 @@ label[for='nav-trigger'] {
         letter-spacing: 1px; } }
 
 .content-company-history {
-  background: #16427d; }
+  background: #16427d;
+  padding-bottom: 0px; }
   .content-company-history h2 {
     text-align: center;
     font-family: 'Lalezar';
@@ -2477,3 +2484,23 @@ p.is-active {
     -o-object-position: center;
        object-position: center;
     opacity: 0.2; }
+
+.content-client-list .entry-title {
+  border-bottom: 1px solid #c4c4c4;
+  width: 80%;
+  padding-bottom: 40px;
+  margin-bottom: 50px; }
+
+.content-client-list ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .content-client-list ul li {
+    width: 50%;
+    text-align: center; }
+    @media (max-width: 740px) {
+      .content-client-list ul li {
+        width: 100%; } }

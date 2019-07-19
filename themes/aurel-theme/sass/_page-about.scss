@@ -2,6 +2,10 @@
   position: relative;
   .hero-title {
     color: $color__blue;
+    @include mobile {
+      letter-spacing: 1px;
+      font-size: 40px;
+    }
   }
   .hero-image {
     img {
@@ -20,6 +24,10 @@
   //color: $color__blue;
   color: #fff;
   z-index: 100;
+  @include mobile {
+    letter-spacing: 1px;
+    font-size: 40px;
+  }
 }
 .hero-image {
   margin: 0px auto;

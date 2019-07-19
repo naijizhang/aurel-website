@@ -2573,10 +2573,12 @@ p.is-active {
       background: #fff; }
       .content-conference .card-header h2 button:hover {
         outline: none;
-        border: none; }
+        border: none;
+        background: #dfe9f6; }
       .content-conference .card-header h2 button:focus {
         outline: none;
-        border: none; }
+        border: none;
+        background: #dfe9f6; }
       .content-conference .card-header h2 button p {
         width: 80%;
         text-align: start;

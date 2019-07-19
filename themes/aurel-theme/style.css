@@ -1971,6 +1971,10 @@ label[for='nav-trigger'] {
     color: #fff;
     padding-top: 150px;
     padding-bottom: 150px; }
+    @media (max-width: 740px) {
+      .content-company-history h2 {
+        padding-top: 100px;
+        padding-bottom: 50px; } }
   .content-company-history h4 {
     color: #dfe9f6;
     margin-top: 100px; }
@@ -1986,13 +1990,22 @@ label[for='nav-trigger'] {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-bottom: 200px; }
+  @media (max-width: 740px) {
+    .company-history-container {
+      padding-bottom: 50px; } }
   .company-history-container p {
     -webkit-transition: font-size 1s;
     transition: font-size 1s;
     color: inherit; }
+    @media (max-width: 740px) {
+      .company-history-container p {
+        font-size: 15px; } }
     .company-history-container p strong {
       -webkit-transition: font-size 1s;
       transition: font-size 1s; }
+      @media (max-width: 740px) {
+        .company-history-container p strong {
+          font-size: 20px; } }
     .company-history-container p a {
       color: #79b3fa; }
   .company-history-container .helper-block.circle {
@@ -2006,11 +2019,24 @@ label[for='nav-trigger'] {
     padding-right: 50px;
     padding-top: 20px;
     padding-bottom: 20px; }
+    @media (max-width: 740px) {
+      .company-history-container p {
+        width: 90%;
+        margin-left: auto; } }
     .company-history-container p:nth-child(even) {
       padding-left: 30px;
       border-left: 5px solid #fff; }
+      @media (max-width: 740px) {
+        .company-history-container p:nth-child(even) {
+          border-left: 3px solid #fff;
+          padding-left: 30px; } }
     .company-history-container p:nth-child(odd) {
       padding-right: 30px; }
+      @media (max-width: 740px) {
+        .company-history-container p:nth-child(odd) {
+          padding-left: 30px;
+          padding-right: 50px;
+          border-left: 3px solid #fff; } }
   .company-history-container .helper-block {
     width: 50%;
     display: -webkit-box;
@@ -2047,6 +2073,37 @@ label[for='nav-trigger'] {
       height: 50px;
       border: 3px solid #c4c4c4;
       border-radius: 50%; }
+  .company-history-container .helper-block-desktop {
+    width: 10%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative; }
+    .company-history-container .helper-block-desktop .circle {
+      z-index: 100;
+      width: 20px;
+      height: 20px;
+      border: 3px solid #c4c4c4;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      right: 0px;
+      margin-top: -10px;
+      margin-right: -11.5px;
+      background: #dfe9f6 !important;
+      -webkit-animation-name: circlebackground;
+              animation-name: circlebackground;
+      -webkit-animation-duration: 1s;
+              animation-duration: 1s;
+      -webkit-box-shadow: 0 0 11px 0 #ffffff;
+              box-shadow: 0 0 11px 0 #ffffff; }
 
 p.is-active {
   font-size: 20px; }

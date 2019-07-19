@@ -34,32 +34,40 @@
         $('.toggle-widget-button div').html('HIDE');
       }
     });
+    if ($(window).width() > 740) {
+      //company history animation
+      $('.company-history-container p:odd').after(
+        "<div class='helper-block in-view'><div class='circle'></div></div>"
+      );
+      $('.company-history-container p:even').before(
+        "<div class='helper-block in-view'><div class='circle'></div></div>"
+      );
+      $('.helper-block')
+        .last()
+        .css('align-items', 'flex-end');
 
-    //company history animation
-    $('.company-history-container p:odd').after(
-      "<div class='helper-block in-view'><div class='circle'></div></div>"
-    );
-    $('.company-history-container p:even').before(
-      "<div class='helper-block in-view'><div class='circle'></div></div>"
-    );
-    $('.helper-block')
-      .last()
-      .css('align-items', 'flex-end');
+      //start of scroll function.
+      const elemInView = $('.in-view');
+      $(window).scroll(function() {
+        let yPos = $(window).scrollTop();
 
-    //start of scroll function.
-    const elemInView = $('.in-view');
-    $(window).scroll(function() {
-      let yPos = $(window).scrollTop();
-
-      $.each(elemInView, function(index, value) {
-        if (yPos > value.offsetTop - 400 && yPos < value.offsetTop - 210) {
-          console.log(value.offsetTop);
-          $(this).addClass('is-active');
-        } else {
-          $(this).removeClass('is-active');
-        }
+        $.each(elemInView, function(index, value) {
+          if (yPos > value.offsetTop - 400 && yPos < value.offsetTop - 210) {
+            console.log(value.offsetTop);
+            $(this).addClass('is-active');
+          } else {
+            $(this).removeClass('is-active');
+          }
+        });
       });
-    });
+    } else{
+      $('.company-history-container p').before(
+        "<div class='helper-block-desktop'><div class='circle'></div></div>"
+      );
+      $('.helper-block-desktop')
+        .last()
+        .css('align-items', 'flex-end');
+    }
 
     //hamburger menu
     let isMenuOn = true;
@@ -250,8 +258,5 @@
         scrollTop: offset
       });
     });
-
-
-
   });
 })(jQuery);

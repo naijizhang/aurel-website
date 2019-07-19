@@ -2208,6 +2208,9 @@ p.is-active {
 
 .card--expand__container {
   padding: 40px; }
+  @media (max-width: 740px) {
+    .card--expand__container {
+      padding: 15px; } }
 
 .card__cell .card--basic:after {
   content: '';
@@ -2383,7 +2386,14 @@ p.is-active {
 
 @media (max-width: 740px) {
   .member-detail-content ul, .member-detail-content h1, .member-detail-content h2, .member-detail-content h3, .member-detail-content h4, .member-detail-content p {
-    width: 100%; } }
+    width: 100%;
+    font-size: 15px; }
+  .member-detail-content h4 {
+    font-size: 18px; }
+  .member-detail-content h1, .member-detail-content h2, .member-detail-content h3, .member-detail-content h4, .member-detail-content p {
+    padding-left: 15px; }
+  .member-detail-content ul {
+    width: 90%; } }
 
 .content-about-page {
   position: relative; }

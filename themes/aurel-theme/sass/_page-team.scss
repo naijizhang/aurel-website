@@ -147,6 +147,9 @@
 
 .card--expand__container {
   padding: 40px;
+  @include mobile {
+    padding: 15px;
+  }
 }
 
 // Arrow Down
@@ -283,7 +286,7 @@
       padding-bottom: 30px;
       @include mobile {
         letter-spacing: 1px;
-        font-size: 30px;
+        font-size: $mobile_heading1_size;
       }
     }
   }
@@ -324,6 +327,16 @@
   @include mobile {
     ul,h1,h2,h3,h4,p{
       width:100%;
+      font-size: 15px;
+    }
+    h4{
+      font-size: $mobile_heading2_size;
+    }
+    h1,h2,h3,h4,p{
+      padding-left: 15px;
+    }
+    ul{
+      width:90%;
     }
   }
 }

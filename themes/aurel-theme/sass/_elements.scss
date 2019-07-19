@@ -126,6 +126,7 @@ h1 {
     width: 90%;
     @include mobile {
       letter-spacing: 1px;
+      font-size: 30px;
     }
   }
 }

@@ -56,10 +56,6 @@
       'tech-corner':'products',
       'newsletters':'products',
 
-
-
-
-
     };
     const segment_str = $(location).attr('href');
     const segment_array = segment_str.split('/');
@@ -153,10 +149,10 @@
 
     if (jQuery('body').hasClass('logged-in')) {
       $('.site-header').addClass('fixed-header-logged');
+      $("label[for='nav-trigger']").css('top', '67px');
     } else {
       $('.site-header').addClass('fixed-header-unlog');
     }
-    $("label[for='nav-trigger']").css('top', '67px');
 
     //team page animations
     //reference: https://codepen.io/SebastianNord/pen/vyZGye

@@ -34,6 +34,44 @@
         $('.toggle-widget-button div').html('HIDE');
       }
     });
+
+    const widgetList = {
+      about: '#nav_menu-2',
+      products: '#nav_menu-3'
+    };
+    const pageCategory = {
+      'about': 'about',
+      'aurel-team': 'about',
+      'client-list':'about',
+      'client-comments':'about',
+      'consultant-links':'about',
+      'conference-papers':'about',
+      'company-history':'about',
+      'contact':'about',
+
+      'products':'products',
+      'cadsim-plus':'products',
+      'data-reconciliation':'products',
+      'product-tracking':'products',
+      'tech-corner':'products',
+      'newsletters':'products',
+
+
+
+
+
+    };
+    const segment_str = $(location).attr('href');
+    const segment_array = segment_str.split('/');
+    let last_segment = segment_array[segment_array.length - 1];
+    if (last_segment == '') {
+      last_segment = segment_array[segment_array.length - 2];
+    }
+    let widgetCategory=pageCategory[last_segment]
+    $(widgetList[widgetCategory]).css("display","block")
+
+
+
     if ($(window).width() > 740) {
       //company history animation
       $('.company-history-container p:odd').after(
@@ -60,7 +98,7 @@
           }
         });
       });
-    } else{
+    } else {
       $('.company-history-container p').before(
         "<div class='helper-block-desktop'><div class='circle'></div></div>"
       );
@@ -118,7 +156,7 @@
     } else {
       $('.site-header').addClass('fixed-header-unlog');
     }
-    $("label[for='nav-trigger']").css("top","67px")
+    $("label[for='nav-trigger']").css('top', '67px');
 
     //team page animations
     //reference: https://codepen.io/SebastianNord/pen/vyZGye

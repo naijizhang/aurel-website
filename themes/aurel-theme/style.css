@@ -522,10 +522,16 @@ blockquote {
     display: inline;
     font-size: 16px;
     font-style: italic;
-    color: #2b2b2b;
+    color: #5c5c5c;
     text-align: center;
     margin: 15px 0px;
     padding: 15px; }
+    @media (max-width: 740px) {
+      blockquote p {
+        width: 90%;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        font-size: 14px; } }
   blockquote:before {
     content: '';
     display: block;
@@ -539,6 +545,9 @@ blockquote {
     position: absolute;
     top: 35px;
     left: 30px; }
+    @media (max-width: 740px) {
+      blockquote:before {
+        display: none; } }
   blockquote:after {
     content: '';
     display: block;
@@ -550,6 +559,9 @@ blockquote {
     position: absolute;
     bottom: 35px;
     right: 30px; }
+    @media (max-width: 740px) {
+      blockquote:after {
+        display: none; } }
 
 .wp-block-separator {
   margin: 0px auto;
@@ -565,6 +577,12 @@ h3 {
   font-family: 'Lalezar';
   margin: 50px auto;
   letter-spacing: 2px; }
+  @media (max-width: 740px) {
+    h3 {
+      font-size: 25px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto; } }
 
 p {
   width: 80%;
@@ -573,7 +591,7 @@ p {
 
 h4 {
   font-size: 15px;
-  color: #2b2b2b;
+  color: #5c5c5c;
   font-style: italic;
   width: 80%;
   margin: 10px auto;
@@ -1072,8 +1090,8 @@ object {
   transition: right 0.5s ease-in-out; }
   @media (max-width: 740px) {
     .site-header {
-      -webkit-box-shadow: 0px 0px 5px #2b2b2b;
-              box-shadow: 0px 0px 5px #2b2b2b; } }
+      -webkit-box-shadow: 0px 0px 5px #5c5c5c;
+              box-shadow: 0px 0px 5px #5c5c5c; } }
   .site-header .header-container {
     -webkit-box-flex: 1;
         -ms-flex: 1;

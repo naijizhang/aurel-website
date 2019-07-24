@@ -189,6 +189,12 @@ blockquote {
     text-align: center;
     margin: 15px 0px;
     padding: 15px;
+    @include mobile {
+      width:90%;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      font-size: 14px;
+    }
   }
   &:before {
     content: '';
@@ -202,6 +208,9 @@ blockquote {
     position: absolute;
     top: 35px;
     left: 30px;
+    @include mobile {
+      display: none;
+    }
   }
   &:after {
     content: '';
@@ -214,6 +223,9 @@ blockquote {
     position: absolute;
     bottom: 35px;
     right: 30px;
+    @include mobile {
+      display: none;
+    }
   }
 }
 
@@ -231,6 +243,12 @@ h3 {
   font-family: 'Lalezar';
   margin: 50px auto;
   letter-spacing: 2px;
+  @include mobile {
+   font-size: 25px;
+   width:80%;
+   margin-left: auto;
+   margin-right: auto;
+  }
 }
 
 p {

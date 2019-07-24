@@ -118,6 +118,7 @@
     } else {
       $('.site-header').addClass('fixed-header-unlog');
     }
+    $("label[for='nav-trigger']").css("top","67px")
 
     //team page animations
     //reference: https://codepen.io/SebastianNord/pen/vyZGye

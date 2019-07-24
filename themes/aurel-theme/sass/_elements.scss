@@ -136,6 +136,42 @@ figure .wp-block-image {
     width: 500px;
   }
 }
+.float-right{
+  float: right; 
+  margin-left: 1em; 
+  margin-bottom: 1em;
+  width:50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include mobile {
+    margin:0px;
+    float:none;
+    width:100%;
+    margin-bottom: 20px;
+  }
+  img{
+    object-fit: contain;
+  }
+}
+.float-left{
+  float: left; 
+  margin-right: 1em; 
+  margin-bottom: 1em;
+  width:50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include mobile {
+    margin:0px;
+    float:none;
+    width:100%;
+    margin-bottom: 20px;
+  }
+  img{
+    object-fit: contain;
+  }
+}
 
 blockquote {
   display: flex;
@@ -185,7 +221,10 @@ blockquote {
   margin: 0px auto;
   width: 80%;
 }
-
+h1,h2,h3,h4,h5,h6{
+  text-align: center;
+  color: $color__blue;
+}
 h3 {
   text-align: center;
   color: $color__blue;
@@ -206,4 +245,14 @@ h4 {
   font-style: italic;
   width: 80%;
   margin: 10px auto;
+  text-align: left;
+}
+h5{
+  width:80%;
+  font-weight:bold ;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
 }

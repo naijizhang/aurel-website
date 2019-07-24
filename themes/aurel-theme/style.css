@@ -683,7 +683,7 @@ a {
 .toggle-widget {
   position: fixed;
   height: 5vh;
-  top: 20vh;
+  top: 25vh;
   left: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -719,7 +719,8 @@ a {
   left: 0px; }
 
 .search-form {
-  width: 180px; }
+  width: 180px;
+  display: none; }
   @media (max-width: 740px) {
     .search-form {
       display: none; } }

@@ -20,7 +20,8 @@ $widget_width: 180px;
 .toggle-widget {
   position: fixed;
   height: 5vh;
-  top: 20vh;
+  //top: 20vh; //with search area
+  top: 25vh; //without search area
   left: 0px;
   display: flex;
   align-items: flex-end;
@@ -53,6 +54,7 @@ $widget_width: 180px;
 }
 .search-form {
   width: $widget_width;
+  display: none;
   @include mobile {
     display: none;
   }

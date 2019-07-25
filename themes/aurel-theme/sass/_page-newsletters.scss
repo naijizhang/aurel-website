@@ -1,0 +1,42 @@
+.newsletters-content {
+  .cadsimulator-logo {
+    margin-left: 10%;
+    object-fit: contain;
+    width: 25%;
+    height: auto;
+    @include mobile {
+        width: 50%;
+    }
+  }
+  .newsletters-container {    
+    .each-newsletter {
+      margin: 10px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      .new-badge{
+        position: absolute;
+        top:-10px;
+        right: 5px;
+        z-index: 2;
+      }
+      .newsletter-toggle-button {
+        width: 100%;
+        background: $color__blue;
+        opacity: 0.8;
+        &:hover,
+        &:focus {
+          color: #fff;
+          background: $color__button_blue;
+          outline: none;
+        }
+      }
+      .card-body {
+        margin-top: 10px;
+        width: 100%;
+
+      }
+    }
+  }
+}

@@ -954,7 +954,10 @@ a {
   right: 0;
   -webkit-transition: right 0.5s ease-in-out;
   transition: right 0.5s ease-in-out;
-  background: #ffffff; }
+  background: #ffffff;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
 
 /* Posts and pages */
 .sticky {
@@ -2712,3 +2715,36 @@ p.is-active {
     @media (max-width: 740px) {
       .content-contact p:first-of-type img {
         display: none; } }
+
+.newsletters-content .cadsimulator-logo {
+  margin-left: 10%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 25%;
+  height: auto; }
+  @media (max-width: 740px) {
+    .newsletters-content .cadsimulator-logo {
+      width: 50%; } }
+
+.newsletters-content .newsletters-container .each-newsletter {
+  margin: 10px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; }
+  .newsletters-content .newsletters-container .each-newsletter .new-badge {
+    position: absolute;
+    top: -10px;
+    right: 5px;
+    z-index: 2; }
+  .newsletters-content .newsletters-container .each-newsletter .newsletter-toggle-button {
+    width: 100%;
+    background: #16427d;
+    opacity: 0.8; }
+    .newsletters-content .newsletters-container .each-newsletter .newsletter-toggle-button:hover, .newsletters-content .newsletters-container .each-newsletter .newsletter-toggle-button:focus {
+      color: #fff;
+      background: #67a8fe;
+      outline: none; }
+  .newsletters-content .newsletters-container .each-newsletter .card-body {
+    margin-top: 10px;
+    width: 100%; }

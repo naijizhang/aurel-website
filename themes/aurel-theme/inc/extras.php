@@ -33,3 +33,13 @@ function aurel_get_members()
 	$members = get_posts($args);
 	return $members;
 }
+function aurel_get_newsletters()
+{
+	$args = array(
+		'post_type' => 'newsletters', 'posts_per_page' => -1,   'orderby' => 'date',
+		'order'   => 'DEC',
+	);
+	$newsletters = get_posts($args);
+	return $newsletters;
+}
+

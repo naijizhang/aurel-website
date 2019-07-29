@@ -1072,8 +1072,73 @@ object {
       -webkit-box-shadow: 5px 0 15px -4px #000, -5px 0 8px -4px #000;
               box-shadow: 5px 0 15px -4px #000, -5px 0 8px -4px #000; } }
 
-/* Front page */
-/* About page */
+.qa-container h3 {
+  text-align: left;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.qa-container .each-newsletter {
+  margin-bottom: 2px; }
+  .qa-container .each-newsletter:nth-child(4n + 1) .item-toggle-button {
+    background: #16427d;
+    margin-left: 15%;
+    margin-right: auto; }
+  .qa-container .each-newsletter:nth-child(4n + 2) .item-toggle-button {
+    background: #3e6ba8;
+    margin-left: 25%;
+    margin-right: auto; }
+  .qa-container .each-newsletter:nth-child(4n + 3) .item-toggle-button {
+    background: #5f799b;
+    margin-left: 35%;
+    margin-right: auto; }
+  .qa-container .each-newsletter:nth-child(4n) .item-toggle-button {
+    background: #3e6ba8; }
+
+.qa-container .item-toggle-button {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  opacity: 0.8;
+  background: #16427d;
+  border-radius: 8px; }
+  .qa-container .item-toggle-button:hover {
+    background: #67a8fe; }
+    .qa-container .item-toggle-button:hover p:after {
+      border-right-color: #16427d; }
+  .qa-container .item-toggle-button:focus {
+    background: #67a8fe; }
+  .qa-container .item-toggle-button p:after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #67a8fe; }
+
+.qa-container .card-body {
+  display: block;
+  width: 80%;
+  margin: 10px auto; }
+  .qa-container .card-body p {
+    width: 90%; }
+
 .fixed-header-logged {
   top: 32px; }
   @media screen and (max-width: 782px) {

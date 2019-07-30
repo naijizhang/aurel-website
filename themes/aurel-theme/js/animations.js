@@ -37,7 +37,8 @@
 
     const widgetList = {
       about: '#nav_menu-2',
-      products: '#nav_menu-3'
+      products: '#nav_menu-3',
+      techCorner:'#nav_menu-4'
     };
     const pageCategory = {
       'about': 'about',
@@ -53,9 +54,11 @@
       'cadsim-plus':'products',
       'dynamic-data-reconciliation':'products',
       'product-tracking':'products',
-      'tech-corner':'products',
+      // 'tech-corner':'products',
       'newsletters':'products',
 
+      'tech-corner':'techCorner',
+      'split-range-controllers':'techCorner',
     };
     const segment_str = $(location).attr('href');
     const segment_array = segment_str.split('/');
@@ -65,7 +68,12 @@
     }
     let widgetCategory=pageCategory[last_segment]
     $(widgetList[widgetCategory]).css("display","block")
-
+    // if (last_segment === 'tech-corner') {
+    //   $(widgetList['techCorner']).css("display","block")
+    // }
+    // if (widgetCategory === 'techCorner') {
+    //   $(widgetList['products']).css("display","block")
+    // }
 
 
     if ($(window).width() > 740) {

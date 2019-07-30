@@ -833,7 +833,7 @@ a {
   left: 0px; }
 
 .search-form {
-  width: 180px;
+  width: 200px;
   display: none; }
   @media (max-width: 740px) {
     .search-form {
@@ -859,7 +859,7 @@ a {
 .widget {
   margin: 0px;
   padding-bottom: 10px;
-  width: 180px;
+  width: 200px;
   border-right: 1px solid #fff;
   border-bottom: none; }
   .widget:first-child {
@@ -974,7 +974,7 @@ a {
           color: #79ff93;
           border: 1px solid #79ff93; }
 
-#nav_menu-2, #nav_menu-3 {
+#nav_menu-2, #nav_menu-3, #nav_menu-4 {
   display: none; }
 
 /*--------------------------------------------------------------

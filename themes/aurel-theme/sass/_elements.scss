@@ -72,6 +72,15 @@ ul {
 
 ol {
   list-style: decimal;
+  width: 80%;
+  margin: 10px auto;
+  padding-left: 30px;
+  li {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 li > ul,
@@ -174,6 +183,17 @@ figure .wp-block-image {
   }
   img {
     object-fit: contain;
+  }
+}
+.normal-image{
+  img {
+    margin-left: 10%;
+    object-fit: contain;
+  }
+  @include mobile {
+    margin: 0px;
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 

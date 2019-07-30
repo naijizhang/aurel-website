@@ -42,7 +42,7 @@
     };
     const pageCategory = {
       'about': 'about',
-      'aurel-team': 'about',
+      'aurel-team-page': 'about',
       'client-list':'about',
       'client-comments':'about',
       'consultant-links':'about',
@@ -55,10 +55,17 @@
       'dynamic-data-reconciliation':'products',
       'product-tracking':'products',
       // 'tech-corner':'products',
-      'newsletters':'products',
+      'newsletters-page':'products',
 
       'tech-corner':'techCorner',
       'split-range-controllers':'techCorner',
+      'pipe-friction':'techCorner',
+      'link-cadsim-plus':'techCorner',
+      'export-drawing-to-pdf':'techCorner',
+      'creating-computer-based-manuals':'techCorner',
+      'using-autotune':'techCorner',
+      'using-the-compound-editor':'techCorner',
+      'using-the-multi-doc-interface':'techCorner',
     };
     const segment_str = $(location).attr('href');
     const segment_array = segment_str.split('/');

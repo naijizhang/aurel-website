@@ -460,7 +460,8 @@ figure .wp-block-image img {
   float: right;
   margin-left: 1em;
   margin-bottom: 1em;
-  width: 50%;
+  max-width: 50%;
+  margin-right: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -475,6 +476,7 @@ figure .wp-block-image img {
       margin: 0px;
       float: none;
       width: 100%;
+      max-width: 100%;
       margin-bottom: 20px; } }
   .float-right img {
     -o-object-fit: contain;
@@ -484,7 +486,8 @@ figure .wp-block-image img {
   float: left;
   margin-right: 1em;
   margin-bottom: 1em;
-  width: 50%;
+  max-width: 50%;
+  margin-left: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -499,6 +502,7 @@ figure .wp-block-image img {
       margin: 0px;
       float: none;
       width: 100%;
+      max-width: 100%;
       margin-bottom: 20px; } }
   .float-left img {
     -o-object-fit: contain;
@@ -1156,6 +1160,23 @@ object {
   @media (max-width: 740px) {
     .qa-container .card-body {
       width: 90%; } }
+  .qa-container .card-body h3,
+  .qa-container .card-body h4 {
+    text-align: left;
+    color: #16427d;
+    font-family: 'Lalezar';
+    margin: 20px auto;
+    letter-spacing: 1px;
+    font-style: normal;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; }
+    @media (max-width: 740px) {
+      .qa-container .card-body h3,
+      .qa-container .card-body h4 {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto; } }
   .qa-container .card-body p {
     width: 90%; }
     @media (max-width: 740px) {
@@ -1195,7 +1216,9 @@ object {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 20px;
-  margin-top: 50px; }
+  margin-top: 50px;
+  -webkit-box-shadow: 0px 5px 15px gainsboro;
+          box-shadow: 0px 5px 15px gainsboro; }
   @media (max-width: 740px) {
     .contact-block {
       width: 90%;

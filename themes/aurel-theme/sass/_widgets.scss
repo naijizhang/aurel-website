@@ -16,7 +16,7 @@
 }
 
 // widget-area
-$widget_width: 200px;
+$widget_width: 180px;
 .toggle-widget {
   position: fixed;
   height: 5vh;
@@ -158,27 +158,35 @@ $widget_width: 200px;
     li {
       width: 70%;
       margin: 0px;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
       @include mobile {
         width: auto;
         margin-right: 10px;
+        a {
+          border: 1px solid $color__light_blue;
+          &:hover {
+            border: 1px solid $color__light_green;
+          }
+        }
       }
       a {
         color: #fff;
-        border: 1px solid $color__light_blue;
+        border-bottom: 1px solid $color__light_blue;
         padding: 3px;
         text-decoration: none;
         font-size: 12px;
         transition: 0.5s;
         &:hover {
           color: $color__light_green;
-          border: 1px solid $color__light_green;
+          border-bottom: 1px solid $color__light_green;
         }
       }
     }
   }
 }
 
-#nav_menu-2,#nav_menu-3,#nav_menu-4{
+#nav_menu-2,
+#nav_menu-3,
+#nav_menu-4 {
   display: none;
 }

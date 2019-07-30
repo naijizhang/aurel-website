@@ -38,9 +38,16 @@ get_header(); ?>
             <?php endforeach;
             wp_reset_postdata(); ?>
         </div>
-
-
-
+        <div class="contact-block">
+            <div class="column">
+                <h3>Have a story for our newsletter?</h3>
+                <p>Let us know how you are using CADSIM Plus!</p>
+                <p>Click to e-mail or call us at 604.299.7707</p>
+            </div>
+            <a href="mailto:mail@aurelsystems.com?subject=*Get%20more%20info%20about%20CADSIM%20Plus">
+                Article ideas...
+            </a>
+        </div>
     </main><!-- #main -->
 </div><!-- #primary -->
 

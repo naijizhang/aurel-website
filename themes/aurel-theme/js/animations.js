@@ -51,7 +51,7 @@
 
       'products':'products',
       'cadsim-plus':'products',
-      'data-reconciliation':'products',
+      'dynamic-data-reconciliation':'products',
       'product-tracking':'products',
       'tech-corner':'products',
       'newsletters':'products',

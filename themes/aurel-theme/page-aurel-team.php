@@ -2,7 +2,7 @@
 
 /**
  * The template for displaying all pages.
- *
+ * Template name: Aurel Team
  * @package RED_Starter_Theme
  */
 

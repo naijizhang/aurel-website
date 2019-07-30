@@ -2,7 +2,7 @@
 
 /**
  * The template for displaying all pages.
- *
+ * Template name: Newsletter
  * @package RED_Starter_Theme
  */
 

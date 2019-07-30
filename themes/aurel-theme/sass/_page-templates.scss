@@ -14,9 +14,9 @@
 
 //qa model
 .qa-container {
-  h3{
+  h3 {
     text-align: left;
-    width:80%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -76,6 +76,11 @@
     opacity: 0.8;
     background: $color__blue;
     border-radius: 8px;
+    @include mobile {
+      width: 80% !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
 
     &:hover {
       background: $color__button_blue;
@@ -103,8 +108,24 @@
     display: block;
     width: 80%;
     margin: 10px auto;
+    @include mobile {
+      width:90%;
+    }
     p {
       width: 90%;
+      @include mobile {
+        width:95%;
+      }
+    }
+    ul {
+      @include mobile {
+        margin-left: 10px;
+        width:90%;
+      }
+      ul {
+        list-style-type: circle;
+       
+      }
     }
   }
 }

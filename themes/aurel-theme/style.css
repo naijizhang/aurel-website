@@ -1122,6 +1122,11 @@ object {
   opacity: 0.8;
   background: #16427d;
   border-radius: 8px; }
+  @media (max-width: 740px) {
+    .qa-container .item-toggle-button {
+      width: 80% !important;
+      margin-left: auto !important;
+      margin-right: auto !important; } }
   .qa-container .item-toggle-button:hover {
     background: #67a8fe; }
     .qa-container .item-toggle-button:hover p:after {
@@ -1145,8 +1150,20 @@ object {
   display: block;
   width: 80%;
   margin: 10px auto; }
+  @media (max-width: 740px) {
+    .qa-container .card-body {
+      width: 90%; } }
   .qa-container .card-body p {
     width: 90%; }
+    @media (max-width: 740px) {
+      .qa-container .card-body p {
+        width: 95%; } }
+  @media (max-width: 740px) {
+    .qa-container .card-body ul {
+      margin-left: 10px;
+      width: 90%; } }
+  .qa-container .card-body ul ul {
+    list-style-type: circle; }
 
 .fixed-header-logged {
   top: 32px; }

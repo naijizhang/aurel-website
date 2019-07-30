@@ -1121,16 +1121,19 @@ object {
   color: #fff;
   opacity: 0.8;
   background: #16427d;
-  border-radius: 8px; }
+  border-radius: 8px;
+  border: none; }
   @media (max-width: 740px) {
     .qa-container .item-toggle-button {
       width: 80% !important;
       margin-left: auto !important;
       margin-right: auto !important; } }
   .qa-container .item-toggle-button:hover {
-    background: #67a8fe; }
+    background: #67a8fe;
+    opacity: 1; }
     .qa-container .item-toggle-button:hover p:after {
-      border-right-color: #16427d; }
+      border-right-color: #16427d;
+      opacity: 1; }
   .qa-container .item-toggle-button:focus {
     background: #67a8fe; }
   .qa-container .item-toggle-button p:after {
@@ -1164,6 +1167,88 @@ object {
       width: 90%; } }
   .qa-container .card-body ul ul {
     list-style-type: circle; }
+
+.remove-margin {
+  margin-top: 30px; }
+  .remove-margin .item-toggle-button {
+    width: 60% !important;
+    margin-left: auto !important;
+    margin-right: auto !important; }
+    @media (max-width: 740px) {
+      .remove-margin .item-toggle-button {
+        width: 80% !important; } }
+
+.contact-block {
+  background: #d1dceb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #7598c4;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px;
+  margin-top: 50px; }
+  @media (max-width: 740px) {
+    .contact-block {
+      width: 90%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+  .contact-block .column {
+    width: 60%; }
+    @media (max-width: 740px) {
+      .contact-block .column {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto; } }
+    .contact-block .column h3 {
+      color: #7598c4;
+      letter-spacing: 1px;
+      font-style: normal;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      text-transform: capitalize; }
+    .contact-block .column p {
+      margin-bottom: 10px; }
+  .contact-block a {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 30%;
+    height: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: #6f99cd;
+    color: #fff;
+    border-radius: 30px; }
+    @media (max-width: 740px) {
+      .contact-block a {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto; } }
+    .contact-block a .cheatbox-logo {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px; }
+    .contact-block a:hover {
+      text-decoration: none;
+      background: #67a8fe; }
 
 .fixed-header-logged {
   top: 32px; }

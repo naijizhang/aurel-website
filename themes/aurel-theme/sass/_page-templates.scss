@@ -76,6 +76,7 @@
     opacity: 0.8;
     background: $color__blue;
     border-radius: 8px;
+    border: none;
     @include mobile {
       width: 80% !important;
       margin-left: auto !important;
@@ -84,8 +85,10 @@
 
     &:hover {
       background: $color__button_blue;
+      opacity: 1;
       p:after {
         border-right-color: $color__blue;
+        opacity: 1;
       }
     }
     &:focus {
@@ -109,23 +112,97 @@
     width: 80%;
     margin: 10px auto;
     @include mobile {
-      width:90%;
+      width: 90%;
     }
     p {
       width: 90%;
       @include mobile {
-        width:95%;
+        width: 95%;
       }
     }
     ul {
       @include mobile {
         margin-left: 10px;
-        width:90%;
+        width: 90%;
       }
       ul {
         list-style-type: circle;
-       
       }
+    }
+  }
+}
+.remove-margin {
+  margin-top: 30px;
+  .item-toggle-button {
+    width: 60% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    @include mobile {
+      width:80% !important;
+    }
+  }
+}
+
+.contact-block {
+  background: #d1dceb;
+  display: flex;
+  flex-direction: row;
+  color: #7598c4;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+  justify-content: space-around;
+  padding: 20px;
+  margin-top: 50px;
+  @include mobile {
+    width: 90%;
+    flex-direction: column;
+  }
+  .column {
+    width: 60%;
+    @include mobile {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    h3 {
+      color: #7598c4;
+      letter-spacing: 1px;
+      font-style: normal;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      text-transform: capitalize;
+    }
+    p {
+      margin-bottom: 10px;
+    }
+  }
+  a {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: #6f99cd;
+    color: #fff;
+    border-radius: 30px;
+    @include mobile {
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .cheatbox-logo {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+    &:hover {
+      text-decoration: none;
+      background: $color__button_blue;
     }
   }
 }

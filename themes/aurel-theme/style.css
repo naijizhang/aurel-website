@@ -526,6 +526,12 @@ figure .wp-block-image img {
     width: 100%;
     margin-bottom: 20px; } }
 
+.align-left {
+  width: 80%;
+  margin: 20px auto;
+  margin-bottom: 10px;
+  text-align: left; }
+
 blockquote {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -998,7 +1004,8 @@ a {
 
 #nav_menu-2,
 #nav_menu-3,
-#nav_menu-4 {
+#nav_menu-4,
+#nav_menu-5 {
   display: none; }
 
 /*--------------------------------------------------------------

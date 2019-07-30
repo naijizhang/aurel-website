@@ -38,7 +38,8 @@
     const widgetList = {
       about: '#nav_menu-2',
       products: '#nav_menu-3',
-      techCorner:'#nav_menu-4'
+      techCorner:'#nav_menu-4',
+      services:'#nav_menu-5',
     };
     const pageCategory = {
       'about': 'about',
@@ -66,6 +67,8 @@
       'using-autotune':'techCorner',
       'using-the-compound-editor':'techCorner',
       'using-the-multi-doc-interface':'techCorner',
+
+      'services':'services',
     };
     const segment_str = $(location).attr('href');
     const segment_array = segment_str.split('/');

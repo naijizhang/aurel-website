@@ -185,7 +185,7 @@ figure .wp-block-image {
     object-fit: contain;
   }
 }
-.normal-image{
+.normal-image {
   img {
     margin-left: 10%;
     object-fit: contain;
@@ -196,7 +196,7 @@ figure .wp-block-image {
     margin-bottom: 20px;
   }
 }
-.align-left{
+.align-left {
   width: 80%;
   margin: 20px auto;
   margin-bottom: 10px;
@@ -207,9 +207,9 @@ blockquote {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  width: auto;
+  max-width: 80%;
+  margin: 20px auto;
   position: relative;
   p {
     display: inline;
@@ -219,6 +219,8 @@ blockquote {
     text-align: center;
     margin: 15px 0px;
     padding: 15px;
+    width: auto;
+    max-width: 90%;
     @include mobile {
       width: 90%;
       padding-top: 0px;
@@ -315,29 +317,28 @@ table {
   margin: 30px auto;
   border-bottom: 2px solid $color__light_grey1;
   @include mobile {
-    width:95%;
+    width: 95%;
   }
   tr {
     &:nth-child(2n + 1) {
       background: $color__light_grey1;
     }
     height: 50px;
-  
-    &:hover{
-    
+
+    &:hover {
       background: $color__light_grey;
     }
     th {
       text-align: center;
       background: $color__light_blue;
       @include mobile {
-        border:1px solid $color__light_blue;
+        border: 1px solid $color__light_blue;
       }
     }
     td {
       text-align: center;
       @include mobile {
-        border:1px solid $color__light_blue;
+        border: 1px solid $color__light_blue;
       }
     }
   }

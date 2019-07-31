@@ -42,6 +42,8 @@
       services:'#nav_menu-5',
       onlineApps:'#nav_menu-6',
       industries:'#nav_menu-7',
+      cadsimPlus:'#nav_menu-8',
+      support:'#nav_menu-9',
     };
     const pageCategory = {
       'about': 'about',
@@ -54,7 +56,7 @@
       'contact':'about',
 
       'products':'products',
-      'cadsim-plus':'products',
+      //'cadsim-plus':'products',
       'dynamic-data-reconciliation':'products',
       'product-tracking-2':'products',
       // 'tech-corner':'products',
@@ -88,6 +90,29 @@
       'treatment':'industries',
       'mineral-processing':'industries',
       'research-learning':'industries',
+
+      'cadsim-plus':'cadsimPlus',
+      'new-in-v2-4':'cadsimPlus',
+      'new-in-v2-5':'cadsimPlus',
+      'new-in-v2-6':'cadsimPlus',
+      'new-in-v2-7':'cadsimPlus',
+      'new-in-v3-0':'cadsimPlus',
+      'new-in-v3-1':'cadsimPlus',
+      'new-in-v3-2':'cadsimPlus',
+      'new-in-v3-3':'cadsimPlus',
+      'new-in-v3-4':'cadsimPlus',
+      'new-in-v3-5':'cadsimPlus',
+      'new-in-v3-6':'cadsimPlus',
+      'new-in-v3-7':'cadsimPlus',
+      'new-in-v3-8':'cadsimPlus',
+      'new-in-v3-9':'cadsimPlus',
+      'new-in-v4-0':'cadsimPlus',
+
+      'support':'support',
+      'software-updates':'support',
+      'maintenance-support':'support',
+      'update-report':'support',
+      
     };
     const segment_str = $(location).attr('href');
     const segment_array = segment_str.split('/');

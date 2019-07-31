@@ -197,8 +197,9 @@ figure .wp-block-image {
   }
 }
 .normal-video{
-  width: 80vw;
+  width: 80%;
   height: 50vw;
+  max-height: 600px;
   margin: 15px auto;
   display: block;
 }

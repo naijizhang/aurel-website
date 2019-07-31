@@ -2122,7 +2122,7 @@ label[for='nav-trigger'] {
         border-radius: 20px;
         opacity: 0.7; }
   .what-we-do-container .right-column {
-    width: 30vw;
+    width: 40vw;
     max-width: 500px;
     z-index: 3; }
     @media (max-width: 740px) {

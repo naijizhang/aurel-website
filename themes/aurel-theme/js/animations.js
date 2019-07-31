@@ -40,6 +40,7 @@
       products: '#nav_menu-3',
       techCorner:'#nav_menu-4',
       services:'#nav_menu-5',
+      onlineApps:'#nav_menu-6',
     };
     const pageCategory = {
       'about': 'about',
@@ -54,7 +55,7 @@
       'products':'products',
       'cadsim-plus':'products',
       'dynamic-data-reconciliation':'products',
-      'product-tracking':'products',
+      'product-tracking-2':'products',
       // 'tech-corner':'products',
       'newsletters-page':'products',
 
@@ -69,6 +70,15 @@
       'using-the-multi-doc-interface':'techCorner',
 
       'services':'services',
+      'training':'services',
+      'process-modeling':'services',
+      'custom-modules':'services',
+
+
+      'online-applications':'onlineApps',
+      'data-reconciliation':'onlineApps',
+      'product-tracking':'onlineApps',
+      'energy-tracking':'onlineApps',
     };
     const segment_str = $(location).attr('href');
     const segment_array = segment_str.split('/');

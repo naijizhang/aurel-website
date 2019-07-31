@@ -542,9 +542,9 @@ blockquote {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  width: auto;
+  max-width: 80%;
+  margin: 20px auto;
   position: relative; }
   blockquote p {
     display: inline;
@@ -553,7 +553,9 @@ blockquote {
     color: #5c5c5c;
     text-align: center;
     margin: 15px 0px;
-    padding: 15px; }
+    padding: 15px;
+    width: auto;
+    max-width: 90%; }
     @media (max-width: 740px) {
       blockquote p {
         width: 90%;
@@ -1005,7 +1007,8 @@ a {
 #nav_menu-2,
 #nav_menu-3,
 #nav_menu-4,
-#nav_menu-5 {
+#nav_menu-5,
+#nav_menu-6 {
   display: none; }
 
 /*--------------------------------------------------------------

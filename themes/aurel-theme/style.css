@@ -526,6 +526,12 @@ figure .wp-block-image img {
     width: 100%;
     margin-bottom: 20px; } }
 
+.normal-video {
+  width: 80vw;
+  height: 50vw;
+  margin: 15px auto;
+  display: block; }
+
 .align-left {
   width: 80%;
   margin: 20px auto;
@@ -1008,7 +1014,8 @@ a {
 #nav_menu-3,
 #nav_menu-4,
 #nav_menu-5,
-#nav_menu-6 {
+#nav_menu-6,
+#nav_menu-7 {
   display: none; }
 
 /*--------------------------------------------------------------

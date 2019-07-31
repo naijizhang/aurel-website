@@ -41,6 +41,7 @@
       techCorner:'#nav_menu-4',
       services:'#nav_menu-5',
       onlineApps:'#nav_menu-6',
+      industries:'#nav_menu-7',
     };
     const pageCategory = {
       'about': 'about',
@@ -74,11 +75,19 @@
       'process-modeling':'services',
       'custom-modules':'services',
 
-
       'online-applications':'onlineApps',
       'data-reconciliation':'onlineApps',
       'product-tracking':'onlineApps',
       'energy-tracking':'onlineApps',
+
+      'industries':'industries',
+      'pulp-paper':'industries',
+      'forest-products':'industries',
+      'food-processing':'industries',
+      'water-waste-water':'industries',
+      'treatment':'industries',
+      'mineral-processing':'industries',
+      'research-learning':'industries',
     };
     const segment_str = $(location).attr('href');
     const segment_array = segment_str.split('/');

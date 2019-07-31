@@ -24,28 +24,28 @@
     margin-bottom: 2px;
     &:nth-child(6n + 2) {
       .item-toggle-button {
-        background: #0e59c2;
+        background: $color__blue2;
         margin-left: 20%;
         margin-right: auto;
       }
     }
     &:nth-child(6n + 3) {
       .item-toggle-button {
-        background: #3873c1;
+        background: $color__blue3;
         margin-left: 25%;
         margin-right: auto;
       }
     }
     &:nth-child(6n + 4) {
       .item-toggle-button {
-        background: #7393ba;
+        background: $color__blue4;
         margin-left: 30%;
         margin-right: auto;
       }
     }
     &:nth-child(6n + 5) {
       .item-toggle-button {
-        background: #8db2e3;
+        background: $color__blue5;
         margin-left: 35%;
         margin-right: auto;
       }
@@ -53,7 +53,7 @@
     &:nth-child(6n) {
       .item-toggle-button {
         opacity: 0.95;
-        background: #3e6ba8;
+        background: $color__blue1;
       }
     }
     &:nth-child(6n + 1) {

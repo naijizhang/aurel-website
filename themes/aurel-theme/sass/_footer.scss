@@ -48,7 +48,7 @@
   }
 
   #footer-middle-column {
-    width: 30%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -68,7 +68,7 @@
     .footer-brief-description {
       font-size: 15px;
       margin-top: 20px;
-      color: rgb(218, 217, 217);
+      color: $color__light_grey;
       text-align: left;
       @include mobile {
         display: none;

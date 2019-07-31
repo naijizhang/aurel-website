@@ -313,19 +313,19 @@ h5 {
 table {
   width: 80%;
   margin: 30px auto;
-  border-bottom: 2px solid rgb(237, 237, 237);
+  border-bottom: 2px solid $color__light_grey1;
   @include mobile {
     width:95%;
   }
   tr {
     &:nth-child(2n + 1) {
-      background: rgb(237, 237, 237);
+      background: $color__light_grey1;
     }
     height: 50px;
   
     &:hover{
     
-      background: rgb(220, 220, 220);
+      background: $color__light_grey;
     }
     th {
       text-align: center;

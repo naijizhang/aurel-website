@@ -368,7 +368,7 @@ body {
   /* Fallback for when there is no custom background color defined. */ }
   @media (max-width: 740px) {
     body {
-      background: #16427d; } }
+      background: #004280; } }
 
 blockquote,
 q {
@@ -448,7 +448,7 @@ h1 {
   width: 100vw;
   max-width: 1280px;
   text-align: center;
-  color: #16427d;
+  color: #004280;
   z-index: 100;
   margin: 80px auto;
   border-bottom: 1px solid #c4c4c4;
@@ -602,11 +602,11 @@ h4,
 h5,
 h6 {
   text-align: center;
-  color: #16427d; }
+  color: #004280; }
 
 h3 {
   text-align: center;
-  color: #16427d;
+  color: #004280;
   font-family: 'Lalezar';
   margin: 50px auto;
   letter-spacing: 2px; }
@@ -904,7 +904,7 @@ a {
   position: fixed;
   top: 30vh;
   left: 0px;
-  background: #16427d;
+  background: #004280;
   border: 3px solid #dfe9f6;
   border-radius: 20px;
   border-top-left-radius: 0px;
@@ -1165,7 +1165,7 @@ object {
     opacity: 0.95;
     background: #3e6ba8; }
   .qa-container .each-newsletter:nth-child(6n + 1) .item-toggle-button {
-    background: #16427d;
+    background: #004280;
     margin-left: 15%;
     margin-right: auto; }
 
@@ -1185,7 +1185,7 @@ object {
   margin-right: auto;
   color: #fff;
   opacity: 0.8;
-  background: #16427d;
+  background: #004280;
   border-radius: 8px;
   border: none; }
   @media (max-width: 740px) {
@@ -1197,7 +1197,7 @@ object {
     background: #67a8fe;
     opacity: 1; }
     .qa-container .item-toggle-button:hover p:after {
-      border-right-color: #16427d;
+      border-right-color: #004280;
       opacity: 1; }
   .qa-container .item-toggle-button:focus {
     background: #67a8fe; }
@@ -1224,7 +1224,7 @@ object {
   .qa-container .card-body h3,
   .qa-container .card-body h4 {
     text-align: left;
-    color: #16427d;
+    color: #004280;
     font-family: 'Lalezar';
     margin: 20px auto;
     letter-spacing: 1px;
@@ -1580,7 +1580,7 @@ label[for='nav-trigger'] {
           #myFooter #footer-navigation ul li a:hover {
             color: #dfe9f6; }
   #myFooter #footer-middle-column {
-    width: 30%;
+    width: 40%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1610,7 +1610,7 @@ label[for='nav-trigger'] {
     #myFooter #footer-middle-column .footer-brief-description {
       font-size: 15px;
       margin-top: 20px;
-      color: #dad9d9;
+      color: gainsboro;
       text-align: left; }
       @media (max-width: 740px) {
         #myFooter #footer-middle-column .footer-brief-description {
@@ -1816,7 +1816,7 @@ label[for='nav-trigger'] {
   text-align: center;
   font-family: 'Lalezar';
   letter-spacing: 1px;
-  color: #16427d;
+  color: #004280;
   margin-top: 8vh;
   margin-bottom: 2vh; }
   @media (max-width: 740px) {
@@ -1987,7 +1987,7 @@ label[for='nav-trigger'] {
       .what-we-do-container .hexagon .industry-link .industry-logo-container {
         width: 80px;
         height: 80px;
-        background: #16427d;
+        background: #004280;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -2103,7 +2103,7 @@ label[for='nav-trigger'] {
         text-align: center;
         margin: 0;
         margin-left: -10px;
-        color: #16427d;
+        color: #004280;
         font-family: 'Lalezar';
         font-size: 1.5vw;
         letter-spacing: 1px;
@@ -2336,7 +2336,7 @@ label[for='nav-trigger'] {
         letter-spacing: 1px; } }
 
 .content-company-history {
-  background: #16427d;
+  background: #004280;
   padding-bottom: 0px; }
   .content-company-history h2 {
     text-align: center;
@@ -2441,7 +2441,7 @@ label[for='nav-trigger'] {
         margin-right: -28px; }
     .company-history-container .helper-block .circle {
       z-index: 100;
-      background: #16427d;
+      background: #004280;
       width: 50px;
       height: 50px;
       border: 3px solid #c4c4c4;
@@ -2485,13 +2485,13 @@ p.is-active {
 
 @-webkit-keyframes circlebackground {
   from {
-    background-color: #16427d; }
+    background-color: #004280; }
   to {
     background-color: #dfe9f6; } }
 
 @keyframes circlebackground {
   from {
-    background-color: #16427d; }
+    background-color: #004280; }
   to {
     background-color: #dfe9f6; } }
 
@@ -2501,7 +2501,7 @@ p.is-active {
           animation-name: circlebackground;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  border-color: #16427d;
+  border-color: #004280;
   -webkit-box-shadow: 0 0 11px 0 #ffffff;
           box-shadow: 0 0 11px 0 #ffffff; }
 
@@ -2539,8 +2539,8 @@ p.is-active {
 .card--basic a {
   text-decoration: none;
   display: block;
-  background: #16427d;
-  border: 3px solid #16427d;
+  background: #004280;
+  border: 3px solid #004280;
   color: #fff;
   -webkit-transition: background 0.5s, border 0.5s;
   transition: background 0.5s, border 0.5s;
@@ -2629,8 +2629,8 @@ p.is-active {
   position: relative;
   overflow: hidden;
   opacity: 0;
-  -webkit-box-shadow: inset 0 0 0 3px #16427d;
-          box-shadow: inset 0 0 0 3px #16427d;
+  -webkit-box-shadow: inset 0 0 0 3px #004280;
+          box-shadow: inset 0 0 0 3px #004280;
   height: 0;
   -webkit-transition: height 0.5s ease-in-out, margin-bottom 0.5s, opacity 0.5s ease-in-out;
   transition: height 0.5s ease-in-out, margin-bottom 0.5s, opacity 0.5s ease-in-out;
@@ -2644,7 +2644,7 @@ p.is-active {
 
 .card__cell .card--basic:after {
   content: '';
-  border-top: 20px solid #16427d;
+  border-top: 20px solid #004280;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   height: 0;
@@ -2680,7 +2680,7 @@ p.is-active {
   transition: transform 0.3s cubic-bezier(0.49, 3, 0.51, 0.25), border 0.5s, -webkit-transform 0.3s cubic-bezier(0.49, 3, 0.51, 0.25); }
 
 .card__cell.is-expanded .card__text-container {
-  background: rgba(22, 66, 125, 0.6); }
+  background: rgba(0, 66, 128, 0.6); }
 
 @-webkit-keyframes expandMargin {
   0% {
@@ -2769,7 +2769,7 @@ p.is-active {
        object-fit: contain;
     margin: 80px auto; }
   .team-content #team-top-banner-container #team-page-title {
-    color: #16427d;
+    color: #004280;
     border-bottom: 1px solid #c4c4c4;
     width: 80%;
     padding-bottom: 30px; }
@@ -2781,7 +2781,7 @@ p.is-active {
     font-size: 20px;
     font-style: normal;
     font-weight: bold;
-    color: #16427d; }
+    color: #004280; }
   .team-content #profile-large-image {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2828,7 +2828,7 @@ p.is-active {
 .content-about-page {
   position: relative; }
   .content-about-page .hero-title {
-    color: #16427d; }
+    color: #004280; }
     @media (max-width: 740px) {
       .content-about-page .hero-title {
         letter-spacing: 1px;
@@ -2890,7 +2890,7 @@ p.is-active {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border: 5px solid #16427d;
+  border: 5px solid #004280;
   border-radius: 30px;
   margin-bottom: 30px;
   width: 80%; }
@@ -2969,7 +2969,7 @@ p.is-active {
     position: absolute;
     top: 0%;
     right: 30px;
-    border: 3px solid #16427d;
+    border: 3px solid #004280;
     border-radius: 20px;
     padding: 10px; }
     @media (max-width: 740px) {
@@ -2999,7 +2999,7 @@ p.is-active {
     z-index: 2; }
   .newsletters-content .newsletters-container .each-newsletter .newsletter-toggle-button {
     width: 100%;
-    background: #16427d;
+    background: #004280;
     opacity: 0.8; }
     .newsletters-content .newsletters-container .each-newsletter .newsletter-toggle-button:hover, .newsletters-content .newsletters-container .each-newsletter .newsletter-toggle-button:focus {
       color: #fff;

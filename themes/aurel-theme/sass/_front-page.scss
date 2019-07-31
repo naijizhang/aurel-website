@@ -157,7 +157,7 @@
 .what-we-do-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin: 50px auto;
   @include mobile {
@@ -397,6 +397,7 @@
   }
 
   .right-column {
+    margin-left: 10%;
     width: 40vw;
     max-width: 500px;
     z-index: 3;

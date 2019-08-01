@@ -112,7 +112,8 @@
       'software-updates':'support',
       'maintenance-support':'support',
       'update-report':'support',
-      
+      'faq-hasp':'support',
+
     };
     const segment_str = $(location).attr('href');
     const segment_array = segment_str.split('/');

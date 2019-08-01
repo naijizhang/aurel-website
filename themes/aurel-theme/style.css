@@ -1048,7 +1048,8 @@ a {
 #nav_menu-7,
 #nav_menu-8,
 #nav_menu-9,
-#nav_menu-10 {
+#nav_menu-10,
+#nav_menu-11 {
   display: none; }
 
 /*--------------------------------------------------------------
@@ -1677,6 +1678,10 @@ label[for='nav-trigger'] {
     top: 70px;
     display: none !important;
     float: unset; }
+    #primary-menu li .sub-menu .current_page_item {
+      background: #0e59c2; }
+      #primary-menu li .sub-menu .current_page_item a {
+        color: #fff; }
     #primary-menu li .sub-menu li {
       -webkit-box-sizing: content-box;
               box-sizing: content-box;

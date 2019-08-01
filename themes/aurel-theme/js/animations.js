@@ -45,6 +45,7 @@
       cadsimPlus:'#nav_menu-8',
       support:'#nav_menu-9',
       versions:'#nav_menu-10',
+      advanceTech:'#nav_menu-11',
     };
     const pageCategory = {
       'about': 'about',
@@ -93,7 +94,6 @@
       'research-learning':'industries',
 
       'cadsim-plus':'cadsimPlus',
-      'advanced-technologies':'cadsimPlus',
       'standard-module-library':'cadsimPlus',
       'add-on-module-libraries':'cadsimPlus',
       'ease-of-use':'cadsimPlus',
@@ -122,10 +122,12 @@
       'update-report':'support',
       'faq-hasp':'support',
 
-      //'advanced-technologies'
-
-
-
+      'advanced-technologies':'advanceTech',
+      'stream-based-specifications':'advanceTech',
+      'living-drawings':'advanceTech',
+      'open-simulation':'advanceTech',
+      'smartcalc':'advanceTech',
+      'model-scoping':'advanceTech',
     };
     const segment_str = $(location).attr('href');
     const segment_array = segment_str.split('/');

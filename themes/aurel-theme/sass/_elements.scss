@@ -209,7 +209,17 @@ figure .wp-block-image {
   margin-bottom: 10px;
   text-align: left;
 }
-
+.image-align-right{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10%;
+  margin:30px auto;
+}
+.image-align-center{
+  display: flex;
+  justify-content: center;
+  margin:30px auto;
+}
 blockquote {
   display: flex;
   justify-content: center;

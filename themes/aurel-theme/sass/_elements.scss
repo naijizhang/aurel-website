@@ -215,6 +215,12 @@ figure .wp-block-image {
   padding-right: 10%;
   margin:30px auto;
 }
+.image-align-left{
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10%;
+  margin:30px auto;
+}
 .image-align-center{
   display: flex;
   justify-content: center;

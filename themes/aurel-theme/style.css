@@ -549,6 +549,16 @@ figure .wp-block-image img {
   padding-right: 10%;
   margin: 30px auto; }
 
+.image-align-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 10%;
+  margin: 30px auto; }
+
 .image-align-center {
   display: -webkit-box;
   display: -ms-flexbox;

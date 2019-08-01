@@ -279,3 +279,45 @@
     }
   }
 }
+
+.list-container{
+  h3{
+    margin-top: 100px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid $color__grey;
+  }
+  ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: none;
+    li{
+      width:33%;
+      text-align: center;
+    }
+  }
+}
+
+.screenshots-container{
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+ 
+  .wp-block-image{
+    width:30%;
+    @include mobile {
+      width:40%;
+    }
+    img{
+      width:100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+}

@@ -185,6 +185,12 @@ label[for='nav-trigger'] {
       top: $header_height;
       display: none !important;
       float: unset;
+      .current_page_item{
+        background: $color__blue2;
+        a{
+          color: #fff;
+        }
+      }
       li {
        
         box-sizing: content-box;

@@ -1451,7 +1451,18 @@ object {
       display: none; } }
   .menu-primary-container ul li {
     margin: 0px;
-    margin-right: 20px; }
+    padding-right: 10px;
+    padding-left: 10px;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
     .menu-primary-container ul li:last-child {
       margin-bottom: 0px; }
     .menu-primary-container ul li a {
@@ -1554,6 +1565,48 @@ label[for='nav-trigger'] {
 .nav-trigger + label {
   -webkit-transition: right 0.5s ease-in-out;
   transition: right 0.5s ease-in-out; }
+
+#primary-menu li {
+  position: relative; }
+  #primary-menu li:hover .sub-menu {
+    display: block !important; }
+    @media (max-width: 740px) {
+      #primary-menu li:hover .sub-menu {
+        display: none; } }
+  #primary-menu li .sub-menu {
+    position: absolute;
+    left: -30px;
+    top: 70px;
+    display: none !important;
+    float: unset; }
+    #primary-menu li .sub-menu li {
+      -webkit-box-sizing: content-box;
+              box-sizing: content-box;
+      height: auto;
+      background: #dfe9f6;
+      -webkit-transition: background 400ms linear;
+      transition: background 400ms linear;
+      border-bottom: 1px solid #004280; }
+      #primary-menu li .sub-menu li:hover {
+        background: #0e59c2; }
+        #primary-menu li .sub-menu li:hover a {
+          color: #fff; }
+      #primary-menu li .sub-menu li a {
+        padding: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+        text-align: center;
+        -webkit-transition: none;
+        transition: none;
+        white-space: nowrap;
+        font-family: 'Noto Sans';
+        letter-spacing: 0px;
+        font-size: 15px;
+        font-weight: bold; }
+        #primary-menu li .sub-menu li a:hover {
+          -webkit-filter: none;
+                  filter: none; }
 
 #myFooter {
   background-color: #23447f;

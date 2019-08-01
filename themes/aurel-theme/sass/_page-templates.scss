@@ -250,3 +250,32 @@
     text-align: center;
   }
 }
+
+.faq-container {    
+  .each-newsletter {
+    margin: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    .faq-toggle-button {
+      width: 100%;
+      background: $color__blue;
+      opacity: 0.8;
+      &:hover,
+      &:focus {
+        color: #fff;
+        background: $color__button_blue;
+        outline: none;
+      }
+      p{
+        text-align: left;
+        margin-bottom: 10px;
+      }
+    }
+    .card-body {
+      margin-top: 10px;
+      width: 100%;
+    }
+  }
+}

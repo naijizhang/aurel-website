@@ -539,6 +539,25 @@ figure .wp-block-image img {
   margin-bottom: 10px;
   text-align: left; }
 
+.image-align-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 10%;
+  margin: 30px auto; }
+
+.image-align-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 30px auto; }
+
 blockquote {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1367,6 +1386,27 @@ object {
 
 .content-archive-version .archive-description {
   text-align: center; }
+
+.faq-container .each-newsletter {
+  margin: 10px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; }
+  .faq-container .each-newsletter .faq-toggle-button {
+    width: 100%;
+    background: #004280;
+    opacity: 0.8; }
+    .faq-container .each-newsletter .faq-toggle-button:hover, .faq-container .each-newsletter .faq-toggle-button:focus {
+      color: #fff;
+      background: #67a8fe;
+      outline: none; }
+    .faq-container .each-newsletter .faq-toggle-button p {
+      text-align: left;
+      margin-bottom: 10px; }
+  .faq-container .each-newsletter .card-body {
+    margin-top: 10px;
+    width: 100%; }
 
 .fixed-header-logged {
   top: 32px; }

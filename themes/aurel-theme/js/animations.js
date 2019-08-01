@@ -44,6 +44,7 @@
       industries:'#nav_menu-7',
       cadsimPlus:'#nav_menu-8',
       support:'#nav_menu-9',
+      versions:'#nav_menu-10',
     };
     const pageCategory = {
       'about': 'about',
@@ -92,27 +93,38 @@
       'research-learning':'industries',
 
       'cadsim-plus':'cadsimPlus',
-      'new-in-v2-4':'cadsimPlus',
-      'new-in-v2-5':'cadsimPlus',
-      'new-in-v2-6':'cadsimPlus',
-      'new-in-v2-7':'cadsimPlus',
-      'new-in-v3-0':'cadsimPlus',
-      'new-in-v3-1':'cadsimPlus',
-      'new-in-v3-2':'cadsimPlus',
-      'new-in-v3-3':'cadsimPlus',
-      'new-in-v3-4':'cadsimPlus',
-      'new-in-v3-5':'cadsimPlus',
-      'new-in-v3-6':'cadsimPlus',
-      'new-in-v3-7':'cadsimPlus',
-      'new-in-v3-8':'cadsimPlus',
-      'new-in-v3-9':'cadsimPlus',
-      'new-in-v4-0':'cadsimPlus',
+      'advanced-technologies':'cadsimPlus',
+      'standard-module-library':'cadsimPlus',
+      'add-on-module-libraries':'cadsimPlus',
+      'ease-of-use':'cadsimPlus',
+      'pre-purchase-faqs':'cadsimPlus',
+      'sample-screenshots':'cadsimPlus',
+
+      'new-in-v2-4':'versions',
+      'new-in-v2-5':'versions',
+      'new-in-v2-6':'versions',
+      'new-in-v2-7':'versions',
+      'new-in-v3-0':'versions',
+      'new-in-v3-1':'versions',
+      'new-in-v3-2':'versions',
+      'new-in-v3-3':'versions',
+      'new-in-v3-4':'versions',
+      'new-in-v3-5':'versions',
+      'new-in-v3-6':'versions',
+      'new-in-v3-7':'versions',
+      'new-in-v3-8':'versions',
+      'new-in-v3-9':'versions',
+      'new-in-v4-0':'versions',
 
       'support':'support',
       'software-updates':'support',
       'maintenance-support':'support',
       'update-report':'support',
       'faq-hasp':'support',
+
+      //'advanced-technologies'
+
+
 
     };
     const segment_str = $(location).attr('href');

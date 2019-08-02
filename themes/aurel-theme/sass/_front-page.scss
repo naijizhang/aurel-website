@@ -444,6 +444,7 @@ $polygon2_height: 80px;
   background-position: center;
   background-repeat: no-repeat;
   @include mobile {
+    display: none;
     margin-top: -40vh;
     width: 100%;
     height: 500px;
@@ -465,8 +466,8 @@ $polygon2_height: 80px;
   @include mobile {
     margin-top: 0px;
     height: 40vh;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
   }
   .row-first {
     display: flex;
@@ -478,6 +479,9 @@ $polygon2_height: 80px;
     }
     .cadsim-logo-container {
       width: 20%;
+      display:flex;
+      justify-content: center;
+      align-items: center;
       @include mobile {
         position: absolute;
         top: 0px;
@@ -542,7 +546,7 @@ $polygon2_height: 80px;
   }
 }
 
-$unite-length: 150px;
+$unite-length: 180px;
 $polygon-color: $color__bottom_polygons;
 .polygon-container {
   width: $unite-length;

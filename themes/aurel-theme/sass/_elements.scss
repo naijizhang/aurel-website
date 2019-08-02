@@ -232,6 +232,9 @@ blockquote {
   align-items: center;
   width: auto;
   max-width: 80%;
+  @include mobile {
+    max-width: 100%;
+  }
   margin: 20px auto;
   position: relative;
   p {
@@ -365,4 +368,9 @@ table {
       }
     }
   }
+}
+
+.carousel-indicators{
+  margin-left: auto;
+  margin-right: auto;
 }

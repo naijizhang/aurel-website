@@ -105,7 +105,7 @@ $widget_width: 180px;
   position: fixed;
   top: 30vh;
   left: 0px;
-  background: $color__blue;
+  background: $color__light_teal1;
   border: 3px solid $color__light_blue;
   border-radius: 20px;
   border-top-left-radius: 0px;
@@ -116,6 +116,7 @@ $widget_width: 180px;
   flex-direction: row;
   z-index: 99999;
   @include mobile {
+    background: $color__deep_blue;
     flex-direction: column;
     position: relative;
     top: 0px;
@@ -128,16 +129,18 @@ $widget_width: 180px;
     border-radius: 0px;
   }
   .widget-title {
-    color: $color__light_blue;
+    color: $color__blue;
     margin-left: 15%;
     font-size: 20px;
     padding-top: 10px;
     text-align: left;
     @include mobile {
+      color: #fff;
       margin-left: 0%;
       padding-left: 20px;
     }
   }
+  $hover_widget_link: $color__blue;
   ul {
     width: auto;
     padding: 0px;
@@ -163,22 +166,29 @@ $widget_width: 180px;
         width: auto;
         margin-right: 10px;
         a {
-          border: 1px solid $color__light_blue;
+          border: 1px solid $color__blue5;
           &:hover {
-            border: 1px solid $color__light_green;
+            border: 1px solid $hover_widget_link;
           }
         }
       }
       a {
-        color: #fff;
-        border-bottom: 1px solid $color__light_blue;
+        color: $color__blue;
+        @include mobile {
+          color:#fff;
+        }
+        border-bottom: 1px solid $color__blue5;
         padding: 3px;
         text-decoration: none;
         font-size: 12px;
         transition: 0.5s;
         &:hover {
-          color: $color__light_green;
-          border-bottom: 1px solid $color__light_green;
+          color: $hover_widget_link;
+          border-bottom: 1px solid $hover_widget_link;
+          @include mobile {
+            color:#fff;
+            border-color: #fff;
+          }
         }
       }
     }

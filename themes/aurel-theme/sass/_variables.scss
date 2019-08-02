@@ -1,7 +1,7 @@
 // Structure
 
 $base__space-unit: 1.5rem;
-$header_height:70px;
+$header_height: 70px;
 
 // Colors
 
@@ -29,7 +29,7 @@ $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
 
 //Main colors
-$color__blue: rgb(0,66,128);//#16427d;
+$color__blue: rgb(0, 66, 128); //#16427d;
 //backgrounds
 $color__blue1: #3e6ba8;
 $color__blue2: #0e59c2;
@@ -38,24 +38,42 @@ $color__blue4: #7393ba;
 $color__blue5: #8db2e3;
 $color__deep_blue: #23447f;
 $color__light_blue: #dfe9f6;
+
+
+$color__teal: rgb(54, 205, 211);
+$color__light_teal: #7CDFE3;//rgb(100, 205, 211);
+$color__deep_teal: rgb(60, 131, 135);
+$color__light_teal1: rgba(100, 205, 211, 1);
 //buttons
-$color__button_blue: #67a8fe;
+$color__button_blue: #7b7c7c;
 $color__button_blue1: rgb(40, 117, 218);
 
 $color__green: #397c46;
 $color__light_green: rgb(121, 255, 147);
+
+//front-page colors
+$color__polygon1_blue:$color__light_teal;
+$color__polygon2_blue: rgba(27,135,169 ,0.5);
+$color__industry:$color__blue;
+$color__bottom_polygons:$color__deep_blue;
+$color__linear_background:rgba(100,205,211, 0.2);
+
+//header colors
+$color__header_text:$color__blue;
+$color__header_text_hover:$color__teal;
+$color__submenu_text:$color__blue;
+$color__submenu_background:$color__light_blue;
+$color__submenu_hover_text:#fff;
+$color__submenu_hover_background:$color__blue2;
 
 //Text
 $color__grey: #5c5c5c;
 $color__light_grey: rgb(220, 220, 220);
 $color__light_grey1: rgb(237, 237, 237);
 
-
-
 //Text size
-$mobile_text_size:15px;
-$mobile_heading1_size:30px;
-$mobile_heading2_size:18px;
-
+$mobile_text_size: 15px;
+$mobile_heading1_size: 30px;
+$mobile_heading2_size: 18px;
 
 // R: 0  G:66  B:128

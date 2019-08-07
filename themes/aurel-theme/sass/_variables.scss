@@ -52,8 +52,8 @@ $color__green: #397c46;
 $color__light_green: rgb(121, 255, 147);
 
 //front-page colors
-$color__polygon1_blue:$color__light_teal;
-$color__polygon2_blue: rgba(27,135,169 ,0.5);
+$color__polygon1_blue: linear-gradient(to right, rgb(0,66,128) 0%, rgb(53,206,211) 100%);
+$color__polygon2_blue: linear-gradient(to top, rgb(0,66,128) 0%, rgb(53,206,211) 100%);//rgba(27,135,169 ,0.5);
 $color__industry:$color__blue;
 $color__bottom_polygons:$color__deep_blue;
 $color__linear_background:rgba(100,205,211, 0.2);
@@ -76,4 +76,9 @@ $mobile_text_size: 15px;
 $mobile_heading1_size: 30px;
 $mobile_heading2_size: 18px;
 
-// R: 0  G:66  B:128
+// //new colors
+// $color_blue:rgb(0,66,128);
+// $color_dark_grey:rgb(98,110,119);
+// $color_medium_grey:rgb(120,144,156);
+// $color_light_grey:rgb(172,179,181);
+// $color_turquoise:rgb(54,205,221);

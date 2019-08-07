@@ -47,27 +47,26 @@ get_header(); ?>
                 <div class="each-services service-block1">
                     <h2>CADSIM Plus software</h2>
                     <p>Chemical Process Simulation Software</p>
-                    <p>Unit Modules</p>
-                    <p>Dynamic Data Reconciliation</p>
-                    <p>Product Tracking</p>
-                </div>
-                <div class="each-services service-block2">
-                    <h2>Modeling services</h2>
-                    <p>Just-in-time Modeling Assistance</p>
-                    <p>Turnkey Simulations</p>
-                    <p>Custom Module Development</p>
-                </div>
-                <div class="each-services service-block3">
-                    <h2>Online applications</h2>
-                    <p>Dynamic Data Reconciliation</p>
-                    <p>Product Tracking</p>
-                    <p>Energy Tracking</p>
-                </div>
-                <div class="each-services service-block4">
-                    <h2>CADSIM Plus training</h2>
                     <p>Onsite Customized Training</p>
+                    <p>Dynamic Data Reconciliation</p>
                     <p>On-line Training</p>
+                    <p>Unit Modules</p>
                     <p>Open courses at Aurel</p>
+                    <p>Product Tracking</p>
+                </div>
+                <div class="other-services-container">
+                    <div class="each-services service-block2">
+                        <h2>Modeling services</h2>
+                        <p>Just-in-time Modeling Assistance</p>
+                        <p>Turnkey Simulations</p>
+                        <p>Custom Module Development</p>
+                    </div>
+                    <div class="each-services service-block3">
+                        <h2>Online applications</h2>
+                        <p>Dynamic Data Reconciliation</p>
+                        <p>Product Tracking</p>
+                        <p>Energy Tracking</p>
+                    </div>
                 </div>
             </div>
             <div class="what-we-do-container">

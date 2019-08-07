@@ -41,5 +41,8 @@
 		</header><!-- #masthead -->
 
 		<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'mobile-menu')); ?>
-
-		<div id="content" class="site-content">
+		<?php if (is_home()) : ?>
+			<div id="content" class="site-content site-home">
+			<?php else : ?>
+				<div id="content" class="site-content">
+				<?php endif ?>

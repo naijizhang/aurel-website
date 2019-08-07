@@ -9,6 +9,10 @@
     //     $('.Volleyball-menu p').removeClass('orange-underscore');
     //   });
 
+    if ( $('body').hasClass('home')){
+      $('#myFooter').css('max-width','100%');
+    }
+
     //widget menu toggle
     $('.widget-area').after(
       "<div class='toggle-widget'><button class='toggle-widget-button'><div>HIDE</div></button></div>"

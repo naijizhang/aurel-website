@@ -1196,6 +1196,9 @@ object {
       -webkit-box-shadow: 5px 0 15px -4px #000, -5px 0 8px -4px #000;
               box-shadow: 5px 0 15px -4px #000, -5px 0 8px -4px #000; } }
 
+.site-home {
+  max-width: 100%; }
+
 .qa-container article {
   position: relative; }
 
@@ -1863,7 +1866,6 @@ label[for='nav-trigger'] {
         width: 30px; }
 
 .content-home-page {
-  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 0px;
@@ -1886,8 +1888,8 @@ label[for='nav-trigger'] {
   z-index: 1; }
   .slides-container .each-slide-item {
     width: 100%;
-    height: 50vh;
-    min-height: 500px; }
+    height: 20vh;
+    min-height: 300px; }
     @media (max-width: 740px) {
       .slides-container .each-slide-item {
         height: 100vw;
@@ -1896,10 +1898,12 @@ label[for='nav-trigger'] {
       width: 100%;
       height: 100%;
       -o-object-fit: cover;
-         object-fit: cover; }
+         object-fit: cover;
+      -o-object-position: center;
+         object-position: center; }
   .slides-container .slide-item1 {
-    background: -webkit-gradient(linear, right top, left top, color-stop(0.52%, rgba(255, 255, 255, 0)), color-stop(99.11%, rgba(60, 131, 135, 0.6))), -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.29)), to(rgba(0, 0, 0, 0.29))), url("../../assets/images/CogenPipesBackground2.jpg");
-    background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0.52%, rgba(60, 131, 135, 0.6) 99.11%), linear-gradient(0deg, rgba(0, 0, 0, 0.29), rgba(0, 0, 0, 0.29)), url("../../assets/images/CogenPipesBackground2.jpg");
+    background: -webkit-gradient(linear, right top, left top, from(#36cdd3), color-stop(50%, rgba(255, 255, 255, 0)), to(#004480)), -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.29)), to(rgba(0, 0, 0, 0.29))), url("../../assets/images/CogenPipesBackground2.jpg");
+    background: linear-gradient(270deg, #36cdd3 0%, rgba(255, 255, 255, 0) 50%, #004480 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.29), rgba(0, 0, 0, 0.29)), url("../../assets/images/CogenPipesBackground2.jpg");
     background-size: cover cover cover;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1909,17 +1913,27 @@ label[for='nav-trigger'] {
         -ms-flex-direction: column;
             flex-direction: column;
     -ms-flex-pack: distribute;
-        justify-content: space-around; }
+        justify-content: space-around;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
     .slides-container .slide-item1 .slide1-hook {
-      margin-top: 7%; }
-      @media (max-width: 740px) {
-        .slides-container .slide-item1 .slide1-hook {
-          margin-top: 10%; } }
+      margin-top: 30px;
+      width: 40%; }
       .slides-container .slide-item1 .slide1-hook p {
-        width: 50%;
         color: #fff;
         font-family: 'Poiret One';
-        font-size: 25px;
+        font-size: 20px;
         margin-left: 20%; }
         @media (max-width: 740px) {
           .slides-container .slide-item1 .slide1-hook p {
@@ -1938,13 +1952,14 @@ label[for='nav-trigger'] {
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row;
-      height: 100px;
+      height: 50%;
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      width: 40%; }
       @media (max-width: 740px) {
         .slides-container .slide-item1 .slide1-bottom-content {
           height: 50%;
@@ -1994,24 +2009,40 @@ label[for='nav-trigger'] {
             -webkit-box-shadow: 0px 0px 15px #bbbbbb;
                     box-shadow: 0px 0px 15px #bbbbbb; }
   .slides-container .slide-item2 {
-    background: #000; }
+    background: #000;
+    display: none; }
+
+.section-what-we-do {
+  position: relative;
+  margin: 0px;
+  background: -webkit-gradient(linear, left top, right top, from(#004280), to(#35ced3));
+  background: linear-gradient(to right, #004280 0%, #35ced3 100%); }
 
 .polygon1 {
-  shape-outside: polygon(0 0, 0 100px, 50% 50px, 100% 100px, 100% 0px);
-  -webkit-clip-path: polygon(0 0, 0 100px, 50% 50px, 100% 100px, 100% 0px);
-          clip-path: polygon(0 0, 0 100px, 50% 50px, 100% 100px, 100% 0px);
-  height: 100px;
+  shape-outside: polygon(0 150px, 50% 50px, 100% 150px);
+  -webkit-clip-path: polygon(0 150px, 50% 50px, 100% 150px);
+          clip-path: polygon(0 150px, 50% 50px, 100% 150px);
+  height: 150px;
   width: 100%;
-  background-color: #7CDFE3; }
+  background: #fff;
+  display: block;
+  position: relative;
+  top: 0px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .polygon2 {
-  shape-outside: polygon(0 0, 50% 80px, 100% 0px);
-  -webkit-clip-path: polygon(0 0, 50% 80px, 100% 0px);
-          clip-path: polygon(0 0, 50% 80px, 100% 0px);
-  height: 80px;
+  shape-outside: polygon(0 0, 50% 100px, 100% 0px);
+  -webkit-clip-path: polygon(0 0, 50% 100px, 100% 0px);
+          clip-path: polygon(0 0, 50% 100px, 100% 0px);
+  height: 150px;
   width: 100%;
-  background-color: rgba(27, 135, 169, 0.5);
-  margin-bottom: 40px; }
+  background: #fff;
+  margin-bottom: 40px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto; }
   @media (max-width: 740px) {
     .polygon2 {
       display: none; } }
@@ -2021,12 +2052,95 @@ label[for='nav-trigger'] {
   font-family: 'Lalezar';
   letter-spacing: 1px;
   color: #004280;
-  margin-top: 8vh;
-  margin-bottom: 2vh; }
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background: #fff;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 3; }
   @media (max-width: 740px) {
     .what-we-do {
       margin-top: 2vh;
       font-size: 30px; } }
+
+.main-services-container {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .main-services-container .each-services {
+    padding: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    .main-services-container .each-services h2 {
+      font-size: 30px;
+      text-align: left;
+      color: #fff;
+      font-weight: bold;
+      margin-bottom: 20px; }
+    .main-services-container .each-services p {
+      font-size: 15px;
+      width: auto;
+      margin: 0px;
+      margin-bottom: 10px;
+      text-align: left;
+      color: #fff; }
+  .main-services-container .other-services-container {
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .main-services-container .service-block1 {
+    width: 40%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../assets/images/CADSIMsoftware.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/CADSIMsoftware.jpg");
+    background-position: center,center;
+    background-repeat: repeat,no-repeat;
+    background-size: cover,cover;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .main-services-container .service-block1 h2 {
+      text-align: center;
+      font-size: 35px; }
+    .main-services-container .service-block1 p {
+      display: inline-block;
+      width: 49%;
+      text-align: center; }
+  .main-services-container .service-block2 {
+    width: 50%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../assets/images/modeling.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/modeling.png");
+    background-position: center,center;
+    background-repeat: repeat,no-repeat;
+    background-size: cover,cover; }
+  .main-services-container .service-block3 {
+    width: 50%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../assets/images/onlineApplication.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/onlineApplication.png");
+    background-position: center,center;
+    background-repeat: repeat,no-repeat;
+    background-size: cover,cover; }
 
 .what-we-do-container {
   display: -webkit-box;
@@ -2042,7 +2156,14 @@ label[for='nav-trigger'] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 50px auto; }
+  margin: 0px auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: #fff;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; }
   @media (max-width: 740px) {
     .what-we-do-container {
       -webkit-box-orient: vertical;
@@ -2069,7 +2190,7 @@ label[for='nav-trigger'] {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-left: 30px;
+    margin-left: 8%;
     z-index: 3; }
     @media (max-width: 740px) {
       .what-we-do-container .hexagon {
@@ -2329,8 +2450,14 @@ label[for='nav-trigger'] {
         margin-left: 0px; } }
 
 .front-page-linear-background-picture {
+  display: none;
   width: 100%;
   height: 20vh;
+  position: absolute;
+  bottom: 0px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(100, 205, 211, 0.5)), to(white)), url("../../assets/images/Pumps1.jpg");
   background: linear-gradient(0deg, rgba(100, 205, 211, 0.5), white), url("../../assets/images/Pumps1.jpg");
   background-size: cover;
@@ -2345,11 +2472,12 @@ label[for='nav-trigger'] {
 .front-page-linear-background {
   width: 100%;
   height: 16vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(rgba(100, 205, 211, 0.2))), #dfe9f6;
-  background: linear-gradient(180deg, #ffffff 0%, rgba(100, 205, 211, 0.2) 100%), #dfe9f6;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.5)), to(white)), url("../../assets/images/Pumps1.jpg");
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), white), url("../../assets/images/Pumps1.jpg");
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
+  background-position: center, 50% 18%;
+  background-repeat: no-repeat no-repeat;
+  opacity: 0.5; }
   @media (max-width: 740px) {
     .front-page-linear-background {
       display: none;
@@ -2363,7 +2491,7 @@ label[for='nav-trigger'] {
       background-repeat: no-repeat; } }
 
 .front-page-bottom-banner {
-  margin-top: 10vh;
+  margin-top: 12vh;
   margin-bottom: 0px; }
   @media (max-width: 740px) {
     .front-page-bottom-banner {
@@ -2450,7 +2578,8 @@ label[for='nav-trigger'] {
                 justify-content: center; } }
     .front-page-bottom-banner .row-second .polygon-container {
       margin-left: 5vw;
-      margin-right: 5vw; }
+      margin-right: 5vw;
+      z-index: 5; }
       @media (max-width: 740px) {
         .front-page-bottom-banner .row-second .polygon-container {
           margin-left: 0px;

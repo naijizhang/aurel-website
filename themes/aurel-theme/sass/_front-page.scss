@@ -1,5 +1,5 @@
 .content-home-page {
-  max-width: 1280px;
+  //max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 0px;
@@ -19,12 +19,25 @@
     display: none;
   }
 }
+// #carouselExampleControls{
+//   margin-top: 70px;
+//   display: block;
+//   width:100%;
+//   max-width: 1280px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   z-index: 0;
+//   box-shadow: 5px 0 15px -4px #bbb, -5px 0 8px -4px #bbb;
+//   @include mobile {
+//     box-shadow: 5px 0 15px -4px #000, -5px 0 8px -4px #000;
+//   }
+// }
 .slides-container {
   z-index: 1;
   .each-slide-item {
     width: 100%;
-    height: 50vh;
-    min-height: 500px;
+    height: 20vh;
+    min-height: 300px;
     @include mobile {
       height: 100vw;
       min-height: 0px;
@@ -33,13 +46,15 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: center;
     }
   }
   .slide-item1 {
     background: linear-gradient(
         270deg,
-        rgba(255, 255, 255, 0) 0.52%,
-        rgba(60, 131, 135, 0.6) 99.11%
+        rgba(54, 205, 211, 1) 0%,
+        rgba(255, 255, 255, 0) 50%,
+        rgba(0, 68, 128, 1) 100%
       ),
       linear-gradient(0deg, rgba(0, 0, 0, 0.29), rgba(0, 0, 0, 0.29)),
       url('../../assets/images/CogenPipesBackground2.jpg');
@@ -47,16 +62,25 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     .slide1-hook {
-      margin-top: 7%;
-      @include mobile {
-        margin-top: 10%;
-      }
+      margin-top: 30px;
+      width: 40%;
+      // @include mobile {
+      //   margin-top: 10%;
+      // }
       p {
-        width: 50%;
+        //width: 50%;
         color: #fff;
         font-family: 'Poiret One';
-        font-size: 25px;
+        font-size: 20px;
         margin-left: 20%;
         @include mobile {
           width: 80%;
@@ -72,9 +96,10 @@
     .slide1-bottom-content {
       display: flex;
       flex-direction: row;
-      height: 100px;
+      height: 50%;
       justify-content: flex-end;
-      align-items: center;
+      align-items: flex-end;
+      width: 40%;
       @include mobile {
         height: 50%;
         flex-direction: column;
@@ -121,25 +146,40 @@
   }
   .slide-item2 {
     background: #000;
+    display: none;
   }
 }
-
+.section-what-we-do {
+  position: relative;
+  margin: 0px;
+  background: $color__polygon1_blue;
+}
+$polygon1_height: 150px;
 .polygon1 {
-  shape-outside: polygon(0 0, 0 100px, 50% 50px, 100% 100px, 100% 0px);
-  clip-path: polygon(0 0, 0 100px, 50% 50px, 100% 100px, 100% 0px);
-  height: 100px;
+  shape-outside: polygon(0 $polygon1_height, 50% 50px, 100% $polygon1_height);
+  clip-path: polygon(0 $polygon1_height, 50% 50px, 100% $polygon1_height);
+  height: $polygon1_height;
   width: 100%;
-  background-color: $color__polygon1_blue;
+  background: #fff;
+  display: block;
+  position: relative;
+  top: 0px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-$polygon2_height: 80px;
+$polygon2_height: 150px;
 .polygon2 {
-  shape-outside: polygon(0 0, 50% $polygon2_height, 100% 0px);
-  clip-path: polygon(0 0, 50% $polygon2_height, 100% 0px);
+  shape-outside: polygon(0 0, 50% 100px, 100% 0px);
+  clip-path: polygon(0 0, 50% 100px, 100% 0px);
   height: $polygon2_height;
   width: 100%;
-  background-color: $color__polygon2_blue;
+  background: #fff;
   margin-bottom: 40px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
   @include mobile {
     display: none;
   }
@@ -149,11 +189,87 @@ $polygon2_height: 80px;
   font-family: 'Lalezar';
   letter-spacing: 1px;
   color: $color__blue;
-  margin-top: 8vh;
-  margin-bottom: 2vh;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background: #fff;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 3;
   @include mobile {
     margin-top: 2vh;
     font-size: 30px;
+  }
+}
+.main-services-container {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  // margin-bottom: -20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  .each-services {
+    padding:15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    h2 {
+      font-size: 30px;
+      text-align: left;
+      color: #fff;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 15px;
+      width: auto;
+      margin: 0px;
+      margin-bottom: 10px;
+      text-align: left;
+      color: #fff;
+    }
+  }
+  .other-services-container{
+    width:40%;
+    display: flex;
+    flex-direction: row;
+
+  }
+  .service-block1{
+    width:40%;
+    flex-wrap: wrap;
+    background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../assets/images/CADSIMsoftware.jpg');
+    background-position: center,center;
+    background-repeat: repeat,no-repeat;
+    background-size: cover,cover;
+    justify-content: center;
+    h2{
+      text-align: center;
+      font-size: 35px;
+    }
+    p{
+      display: inline-block;
+      width:49%;
+      text-align: center;
+    }
+  }
+  .service-block2{
+    width:50%;
+    background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../assets/images/modeling.png');
+    background-position: center,center;
+    background-repeat: repeat,no-repeat;
+    background-size: cover,cover;
+  }
+  .service-block3{
+    width:50%;
+    background:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../assets/images/onlineApplication.png');
+    background-position: center,center;
+    background-repeat: repeat,no-repeat;
+    background-size: cover,cover;
   }
 }
 .what-we-do-container {
@@ -161,7 +277,14 @@ $polygon2_height: 80px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 50px auto;
+  margin: 0px auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: #fff;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
   @include mobile {
     flex-direction: column;
   }
@@ -178,7 +301,7 @@ $polygon2_height: 80px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 30px;
+    margin-left: 8%;
     z-index: 3;
     @include mobile {
       background: none;
@@ -413,8 +536,14 @@ $polygon2_height: 80px;
 }
 
 .front-page-linear-background-picture {
+  display: none;
   width: 100%;
   height: 20vh;
+  position: absolute;
+  bottom: 0px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
   background: linear-gradient(
       0deg,
       rgba(100, 205, 211, 0.5),
@@ -434,15 +563,26 @@ $polygon2_height: 80px;
 .front-page-linear-background {
   width: 100%;
   height: 16vh;
+  // background: linear-gradient(
+  //     180deg,
+  //     #ffffff 0%,
+  //     $color__linear_background 100%
+  //   ),
+  //   #dfe9f6;
+  // background-size: cover;
+  // background-position: center;
+  // background-repeat: no-repeat;
   background: linear-gradient(
-      180deg,
-      #ffffff 0%,
-      $color__linear_background 100%
+      0deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 1)
     ),
-    #dfe9f6;
+    url('../../assets/images/Pumps1.jpg');
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-position: center, 50% 18%;
+  background-repeat: no-repeat no-repeat;
+
+  opacity: 0.5;
   @include mobile {
     display: none;
     margin-top: -40vh;
@@ -461,7 +601,7 @@ $polygon2_height: 80px;
 }
 
 .front-page-bottom-banner {
-  margin-top: 10vh;
+  margin-top: 12vh;
   margin-bottom: 0px;
   @include mobile {
     margin-top: 0px;
@@ -479,7 +619,7 @@ $polygon2_height: 80px;
     }
     .cadsim-logo-container {
       width: 20%;
-      display:flex;
+      display: flex;
       justify-content: center;
       align-items: center;
       @include mobile {
@@ -519,6 +659,7 @@ $polygon2_height: 80px;
     .polygon-container {
       margin-left: 5vw;
       margin-right: 5vw;
+      z-index: 5;
       @include mobile {
         margin-left: 0px;
         margin-right: 0px;

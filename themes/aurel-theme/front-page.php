@@ -136,36 +136,55 @@ get_header(); ?>
 
         <div class="front-page-bottom-banner">
             <div class="row-first">
-                <a href="<?php echo get_permalink(get_page_by_path("cadsim-plus")); ?>">
-                    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="polygon-container" id="polygon-block1">
-                        <h3>CADSIM Plus</h3>
-                        <h3>software</h3>
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="polygon-container" id="polygon-block1">
+                    <h3>CADSIM Plus</h3>
+                    <h3>software</h3>
+                    <div class="overlay">
+                        <a href="<?php echo get_permalink(get_page_by_path("cadsim-plus")); ?>">Chemical Process Simulation Software</a>
+                        <a href="<?php echo get_permalink(get_page_by_path("module-libraries", OBJECT, "post")); ?>">Unit Modules</a>
+                        <a href="<?php echo get_post_permalink(get_page_by_path("data-reconciliation", OBJECT, "post")); ?>">Dynamic Data Reconciliation</a>
+                        <a href="<?php echo get_post_permalink(get_page_by_path("product-tracking", OBJECT, "post")); ?>">Product Tracking</a>
                     </div>
-                </a>
+                
+                </div>
                 <div class="cadsim-logo-container">
                     <img class="cadsim-logo" alt="cadsim logo" src='<?php echo get_template_directory_uri() . '/assets/images/cp(blue3black).bmp'; ?>'>
                 </div>
-                <a href="<?php echo get_permalink(get_page_by_path("training")); ?>">
-                    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500" class="polygon-container" id="polygon-block2">
-                        <h3>CADSIM Plus</h3>
-                        <h3>training</h3>
-                    </div>
-                </a>
 
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500" class="polygon-container" id="polygon-block2">
+                    <h3>CADSIM Plus</h3>
+                    <h3>training</h3>
+                    <div class="overlay">
+                        <a href="<?php echo get_permalink(get_page_by_path("training")); ?>">Onsite Customized Training</a>
+                        <a href="<?php echo get_post_permalink(get_page_by_path("training")); ?>">On-line Training</a>
+                        <a href="<?php echo get_post_permalink(get_page_by_path("training")); ?>">Open courses at Aurel</a>
+                    </div>
+                </div>
             </div>
             <div class="row-second">
-                <a href="<?php echo get_permalink(get_page_by_path("process-modeling")); ?>">
-                    <div data-aos="flip-left" data-aos-easing="ease-out-cub ic" data-aos-duration="1500" class="polygon-container" id="polygon-block3">
-                        <h3>Moduling</h3>
-                        <h3>services</h3>
+
+                <div data-aos="flip-left" data-aos-easing="ease-out-cub ic" data-aos-duration="1500" class="polygon-container" id="polygon-block3">
+                    <h3>Moduling</h3>
+                    <h3>services</h3>
+                    <div class="overlay">
+                        <a href="<?php echo get_permalink(get_page_by_path("process-modeling")); ?>">Just-in-time Modeling Assistance</a>
+                        <a href="<?php echo get_post_permalink(get_page_by_path("process-modeling")); ?>">Turnkey Simulations</a>
+                        <a href="<?php echo get_post_permalink(get_page_by_path("custom-modules")); ?>">Custom Module Development</a>
                     </div>
-                </a>
-                <a href="<?php echo get_permalink(get_page_by_path("online-applications")); ?>">
-                    <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="polygon-container" id="polygon-block4">
-                        <h3>Online</h3>
-                        <h3>application</h3>
+                </div>
+
+                <!-- <a href="<?php //echo get_permalink(get_page_by_path("online-applications")); 
+                                ?>"> -->
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="polygon-container" id="polygon-block4">
+                    <h3>Online</h3>
+                    <h3>application</h3>
+                    <div class="overlay">
+                        <a href="<?php echo get_permalink(get_page_by_path("dynamic-data-reconciliation")); ?>">Dynamic Data Reconciliation</a>
+                        <a href="<?php echo get_post_permalink(get_page_by_path("product-tracking", OBJECT, "post")); ?>">Product Tracking</a>
+                        <a href="<?php echo get_post_permalink(get_page_by_path("energy-tracking", OBJECT, "post")); ?>">Energy Tracking</a>
                     </div>
-                </a>
+                </div>
+                <!-- </a> -->
 
             </div>
         </div>

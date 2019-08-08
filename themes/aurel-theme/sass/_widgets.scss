@@ -105,7 +105,7 @@ $widget_width: 180px;
   position: fixed;
   top: 30vh;
   left: 0px;
-  background: $color__light_teal1;
+  background: $color__widget_background;
   border: 3px solid $color__light_blue;
   border-radius: 20px;
   border-top-left-radius: 0px;
@@ -129,7 +129,7 @@ $widget_width: 180px;
     border-radius: 0px;
   }
   .widget-title {
-    color: $color__blue;
+    color:$color__widget_text;
     margin-left: 15%;
     font-size: 20px;
     padding-top: 10px;
@@ -140,7 +140,6 @@ $widget_width: 180px;
       padding-left: 20px;
     }
   }
-  $hover_widget_link: $color__blue;
   ul {
     width: auto;
     padding: 0px;
@@ -173,7 +172,7 @@ $widget_width: 180px;
         }
       }
       a {
-        color: $color__blue;
+        color:$color__widget_text;
         @include mobile {
           color:#fff;
         }

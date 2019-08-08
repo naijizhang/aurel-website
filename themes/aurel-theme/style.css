@@ -948,7 +948,7 @@ a {
   position: fixed;
   top: 30vh;
   left: 0px;
-  background: #64cdd3;
+  background: #23447f;
   border: 3px solid #dfe9f6;
   border-radius: 20px;
   border-top-left-radius: 0px;
@@ -982,7 +982,7 @@ a {
       border-bottom: 2px solid #dfe9f6;
       border-radius: 0px; } }
   .widget-area .widget-title {
-    color: #004280;
+    color: #fff;
     margin-left: 15%;
     font-size: 20px;
     padding-top: 10px;
@@ -1035,9 +1035,9 @@ a {
           .widget-area ul li a {
             border: 1px solid #8db2e3; }
             .widget-area ul li a:hover {
-              border: 1px solid #004280; } }
+              border: 1px solid #7CDFE3; } }
       .widget-area ul li a {
-        color: #004280;
+        color: #fff;
         border-bottom: 1px solid #8db2e3;
         padding: 3px;
         text-decoration: none;
@@ -1048,8 +1048,8 @@ a {
           .widget-area ul li a {
             color: #fff; } }
         .widget-area ul li a:hover {
-          color: #004280;
-          border-bottom: 1px solid #004280; }
+          color: #7CDFE3;
+          border-bottom: 1px solid #7CDFE3; }
           @media (max-width: 740px) {
             .widget-area ul li a:hover {
               color: #fff;

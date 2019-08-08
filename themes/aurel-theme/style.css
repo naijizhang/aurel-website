@@ -2618,7 +2618,12 @@ label[for='nav-trigger'] {
     padding-left: 5%;
     padding-right: 5%;
     text-align: center;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    -webkit-transition: all 300ms;
+    transition: all 300ms; }
+    .overlay a:hover {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
 
 @media (max-width: 740px) {
   #polygon-block1 {

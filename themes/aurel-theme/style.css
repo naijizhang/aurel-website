@@ -2092,16 +2092,17 @@ label[for='nav-trigger'] {
       text-align: left;
       color: #fff;
       font-weight: bold;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      text-align: center; }
     .main-services-container .each-services p {
       font-size: 15px;
       width: auto;
       margin: 0px;
       margin-bottom: 10px;
-      text-align: left;
+      text-align: center;
       color: #fff; }
   .main-services-container .other-services-container {
-    width: 40%;
+    width: 60%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2110,11 +2111,11 @@ label[for='nav-trigger'] {
         -ms-flex-direction: row;
             flex-direction: row; }
   .main-services-container .service-block1 {
-    width: 40%;
+    width: 30%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../assets/images/CADSIMsoftware.jpg");
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/CADSIMsoftware.jpg");
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.5))), url("../../assets/images/CADSIMsoftware.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../../assets/images/CADSIMsoftware.jpg");
     background-position: center, center;
     background-repeat: repeat, no-repeat;
     background-size: cover, cover;
@@ -2122,23 +2123,22 @@ label[for='nav-trigger'] {
         -ms-flex-pack: center;
             justify-content: center; }
     .main-services-container .service-block1 h2 {
-      text-align: center;
-      font-size: 35px; }
+      text-align: center; }
     .main-services-container .service-block1 p {
       display: inline-block;
-      width: 49%;
+      width: 32%;
       text-align: center; }
   .main-services-container .service-block2 {
     width: 50%;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../assets/images/modeling.png");
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/modeling.png");
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.5))), url("../../assets/images/modeling.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../../assets/images/modeling.png");
     background-position: center, center;
     background-repeat: repeat, no-repeat;
     background-size: cover, cover; }
   .main-services-container .service-block3 {
     width: 50%;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../assets/images/onlineApplication.png");
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/onlineApplication.png");
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.5))), url("../../assets/images/onlineApplication.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../../assets/images/onlineApplication.png");
     background-position: center, center;
     background-repeat: repeat, no-repeat;
     background-size: cover, cover; }

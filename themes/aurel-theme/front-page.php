@@ -45,14 +45,10 @@ get_header(); ?>
             <h1 class="what-we-do">What we do?</h1>
             <div class="main-services-container">
                 <div class="each-services service-block1">
-                    <h2>CADSIM Plus software</h2>
-                    <p>Chemical Process Simulation Software</p>
-                    <p>Onsite Customized Training</p>
-                    <p>Dynamic Data Reconciliation</p>
-                    <p>On-line Training</p>
-                    <p>Unit Modules</p>
-                    <p>Open courses at Aurel</p>
-                    <p>Product Tracking</p>
+                    <h2>CADSIM Plus Process Simulator</h2>
+                    <p>Sales</p>
+                    <p>Support</p>
+                    <p>Training</p>
                 </div>
                 <div class="other-services-container">
                     <div class="each-services service-block2">
@@ -62,7 +58,7 @@ get_header(); ?>
                         <p>Custom Module Development</p>
                     </div>
                     <div class="each-services service-block3">
-                        <h2>Online applications</h2>
+                        <h2>Realtime Optimization</h2>
                         <p>Dynamic Data Reconciliation</p>
                         <p>Product Tracking</p>
                         <p>Energy Tracking</p>

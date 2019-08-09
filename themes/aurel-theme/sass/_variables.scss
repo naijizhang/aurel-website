@@ -17,7 +17,7 @@ $color__background-ins: #fff9c0;
 $color__border-abbr: #666;
 
 $color__link: #007bff;
-$color__link-visited: #16427d;
+$color__link-visited: $color__link;
 $color__link-hover: #16427d;
 
 // Typography
@@ -44,6 +44,7 @@ $color__teal: rgb(54, 205, 211);
 $color__light_teal: #7CDFE3;//rgb(100, 205, 211);
 $color__deep_teal: rgb(60, 131, 135);
 $color__light_teal1: rgba(100, 205, 211, 1);
+$color__light_teal2: #6ac4cc;
 //buttons
 $color__button_blue: #7b7c7c;
 $color__button_blue1: rgb(40, 117, 218);
@@ -52,8 +53,9 @@ $color__green: #397c46;
 $color__light_green: rgb(121, 255, 147);
 
 //front-page colors
-$color__polygon1_blue: linear-gradient(to right, rgb(0,66,128) 0%, rgb(53,206,211) 100%);
-$color__polygon2_blue: linear-gradient(to top, rgb(0,66,128) 0%, rgb(53,206,211) 100%);//rgba(27,135,169 ,0.5);
+$color__polygon1_blue: linear-gradient(to right, rgb(27,68,127) 0%, rgb(53,206,211) 100%);
+$color__polygon2_blue:linear-gradient(344.69deg, rgb(27,68,127) 55%, rgb(53,206,211) 100%);
+$color__polygon3_blue:linear-gradient(167.4deg, rgb(27,68,127) 73%, $color__light_teal2 100%);
 $color__industry:$color__blue;
 $color__bottom_polygons:$color__deep_blue;
 $color__linear_background:rgba(100,205,211, 0.2);

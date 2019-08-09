@@ -1758,8 +1758,10 @@ label[for='nav-trigger'] {
               align-items: center;
       height: 100px; } }
   #myFooter #footer-navigation {
-    width: 20%;
+    width: 15%;
     height: 100%; }
+    #myFooter #footer-navigation li:hover .sub-menu {
+      display: none !important; }
     @media (max-width: 740px) {
       #myFooter #footer-navigation {
         display: none; } }

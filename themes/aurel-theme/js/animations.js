@@ -9,8 +9,15 @@
     //     $('.Volleyball-menu p').removeClass('orange-underscore');
     //   });
 
-    if ( $('body').hasClass('home')){
-      $('#myFooter').css('max-width','100%');
+    if ($('body').hasClass('home')) {
+      $('#myFooter').css('max-width', '100%');
+    }
+
+    if ($(document).width() > 740) {
+      $('#software-overview-link').attr('href', '');
+      $('#training-link').attr('href', '');
+      $('#moduling-services-link').attr('href', '');
+      $('#online-application-link').attr('href', '');
     }
 
     //widget menu toggle
@@ -42,96 +49,96 @@
     const widgetList = {
       about: '#nav_menu-2',
       products: '#nav_menu-3',
-      techCorner:'#nav_menu-4',
-      services:'#nav_menu-5',
-      onlineApps:'#nav_menu-6',
-      industries:'#nav_menu-7',
-      cadsimPlus:'#nav_menu-8',
-      support:'#nav_menu-9',
-      versions:'#nav_menu-10',
-      advanceTech:'#nav_menu-11',
+      techCorner: '#nav_menu-4',
+      services: '#nav_menu-5',
+      onlineApps: '#nav_menu-6',
+      industries: '#nav_menu-7',
+      cadsimPlus: '#nav_menu-8',
+      support: '#nav_menu-9',
+      versions: '#nav_menu-10',
+      advanceTech: '#nav_menu-11'
     };
     const pageCategory = {
-      'about': 'about',
+      about: 'about',
       'aurel-team-page': 'about',
-      'client-list':'about',
-      'client-comments':'about',
-      'consultant-links':'about',
-      'conference-papers':'about',
-      'company-history':'about',
-      'contact':'about',
+      'client-list': 'about',
+      'client-comments': 'about',
+      'consultant-links': 'about',
+      'conference-papers': 'about',
+      'company-history': 'about',
+      contact: 'about',
 
-      'products':'products',
+      products: 'products',
       //'cadsim-plus':'products',
-      'dynamic-data-reconciliation':'products',
-      'product-tracking-2':'products',
+      'dynamic-data-reconciliation': 'products',
+      'product-tracking-2': 'products',
       // 'tech-corner':'products',
-      'newsletters-page':'products',
+      'newsletters-page': 'products',
 
-      'tech-corner':'techCorner',
-      'split-range-controllers':'techCorner',
-      'pipe-friction':'techCorner',
-      'link-cadsim-plus':'techCorner',
-      'export-drawing-to-pdf':'techCorner',
-      'creating-computer-based-manuals':'techCorner',
-      'using-autotune':'techCorner',
-      'using-the-compound-editor':'techCorner',
-      'using-the-multi-doc-interface':'techCorner',
+      'tech-corner': 'techCorner',
+      'split-range-controllers': 'techCorner',
+      'pipe-friction': 'techCorner',
+      'link-cadsim-plus': 'techCorner',
+      'export-drawing-to-pdf': 'techCorner',
+      'creating-computer-based-manuals': 'techCorner',
+      'using-autotune': 'techCorner',
+      'using-the-compound-editor': 'techCorner',
+      'using-the-multi-doc-interface': 'techCorner',
 
-      'services':'services',
-      'training':'services',
-      'process-modeling':'services',
-      'custom-modules':'services',
+      services: 'services',
+      training: 'services',
+      'process-modeling': 'services',
+      'custom-modules': 'services',
 
-      'online-applications':'onlineApps',
-      'data-reconciliation':'onlineApps',
-      'product-tracking':'onlineApps',
-      'energy-tracking':'onlineApps',
+      'online-applications': 'onlineApps',
+      'data-reconciliation': 'onlineApps',
+      'product-tracking': 'onlineApps',
+      'energy-tracking': 'onlineApps',
 
-      'industries':'industries',
-      'pulp-paper':'industries',
-      'forest-products':'industries',
-      'food-processing':'industries',
-      'water-waste-water':'industries',
-      'treatment':'industries',
-      'mineral-processing':'industries',
-      'research-learning':'industries',
+      industries: 'industries',
+      'pulp-paper': 'industries',
+      'forest-products': 'industries',
+      'food-processing': 'industries',
+      'water-waste-water': 'industries',
+      treatment: 'industries',
+      'mineral-processing': 'industries',
+      'research-learning': 'industries',
 
-      'cadsim-plus':'cadsimPlus',
-      'standard-module-library':'cadsimPlus',
-      'add-on-module-libraries':'cadsimPlus',
-      'ease-of-use':'cadsimPlus',
-      'pre-purchase-faqs':'cadsimPlus',
-      'sample-screenshots':'cadsimPlus',
+      'cadsim-plus': 'cadsimPlus',
+      'standard-module-library': 'cadsimPlus',
+      'add-on-module-libraries': 'cadsimPlus',
+      'ease-of-use': 'cadsimPlus',
+      'pre-purchase-faqs': 'cadsimPlus',
+      'sample-screenshots': 'cadsimPlus',
 
-      'new-in-v2-4':'versions',
-      'new-in-v2-5':'versions',
-      'new-in-v2-6':'versions',
-      'new-in-v2-7':'versions',
-      'new-in-v3-0':'versions',
-      'new-in-v3-1':'versions',
-      'new-in-v3-2':'versions',
-      'new-in-v3-3':'versions',
-      'new-in-v3-4':'versions',
-      'new-in-v3-5':'versions',
-      'new-in-v3-6':'versions',
-      'new-in-v3-7':'versions',
-      'new-in-v3-8':'versions',
-      'new-in-v3-9':'versions',
-      'new-in-v4-0':'versions',
+      'new-in-v2-4': 'versions',
+      'new-in-v2-5': 'versions',
+      'new-in-v2-6': 'versions',
+      'new-in-v2-7': 'versions',
+      'new-in-v3-0': 'versions',
+      'new-in-v3-1': 'versions',
+      'new-in-v3-2': 'versions',
+      'new-in-v3-3': 'versions',
+      'new-in-v3-4': 'versions',
+      'new-in-v3-5': 'versions',
+      'new-in-v3-6': 'versions',
+      'new-in-v3-7': 'versions',
+      'new-in-v3-8': 'versions',
+      'new-in-v3-9': 'versions',
+      'new-in-v4-0': 'versions',
 
-      'support':'support',
-      'software-updates':'support',
-      'maintenance-support':'support',
-      'update-report':'support',
-      'faq-hasp':'support',
+      support: 'support',
+      'software-updates': 'support',
+      'maintenance-support': 'support',
+      'update-report': 'support',
+      'faq-hasp': 'support',
 
-      'advanced-technologies':'advanceTech',
-      'stream-based-specifications':'advanceTech',
-      'living-drawings':'advanceTech',
-      'open-simulation':'advanceTech',
-      'smartcalc':'advanceTech',
-      'model-scoping':'advanceTech',
+      'advanced-technologies': 'advanceTech',
+      'stream-based-specifications': 'advanceTech',
+      'living-drawings': 'advanceTech',
+      'open-simulation': 'advanceTech',
+      smartcalc: 'advanceTech',
+      'model-scoping': 'advanceTech'
     };
     const segment_str = $(location).attr('href');
     const segment_array = segment_str.split('/');
@@ -139,15 +146,14 @@
     if (last_segment == '') {
       last_segment = segment_array[segment_array.length - 2];
     }
-    let widgetCategory=pageCategory[last_segment]
-    $(widgetList[widgetCategory]).css("display","block")
+    let widgetCategory = pageCategory[last_segment];
+    $(widgetList[widgetCategory]).css('display', 'block');
     // if (last_segment === 'tech-corner') {
     //   $(widgetList['techCorner']).css("display","block")
     // }
     // if (widgetCategory === 'techCorner') {
     //   $(widgetList['products']).css("display","block")
     // }
-
 
     if ($(window).width() > 740) {
       //company history animation

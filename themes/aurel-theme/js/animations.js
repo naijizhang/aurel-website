@@ -105,7 +105,7 @@
       'research-learning': 'industries',
 
       'cadsim-plus': 'cadsimPlus',
-      'standard-module-library': 'cadsimPlus',
+      'module-libraries': 'cadsimPlus',
       'add-on-module-libraries': 'cadsimPlus',
       'ease-of-use': 'cadsimPlus',
       'pre-purchase-faqs': 'cadsimPlus',
@@ -154,6 +154,7 @@
     // if (widgetCategory === 'techCorner') {
     //   $(widgetList['products']).css("display","block")
     // }
+    
 
     if ($(window).width() > 740) {
       //company history animation

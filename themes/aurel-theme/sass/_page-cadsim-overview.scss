@@ -1,0 +1,407 @@
+#flask {
+  width: 197px;
+  height: 230px;
+  margin: 0 auto;
+  margin-top: 150px;
+  position: relative;
+}
+#flask svg {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 200px;
+  height: 230px;
+  position: absolute;
+}
+#flask .background {
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+  width: 197px;
+  height: 100px;
+  position: absolute;
+  background-color: #5bbcfc;
+  animation: liquid 3s infinite, liquid-color 80s infinite;
+}
+.bubble {
+  top: 180px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background: #5bbcfc;
+  border-radius: 40px;
+}
+.b1,
+.b2,
+.b3 {
+  right: 60px;
+  opacity: 0.6;
+  transform: scale(0.4);
+  animation: bubble 8s linear infinite, liquid-color 80s infinite,
+    side 2s ease-in-out infinite alternate;
+}
+.b2 {
+  right: 65px;
+  transform: scale(0.5);
+  animation-delay: 2s, 0s, 2s;
+}
+.b3 {
+  right: 70px;
+  animation-delay: 5s, 0s, 5s;
+  animation: bubble 10s linear infinite, liquid-color 80s infinite,
+    side 3s ease-in-out infinite alternate;
+}
+.b4,
+.b5 {
+  right: 65px;
+  opacity: 0.8;
+  transform: scale(0.5);
+  animation-delay: 4s, 0s, 4s;
+  animation: bubble 16s linear infinite, liquid-color 80s infinite,
+    side 5s ease-in-out infinite alternate;
+}
+.b5 {
+  right: 55px;
+  animation-delay: 5s, 0s, 5s;
+}
+.b6,
+.b7,
+.b8 {
+  right: 65px;
+  opacity: 0.4;
+  transform: scale(0.6);
+  animation-delay: 9s, 0s, 9s;
+  animation: bubble 14s linear infinite, liquid-color 80s infinite,
+    side 3s ease-in-out infinite alternate;
+}
+.b7 {
+  right: 70px;
+  transform: scale(0.7);
+  animation-delay: 3s, 0s, 3s;
+}
+.b8 {
+  right: 65px;
+  animation-delay: 7s, 0s, 7s;
+}
+.b9,
+.b0 {
+  right: 70px;
+  opacity: 0.7;
+  transform: scale(0.65);
+  animation: bubble 20s linear infinite, liquid-color 80s infinite,
+    side 5s ease-in-out infinite alternate;
+}
+.b0 {
+  right: 60px;
+  animation-delay: 13s, 0s, 13s;
+}
+.swirl {
+  top: 140px;
+  left: 80px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: #5bbcfc;
+  border-radius: 20px;
+}
+.s0 {
+  animation: liquid-color 80s infinite, swirl 1s ease-in-out infinite alternate;
+}
+.s1 {
+  left: 100px;
+  transform: scale(1.2);
+  animation-delay: 0s, 2s;
+  animation: liquid-color 80s infinite, swirl 2s ease-in-out infinite alternate;
+}
+.s2 {
+  left: 40px;
+  transform: scale(0.8);
+  animation-delay: 0s, 3s;
+  animation: liquid-color 80s infinite, swirl 2s ease-in-out infinite alternate;
+}
+.s3 {
+  left: 60px;
+  transform: scale(1.4);
+  animation-delay: 0s, 5s;
+  animation: liquid-color 80s infinite, swirl 1s ease-in-out infinite alternate;
+}
+.s4 {
+  left: 120px;
+  animation-delay: 0s, 3s;
+  animation: liquid-color 80s infinite, swirl 2s ease-in-out infinite alternate;
+}
+.s5 {
+  left: 135px;
+  transform: scale(0.8);
+  animation-delay: 0s, 2s;
+  animation: liquid-color 80s infinite, swirl 1s ease-in-out infinite alternate;
+}
+@-moz-keyframes liquid {
+  0% {
+    height: 100px;
+  }
+  10% {
+    height: 97px;
+  }
+  35% {
+    height: 100px;
+  }
+  50% {
+    height: 102px;
+  }
+  80% {
+    height: 98px;
+  }
+  100% {
+    height: 100px;
+  }
+}
+@-webkit-keyframes liquid {
+  0% {
+    height: 100px;
+  }
+  10% {
+    height: 97px;
+  }
+  35% {
+    height: 100px;
+  }
+  50% {
+    height: 102px;
+  }
+  80% {
+    height: 98px;
+  }
+  100% {
+    height: 100px;
+  }
+}
+@-o-keyframes liquid {
+  0% {
+    height: 100px;
+  }
+  10% {
+    height: 97px;
+  }
+  35% {
+    height: 100px;
+  }
+  50% {
+    height: 102px;
+  }
+  80% {
+    height: 98px;
+  }
+  100% {
+    height: 100px;
+  }
+}
+@keyframes liquid {
+  0% {
+    height: 100px;
+  }
+  10% {
+    height: 97px;
+  }
+  35% {
+    height: 100px;
+  }
+  50% {
+    height: 102px;
+  }
+  80% {
+    height: 98px;
+  }
+  100% {
+    height: 100px;
+  }
+}
+@-moz-keyframes liquid-color {
+  from {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(0);
+  }
+}
+@-webkit-keyframes liquid-color {
+  from {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(0);
+  }
+}
+@-o-keyframes liquid-color {
+  from {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(0);
+  }
+}
+@keyframes liquid-color {
+  from {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(0);
+  }
+}
+@-moz-keyframes bubble {
+  0% {
+    top: 200px;
+  }
+  100% {
+    top: -200px;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes bubble {
+  0% {
+    top: 200px;
+  }
+  100% {
+    top: -200px;
+    opacity: 0;
+  }
+}
+@-o-keyframes bubble {
+  0% {
+    top: 200px;
+  }
+  100% {
+    top: -200px;
+    opacity: 0;
+  }
+}
+@keyframes bubble {
+  0% {
+    top: 200px;
+  }
+  100% {
+    top: -200px;
+    opacity: 0;
+  }
+}
+@-moz-keyframes side {
+  0% {
+    margin-right: 0;
+  }
+  100% {
+    margin-right: 35px;
+  }
+}
+@-webkit-keyframes side {
+  0% {
+    margin-right: 0;
+  }
+  100% {
+    margin-right: 35px;
+  }
+}
+@-o-keyframes side {
+  0% {
+    margin-right: 0;
+  }
+  100% {
+    margin-right: 35px;
+  }
+}
+@keyframes side {
+  0% {
+    margin-right: 0;
+  }
+  100% {
+    margin-right: 35px;
+  }
+}
+@-moz-keyframes swirl {
+  0% {
+    top: 140px;
+  }
+  100% {
+    top: 128px;
+  }
+}
+@-webkit-keyframes swirl {
+  0% {
+    top: 140px;
+  }
+  100% {
+    top: 128px;
+  }
+}
+@-o-keyframes swirl {
+  0% {
+    top: 140px;
+  }
+  100% {
+    top: 128px;
+  }
+}
+@keyframes swirl {
+  0% {
+    top: 140px;
+  }
+  100% {
+    top: 128px;
+  }
+}
+
+.site-cadsim {
+  box-shadow: none;
+  max-width: 100%;
+  overflow: hidden;
+}
+.cadsim-content {
+  width:100vw;
+  margin-left: auto;
+  margin-right: auto;
+  .cadsim-banner-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+	background: $color__polygon2_blue;
+
+    .cadsim-title-content {
+      width: 60%;
+      padding-right: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .entry-header .entry-title {
+        border: none;
+        text-align: left;
+        padding-bottom: 0px;
+        color: #fff;
+      }
+      p {
+        width: 90%;
+        color: #fff;
+        text-align: left;
+        a {
+          color: $color__light_teal;
+        }
+      }
+    }
+    #flask {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  }
+  .cadsim-banner-helper {
+	  width:100vw;
+	  height:150px;
+	 
+	background: $color__polygon3_blue;
+    border-bottom-right-radius: 50% 80%;
+    border-bottom-left-radius: 50% 80%;
+
+  }
+}
+
+.cadsim-footer{
+	width:100%;
+	max-width: 100% !important;
+}

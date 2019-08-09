@@ -781,10 +781,9 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: #007bff;
-  font-weight: 600; }
+  color: #007bff; }
   a:visited {
-    color: #16427d; }
+    color: #007bff; }
   a:hover, a:focus, a:active {
     color: #16427d; }
   a:focus {
@@ -2028,8 +2027,8 @@ label[for='nav-trigger'] {
 .section-what-we-do {
   position: relative;
   margin: 0px;
-  background: -webkit-gradient(linear, left top, right top, from(#004280), to(#35ced3));
-  background: linear-gradient(to right, #004280 0%, #35ced3 100%); }
+  background: -webkit-gradient(linear, left top, right top, from(#1b447f), to(#35ced3));
+  background: linear-gradient(to right, #1b447f 0%, #35ced3 100%); }
   @media (max-width: 740px) {
     .section-what-we-do {
       background: #fff; } }
@@ -2083,8 +2082,8 @@ label[for='nav-trigger'] {
       padding-top: 50px;
       padding-bottom: 50px;
       font-size: 30px;
-      background: -webkit-gradient(linear, left top, right top, from(#004280), to(#35ced3));
-      background: linear-gradient(to right, #004280 0%, #35ced3 100%);
+      background: -webkit-gradient(linear, left top, right top, from(#1b447f), to(#35ced3));
+      background: linear-gradient(to right, #1b447f 0%, #35ced3 100%);
       color: #fff; } }
 
 .main-services-container {
@@ -3465,3 +3464,309 @@ p.is-active {
   .newsletters-content .newsletters-container .each-newsletter .card-body {
     margin-top: 10px;
     width: 100%; }
+
+#flask {
+  width: 197px;
+  height: 230px;
+  margin: 0 auto;
+  margin-top: 150px;
+  position: relative; }
+
+#flask svg {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 200px;
+  height: 230px;
+  position: absolute; }
+
+#flask .background {
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+  width: 197px;
+  height: 100px;
+  position: absolute;
+  background-color: #5bbcfc;
+  -webkit-animation: liquid 3s infinite, liquid-color 80s infinite;
+          animation: liquid 3s infinite, liquid-color 80s infinite; }
+
+.bubble {
+  top: 180px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background: #5bbcfc;
+  border-radius: 40px; }
+
+.b1,
+.b2,
+.b3 {
+  right: 60px;
+  opacity: 0.6;
+  -webkit-transform: scale(0.4);
+          transform: scale(0.4);
+  -webkit-animation: bubble 8s linear infinite, liquid-color 80s infinite, side 2s ease-in-out infinite alternate;
+          animation: bubble 8s linear infinite, liquid-color 80s infinite, side 2s ease-in-out infinite alternate; }
+
+.b2 {
+  right: 65px;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-animation-delay: 2s, 0s, 2s;
+          animation-delay: 2s, 0s, 2s; }
+
+.b3 {
+  right: 70px;
+  -webkit-animation-delay: 5s, 0s, 5s;
+          animation-delay: 5s, 0s, 5s;
+  -webkit-animation: bubble 10s linear infinite, liquid-color 80s infinite, side 3s ease-in-out infinite alternate;
+          animation: bubble 10s linear infinite, liquid-color 80s infinite, side 3s ease-in-out infinite alternate; }
+
+.b4,
+.b5 {
+  right: 65px;
+  opacity: 0.8;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-animation-delay: 4s, 0s, 4s;
+          animation-delay: 4s, 0s, 4s;
+  -webkit-animation: bubble 16s linear infinite, liquid-color 80s infinite, side 5s ease-in-out infinite alternate;
+          animation: bubble 16s linear infinite, liquid-color 80s infinite, side 5s ease-in-out infinite alternate; }
+
+.b5 {
+  right: 55px;
+  -webkit-animation-delay: 5s, 0s, 5s;
+          animation-delay: 5s, 0s, 5s; }
+
+.b6,
+.b7,
+.b8 {
+  right: 65px;
+  opacity: 0.4;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  -webkit-animation-delay: 9s, 0s, 9s;
+          animation-delay: 9s, 0s, 9s;
+  -webkit-animation: bubble 14s linear infinite, liquid-color 80s infinite, side 3s ease-in-out infinite alternate;
+          animation: bubble 14s linear infinite, liquid-color 80s infinite, side 3s ease-in-out infinite alternate; }
+
+.b7 {
+  right: 70px;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  -webkit-animation-delay: 3s, 0s, 3s;
+          animation-delay: 3s, 0s, 3s; }
+
+.b8 {
+  right: 65px;
+  -webkit-animation-delay: 7s, 0s, 7s;
+          animation-delay: 7s, 0s, 7s; }
+
+.b9,
+.b0 {
+  right: 70px;
+  opacity: 0.7;
+  -webkit-transform: scale(0.65);
+          transform: scale(0.65);
+  -webkit-animation: bubble 20s linear infinite, liquid-color 80s infinite, side 5s ease-in-out infinite alternate;
+          animation: bubble 20s linear infinite, liquid-color 80s infinite, side 5s ease-in-out infinite alternate; }
+
+.b0 {
+  right: 60px;
+  -webkit-animation-delay: 13s, 0s, 13s;
+          animation-delay: 13s, 0s, 13s; }
+
+.swirl {
+  top: 140px;
+  left: 80px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: #5bbcfc;
+  border-radius: 20px; }
+
+.s0 {
+  -webkit-animation: liquid-color 80s infinite, swirl 1s ease-in-out infinite alternate;
+          animation: liquid-color 80s infinite, swirl 1s ease-in-out infinite alternate; }
+
+.s1 {
+  left: 100px;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-animation-delay: 0s, 2s;
+          animation-delay: 0s, 2s;
+  -webkit-animation: liquid-color 80s infinite, swirl 2s ease-in-out infinite alternate;
+          animation: liquid-color 80s infinite, swirl 2s ease-in-out infinite alternate; }
+
+.s2 {
+  left: 40px;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-animation-delay: 0s, 3s;
+          animation-delay: 0s, 3s;
+  -webkit-animation: liquid-color 80s infinite, swirl 2s ease-in-out infinite alternate;
+          animation: liquid-color 80s infinite, swirl 2s ease-in-out infinite alternate; }
+
+.s3 {
+  left: 60px;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  -webkit-animation-delay: 0s, 5s;
+          animation-delay: 0s, 5s;
+  -webkit-animation: liquid-color 80s infinite, swirl 1s ease-in-out infinite alternate;
+          animation: liquid-color 80s infinite, swirl 1s ease-in-out infinite alternate; }
+
+.s4 {
+  left: 120px;
+  -webkit-animation-delay: 0s, 3s;
+          animation-delay: 0s, 3s;
+  -webkit-animation: liquid-color 80s infinite, swirl 2s ease-in-out infinite alternate;
+          animation: liquid-color 80s infinite, swirl 2s ease-in-out infinite alternate; }
+
+.s5 {
+  left: 135px;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-animation-delay: 0s, 2s;
+          animation-delay: 0s, 2s;
+  -webkit-animation: liquid-color 80s infinite, swirl 1s ease-in-out infinite alternate;
+          animation: liquid-color 80s infinite, swirl 1s ease-in-out infinite alternate; }
+
+@-webkit-keyframes liquid {
+  0% {
+    height: 100px; }
+  10% {
+    height: 97px; }
+  35% {
+    height: 100px; }
+  50% {
+    height: 102px; }
+  80% {
+    height: 98px; }
+  100% {
+    height: 100px; } }
+
+@keyframes liquid {
+  0% {
+    height: 100px; }
+  10% {
+    height: 97px; }
+  35% {
+    height: 100px; }
+  50% {
+    height: 102px; }
+  80% {
+    height: 98px; }
+  100% {
+    height: 100px; } }
+
+@-webkit-keyframes liquid-color {
+  from {
+    -webkit-filter: hue-rotate(-360deg); }
+  to {
+    -webkit-filter: hue-rotate(0); } }
+
+@keyframes liquid-color {
+  from {
+    -webkit-filter: hue-rotate(-360deg); }
+  to {
+    -webkit-filter: hue-rotate(0); } }
+
+@-webkit-keyframes bubble {
+  0% {
+    top: 200px; }
+  100% {
+    top: -200px;
+    opacity: 0; } }
+
+@keyframes bubble {
+  0% {
+    top: 200px; }
+  100% {
+    top: -200px;
+    opacity: 0; } }
+
+@-webkit-keyframes side {
+  0% {
+    margin-right: 0; }
+  100% {
+    margin-right: 35px; } }
+
+@keyframes side {
+  0% {
+    margin-right: 0; }
+  100% {
+    margin-right: 35px; } }
+
+@-webkit-keyframes swirl {
+  0% {
+    top: 140px; }
+  100% {
+    top: 128px; } }
+
+@keyframes swirl {
+  0% {
+    top: 140px; }
+  100% {
+    top: 128px; } }
+
+.site-cadsim {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  max-width: 100%;
+  overflow: hidden; }
+
+.cadsim-content {
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto; }
+  .cadsim-content .cadsim-banner-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: linear-gradient(344.69deg, #1b447f 55%, #35ced3 100%); }
+    .cadsim-content .cadsim-banner-container .cadsim-title-content {
+      width: 60%;
+      padding-right: 30px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .cadsim-content .cadsim-banner-container .cadsim-title-content .entry-header .entry-title {
+        border: none;
+        text-align: left;
+        padding-bottom: 0px;
+        color: #fff; }
+      .cadsim-content .cadsim-banner-container .cadsim-title-content p {
+        width: 90%;
+        color: #fff;
+        text-align: left; }
+        .cadsim-content .cadsim-banner-container .cadsim-title-content p a {
+          color: #7CDFE3; }
+    .cadsim-content .cadsim-banner-container #flask {
+      margin-left: 0px;
+      margin-right: 0px; }
+  .cadsim-content .cadsim-banner-helper {
+    width: 100vw;
+    height: 150px;
+    background: linear-gradient(167.4deg, #1b447f 73%, #6ac4cc 100%);
+    border-bottom-right-radius: 50% 80%;
+    border-bottom-left-radius: 50% 80%; }
+
+.cadsim-footer {
+  width: 100%;
+  max-width: 100% !important; }

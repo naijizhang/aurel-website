@@ -20,11 +20,11 @@
 	</div>
 	<div id="footer-right-column">
 		<a class="software-link" href="<?php echo get_permalink(get_page_by_path("cadsim-plus")); ?>">
-			<img class="software-logo" alt="home logo" src='<?php echo get_template_directory_uri() . '/assets/images/cp(blue3black).bmp'; ?>'>
+			<img class="software-logo" alt="home logo" src='<?php echo get_template_directory_uri() . '/assets/images/CADSIM-Plus_PrimaryLogo.png'; ?>'>
 		</a>
 		<div class="social-media-container">
-			<a class="link-googlePlus" href="https://plus.google.com/112787646309351873263">
-				<img class="googleplus-logo" alt="google plus logo" src='<?php echo get_template_directory_uri() . '/assets/icons/googleplus.svg'; ?>'>
+			<a class="link-googlePlus" href="https://youtube.com/">
+				<img class="googleplus-logo" alt="google plus logo" src='<?php echo get_template_directory_uri() . '/assets/icons/youtube.svg'; ?>'>
 			</a>
 			<a class="link-linkedin" href="https://www.linkedin.com/groups/4336849/profile">
 				<img class="linkedin-logo" alt="linkedin logo" src='<?php echo get_template_directory_uri() . '/assets/icons/linkedin.svg'; ?>'>

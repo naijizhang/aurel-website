@@ -24,7 +24,7 @@ get_header(); ?>
                     <div class="slide1-bottom-content">
                         <p>See the future... with</p>
                         <a class="software-link" href="<?php echo get_permalink(get_page_by_path("cadsim-plus")); ?>">
-                            <img class="software-logo" alt="home logo" src='<?php echo get_template_directory_uri() . '/assets/images/cp(blue3black).bmp'; ?>'>
+                            <img class="software-logo" alt="home logo" src='<?php echo get_template_directory_uri() . '/assets/images/CADSIM-Plus_PrimaryLogo.png'; ?>'>
                         </a>
                     </div>
                 </div>
@@ -66,7 +66,7 @@ get_header(); ?>
                 </div>
             </div>
             <div class="what-we-do-container">
-                <div class="hexagon" data-aos="fade-right">
+                <!-- <div class="hexagon" data-aos="fade-right">
                     <div class="hexagon-industry-container1">
                         <a class="industry-link" href="<?php echo get_permalink(get_page_by_path("pulp-paper")); ?>">
                             <div class="industry-logo-container industry1-container">
@@ -115,9 +115,10 @@ get_header(); ?>
                     <div class="position-helper-container">
                         <p>Industries</p>
                     </div>
-                </div>
+                </div> -->
 
-                <div class="right-column" data-aos="fade-left">
+                <!-- <div class="right-column" data-aos="fade-left"> -->
+                <div class="right-column">
                     <p>Aurel Systems has been providing dynamic chemical process simulation software tools and services to chemical engineers for 30+ years.</p>
                     <p>Our CADSIM Plus process simulation tools and services can help you design, investigate, improve, operate and optimize a new or existing process.</p>
                     <p>Save money and time by using the right tools to validate your design before you invest in a capital project.</p>
@@ -134,6 +135,7 @@ get_header(); ?>
             <div class="row-first">
                 <a id="software-overview-link" href="<?php echo get_permalink(get_page_by_path("cadsim-plus")); ?>">
                     <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="polygon-container" id="polygon-block1">
+                        <!-- <div class="polygon-container" id="polygon-block1"> -->
                         <h3>CADSIM Plus</h3>
                         <h3>software</h3>
                         <div class="overlay">
@@ -146,11 +148,12 @@ get_header(); ?>
                 </a>
 
                 <div class="cadsim-logo-container">
-                    <img class="cadsim-logo" alt="cadsim logo" src='<?php echo get_template_directory_uri() . '/assets/images/cp(blue3black).bmp'; ?>'>
+                    <img class="cadsim-logo" alt="cadsim logo" src='<?php echo get_template_directory_uri() . '/assets/images/CADSIM-Plus_PrimaryLogo.png'; ?>'>
                 </div>
 
                 <a id="training-link" href="<?php echo get_permalink(get_page_by_path("training")); ?>">
                     <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500" class="polygon-container" id="polygon-block2">
+                        <!-- <div class="polygon-container" id="polygon-block2"> -->
                         <h3>CADSIM Plus</h3>
                         <h3>training</h3>
                         <div class="overlay">
@@ -164,6 +167,7 @@ get_header(); ?>
             <div class="row-second">
                 <a id="moduling-services-link" href="<?php echo get_permalink(get_page_by_path("process-modeling")); ?>">
                     <div data-aos="flip-left" data-aos-easing="ease-out-cub ic" data-aos-duration="1500" class="polygon-container" id="polygon-block3">
+                        <!-- <div class="polygon-container" id="polygon-block3"> -->
                         <h3>Moduling</h3>
                         <h3>services</h3>
                         <div class="overlay">
@@ -175,6 +179,7 @@ get_header(); ?>
                 </a>
                 <a id="online-application-link" href="<?php echo get_permalink(get_page_by_path("online-applications")); ?>">
                     <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" class="polygon-container" id="polygon-block4">
+                        <!-- <div class="polygon-container" id="polygon-block4"> -->
                         <h3>Online</h3>
                         <h3>application</h3>
                         <div class="overlay">
@@ -192,39 +197,39 @@ get_header(); ?>
 
         <div class="front-page-linear-background"></div>
         <button type="button" class="btn btn-primary get-contact-info" data-toggle="modal" data-target="#exampleModal">
-			<div class="contact-icon-container">
-				<img class="button-icon" alt="contact us" src='<?php echo get_template_directory_uri() . '/assets/icons/phone.svg'; ?>' />
-				<p class="contact-hint">Contact Us</p>
-			</div>
-			<p class="contact-fixed-text">Click To Contact Us</p>
-		</button>
+            <div class="contact-icon-container">
+                <img class="button-icon" alt="contact us" src='<?php echo get_template_directory_uri() . '/assets/icons/phone.svg'; ?>' />
+                <p class="contact-hint">Contact Us</p>
+            </div>
+            <p class="contact-fixed-text">Click To Contact Us</p>
+        </button>
 
-		<!-- Modal -->
-		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body">
-						We are happy to provide more information!<br>
-						Click to e-mail or call us at 604.299.7707
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-						<a href="mailto:mail@aurelsystems.com?subject=*Get%20more%20info%20about%20CADSIM%20Plus">
-							<button type="button" class="btn btn-primary">Email</button>
-						</a>
-						<a href="tel:6042997707">
-							<button type="button" class="btn btn-primary">Call</button>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        We are happy to provide more information!<br>
+                        Click to e-mail or call us at 604.299.7707
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <a href="mailto:mail@aurelsystems.com?subject=*Get%20more%20info%20about%20CADSIM%20Plus">
+                            <button type="button" class="btn btn-primary">Email</button>
+                        </a>
+                        <a href="tel:6042997707">
+                            <button type="button" class="btn btn-primary">Call</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main><!-- #main -->
 </div><!-- #primary -->
 

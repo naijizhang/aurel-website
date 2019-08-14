@@ -95,8 +95,9 @@
       .software-logo {
         width: 80%;
         border-radius: 15px;
-        border: 10px solid #fff;
+       // border: 10px solid #fff;
         margin-top: 20px;
+        filter: brightness(1000%);
       }
     }
     .social-media-container {

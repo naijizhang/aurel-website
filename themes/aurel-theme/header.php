@@ -28,7 +28,7 @@
 			<div class="header-container">
 
 				<a class="logo-link" href="<?php echo get_home_url(); ?>">
-					<img class="site-logo" alt="home logo" src='<?php echo get_template_directory_uri() . '/assets/images/Aurel1md.gif'; ?>'>
+					<img class="site-logo" alt="home logo" src='<?php echo get_template_directory_uri() . '/assets/images/Aurel_Logo-1.png'; ?>'>
 				</a>
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">

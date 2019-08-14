@@ -59,6 +59,9 @@
     display: none;
   }
   li {
+    &:before{
+      background-image: none;
+    }
     margin: 0px;
     padding-right: 10px;
     padding-left: 10px;

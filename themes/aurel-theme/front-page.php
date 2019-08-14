@@ -46,22 +46,40 @@ get_header(); ?>
             <div class="main-services-container">
                 <div class="each-services service-block1">
                     <h2>CADSIM Plus Process Simulator</h2>
-                    <p>Sales</p>
-                    <p>Support</p>
-                    <p>Training</p>
+                    <a href="<?php echo get_post_permalink(get_page_by_path("cadsim-plus")); ?>">
+                        <p>Sales</p>
+                    </a>
+                    <a href="<?php echo get_post_permalink(get_page_by_path("support")); ?>">
+                        <p>Support</p>
+                    </a>
+                    <a href="<?php echo get_post_permalink(get_page_by_path("training")); ?>">
+                        <p>Training</p>
+                    </a>
                 </div>
                 <div class="other-services-container">
                     <div class="each-services service-block2">
                         <h2>Modeling services</h2>
-                        <p>Just-in-time Modeling Assistance</p>
-                        <p>Turnkey Simulations</p>
-                        <p>Custom Module Development</p>
+                        <a href="<?php echo get_permalink(get_page_by_path("process-modeling")); ?>">
+                            <p>Just-in-time Modeling Assistance</p>
+                        </a>
+                        <a href="<?php echo get_post_permalink(get_page_by_path("process-modeling")); ?>">
+                            <p>Turnkey Simulations</p>
+                        </a>
+                        <a href="<?php echo get_post_permalink(get_page_by_path("custom-modules")); ?>">
+                            <p>Custom Module Development</p>
+                        </a>
                     </div>
                     <div class="each-services service-block3">
                         <h2>Realtime Optimization</h2>
-                        <p>Dynamic Data Reconciliation</p>
-                        <p>Product Tracking</p>
-                        <p>Energy Tracking</p>
+                        <a href="<?php echo get_permalink(get_page_by_path("dynamic-data-reconciliation")); ?>">
+                            <p>Dynamic Data Reconciliation</p>
+                        </a>
+                        <a href="<?php echo get_post_permalink(get_page_by_path("product-tracking", OBJECT, "post")); ?>">
+                            <p>Product Tracking</p>
+                        </a>
+                        <a href="<?php echo get_post_permalink(get_page_by_path("energy-tracking", OBJECT, "post")); ?>">
+                            <p>Energy Tracking</p>
+                        </a>
                     </div>
                 </div>
             </div>

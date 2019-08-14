@@ -2136,8 +2136,8 @@ label[for='nav-trigger'] {
           height: auto;
           -o-object-fit: contain;
              object-fit: contain;
-          -webkit-filter: brightness(180%);
-                  filter: brightness(180%);
+          -webkit-filter: brightness(180%) drop-shadow(5px 5px 5px #fff);
+                  filter: brightness(180%) drop-shadow(5px 5px 5px #fff);
           -webkit-transition: all 0.3s;
           transition: all 0.3s; }
           @media (max-width: 740px) {
@@ -2145,8 +2145,11 @@ label[for='nav-trigger'] {
               width: 150px;
               margin-top: 5px; } }
           .slides-container .slide-item1 .slide1-bottom-content a .software-logo:hover {
-            -webkit-filter: brightness(180%) drop-shadow(5px 5px 5px #fff);
-                    filter: brightness(180%) drop-shadow(5px 5px 5px #fff); }
+            -webkit-filter: brightness(100%);
+                    filter: brightness(100%);
+            border-radius: 15px;
+            padding: 10px;
+            background: #fff; }
   .slides-container .slide-item2 {
     background: #000;
     display: none; }

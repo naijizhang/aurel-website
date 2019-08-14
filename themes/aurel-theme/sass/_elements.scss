@@ -196,7 +196,7 @@ figure .wp-block-image {
     margin-bottom: 20px;
   }
 }
-.normal-video{
+.normal-video {
   width: 80%;
   height: 50vw;
   max-height: 600px;
@@ -209,22 +209,22 @@ figure .wp-block-image {
   margin-bottom: 10px;
   text-align: left;
 }
-.image-align-right{
+.image-align-right {
   display: flex;
   justify-content: flex-end;
   padding-right: 10%;
-  margin:30px auto;
+  margin: 30px auto;
 }
-.image-align-left{
+.image-align-left {
   display: flex;
   justify-content: flex-start;
   padding-left: 10%;
-  margin:30px auto;
+  margin: 30px auto;
 }
-.image-align-center{
+.image-align-center {
   display: flex;
   justify-content: center;
-  margin:30px auto;
+  margin: 30px auto;
 }
 blockquote {
   display: flex;
@@ -370,7 +370,111 @@ table {
   }
 }
 
-.carousel-indicators{
+.carousel-indicators {
   margin-left: auto;
   margin-right: auto;
+}
+
+.get-contact-info {
+  box-shadow: none;
+  border-radius: 50px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  padding: 10px;
+  position: fixed;
+  bottom: 30px;
+  right: -140px;
+  z-index: 999;
+  transition: all 1s;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  background: $color__fixed_contact_background;
+  border: none;
+  .contact-icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .button-icon {
+      width: 30px;
+      height: 30px;
+      object-fit: contain;
+      transition: all 0.5s;
+      transform: scaleX(-1);
+      margin-bottom: 50px;
+      @include mobile {
+        width: 50px;
+        height: 50px;
+        margin-bottom: auto;
+        margin-top: auto;
+      }
+    }
+    .contact-hint {
+      font-size: 10px;
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      text-align: center;
+      margin-bottom: 10px;
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+
+  .contact-fixed-text {
+    width: 140px;
+    transition: all 0.5s;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  &:hover {
+    box-shadow: none;
+    background: $color__fixed_contact_background_hover;
+    right: 0px;
+    border: none;
+    .button-icon{
+      transform: scale(1.5);
+      margin-bottom: 0px;
+      margin-left: 10px;
+      @include mobile{
+        width: 50px;
+        height: 50px;
+        margin-bottom: auto;
+        margin-top: auto;
+        transform: scale(1);
+      }
+    }
+    .contact-hint {
+     visibility: hidden;
+    }
+    @include mobile {
+      right: -140px;
+    }
+  }
+  &:focus {
+    outline: none;
+  }
+  &:visited {
+    outline: none;
+  }
+  
+}
+.modal-body {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.modal-footer {
+  button {
+    box-shadow: none;
+    &:hover {
+      box-shadow: none;
+    }
+  }
 }

@@ -2282,6 +2282,8 @@ label[for='nav-trigger'] {
       margin-bottom: 10px;
       text-align: center;
       color: #fff; }
+      .main-services-container .each-services p:hover {
+        text-decoration: underline; }
   .main-services-container .other-services-container {
     width: 60%;
     display: -webkit-box;
@@ -3956,3 +3958,12 @@ p.is-active {
 .cadsim-footer {
   width: 100%;
   max-width: 100% !important; }
+
+#what-we-do-industries {
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px; }
+
+#industries-hexagon {
+  margin-left: auto;
+  margin-right: auto; }

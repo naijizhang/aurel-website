@@ -271,6 +271,9 @@ $polygon2_height: 150px;
       margin-bottom: 10px;
       text-align: center;
       color: #fff;
+      &:hover{
+        text-decoration: underline;
+      }
     }
   }
   .other-services-container {

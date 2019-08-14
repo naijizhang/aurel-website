@@ -3471,6 +3471,9 @@ p.is-active {
   margin: 0 auto;
   margin-top: 150px;
   position: relative; }
+  @media (max-width: 740px) {
+    #flask {
+      display: none; } }
 
 #flask svg {
   top: 0;
@@ -3746,11 +3749,18 @@ p.is-active {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
+      @media (max-width: 740px) {
+        .cadsim-content .cadsim-banner-container .cadsim-title-content {
+          width: 80%;
+          padding-right: 0px; } }
       .cadsim-content .cadsim-banner-container .cadsim-title-content .entry-header .entry-title {
         border: none;
         text-align: left;
         padding-bottom: 0px;
         color: #fff; }
+        @media (max-width: 740px) {
+          .cadsim-content .cadsim-banner-container .cadsim-title-content .entry-header .entry-title {
+            text-align: center; } }
       .cadsim-content .cadsim-banner-container .cadsim-title-content p {
         width: 90%;
         color: #fff;
@@ -3783,6 +3793,10 @@ p.is-active {
     position: relative;
     z-index: 2;
     background: #fff; }
+    @media (max-width: 740px) {
+      .cadsim-content .qa-container {
+        -webkit-box-shadow: 0px 0px 5px #bbb;
+                box-shadow: 0px 0px 5px #bbb; } }
     .cadsim-content .qa-container article {
       margin-top: 0px; }
       .cadsim-content .qa-container article .item-toggle-button {
@@ -3800,6 +3814,9 @@ p.is-active {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
+    @media (max-width: 740px) {
+      .cadsim-content .as-background {
+        display: none; } }
     .cadsim-content .as-background img {
       -o-object-fit: contain;
          object-fit: contain; }
@@ -3808,6 +3825,11 @@ p.is-active {
     z-index: 2;
     margin-left: 10%;
     width: 60%; }
+    @media (max-width: 740px) {
+      .cadsim-content .contact-block {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto; } }
 
 .cadsim-footer {
   width: 100%;

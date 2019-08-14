@@ -3766,6 +3766,48 @@ p.is-active {
     background: linear-gradient(167.4deg, #1b447f 73%, #6ac4cc 100%);
     border-bottom-right-radius: 50% 80%;
     border-bottom-left-radius: 50% 80%; }
+  .cadsim-content article {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px; }
+  .cadsim-content .qa-container {
+    -webkit-box-shadow: 0px 0px 15px #bbb;
+            box-shadow: 0px 0px 15px #bbb;
+    margin-top: 100px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 2;
+    background: #fff; }
+    .cadsim-content .qa-container article {
+      margin-top: 0px; }
+      .cadsim-content .qa-container article .item-toggle-button {
+        width: 80% !important; }
+  .cadsim-content .as-background {
+    position: relative;
+    z-index: 0;
+    margin-top: -100px;
+    margin-bottom: -180px;
+    margin-right: -50px;
+    opacity: 0.3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    .cadsim-content .as-background img {
+      -o-object-fit: contain;
+         object-fit: contain; }
+  .cadsim-content .contact-block {
+    position: relative;
+    z-index: 2;
+    margin-left: 10%;
+    width: 60%; }
 
 .cadsim-footer {
   width: 100%;

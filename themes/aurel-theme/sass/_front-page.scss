@@ -163,19 +163,20 @@
 .section-what-we-do {
   position: relative;
   margin: 0px;
-  background: $color__polygon1_blue;
+  //background: $color__polygon1_blue;
   @include mobile {
     background: #fff;
   }
 }
 $polygon1_height: 150px;
 .polygon1 {
+  display: none;
   shape-outside: polygon(0 $polygon1_height, 50% 50px, 100% $polygon1_height);
   clip-path: polygon(0 $polygon1_height, 50% 50px, 100% $polygon1_height);
   height: $polygon1_height;
   width: 100%;
   background: #fff;
-  display: block;
+  //display: block;
   position: relative;
   top: 0px;
   max-width: 1280px;
@@ -188,6 +189,7 @@ $polygon1_height: 150px;
 
 $polygon2_height: 150px;
 .polygon2 {
+  display: none;
   shape-outside: polygon(0 0, 50% 100px, 100% 0px);
   clip-path: polygon(0 0, 50% 100px, 100% 0px);
   height: $polygon2_height;
@@ -206,7 +208,7 @@ $polygon2_height: 150px;
   font-family: 'Lalezar';
   letter-spacing: 1px;
   color: $color__blue;
-  margin-top: 0px;
+  margin-top: 50px;
   margin-bottom: 0px;
   background: #fff;
   max-width: 1280px;
@@ -658,6 +660,7 @@ $polygon2_height: 150px;
 .front-page-bottom-banner {
   margin-top: 12vh;
   margin-bottom: 0px;
+  display: none;
   @include mobile {
     margin-top: 0px;
     height: 40vh;

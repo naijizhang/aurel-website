@@ -211,14 +211,14 @@ $widget_width: 180px;
   display: none;
 }
 
-.current-menu-item {
-  a {
-    color: $hover_widget_link !important;
-    @include mobile{
-      border: 1px solid $hover_widget_link !important;
-    }
-  }
-}
+// .current-menu-item {
+//   a {
+//     color: $hover_widget_link ;
+//     @include mobile{
+//       border: 1px solid $hover_widget_link ;
+//     }
+//   }
+// }
 
 #go-back-button {
   width: 60%;

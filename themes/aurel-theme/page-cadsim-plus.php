@@ -43,9 +43,7 @@
 
                     <section class="cadsim-banner-container">
                         <div class="cadsim-title-content">
-                            <header class="entry-header">
-                                <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
-                            </header><!-- .entry-header -->
+                        <img class="software-logo" alt="software logo" src='<?php echo get_template_directory_uri() . '/assets/images/CADSIM-Plus_PrimaryLogo.png'; ?>'>
                             <p>CADSIM Plus is chemical process simulation software that can perform mass and energy balances and simulate dynamic conditions. It is a first-principles dynamic chemical process simulator and a full-featured Computer Assisted Drawing<a href="https://www.aurelsystems.com/sample-screenshots/">&nbsp;(CAD) front-end</a>&nbsp;in one package. CADSIM Plus includes a comprehensive set of&nbsp;<a href="https://www.aurelsystems.com/module-libraries/">generic process modules</a>&nbsp;and has a number of&nbsp;<a href="https://www.aurelsystems.com/optional-module-libraries/">optional module libraries</a>&nbsp;for various applications.</p>
                         </div>
 

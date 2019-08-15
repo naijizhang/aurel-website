@@ -102,6 +102,10 @@ $widget_width: 180px;
   }
 }
 .widget-area {
+  h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
   position: fixed;
   top: 30vh;
   left: 0px;

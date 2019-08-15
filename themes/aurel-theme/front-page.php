@@ -45,7 +45,7 @@ get_header(); ?>
             <h1 class="what-we-do">What we do?</h1>
             <div class="main-services-container">
                 <div class="each-services service-block1">
-                    <h2><img class="software-logo" alt="home logo" src='<?php echo get_template_directory_uri() . '/assets/images/CADSIM-Plus_PrimaryLogo.png'; ?>'><br>Process Simulator</h2>
+                    <h2> <a class="software-link" href="<?php echo get_permalink(get_page_by_path("cadsim-plus")); ?>"><img class="software-logo" alt="home logo" src='<?php echo get_template_directory_uri() . '/assets/images/CADSIM-Plus_PrimaryLogo.png'; ?>'></a><br>Process Simulator</h2>
                     <a href="<?php echo get_post_permalink(get_page_by_path("cadsim-plus")); ?>">
                         <p>Sales</p>
                     </a>

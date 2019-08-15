@@ -372,7 +372,16 @@
       padding-right: 30px;
       display: flex;
       flex-direction: column;
-	  justify-content: center;
+    justify-content: center;
+    .software-logo{
+      width:40%;
+      min-width: 200px;
+      object-fit: contain;
+      margin-left: 5%;
+      margin-bottom: 20px;
+      margin-top: 100px;
+      filter: brightness(140%) drop-shadow(0px 0px 3px #fff);
+    }
 	  @include mobile {
 		  width:80%;
 		  padding-right: 0px;

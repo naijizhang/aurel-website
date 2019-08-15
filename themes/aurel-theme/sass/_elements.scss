@@ -135,6 +135,16 @@ h2{
   text-align: center;
   margin:30px auto;
 }
+.card{
+  h2{
+    margin-top: 0px;
+  }
+}
+.content-company-history{
+  h2{
+    margin:0 auto;
+  }
+}
 .entry-header {
   .entry-title {
     width: 100vw;
@@ -143,7 +153,7 @@ h2{
     color: $color__blue;
     z-index: 100;
     margin: 80px auto;
-    border-bottom: 1px solid #c4c4c4;
+    border-bottom: 1px solid $color__teal;
     margin-bottom: 30px;
     padding-bottom: 30px;
     width: 90%;

@@ -9,10 +9,6 @@
     //     $('.Volleyball-menu p').removeClass('orange-underscore');
     //   });
 
-    if ($('body').hasClass('home')) {
-      $('#myFooter').css('max-width', '100%');
-    }
-
     if ($(document).width() > 740) {
       $('#software-overview-link').attr('href', '');
       $('#training-link').attr('href', '');

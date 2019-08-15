@@ -235,4 +235,7 @@ $widget_width: 180px;
   &:hover {
     background: $color__button_blue1;
   }
+  &:focus{
+    outline:none;
+  }
 }

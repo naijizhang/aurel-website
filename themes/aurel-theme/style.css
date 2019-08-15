@@ -1235,6 +1235,8 @@ a {
       display: none; } }
   #go-back-button:hover {
     background: #2875da; }
+  #go-back-button:focus {
+    outline: none; }
 
 /*--------------------------------------------------------------
 # Content

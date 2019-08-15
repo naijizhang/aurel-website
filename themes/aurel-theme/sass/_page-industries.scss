@@ -1,9 +1,11 @@
-#what-we-do-industries{
-    width:100%;
-    padding-top: 80px;
+#what-we-do-industries {
+  width: 100%;
+  padding-top: 80px;
+  @include mobile {
     padding-bottom: 80px;
+  }
 }
-#industries-hexagon{
-margin-left: auto;
-margin-right: auto;
+#industries-hexagon {
+  margin-left: auto;
+  margin-right: auto;
 }

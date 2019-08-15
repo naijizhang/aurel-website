@@ -129,7 +129,7 @@ $widget_width: 180px;
     border-radius: 0px;
   }
   .widget-title {
-    color:$color__widget_text;
+    color: $color__widget_text;
     margin-left: 15%;
     font-size: 20px;
     padding-top: 10px;
@@ -172,9 +172,9 @@ $widget_width: 180px;
         }
       }
       a {
-        color:$color__widget_text;
+        color: $color__widget_text;
         @include mobile {
-          color:#fff;
+          color: #fff;
         }
         border-bottom: 1px solid $color__blue5;
         padding: 3px;
@@ -185,7 +185,7 @@ $widget_width: 180px;
           color: $hover_widget_link;
           border-bottom: 1px solid $hover_widget_link;
           @include mobile {
-            color:#fff;
+            color: #fff;
             border-color: #fff;
           }
         }
@@ -205,4 +205,10 @@ $widget_width: 180px;
 #nav_menu-10,
 #nav_menu-11 {
   display: none;
+}
+
+.current-menu-item {
+  a {
+    color: $hover_widget_link !important;
+  }
 }

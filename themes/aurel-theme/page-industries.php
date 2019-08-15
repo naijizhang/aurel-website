@@ -1,17 +1,12 @@
-<!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+<?php
 
-<head>
-    <meta charset="<?php bloginfo('charset'); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="profile" href="http://gmpg.org/xfn/11">
-    <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <?php wp_head(); ?>
-</head>
+/**
+ * The template for displaying all pages.
+ *
+ * @package RED_Starter_Theme
+ */
 
+get_header(); ?>
 <body <?php body_class(); ?>>
     <div id="page" class="hfeed site">
         <a class="skip-link screen-reader-text" href="#content"><?php echo esc_html('Skip to content'); ?></a>

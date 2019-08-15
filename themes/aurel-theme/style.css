@@ -742,7 +742,7 @@ table {
           align-items: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  background: #0e59c2;
+  background: #1E4F70;
   border: none; }
   .get-contact-info .contact-icon-container {
     display: -webkit-box;
@@ -796,7 +796,7 @@ table {
   .get-contact-info:hover {
     -webkit-box-shadow: none;
             box-shadow: none;
-    background: #3873c1;
+    background: #377CA8;
     right: 0px;
     border: none; }
     .get-contact-info:hover .button-icon {
@@ -1176,12 +1176,12 @@ a {
           width: auto;
           margin-right: 10px; }
           .widget-area ul li a {
-            border: 1px solid #8db2e3; }
+            border: 1px solid #57B9D3; }
             .widget-area ul li a:hover {
               border: 1px solid #7CDFE3; } }
       .widget-area ul li a {
         color: #fff;
-        border-bottom: 1px solid #8db2e3;
+        border-bottom: 1px solid #57B9D3;
         padding: 3px;
         text-decoration: none;
         font-size: 12px;
@@ -1360,24 +1360,24 @@ object {
 .qa-container .each-newsletter {
   margin-bottom: 2px; }
   .qa-container .each-newsletter:nth-child(6n + 2) .item-toggle-button {
-    background: #0e59c2;
+    background: #1E4F70;
     margin-left: 20%;
     margin-right: auto; }
   .qa-container .each-newsletter:nth-child(6n + 3) .item-toggle-button {
-    background: #3873c1;
+    background: #377CA8;
     margin-left: 25%;
     margin-right: auto; }
   .qa-container .each-newsletter:nth-child(6n + 4) .item-toggle-button {
-    background: #7393ba;
+    background: #4699CE;
     margin-left: 30%;
     margin-right: auto; }
   .qa-container .each-newsletter:nth-child(6n + 5) .item-toggle-button {
-    background: #8db2e3;
+    background: #57B9D3;
     margin-left: 35%;
     margin-right: auto; }
   .qa-container .each-newsletter:nth-child(6n) .item-toggle-button {
     opacity: 0.95;
-    background: #3e6ba8; }
+    background: #84C6E8; }
   .qa-container .each-newsletter:nth-child(6n + 1) .item-toggle-button {
     background: #004280;
     margin-left: 15%;
@@ -1839,7 +1839,7 @@ label[for='nav-trigger'] {
     display: none !important;
     float: unset; }
     #primary-menu li .sub-menu .current_page_item {
-      background: #0e59c2; }
+      background: #1E4F70; }
       #primary-menu li .sub-menu .current_page_item a {
         color: #fff; }
     #primary-menu li .sub-menu li {
@@ -1851,7 +1851,7 @@ label[for='nav-trigger'] {
       transition: background 400ms linear;
       border-bottom: 1px solid #004280; }
       #primary-menu li .sub-menu li:hover {
-        background: #0e59c2; }
+        background: #1E4F70; }
         #primary-menu li .sub-menu li:hover a {
           color: #fff; }
       #primary-menu li .sub-menu li a {
@@ -2459,9 +2459,9 @@ label[for='nav-trigger'] {
           padding-left: 4vw;
           padding-right: 4vw; }
           .what-we-do-container .hexagon .hexagon-industry-container2 .industry2-container {
-            background: #3873c1 !important; }
+            background: #377CA8 !important; }
           .what-we-do-container .hexagon .hexagon-industry-container2 .industry3-container {
-            background: #7393ba !important; } }
+            background: #4699CE !important; } }
     .what-we-do-container .hexagon .hexagon-industry-container3 {
       height: 29%;
       width: 130%;
@@ -2484,7 +2484,7 @@ label[for='nav-trigger'] {
           padding-left: 4vw;
           padding-right: 4vw; }
           .what-we-do-container .hexagon .hexagon-industry-container3 .industry4-container {
-            background: #7393ba !important; } }
+            background: #4699CE !important; } }
     .what-we-do-container .hexagon .hexagon-industry-container4 {
       height: 21%;
       width: 100%;
@@ -2508,7 +2508,7 @@ label[for='nav-trigger'] {
                   justify-content: flex-end;
           padding-right: 4vw; }
           .what-we-do-container .hexagon .hexagon-industry-container4 .industry6-container {
-            background: #3873c1 !important; } }
+            background: #377CA8 !important; } }
     .what-we-do-container .hexagon .industry-link {
       display: -webkit-box;
       display: -ms-flexbox;

@@ -742,7 +742,7 @@ table {
           align-items: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  background: #1E4F70;
+  background: #2875da;
   border: none; }
   .get-contact-info .contact-icon-container {
     display: -webkit-box;
@@ -796,7 +796,7 @@ table {
   .get-contact-info:hover {
     -webkit-box-shadow: none;
             box-shadow: none;
-    background: #377CA8;
+    background: #4699CE;
     right: 0px;
     border: none; }
     .get-contact-info:hover .button-icon {

@@ -44,6 +44,33 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+/*******
+1. industry page , bigger container
+2. remove all site-content shadows
+3. use new industry images
+
+add email icon on contact button,remove "us"
+increase the contact button size
+
+
+
+cadsim plus text to image on overview page
+
+3 boxes software
+
+
+homepage cadsim plus  mid banner---> 2 lines with img
+Capital mid banner title
+
+
+add home button on header
+
+
+footer color try linear
+
+change research& learning to research
+research page , add chemical animation gif
+**/
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -451,6 +478,10 @@ h1 {
   margin: 30px auto;
   letter-spacing: 5px;
   font-size: 50px; }
+
+h2 {
+  text-align: center;
+  margin: 30px auto; }
 
 .entry-header .entry-title {
   width: 100vw;
@@ -1213,12 +1244,6 @@ a {
 #nav_menu-11 {
   display: none; }
 
-.current-menu-item a {
-  color: #7CDFE3 !important; }
-  @media (max-width: 740px) {
-    .current-menu-item a {
-      border: 1px solid #7CDFE3 !important; } }
-
 #go-back-button {
   width: 60%;
   margin-left: auto;
@@ -1947,7 +1972,12 @@ label[for='nav-trigger'] {
           flex-wrap: wrap;
       margin-top: 20px;
       padding: 0;
-      height: 80%; }
+      height: 80%;
+      display: flex;
+      flex-wrap: wrap;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
       #myFooter #footer-navigation ul li {
         margin: 0px;
         width: 100px;
@@ -2203,21 +2233,19 @@ label[for='nav-trigger'] {
 
 .section-what-we-do {
   position: relative;
-  margin: 0px;
-  background: -webkit-gradient(linear, left top, right top, from(#1b447f), to(#35ced3));
-  background: linear-gradient(to right, #1b447f 0%, #35ced3 100%); }
+  margin: 0px; }
   @media (max-width: 740px) {
     .section-what-we-do {
       background: #fff; } }
 
 .polygon1 {
+  display: none;
   shape-outside: polygon(0 150px, 50% 50px, 100% 150px);
   -webkit-clip-path: polygon(0 150px, 50% 50px, 100% 150px);
           clip-path: polygon(0 150px, 50% 50px, 100% 150px);
   height: 150px;
   width: 100%;
   background: #fff;
-  display: block;
   position: relative;
   top: 0px;
   max-width: 1280px;
@@ -2228,6 +2256,7 @@ label[for='nav-trigger'] {
       display: none; } }
 
 .polygon2 {
+  display: none;
   shape-outside: polygon(0 0, 50% 100px, 100% 0px);
   -webkit-clip-path: polygon(0 0, 50% 100px, 100% 0px);
           clip-path: polygon(0 0, 50% 100px, 100% 0px);
@@ -2247,7 +2276,7 @@ label[for='nav-trigger'] {
   font-family: 'Lalezar';
   letter-spacing: 1px;
   color: #004280;
-  margin-top: 0px;
+  margin-top: 50px;
   margin-bottom: 0px;
   background: #fff;
   max-width: 1280px;
@@ -2261,7 +2290,8 @@ label[for='nav-trigger'] {
       font-size: 30px;
       background: -webkit-gradient(linear, left top, right top, from(#1b447f), to(#35ced3));
       background: linear-gradient(to right, #1b447f 0%, #35ced3 100%);
-      color: #fff; } }
+      color: #fff;
+      margin-top: 0px; } }
 
 .main-services-container {
   width: 100%;
@@ -2291,7 +2321,27 @@ label[for='nav-trigger'] {
   .main-services-container .each-services {
     padding: 15px;
     padding-top: 30px;
-    padding-bottom: 30px; }
+    padding-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .main-services-container .each-services .software-logo {
+      width: 55%;
+      -o-object-fit: contain;
+         object-fit: contain;
+      margin-bottom: 5px;
+      -webkit-filter: brightness(140%) drop-shadow(0px 0px 3px #fff);
+              filter: brightness(140%) drop-shadow(0px 0px 3px #fff); }
     @media (max-width: 740px) {
       .main-services-container .each-services {
         padding: 0px;
@@ -2308,16 +2358,19 @@ label[for='nav-trigger'] {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        height: 200px; } }
+        height: auto;
+        padding-bottom: 30px; } }
     .main-services-container .each-services h2 {
       font-size: 30px;
       text-align: left;
       color: #fff;
       font-weight: bold;
       margin-bottom: 20px;
+      margin-top: 10px;
       text-align: center; }
       @media (max-width: 740px) {
         .main-services-container .each-services h2 {
+          margin-top: 40px;
           width: 70%;
           margin-left: auto;
           margin-right: auto;
@@ -2345,8 +2398,6 @@ label[for='nav-trigger'] {
         width: 100%; } }
   .main-services-container .service-block1 {
     width: 30%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.5))), url("../../assets/images/CADSIMsoftware.jpg");
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../../assets/images/CADSIMsoftware.jpg");
     background-position: center, center;
@@ -2362,8 +2413,10 @@ label[for='nav-trigger'] {
       text-align: center; }
     .main-services-container .service-block1 p {
       display: inline-block;
-      width: 32%;
-      text-align: center; }
+      width: 100%;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto; }
   .main-services-container .service-block2 {
     width: 50%;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.5))), url("../../assets/images/modeling.png");
@@ -2408,10 +2461,10 @@ label[for='nav-trigger'] {
           -ms-flex-direction: column;
               flex-direction: column; } }
   .what-we-do-container .hexagon {
-    width: 25vw;
-    height: 25vw;
-    max-width: 300px;
-    max-height: 300px;
+    width: 40vw;
+    height: 40vw;
+    max-width: 500px;
+    max-height: 500px;
     min-width: 200px;
     min-height: 200px;
     background: url("../../assets/images/hexagon.png");
@@ -2467,14 +2520,14 @@ label[for='nav-trigger'] {
           padding-left: 4vw; } }
     .what-we-do-container .hexagon .hexagon-industry-container2 {
       height: 29%;
-      width: 130%;
+      width: 126%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      margin-left: -15%;
+      margin-left: -14%;
       margin-top: -3%; }
       @media (max-width: 740px) {
         .what-we-do-container .hexagon .hexagon-industry-container2 {
@@ -2492,14 +2545,14 @@ label[for='nav-trigger'] {
             background: #4699CE !important; } }
     .what-we-do-container .hexagon .hexagon-industry-container3 {
       height: 29%;
-      width: 130%;
+      width: 126%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      margin-left: -15%;
+      margin-left: -14%;
       margin-top: 30%; }
       @media (max-width: 740px) {
         .what-we-do-container .hexagon .hexagon-industry-container3 {
@@ -2548,8 +2601,8 @@ label[for='nav-trigger'] {
           -ms-flex-align: center;
               align-items: center; }
       .what-we-do-container .hexagon .industry-link .industry-logo-container {
-        width: 80px;
-        height: 80px;
+        width: 120px;
+        height: 120px;
         background: #004280;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -2564,8 +2617,8 @@ label[for='nav-trigger'] {
         -webkit-transition: 0.3s ease-in-out;
         transition: 0.3s ease-in-out; }
         .what-we-do-container .hexagon .industry-link .industry-logo-container .industry-logo {
-          width: 50px;
-          height: 50px;
+          width: 70px;
+          height: 70px;
           -webkit-filter: invert(1);
                   filter: invert(1); }
         .what-we-do-container .hexagon .industry-link .industry-logo-container p {
@@ -2573,17 +2626,20 @@ label[for='nav-trigger'] {
           color: #fff;
           font-family: 'Lalezar';
           margin-top: auto;
-          margin-bottom: auto; }
+          margin-bottom: auto;
+          text-align: center;
+          font-size: 25px;
+          padding-right: 10px; }
         .what-we-do-container .hexagon .industry-link .industry-logo-container:hover {
-          width: 180px;
-          border-radius: 40px;
+          width: 250px;
+          border-radius: 60px;
           z-index: 9999;
           -webkit-box-shadow: 0px 0px 15px #4d4d4d;
                   box-shadow: 0px 0px 15px #4d4d4d; }
           .what-we-do-container .hexagon .industry-link .industry-logo-container:hover .industry-logo {
-            width: 40px;
-            height: 40px;
-            margin-left: 10px;
+            width: 60px;
+            height: 60px;
+            margin-left: 20px;
             margin-right: 10px; }
           .what-we-do-container .hexagon .industry-link .industry-logo-container:hover p {
             display: inline; }
@@ -2643,10 +2699,10 @@ label[for='nav-trigger'] {
       position: absolute;
       top: 0px;
       left: 0px;
-      width: 25vw;
-      height: 25vw;
-      max-width: 300px;
-      max-height: 300px;
+      width: 40vw;
+      height: 40vw;
+      max-width: 500px;
+      max-height: 500px;
       min-width: 200px;
       min-height: 200px;
       display: -webkit-box;
@@ -2662,13 +2718,13 @@ label[for='nav-trigger'] {
         .what-we-do-container .hexagon .position-helper-container {
           display: none; } }
       .what-we-do-container .hexagon .position-helper-container p {
-        width: 50%;
+        width: 33%;
         text-align: center;
         margin: 0;
         margin-left: -10px;
         color: #004280;
         font-family: 'Lalezar';
-        font-size: 1.5vw;
+        font-size: 25px;
         letter-spacing: 1px;
         background: #dfe9f6;
         padding: 10px;
@@ -2727,7 +2783,8 @@ label[for='nav-trigger'] {
 
 .front-page-bottom-banner {
   margin-top: 12vh;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  display: none; }
   @media (max-width: 740px) {
     .front-page-bottom-banner {
       margin-top: 0px;

@@ -35,6 +35,9 @@
       margin-top: 20px;
       padding: 0;
       height: 80%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
       li {
         margin: 0px;
         &:last-child {

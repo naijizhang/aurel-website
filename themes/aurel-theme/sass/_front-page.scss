@@ -735,6 +735,9 @@ $polygon2_height: 150px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @include mobile {
+    display: none;
+  }
   a {
     color: #fff;
     margin-left: auto;

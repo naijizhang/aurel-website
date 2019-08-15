@@ -2837,6 +2837,9 @@ label[for='nav-trigger'] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  @media (max-width: 740px) {
+    .overlay {
+      display: none; } }
   .overlay a {
     color: #fff;
     margin-left: auto;

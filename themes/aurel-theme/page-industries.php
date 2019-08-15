@@ -7,6 +7,7 @@
  */
 
 get_header(); ?>
+
 <body <?php body_class(); ?>>
     <div id="page" class="hfeed site">
         <a class="skip-link screen-reader-text" href="#content"><?php echo esc_html('Skip to content'); ?></a>
@@ -82,7 +83,7 @@ get_header(); ?>
                                         </a>
                                         <a class="industry-link" href="<?php echo get_permalink(get_page_by_path("mineral-processing")); ?>">
                                             <div class="industry-logo-container industry5-container">
-                                                <img class="industry-logo" alt="industry logo" src='<?php echo get_template_directory_uri() . '/assets/icons/pickaxe.svg'; ?>'>
+                                                <img class="industry-logo" alt="industry logo" src='<?php echo get_template_directory_uri() . '/assets/icons/gold-bars.svg'; ?>'>
                                                 <p class="industry-title">Mineral Processing</p>
                                             </div>
                                         </a>
@@ -103,7 +104,7 @@ get_header(); ?>
                             <div class='references'>
                                 <p class="reference-title">Icon References</p>
                                 <div class='references-text'>
-                                    <div>Pickaxe Icons made by <a href="https://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev">Nikita Golubev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+                                    <div>Gold Bar Icons made by <a href="https://www.flaticon.com/authors/prettycons" title="prettycons">prettycons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
                                     <div>Dish Icons made by <a href="https://www.flaticon.com/authors/pause08" title="Pause08">Pause08</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
                                     <div>Tree Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
                                     <div>Other Icons are from Ionicons</div>

@@ -46,7 +46,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 /*******
 
-cadsim plus text to image on overview page
 
 3 boxes software
 
@@ -54,8 +53,6 @@ cadsim plus text to image on overview page
 homepage cadsim plus  mid banner---> 2 lines with img
 Capital mid banner title
 
-
-add home button on header
 
 
 footer color try linear
@@ -803,7 +800,8 @@ table {
           width: 50px;
           height: 50px;
           margin-bottom: auto;
-          margin-top: auto; } }
+          margin-top: auto;
+          margin-bottom: 30px; } }
     .get-contact-info .contact-icon-container .button-icon-bottom {
       width: 30px;
       height: 30px;
@@ -828,7 +826,7 @@ table {
       margin: auto 0; }
       @media (max-width: 740px) {
         .get-contact-info .contact-icon-container .contact-hint {
-          display: none; } }
+          left: 0px; } }
   .get-contact-info .contact-fixed-text {
     width: 140px;
     -webkit-transition: all 0.5s;
@@ -855,7 +853,8 @@ table {
           margin-bottom: auto;
           margin-top: auto;
           -webkit-transform: scale(1);
-                  transform: scale(1); } }
+                  transform: scale(1);
+          margin-bottom: 30px; } }
     .get-contact-info:hover .button-icon-bottom {
       -webkit-transform: scale(1.5);
               transform: scale(1.5);
@@ -871,6 +870,9 @@ table {
                   transform: scale(1); } }
     .get-contact-info:hover .contact-hint {
       visibility: hidden; }
+      @media (max-width: 740px) {
+        .get-contact-info:hover .contact-hint {
+          visibility: visible; } }
     @media (max-width: 740px) {
       .get-contact-info:hover {
         right: -140px; } }
@@ -1165,6 +1167,9 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   z-index: 99999; }
+  .widget-area h2 {
+    margin-top: 10px;
+    margin-bottom: 10px; }
   @media (max-width: 740px) {
     .widget-area {
       background: #23447f;
@@ -4007,6 +4012,16 @@ p.is-active {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
+      .cadsim-content .cadsim-banner-container .cadsim-title-content .software-logo {
+        width: 40%;
+        min-width: 200px;
+        -o-object-fit: contain;
+           object-fit: contain;
+        margin-left: 5%;
+        margin-bottom: 20px;
+        margin-top: 100px;
+        -webkit-filter: brightness(140%) drop-shadow(0px 0px 3px #fff);
+                filter: brightness(140%) drop-shadow(0px 0px 3px #fff); }
       @media (max-width: 740px) {
         .cadsim-content .cadsim-banner-container .cadsim-title-content {
           width: 80%;

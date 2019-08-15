@@ -113,7 +113,7 @@ $widget_width: 180px;
   opacity: 0.8;
   transition: all 0.5s ease-in-out;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   z-index: 99999;
   @include mobile {
     background: $color__deep_blue;
@@ -162,10 +162,14 @@ $widget_width: 180px;
       margin: 0px;
       margin-bottom: 15px;
       @include mobile {
+        &:before{
+          background: none;
+          display: none;
+        }
         width: auto;
         margin-right: 10px;
         a {
-          border: 1px solid $color__blue5;
+          border: 1px solid $color__light_blue;
           &:hover {
             border: 1px solid $hover_widget_link;
           }
@@ -176,7 +180,7 @@ $widget_width: 180px;
         @include mobile {
           color: #fff;
         }
-        border-bottom: 1px solid $color__blue5;
+        border-bottom: 1px solid $color__light_blue;
         padding: 3px;
         text-decoration: none;
         font-size: 12px;
@@ -210,5 +214,25 @@ $widget_width: 180px;
 .current-menu-item {
   a {
     color: $hover_widget_link !important;
+    @include mobile{
+      border: 1px solid $hover_widget_link !important;
+    }
+  }
+}
+
+#go-back-button {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  box-shadow: none;
+  background: $color__polygon2_blue;
+  margin-bottom: 20px;
+  transition: background 0.5s;
+  @include mobile{
+    display: none;
+  }
+  &:hover {
+    background: $color__button_blue1;
   }
 }

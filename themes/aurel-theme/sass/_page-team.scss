@@ -281,7 +281,7 @@
     }
     #team-page-title {
       color: $color__blue;
-      border-bottom: 1px solid #c4c4c4;
+      border-bottom: 1px solid $color__teal;
       width: 80%;
       padding-bottom: 30px;
       @include mobile {

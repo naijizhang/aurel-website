@@ -45,14 +45,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Front page
 --------------------------------------------------------------*/
 /*******
-1. industry page , bigger container
-2. remove all site-content shadows
-3. use new industry images
-
-add email icon on contact button,remove "us"
-increase the contact button size
-
-
 
 cadsim plus text to image on overview page
 
@@ -406,7 +398,7 @@ q {
     content: ''; }
 
 hr {
-  background-color: #ccc;
+  background-color: #36cdd3;
   border: 0;
   height: 1px;
   margin-bottom: 1.5rem; }
@@ -483,6 +475,12 @@ h2 {
   text-align: center;
   margin: 30px auto; }
 
+.card h2 {
+  margin-top: 0px; }
+
+.content-company-history h2 {
+  margin: 0 auto; }
+
 .entry-header .entry-title {
   width: 100vw;
   max-width: 1280px;
@@ -490,7 +488,7 @@ h2 {
   color: #004280;
   z-index: 100;
   margin: 80px auto;
-  border-bottom: 1px solid #c4c4c4;
+  border-bottom: 1px solid #36cdd3;
   margin-bottom: 30px;
   padding-bottom: 30px;
   width: 90%; }
@@ -754,7 +752,7 @@ table {
   border-radius: 50px;
   border-bottom-right-radius: 0px;
   border-top-right-radius: 0px;
-  padding: 10px;
+  padding: 20px;
   position: fixed;
   bottom: 30px;
   right: -140px;
@@ -790,7 +788,7 @@ table {
         -ms-flex-align: center;
             align-items: center;
     position: relative; }
-    .get-contact-info .contact-icon-container .button-icon {
+    .get-contact-info .contact-icon-container .button-icon-top {
       width: 30px;
       height: 30px;
       -o-object-fit: contain;
@@ -801,18 +799,33 @@ table {
               transform: scaleX(-1);
       margin-bottom: 50px; }
       @media (max-width: 740px) {
-        .get-contact-info .contact-icon-container .button-icon {
+        .get-contact-info .contact-icon-container .button-icon-top {
+          width: 50px;
+          height: 50px;
+          margin-bottom: auto;
+          margin-top: auto; } }
+    .get-contact-info .contact-icon-container .button-icon-bottom {
+      width: 30px;
+      height: 30px;
+      -o-object-fit: contain;
+         object-fit: contain;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+      -webkit-transform: scaleX(-1);
+              transform: scaleX(-1); }
+      @media (max-width: 740px) {
+        .get-contact-info .contact-icon-container .button-icon-bottom {
           width: 50px;
           height: 50px;
           margin-bottom: auto;
           margin-top: auto; } }
     .get-contact-info .contact-icon-container .contact-hint {
-      font-size: 10px;
+      font-size: 13px;
       position: absolute;
-      left: 0px;
-      bottom: 0px;
+      left: -8px;
       text-align: center;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      margin: auto 0; }
       @media (max-width: 740px) {
         .get-contact-info .contact-icon-container .contact-hint {
           display: none; } }
@@ -830,13 +843,26 @@ table {
     background: #4699CE;
     right: 0px;
     border: none; }
-    .get-contact-info:hover .button-icon {
+    .get-contact-info:hover .button-icon-top {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+      margin-bottom: 10px;
+      margin-left: 10px; }
+      @media (max-width: 740px) {
+        .get-contact-info:hover .button-icon-top {
+          width: 50px;
+          height: 50px;
+          margin-bottom: auto;
+          margin-top: auto;
+          -webkit-transform: scale(1);
+                  transform: scale(1); } }
+    .get-contact-info:hover .button-icon-bottom {
       -webkit-transform: scale(1.5);
               transform: scale(1.5);
       margin-bottom: 0px;
       margin-left: 10px; }
       @media (max-width: 740px) {
-        .get-contact-info:hover .button-icon {
+        .get-contact-info:hover .button-icon-bottom {
           width: 50px;
           height: 50px;
           margin-bottom: auto;
@@ -1384,9 +1410,7 @@ object {
   width: 100%;
   max-width: 1280px;
   margin-left: auto;
-  margin-right: auto;
-  -webkit-box-shadow: 5px 0 15px -4px #bbb, -5px 0 8px -4px #bbb;
-          box-shadow: 5px 0 15px -4px #bbb, -5px 0 8px -4px #bbb; }
+  margin-right: auto; }
   @media (max-width: 740px) {
     .site-content {
       -webkit-box-shadow: 5px 0 15px -4px #000, -5px 0 8px -4px #000;
@@ -1938,7 +1962,6 @@ label[for='nav-trigger'] {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 250px;
-  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   -webkit-box-shadow: 5px 0 15px 0px #bbb, -5px 0 8px 0px #bbb;
@@ -3522,10 +3545,12 @@ p.is-active {
       .content-about-page .hero-title {
         letter-spacing: 1px;
         font-size: 40px; } }
-  .content-about-page .hero-image img {
-    opacity: 0.2;
-    -webkit-filter: none;
-            filter: none; }
+  .content-about-page .hero-image {
+    width: 100vw; }
+    .content-about-page .hero-image img {
+      opacity: 0.2;
+      -webkit-filter: none;
+              filter: none; }
 
 .hero-title {
   position: absolute;
@@ -3542,11 +3567,11 @@ p.is-active {
 
 .hero-image {
   margin: 0px auto;
-  margin-top: -30px; }
+  margin-top: -30px;
+  width: 100vw; }
   .hero-image img {
     z-index: -1;
     width: 100%;
-    max-width: 1280px;
     height: 25vh;
     -o-object-fit: cover;
        object-fit: cover;

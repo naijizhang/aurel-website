@@ -25,8 +25,9 @@ get_header(); ?>
         ?>
         <button type="button" class="btn btn-primary get-contact-info" data-toggle="modal" data-target="#exampleModal">
             <div class="contact-icon-container">
-                <img class="button-icon" alt="contact us" src='<?php echo get_template_directory_uri() . '/assets/icons/phone.svg'; ?>' />
-                <p class="contact-hint">Contact Us</p>
+                <img class="button-icon-top" alt="contact us" src='<?php echo get_template_directory_uri() . '/assets/icons/phone.svg'; ?>' />
+                <p class="contact-hint">Contact</p>
+                <img class="button-icon-bottom" alt="contact us" src='<?php echo get_template_directory_uri() . '/assets/icons/mail.svg'; ?>' />
             </div>
             <p class="contact-fixed-text">Click To Contact Us</p>
         </button>

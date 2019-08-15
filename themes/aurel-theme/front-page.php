@@ -45,7 +45,7 @@ get_header(); ?>
             <h1 class="what-we-do">What we do?</h1>
             <div class="main-services-container">
                 <div class="each-services service-block1">
-                    <h2>CADSIM Plus Process Simulator</h2>
+                    <h2><img class="software-logo" alt="home logo" src='<?php echo get_template_directory_uri() . '/assets/images/CADSIM-Plus_PrimaryLogo.png'; ?>'><br>Process Simulator</h2>
                     <a href="<?php echo get_post_permalink(get_page_by_path("cadsim-plus")); ?>">
                         <p>Sales</p>
                     </a>
@@ -58,27 +58,27 @@ get_header(); ?>
                 </div>
                 <div class="other-services-container">
                     <div class="each-services service-block2">
-                        <h2>Modeling services</h2>
+                        <h2>Modeling Services</h2>
                         <a href="<?php echo get_permalink(get_page_by_path("process-modeling")); ?>">
-                            <p>Just-in-time Modeling Assistance</p>
+                            <p>Custom Modeling Assistance</p>
                         </a>
-                        <a href="<?php echo get_post_permalink(get_page_by_path("process-modeling")); ?>">
-                            <p>Turnkey Simulations</p>
+                        <a href="<?php echo get_post_permalink(get_page_by_path("dcs-check-out")); ?>">
+                            <p>DCS Check Out</p>
                         </a>
-                        <a href="<?php echo get_post_permalink(get_page_by_path("custom-modules")); ?>">
-                            <p>Custom Module Development</p>
+                        <a href="<?php echo get_post_permalink(get_page_by_path("operator-training-simulators")); ?>">
+                            <p>Operator Training Simulators</p>
                         </a>
                     </div>
                     <div class="each-services service-block3">
-                        <h2>Realtime Optimization</h2>
+                        <h2>Real-time Optimization</h2>
                         <a href="<?php echo get_permalink(get_page_by_path("dynamic-data-reconciliation")); ?>">
                             <p>Dynamic Data Reconciliation</p>
                         </a>
                         <a href="<?php echo get_post_permalink(get_page_by_path("product-tracking", OBJECT, "post")); ?>">
-                            <p>Product Tracking</p>
+                            <p>Product and Energy Tracking</p>
                         </a>
-                        <a href="<?php echo get_post_permalink(get_page_by_path("energy-tracking", OBJECT, "post")); ?>">
-                            <p>Energy Tracking</p>
+                        <a href="<?php echo get_post_permalink(get_page_by_path("process-optimization", OBJECT)); ?>">
+                            <p>Process Optimization</p>
                         </a>
                     </div>
                 </div>

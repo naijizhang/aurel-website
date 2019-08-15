@@ -89,11 +89,14 @@
       training: 'services',
       'process-modeling': 'services',
       'custom-modules': 'services',
+      'dcs-check-out': 'services',
+      'operator-training-simulators': 'services',
 
       'online-applications': 'onlineApps',
       'data-reconciliation': 'onlineApps',
       'product-tracking': 'onlineApps',
       'energy-tracking': 'onlineApps',
+      'process-optimization':'onlineApps',
 
       industries: 'industries',
       'pulp-paper': 'industries',

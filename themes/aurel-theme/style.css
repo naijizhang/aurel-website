@@ -2117,7 +2117,6 @@ label[for='nav-trigger'] {
           display: none; } }
       #myFooter #footer-right-column .software-link .software-logo {
         width: 80%;
-        border-radius: 15px;
         margin-top: 20px;
         -webkit-filter: brightness(100%) drop-shadow(0px 0px 3px #fff);
                 filter: brightness(100%) drop-shadow(0px 0px 3px #fff); }

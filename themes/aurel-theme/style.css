@@ -2353,7 +2353,11 @@ label[for='nav-trigger'] {
   margin-right: auto; }
   @media (max-width: 740px) {
     .section-what-we-do {
-      background: #fff; } }
+      background: #fff;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
   .section-what-we-do .what-we-do-container {
     position: relative;
     margin: 0px;
@@ -2375,8 +2379,15 @@ label[for='nav-trigger'] {
       position: absolute;
       top: 50px;
       left: 15%; }
+      @media (max-width: 740px) {
+        .section-what-we-do .what-we-do-container .what-we-do-title {
+          display: none; } }
     .section-what-we-do .what-we-do-container p {
       font-size: 15px; }
+    @media (max-width: 740px) {
+      .section-what-we-do .what-we-do-container {
+        width: 100%;
+        padding-bottom: 50px; } }
 
 .what-we-do {
   text-align: center;
@@ -2427,7 +2438,8 @@ label[for='nav-trigger'] {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      padding-top: 0px; } }
+      padding-top: 0px;
+      width: 100%; } }
   .main-services-container .each-services {
     padding: 15px;
     display: -webkit-box;
@@ -2443,8 +2455,8 @@ label[for='nav-trigger'] {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-shadow: 3px 0 10px  #bbb;
-            box-shadow: 3px 0 10px  #bbb; }
+    -webkit-box-shadow: 3px 0 10px #bbb;
+            box-shadow: 3px 0 10px #bbb; }
     .main-services-container .each-services .software-logo {
       width: 55%;
       -o-object-fit: contain;
@@ -2519,7 +2531,8 @@ label[for='nav-trigger'] {
     margin-bottom: 20px; }
     @media (max-width: 740px) {
       .main-services-container .service-block1 {
-        width: 100%; } }
+        width: 100%;
+        margin-bottom: 0px; } }
     .main-services-container .service-block1 h2 {
       text-align: center; }
     .main-services-container .service-block1 .three-links-container {
@@ -2556,6 +2569,9 @@ label[for='nav-trigger'] {
     margin-right: 20px; }
     .main-services-container .service-block2 h2 {
       width: 50%; }
+    @media (max-width: 740px) {
+      .main-services-container .service-block2 {
+        margin-right: 0px; } }
   .main-services-container .service-block3 {
     width: 50%;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.5))), url("../../assets/images/onlineApplication.png");

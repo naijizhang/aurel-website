@@ -164,18 +164,19 @@
   position: relative;
   margin: 0px;
   //background: $color__polygon1_blue;
-  @include mobile {
-    background: #fff;
-  }
   display: flex;
   flex-direction: row;
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
+  @include mobile {
+    background: #fff;
+    flex-direction: column;
+  }
 
   .what-we-do-container {
     position: relative;
-    .what-we-do-title{
+    .what-we-do-title {
       text-align: center;
       font-family: 'Lalezar';
       letter-spacing: 1px;
@@ -189,14 +190,21 @@
       margin-right: auto;
       z-index: 3;
       position: absolute;
-top: 50px;
-left:15%;
+      top: 50px;
+      left: 15%;
+      @include mobile {
+        display: none;
+      }
     }
     margin: 0px;
     width: 48%;
-    padding:0px;
+    padding: 0px;
     p {
       font-size: 15px;
+    }
+    @include mobile {
+      width: 100%;
+      padding-bottom: 50px;
     }
   }
 }
@@ -274,10 +282,11 @@ left:15%;
   flex-wrap: wrap;
   // padding-top: 0px;
   //box-shadow: 5px 0 15px -4px #bbb;
- z-index: 3;
+  z-index: 3;
   @include mobile {
     flex-direction: column;
     padding-top: 0px;
+    width: 100%;
   }
   .each-services {
     padding: 15px;
@@ -287,8 +296,8 @@ left:15%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 3px 0 10px  #bbb;
- 
+    box-shadow: 3px 0 10px #bbb;
+
     .software-logo {
       width: 55%;
       object-fit: contain;
@@ -343,9 +352,6 @@ left:15%;
   }
   .service-block1 {
     width: 50%;
-    @include mobile {
-      width: 100%;
-    }
     //flex-wrap: wrap;
     background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.5)),
       url('../../assets/images/CADSIMsoftware.jpg');
@@ -354,6 +360,10 @@ left:15%;
     background-size: cover, cover;
     justify-content: center;
     margin-bottom: 20px;
+    @include mobile {
+      width: 100%;
+      margin-bottom: 0px;
+    }
     h2 {
       text-align: center;
       //font-size: 35px;
@@ -388,6 +398,9 @@ left:15%;
     h2 {
       width: 50%;
     }
+    @include mobile {
+      margin-right: 0px;
+    }
   }
   .service-block3 {
     width: 50%;
@@ -397,7 +410,6 @@ left:15%;
     background-repeat: repeat, no-repeat;
     background-size: cover, cover;
   }
-  
 }
 .what-we-do-container {
   display: flex;

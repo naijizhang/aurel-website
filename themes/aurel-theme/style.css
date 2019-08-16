@@ -47,15 +47,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*******
 
 
-3 boxes software
 
 
-homepage cadsim plus  mid banner---> 2 lines with img
-Capital mid banner title
-
-
-
-footer color try linear
 
 change research& learning to research
 research page , add chemical animation gif
@@ -1709,6 +1702,11 @@ object {
       height: auto;
       -o-object-fit: contain;
          object-fit: contain; }
+
+.research-flask {
+  margin-left: 50px !important;
+  margin-bottom: 20px !important;
+  margin-right: 50px !important; }
 
 .fixed-header-logged {
   top: 32px; }

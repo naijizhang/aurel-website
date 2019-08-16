@@ -9,8 +9,9 @@
 ?>
 
 </div><!-- #content -->
-
 <footer id="myFooter" class="site-footer" role="contentinfo">
+	<div class="big-curve2"><img alt="curved background" src='<?php echo get_template_directory_uri() . '/assets/images/curve-background2.svg'; ?>'></div>
+
 	<nav id="footer-navigation" role="navigation">
 		<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
 	</nav><!-- #footer-navigation -->

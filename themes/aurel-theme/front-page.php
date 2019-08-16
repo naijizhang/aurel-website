@@ -40,8 +40,8 @@ get_header(); ?>
                 <span class="sr-only">Next</span>
             </a>
         </div>
+        <div class="big-curve1"><img alt="curved background" src='<?php echo get_template_directory_uri() . '/assets/images/curve-background1.svg'; ?>'></div>
         <section class="section-what-we-do">
-            <div class="polygon1"></div>
             <h1 class="what-we-do">What we do?</h1>
             <div class="main-services-container">
                 <div class="each-services service-block1">
@@ -84,59 +84,7 @@ get_header(); ?>
                 </div>
             </div>
             <div class="what-we-do-container">
-                <!-- <div class="hexagon" data-aos="fade-right">
-                    <div class="hexagon-industry-container1">
-                        <a class="industry-link" href="<?php echo get_permalink(get_page_by_path("pulp-paper")); ?>">
-                            <div class="industry-logo-container industry1-container">
-                                <img class="industry-logo" alt="industry logo" src='<?php echo get_template_directory_uri() . '/assets/icons/paper.svg'; ?>'>
-                                <p class="industry-title">Pulp & Paper</p>
-                            </div>
-
-                        </a>
-                    </div>
-                    <div class="hexagon-industry-container2">
-                        <a class="industry-link" href="<?php echo get_permalink(get_page_by_path("forest-products")); ?>">
-                            <div class="industry-logo-container industry2-container">
-                                <img class="industry-logo" alt="industry logo" src='<?php echo get_template_directory_uri() . '/assets/icons/rose.svg'; ?>'>
-                                <p class="industry-title">Forest Products</p>
-                            </div>
-                        </a>
-                        <a class="industry-link" href="<?php echo get_permalink(get_page_by_path("food-processing")); ?>">
-                            <div class="industry-logo-container industry3-container">
-                                <img class="industry-logo" alt="industry logo" src='<?php echo get_template_directory_uri() . '/assets/icons/pizza.svg'; ?>'>
-                                <p class="industry-title">Food Processing</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="hexagon-industry-container3">
-                        <a class="industry-link" href="<?php echo get_permalink(get_page_by_path("water-waste-water")); ?>">
-                            <div class="industry-logo-container industry4-container">
-                                <img class="industry-logo" alt="industry logo" src='<?php echo get_template_directory_uri() . '/assets/icons/water.svg'; ?>'>
-                                <p class="industry-title">Water & Waste Water</p>
-                            </div>
-                        </a>
-                        <a class="industry-link" href="<?php echo get_permalink(get_page_by_path("mineral-processing")); ?>">
-                            <div class="industry-logo-container industry5-container">
-                                <img class="industry-logo" alt="industry logo" src='<?php echo get_template_directory_uri() . '/assets/icons/hammer.svg'; ?>'>
-                                <p class="industry-title">Mineral Processing</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="hexagon-industry-container4">
-                        <a class="industry-link" href="<?php echo get_permalink(get_page_by_path("research-learning")); ?>">
-                            <div class="industry-logo-container industry6-container">
-                                <img class="industry-logo" alt="industry logo" src='<?php echo get_template_directory_uri() . '/assets/icons/book.svg'; ?>'>
-                                <p class="industry-title">Research & learning</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="position-helper-container">
-                        <p>Industries</p>
-                    </div>
-                </div> -->
-
-                <!-- <div class="right-column" data-aos="fade-left"> -->
-                <div class="right-column">
+                 <div class="right-column">
                     <p>Aurel Systems has been providing dynamic chemical process simulation software tools and services to chemical engineers for 30+ years.</p>
                     <p>Our CADSIM Plus process simulation tools and services can help you design, investigate, improve, operate and optimize a new or existing process.</p>
                     <p>Save money and time by using the right tools to validate your design before you invest in a capital project.</p>

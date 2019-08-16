@@ -44,6 +44,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+/****
+1. reverse footer  background color
+2. reduce size of everything , put everything in one screen 
+3. switch email and phone icon 
+***/
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -1726,7 +1731,7 @@ object {
     background: #fff;
     border-top-left-radius: 20%;
     border-top-right-radius: 20%;
-    border-top: solid 8px #004280;
+    border-top: solid 8px #78909c;
     padding-top: 50px; }
     @media (max-width: 740px) {
       .single-post-content .entry-content {
@@ -1743,7 +1748,7 @@ object {
 .content-all-page .entry-title {
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
-  border-bottom: solid 8px #004280; }
+  border-bottom: solid 8px #78909c; }
   @media (max-width: 740px) {
     .content-all-page .entry-title {
       border-bottom-width: 5px; } }
@@ -2118,8 +2123,8 @@ label[for='nav-trigger'] {
       #myFooter #footer-right-column .software-link .software-logo {
         width: 80%;
         margin-top: 20px;
-        -webkit-filter: brightness(100%) drop-shadow(0px 0px 3px #fff);
-                filter: brightness(100%) drop-shadow(0px 0px 3px #fff); }
+        -webkit-filter: brightness(100%);
+                filter: brightness(100%); }
     #myFooter #footer-right-column .social-media-container {
       z-index: 4;
       margin-top: 10px; }

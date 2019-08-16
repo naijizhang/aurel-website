@@ -353,7 +353,7 @@
     background: #fff;
     border-top-left-radius: 20%;
     border-top-right-radius: 20%;
-    border-top: solid 8px $color__blue;
+    border-top: solid 8px $color_medium_grey;
     padding-top: 50px;
     // margin-top: 0px;
     @include mobile {
@@ -378,7 +378,7 @@
   .entry-title {
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
-    border-bottom: solid 8px $color__blue;
+    border-bottom: solid 8px $color_medium_grey;
     @include mobile {
       border-bottom-width: 5px;
     }

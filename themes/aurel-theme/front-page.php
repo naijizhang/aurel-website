@@ -46,15 +46,17 @@ get_header(); ?>
             <div class="main-services-container">
                 <div class="each-services service-block1">
                     <h2> <a class="software-link" href="<?php echo get_permalink(get_page_by_path("cadsim-plus")); ?>"><img class="software-logo" alt="home logo" src='<?php echo get_template_directory_uri() . '/assets/images/CADSIM-Plus_PrimaryLogo.png'; ?>'></a><br>Process Simulator</h2>
-                    <a href="<?php echo get_post_permalink(get_page_by_path("cadsim-plus")); ?>">
-                        <p>Sales</p>
-                    </a>
-                    <a href="<?php echo get_post_permalink(get_page_by_path("support")); ?>">
-                        <p>Support</p>
-                    </a>
-                    <a href="<?php echo get_post_permalink(get_page_by_path("training")); ?>">
-                        <p>Training</p>
-                    </a>
+                    <div class="three-links-container">
+                        <a href="<?php echo get_post_permalink(get_page_by_path("cadsim-plus")); ?>">
+                            <p>Sales</p>
+                        </a>
+                        <a href="<?php echo get_post_permalink(get_page_by_path("support")); ?>">
+                            <p>Support</p>
+                        </a>
+                        <a href="<?php echo get_post_permalink(get_page_by_path("training")); ?>">
+                            <p>Training</p>
+                        </a>
+                    </div>
                 </div>
                 <div class="other-services-container">
                     <div class="each-services service-block2">
@@ -69,6 +71,7 @@ get_header(); ?>
                             <p>Operator Training Simulators</p>
                         </a>
                     </div>
+
                     <div class="each-services service-block3">
                         <h2>Real-time Optimization</h2>
                         <a href="<?php echo get_permalink(get_page_by_path("dynamic-data-reconciliation")); ?>">
@@ -84,15 +87,16 @@ get_header(); ?>
                 </div>
             </div>
             <div class="what-we-do-container">
-                 <div class="right-column">
+            <h1 class="what-we-do-title">What we do?</h1>
+                <div class="right-column">
                     <p>Aurel Systems has been providing dynamic chemical process simulation software tools and services to chemical engineers for 30+ years.</p>
                     <p>Our CADSIM Plus process simulation tools and services can help you design, investigate, improve, operate and optimize a new or existing process.</p>
                     <p>Save money and time by using the right tools to validate your design before you invest in a capital project.</p>
                 </div>
-                <div class="front-page-linear-background"></div>
             </div>
         </section>
 
+        <div class="front-page-linear-background"></div>
 
         <div class="front-page-bottom-banner">
             <div class="row-first">
@@ -158,7 +162,7 @@ get_header(); ?>
 
 
 
-       
+
         <button type="button" class="btn btn-primary get-contact-info" data-toggle="modal" data-target="#exampleModal">
             <div class="contact-icon-container">
                 <img class="button-icon-top" alt="contact us" src='<?php echo get_template_directory_uri() . '/assets/icons/phone.svg'; ?>' />

@@ -48,6 +48,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 1. reverse footer  background color
 2. reduce size of everything , put everything in one screen 
 3. switch email and phone icon 
+4. first box background move monitor position
 ***/
 html {
   font-family: sans-serif;
@@ -2001,8 +2002,7 @@ label[for='nav-trigger'] {
                   filter: none; }
 
 #myFooter {
-  background: -webkit-gradient(linear, left top, right top, from(#1b447f), to(#35ced3));
-  background: linear-gradient(to right, #1b447f 0%, #35ced3 100%);
+  background: #36cdd3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2013,10 +2013,14 @@ label[for='nav-trigger'] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 250px;
+  height: 200px;
   margin-left: auto;
   margin-right: auto;
   position: relative; }
+  @media (max-width: 740px) {
+    #myFooter {
+      background: -webkit-gradient(linear, left top, right top, from(#1b447f), to(#35ced3));
+      background: linear-gradient(to right, #1b447f 0%, #35ced3 100%); } }
   @media (max-width: 740px) {
     #myFooter {
       -webkit-box-orient: vertical;
@@ -2031,7 +2035,8 @@ label[for='nav-trigger'] {
   #myFooter #footer-navigation {
     z-index: 4;
     width: 15%;
-    height: 100%; }
+    height: 100%;
+    min-width: 200px; }
     #myFooter #footer-navigation li:hover .sub-menu {
       display: none !important; }
     @media (max-width: 740px) {
@@ -2062,7 +2067,7 @@ label[for='nav-trigger'] {
         #myFooter #footer-navigation ul li a {
           font-family: 'Noto Sans';
           font-size: 15px;
-          color: #fff; }
+          color: #626e77; }
           #myFooter #footer-navigation ul li a:hover {
             color: #dfe9f6; }
   #myFooter #footer-middle-column {
@@ -2098,7 +2103,7 @@ label[for='nav-trigger'] {
       z-index: 4;
       font-size: 15px;
       margin-top: 20px;
-      color: gainsboro;
+      color: #626e77;
       text-align: left; }
       @media (max-width: 740px) {
         #myFooter #footer-middle-column .footer-brief-description {
@@ -2166,6 +2171,8 @@ label[for='nav-trigger'] {
        object-fit: cover;
     -o-object-position: 0px 2vw;
        object-position: 0px 2vw;
+    margin: 0px;
+    margin-left: -2px;
     -webkit-filter: brightness(100%);
             filter: brightness(100%); }
 
@@ -2812,9 +2819,10 @@ label[for='nav-trigger'] {
   height: 10vh;
   position: absolute;
   bottom: 0px;
+  left: 0px;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.5)), to(white)), url("../../assets/images/Pumps1.jpg");
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), white), url("../../assets/images/Pumps1.jpg");
-  background-size: cover;
+  background-size: cover,cover;
   background-position: center, 50% 18%;
   background-repeat: no-repeat no-repeat;
   opacity: 0.5; }

@@ -5,5 +5,5 @@
         <stop offset="100%" stop-color="rgb(53,206,211)"/>
       </linearGradient>
       </defs>
-    <path d="M0,90 C150,25 350,150 500,80 L500,00 L0,0 Z" style="stroke: none; fill:url(#Gradient1);"></path>
+    <path d="M-20,90 C150,55 350,110 500,80 L500,00 L0,0 Z" style="stroke: none; fill:url(#Gradient1);"></path>
   </svg>

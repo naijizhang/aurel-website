@@ -2345,7 +2345,8 @@ label[for='nav-trigger'] {
   font-family: 'Lalezar';
   letter-spacing: 1px;
   color: #004280;
-  margin-top: 50px;
+  font-size: 35px;
+  margin-top: 0px;
   margin-bottom: 0px;
   background: transparent;
   max-width: 1280px;
@@ -2806,29 +2807,11 @@ label[for='nav-trigger'] {
         margin-top: 30px;
         margin-left: 0px; } }
 
-.front-page-linear-background-picture {
-  display: none;
-  width: 100%;
-  height: 20vh;
-  position: absolute;
-  bottom: 0px;
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(100, 205, 211, 0.5)), to(white)), url("../../assets/images/Pumps1.jpg");
-  background: linear-gradient(0deg, rgba(100, 205, 211, 0.5), white), url("../../assets/images/Pumps1.jpg");
-  background-size: cover;
-  background-position: center, 50% 18%;
-  background-repeat: no-repeat no-repeat;
-  opacity: 0.5;
-  margin-top: -10vh; }
-  @media (max-width: 740px) {
-    .front-page-linear-background-picture {
-      display: none; } }
-
 .front-page-linear-background {
   width: 100%;
-  height: 16vh;
+  height: 10vh;
+  position: absolute;
+  bottom: 0px;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.5)), to(white)), url("../../assets/images/Pumps1.jpg");
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), white), url("../../assets/images/Pumps1.jpg");
   background-size: cover;
@@ -3091,7 +3074,7 @@ label[for='nav-trigger'] {
         letter-spacing: 1px; } }
 
 .big-curve1 {
-  height: 100px;
+  height: 50px;
   width: 100%;
   z-index: 0; }
   @media (max-width: 740px) {
@@ -3102,8 +3085,9 @@ label[for='nav-trigger'] {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    -o-object-position: 0px -12vw;
-       object-position: 0px -12vw; }
+    resize: horizontal;
+    -o-object-position: 0px -15vw;
+       object-position: 0px -15vw; }
 
 .content-company-history {
   background: #004280;

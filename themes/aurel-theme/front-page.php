@@ -41,8 +41,8 @@ get_header(); ?>
             </a>
         </div>
         <div class="big-curve1"><img alt="curved background" src='<?php echo get_template_directory_uri() . '/assets/images/curve-background1.svg'; ?>'></div>
+        <h1 class="what-we-do">What we do?</h1>
         <section class="section-what-we-do">
-            <h1 class="what-we-do">What we do?</h1>
             <div class="main-services-container">
                 <div class="each-services service-block1">
                     <h2> <a class="software-link" href="<?php echo get_permalink(get_page_by_path("cadsim-plus")); ?>"><img class="software-logo" alt="home logo" src='<?php echo get_template_directory_uri() . '/assets/images/CADSIM-Plus_PrimaryLogo.png'; ?>'></a><br>Process Simulator</h2>
@@ -89,11 +89,8 @@ get_header(); ?>
                     <p>Our CADSIM Plus process simulation tools and services can help you design, investigate, improve, operate and optimize a new or existing process.</p>
                     <p>Save money and time by using the right tools to validate your design before you invest in a capital project.</p>
                 </div>
-
-
-                <div class="front-page-linear-background-picture"></div>
+                <div class="front-page-linear-background"></div>
             </div>
-            <div class="polygon2"></div>
         </section>
 
 
@@ -161,7 +158,7 @@ get_header(); ?>
 
 
 
-        <div class="front-page-linear-background"></div>
+       
         <button type="button" class="btn btn-primary get-contact-info" data-toggle="modal" data-target="#exampleModal">
             <div class="contact-icon-container">
                 <img class="button-icon-top" alt="contact us" src='<?php echo get_template_directory_uri() . '/assets/icons/phone.svg'; ?>' />

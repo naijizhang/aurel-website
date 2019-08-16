@@ -355,10 +355,10 @@
     width: 50%;
     //flex-wrap: wrap;
     background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.5)),
-      url('../../assets/images/CADSIMsoftware.jpg');
-    background-position: center, 0px 0px;
+      url('../../assets/images/CADSIMsoftware.png');
+    background-position: center, 0px -7px;
     background-repeat: repeat, no-repeat;
-    background-size: cover, cover;
+    background-size: cover, 135%;
     justify-content: center;
     margin-bottom: 20px;
     @include mobile {

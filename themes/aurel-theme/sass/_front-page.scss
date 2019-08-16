@@ -168,41 +168,41 @@
     background: #fff;
   }
 }
-$polygon1_height: 150px;
-.polygon1 {
-  display: none;
-  shape-outside: polygon(0 $polygon1_height, 50% 50px, 100% $polygon1_height);
-  clip-path: polygon(0 $polygon1_height, 50% 50px, 100% $polygon1_height);
-  height: $polygon1_height;
-  width: 100%;
-  background: #fff;
-  //display: block;
-  position: relative;
-  top: 0px;
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
-  @include mobile {
-    display: none;
-  }
-}
+// $polygon1_height: 150px;
+// .polygon1 {
+//   display: none;
+//   shape-outside: polygon(0 $polygon1_height, 50% 50px, 100% $polygon1_height);
+//   clip-path: polygon(0 $polygon1_height, 50% 50px, 100% $polygon1_height);
+//   height: $polygon1_height;
+//   width: 100%;
+//   background: #fff;
+//   //display: block;
+//   position: relative;
+//   top: 0px;
+//   max-width: 1280px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   @include mobile {
+//     display: none;
+//   }
+// }
 
-$polygon2_height: 150px;
-.polygon2 {
-  display: none;
-  shape-outside: polygon(0 0, 50% 100px, 100% 0px);
-  clip-path: polygon(0 0, 50% 100px, 100% 0px);
-  height: $polygon2_height;
-  width: 100%;
-  background: #fff;
-  margin-bottom: 40px;
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
-  @include mobile {
-    display: none;
-  }
-}
+// $polygon2_height: 150px;
+// .polygon2 {
+//   display: none;
+//   shape-outside: polygon(0 0, 50% 100px, 100% 0px);
+//   clip-path: polygon(0 0, 50% 100px, 100% 0px);
+//   height: $polygon2_height;
+//   width: 100%;
+//   background: #fff;
+//   margin-bottom: 40px;
+//   max-width: 1280px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   @include mobile {
+//     display: none;
+//   }
+// }
 .what-we-do {
   text-align: center;
   font-family: 'Lalezar';
@@ -210,17 +210,17 @@ $polygon2_height: 150px;
   color: $color__blue;
   margin-top: 50px;
   margin-bottom: 0px;
-  background: #fff;
+  background: transparent;
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   z-index: 3;
   @include mobile {
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 50px;
     font-size: 30px;
-    background: $color__polygon1_blue;
-    color: #fff;
+    // background: $color__polygon1_blue;
+    // color: #fff;
     margin-top: 0px;
   }
 }
@@ -871,5 +871,20 @@ $polygon-color: $color__bottom_polygons;
       margin: 10px;
       letter-spacing: 1px;
     }
+  }
+}
+
+.big-curve1{
+  height:100px;
+  width:100%;
+  z-index: 0;
+  @include mobile{
+    height:50px;
+  }
+  img{
+    height:20vw;
+    width:100%;
+    object-fit: cover;
+    object-position: 0px -12vw;
   }
 }

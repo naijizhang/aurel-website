@@ -11,23 +11,22 @@ get_header(); ?>
 <?php get_sidebar(); ?>
 
 <div id="primary" class="content-area content-client-list">
-    <main id="main" class="site-main" role="main">
+	<main id="main" class="site-main" role="main">
 
-        <?php while (have_posts()) : the_post(); ?>
+		<?php while (have_posts()) : the_post(); ?>
 
-            <?php get_template_part('template-parts/content-withhero'); ?>
+			<?php get_template_part('template-parts/content-withhero'); ?>
 
-        <?php endwhile; // End of the loop. 
-        ?>
-       	<button type="button" class="btn btn-primary get-contact-info" data-toggle="modal" data-target="#exampleModal">
-           <div class="contact-icon-container">
-                <img class="button-icon-top" alt="contact us" src='<?php echo get_template_directory_uri() . '/assets/icons/phone.svg'; ?>' />
-                <p class="contact-hint">Contact</p>
-                <img class="button-icon-bottom" alt="contact us" src='<?php echo get_template_directory_uri() . '/assets/icons/mail.svg'; ?>' />
-            </div>
+		<?php endwhile; // End of the loop. 
+		?>
+		<button type="button" class="btn btn-primary get-contact-info" data-toggle="modal" data-target="#exampleModal">
+			<div class="contact-icon-container">
+				<img class="button-icon-top" alt="contact us" src='<?php echo get_template_directory_uri() . '/assets/icons/mail.svg'; ?>' />
+				<p class="contact-hint">Contact</p>
+				<img class="button-icon-bottom" alt="contact us" src='<?php echo get_template_directory_uri() . '/assets/icons/phone.svg'; ?>' />
+			</div>
 			<p class="contact-fixed-text">Click To Contact Us</p>
 		</button>
-
 		<!-- Modal -->
 		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered" role="document">
@@ -54,7 +53,7 @@ get_header(); ?>
 				</div>
 			</div>
 		</div>
-    </main><!-- #main -->
+	</main><!-- #main -->
 </div><!-- #primary -->
 
 <?php get_footer(); ?>

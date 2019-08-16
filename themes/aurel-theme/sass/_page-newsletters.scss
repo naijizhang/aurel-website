@@ -1,23 +1,26 @@
 .newsletters-content {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
   .cadsimulator-logo {
     margin-left: 10%;
     object-fit: contain;
     width: 25%;
     height: auto;
     @include mobile {
-        width: 50%;
+      width: 50%;
     }
   }
-  .newsletters-container {    
+  .newsletters-container {
     .each-newsletter {
       margin: 10px;
       width: 80%;
       margin-left: auto;
       margin-right: auto;
       position: relative;
-      .new-badge{
+      .new-badge {
         position: absolute;
-        top:-10px;
+        top: -10px;
         right: 5px;
         z-index: 2;
       }
@@ -35,7 +38,6 @@
       .card-body {
         margin-top: 10px;
         width: 100%;
-
       }
     }
   }

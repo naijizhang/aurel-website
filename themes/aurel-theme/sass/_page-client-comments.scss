@@ -1,16 +1,19 @@
-.content-client-comments{
-    .wp-block-quote{
-        display: flex;
-        flex-wrap: wrap;
-        border:5px solid $color__blue;
-        border-radius: 30px;
-        margin-bottom: 30px;
-        width:80%;
-        @include mobile {
-            width:90%;
-        }
-        p{
-            width:85%;
-        }
+.content-client-comments {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  .wp-block-quote {
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid $color__blue;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    width: 80%;
+    @include mobile {
+      width: 90%;
     }
+    p {
+      width: 85%;
+    }
+  }
 }

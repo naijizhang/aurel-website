@@ -273,6 +273,9 @@
 .team-content {
   padding-bottom: 50px;
   #team-top-banner-container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
     .wp-block-image {
       width: 40%;
       height: auto;
@@ -321,6 +324,11 @@
       margin: 20px auto;
     }
   }
+  .team-member-container{
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .member-detail-content{
@@ -328,6 +336,7 @@
     ul,h1,h2,h3,h4,p{
       width:100%;
       font-size: 15px;
+      max-width: 1024px;
     }
     h4{
       font-size: $mobile_heading2_size;

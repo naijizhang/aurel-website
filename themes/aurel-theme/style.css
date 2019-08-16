@@ -2360,6 +2360,7 @@ label[for='nav-trigger'] {
               flex-direction: column; } }
   .section-what-we-do .what-we-do-container {
     position: relative;
+    background: none;
     margin: 0px;
     width: 48%;
     padding: 0px; }

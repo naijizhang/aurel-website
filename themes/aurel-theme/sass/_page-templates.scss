@@ -344,6 +344,24 @@
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
+  .entry-title {
+    margin-bottom: 0px;
+    border-bottom: none;
+    padding-bottom: 10px;
+  }
+  .entry-content {
+    background: #fff;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-top: solid 8px $color__blue;
+    padding-top: 50px;
+    // margin-top: 0px;
+    @include mobile {
+      border-top-left-radius: 10%;
+      border-top-right-radius: 10%;
+      border-top-width: 5px;
+    }
+  }
   .float-right {
     margin-right: 10%;
   }
@@ -354,5 +372,18 @@
     img {
       margin-left: 10%;
     }
+  }
+}
+.content-all-page {
+  .entry-title {
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom: solid 8px $color__blue;
+    @include mobile {
+      border-bottom-width: 5px;
+    }
+  }
+  .entry-content {
+    padding-top: 10px;
   }
 }

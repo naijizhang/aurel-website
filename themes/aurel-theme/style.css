@@ -44,6 +44,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+/*
+1. reverse footer color 
+2. darken services blocks background
+3. remove all shadows
+
+*/
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -1996,7 +2002,8 @@ label[for='nav-trigger'] {
                   filter: none; }
 
 #myFooter {
-  background: #36cdd3;
+  background: -webkit-gradient(linear, left top, right top, from(#1b447f), to(#35ced3));
+  background: linear-gradient(to right, #1b447f 0%, #35ced3 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2061,7 +2068,7 @@ label[for='nav-trigger'] {
         #myFooter #footer-navigation ul li a {
           font-family: 'Noto Sans';
           font-size: 15px;
-          color: #626e77; }
+          color: #fff; }
           #myFooter #footer-navigation ul li a:hover {
             color: #dfe9f6; }
   #myFooter #footer-middle-column {
@@ -2097,7 +2104,7 @@ label[for='nav-trigger'] {
       z-index: 4;
       font-size: 15px;
       margin-top: 20px;
-      color: #626e77;
+      color: gainsboro;
       text-align: left; }
       @media (max-width: 740px) {
         #myFooter #footer-middle-column .footer-brief-description {

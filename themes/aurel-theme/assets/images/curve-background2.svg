@@ -1,9 +1,10 @@
 <svg fill="rgb(54, 205, 211)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 178">
-    <defs>
+    <path d="M1439,0 L1440,0 L1440,178 L0,178 L0,110.3817 C372.259672,195.829187 1299.44761,23.0287189 1439,23.0287189 L1439,0 Z">     </path>
+    <!-- <defs>
       <linearGradient id="Gradient1" x1="0" x2="1" y1="0" y2="0">
         <stop offset="0%" stop-color="rgb(27,68,127)"/>
         <stop offset="100%" stop-color="rgb(53,206,211)"/>
       </linearGradient>
       </defs>
-    <path d="M1439,0 L1440,0 L1440,178 L0,178 L0,110.3817 C372.259672,195.829187 1299.44761,23.0287189 1439,23.0287189 L1439,0 Z" style="stroke: none; fill:url(#Gradient1);">     </path>
+    <path d="M1439,0 L1440,0 L1440,178 L0,178 L0,110.3817 C372.259672,195.829187 1299.44761,23.0287189 1439,23.0287189 L1439,0 Z" style="stroke: none; fill:url(#Gradient1);">     </path> -->
   </svg>

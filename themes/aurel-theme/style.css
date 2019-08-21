@@ -1761,6 +1761,9 @@ object {
   margin-top: 15vh;
   margin-bottom: auto; }
 
+.content-hero {
+  position: relative; }
+
 .fixed-header-logged {
   top: 32px; }
   @media screen and (max-width: 782px) {

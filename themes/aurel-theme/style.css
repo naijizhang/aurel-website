@@ -1757,6 +1757,10 @@ object {
 .content-all-page .entry-content {
   padding-top: 10px; }
 
+.content-404 {
+  margin-top: 30vh;
+  margin-bottom: auto; }
+
 .fixed-header-logged {
   top: 32px; }
   @media screen and (max-width: 782px) {

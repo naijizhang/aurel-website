@@ -2563,7 +2563,7 @@ label[for='nav-trigger'] {
     background-size: cover, cover;
     margin-right: 20px; }
     .main-services-container .service-block2 h2 {
-      width: 50%; }
+      width: 80%; }
     @media (max-width: 740px) {
       .main-services-container .service-block2 {
         margin-right: 0px; } }

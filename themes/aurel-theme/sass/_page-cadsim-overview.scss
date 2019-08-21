@@ -5,7 +5,7 @@
   margin-top: 150px;
   position: relative;
   @include mobile {
-	  display: none;
+    display: none;
   }
 }
 #flask svg {
@@ -361,6 +361,9 @@
   width: 100vw;
   margin-left: auto;
   margin-right: auto;
+  .float-right {
+    margin-right: 15%;
+  }
   .cadsim-banner-container {
     display: flex;
     flex-direction: row;
@@ -368,32 +371,32 @@
     background: $color__polygon2_blue;
 
     .cadsim-title-content {
-      width: 60%;
-      padding-right: 30px;
+      width: 40%;
+      padding-right: 20px;
       display: flex;
       flex-direction: column;
-    justify-content: center;
-    .software-logo{
-      width:40%;
-      min-width: 200px;
-      object-fit: contain;
-      margin-left: 5%;
-      margin-bottom: 20px;
-      margin-top: 100px;
-      filter: brightness(140%) drop-shadow(0px 0px 3px #fff);
-    }
-	  @include mobile {
-		  width:80%;
-		  padding-right: 0px;
-	  }
+      justify-content: center;
+      .software-logo {
+        width: 40%;
+        min-width: 200px;
+        object-fit: contain;
+        margin-left: 5%;
+        margin-bottom: 20px;
+        margin-top: 100px;
+        filter: brightness(200%);
+      }
+      @include mobile {
+        width: 80%;
+        padding-right: 0px;
+      }
       .entry-header .entry-title {
         border: none;
         text-align: left;
         padding-bottom: 0px;
-		color: #fff;
-		@include mobile {
-			text-align: center;
-		}
+        color: #fff;
+        @include mobile {
+          text-align: center;
+        }
       }
       p {
         width: 90%;
@@ -407,6 +410,28 @@
     #flask {
       margin-left: 0px;
       margin-right: 0px;
+    }
+    .three-boxes-container {
+      height: 300px;
+      width: 30%;
+      margin-top: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .box {
+        width: 32%;
+        height: 80%;
+      }
+      #box1 {
+        background: #5bbcfc;
+      }
+      #box2 {
+        background: #bbb;
+      }
+      #box3 {
+        background: #fff;
+      }
     }
   }
   .cadsim-banner-helper {
@@ -425,18 +450,18 @@
   }
   .qa-container {
     box-shadow: 0px 0px 15px #bbb;
-	margin-top: 100px;
-	padding-top: 30px;
+    margin-top: 100px;
+    padding-top: 30px;
     padding-bottom: 60px;
     max-width: 1280px;
     margin-left: auto;
-	margin-right: auto;
-	position: relative;
-	z-index: 2;
-	background:#fff;
-	@include mobile {
-		box-shadow: 0px 0px 5px #bbb;
-	}
+    margin-right: auto;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+    @include mobile {
+      box-shadow: 0px 0px 5px #bbb;
+    }
     article {
       margin-top: 0px;
       .item-toggle-button {
@@ -444,32 +469,32 @@
       }
     }
   }
-  .as-background{
-	  position: relative;
-	  z-index: 0;
-	  margin-top: -100px;
-	  margin-bottom: -180px;
-	  margin-right: -50px;
-	  opacity: 0.3;
-	  display: flex;
-	  justify-content: flex-end;
-	  @include mobile {
-		display: none;
-	  }
-	  img{
-		  object-fit: contain;
-	  }
+  .as-background {
+    position: relative;
+    z-index: 0;
+    margin-top: -100px;
+    margin-bottom: -180px;
+    margin-right: -50px;
+    opacity: 0.3;
+    display: flex;
+    justify-content: flex-end;
+    @include mobile {
+      display: none;
+    }
+    img {
+      object-fit: contain;
+    }
   }
-  .contact-block{
-	  position: relative;
-	  z-index: 2;
-	  margin-left: 10%;
-	  width:60%;
-	  @include mobile {
-		  width:80%;
-		  margin-left: auto;
-		  margin-right: auto;
-	  }
+  .contact-block {
+    position: relative;
+    z-index: 2;
+    margin-left: 10%;
+    width: 60%;
+    @include mobile {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
 

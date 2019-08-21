@@ -4142,6 +4142,8 @@ p.is-active {
   width: 100vw;
   margin-left: auto;
   margin-right: auto; }
+  .cadsim-content .float-right {
+    margin-right: 15%; }
   .cadsim-content .cadsim-banner-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4155,8 +4157,8 @@ p.is-active {
             justify-content: center;
     background: linear-gradient(344.69deg, #1b447f 55%, #35ced3 100%); }
     .cadsim-content .cadsim-banner-container .cadsim-title-content {
-      width: 60%;
-      padding-right: 30px;
+      width: 40%;
+      padding-right: 20px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -4175,8 +4177,8 @@ p.is-active {
         margin-left: 5%;
         margin-bottom: 20px;
         margin-top: 100px;
-        -webkit-filter: brightness(140%) drop-shadow(0px 0px 3px #fff);
-                filter: brightness(140%) drop-shadow(0px 0px 3px #fff); }
+        -webkit-filter: brightness(200%);
+                filter: brightness(200%); }
       @media (max-width: 740px) {
         .cadsim-content .cadsim-banner-container .cadsim-title-content {
           width: 80%;
@@ -4198,6 +4200,32 @@ p.is-active {
     .cadsim-content .cadsim-banner-container #flask {
       margin-left: 0px;
       margin-right: 0px; }
+    .cadsim-content .cadsim-banner-container .three-boxes-container {
+      height: 300px;
+      width: 30%;
+      margin-top: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .cadsim-content .cadsim-banner-container .three-boxes-container .box {
+        width: 32%;
+        height: 80%; }
+      .cadsim-content .cadsim-banner-container .three-boxes-container #box1 {
+        background: #5bbcfc; }
+      .cadsim-content .cadsim-banner-container .three-boxes-container #box2 {
+        background: #bbb; }
+      .cadsim-content .cadsim-banner-container .three-boxes-container #box3 {
+        background: #fff; }
   .cadsim-content .cadsim-banner-helper {
     width: 100vw;
     height: 150px;

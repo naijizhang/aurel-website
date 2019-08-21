@@ -47,7 +47,7 @@
                             <p>CADSIM Plus is chemical process simulation software that can perform mass and energy balances and simulate dynamic conditions. It is a first-principles dynamic chemical process simulator and a full-featured Computer Assisted Drawing<a href="https://www.aurelsystems.com/sample-screenshots/">&nbsp;(CAD) front-end</a>&nbsp;in one package. CADSIM Plus includes a comprehensive set of&nbsp;<a href="https://www.aurelsystems.com/module-libraries/">generic process modules</a>&nbsp;and has a number of&nbsp;<a href="https://www.aurelsystems.com/optional-module-libraries/">optional module libraries</a>&nbsp;for various applications.</p>
                         </div>
 
-                        <div id="flask">
+                        <!-- <div id="flask">
                             <div class="background"></div>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113 130">
                                 <g>
@@ -71,17 +71,22 @@
                             <div class="swirl s3"></div>
                             <div class="swirl s4"></div>
                             <div class="swirl s5"></div>
+                        </div> -->
+                        <div class="three-boxes-container">
+                            <div id="box1" class="box"></div>
+                            <div id="box2" class="box"></div>
+                            <div id="box3" class="box"></div>
                         </div>
                     </section>
                     <div class="cadsim-banner-helper"></div>
 
                     <?php while (have_posts()) : the_post(); ?>
 
-                        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                            <div class="entry-content">
-                                <?php the_content(); ?>
-                            </div><!-- .entry-content -->
-                        </article><!-- #post-## -->
+                    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                        <div class="entry-content">
+                            <?php the_content(); ?>
+                        </div><!-- .entry-content -->
+                    </article><!-- #post-## -->
 
                     <?php endwhile; // End of the loop. 
                     ?>

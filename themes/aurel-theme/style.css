@@ -44,12 +44,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
-/****
-1. reverse footer  background color
-2. reduce size of everything , put everything in one screen 
-3. switch email and phone icon 
-4. first box background move monitor position
-***/
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -838,7 +832,7 @@ table {
   .get-contact-info:hover {
     -webkit-box-shadow: none;
             box-shadow: none;
-    background: #4699CE;
+    background: #4699ce;
     right: 0px;
     border: none; }
     .get-contact-info:hover .button-icon-top {
@@ -1243,7 +1237,7 @@ a {
           .widget-area ul li a {
             border: 1px solid #dfe9f6; }
             .widget-area ul li a:hover {
-              border: 1px solid #7CDFE3; } }
+              border: 1px solid #7cdfe3; } }
       .widget-area ul li a {
         color: #fff;
         border-bottom: 1px solid #dfe9f6;
@@ -1256,8 +1250,8 @@ a {
           .widget-area ul li a {
             color: #fff; } }
         .widget-area ul li a:hover {
-          color: #7CDFE3;
-          border-bottom: 1px solid #7CDFE3; }
+          color: #7cdfe3;
+          border-bottom: 1px solid #7cdfe3; }
           @media (max-width: 740px) {
             .widget-area ul li a:hover {
               color: #fff;
@@ -1442,24 +1436,24 @@ object {
   .qa-container .each-newsletter {
     margin-bottom: 2px; }
     .qa-container .each-newsletter:nth-child(6n + 2) .item-toggle-button {
-      background: #1E4F70;
+      background: #1e4f70;
       margin-left: 20%;
       margin-right: auto; }
     .qa-container .each-newsletter:nth-child(6n + 3) .item-toggle-button {
-      background: #377CA8;
+      background: #377ca8;
       margin-left: 25%;
       margin-right: auto; }
     .qa-container .each-newsletter:nth-child(6n + 4) .item-toggle-button {
-      background: #4699CE;
+      background: #4699ce;
       margin-left: 30%;
       margin-right: auto; }
     .qa-container .each-newsletter:nth-child(6n + 5) .item-toggle-button {
-      background: #57B9D3;
+      background: #57b9d3;
       margin-left: 35%;
       margin-right: auto; }
     .qa-container .each-newsletter:nth-child(6n) .item-toggle-button {
       opacity: 0.95;
-      background: #84C6E8; }
+      background: #84c6e8; }
     .qa-container .each-newsletter:nth-child(6n + 1) .item-toggle-button {
       background: #004280;
       margin-left: 15%;
@@ -1909,7 +1903,7 @@ object {
       font-family: 'Noto Sans';
       font-weight: bold; }
       #mobile-menu li a:hover {
-        color: #7CDFE3;
+        color: #7cdfe3;
         -webkit-filter: none;
                 filter: none;
         opacity: 0.8; }
@@ -1968,7 +1962,7 @@ label[for='nav-trigger'] {
     display: none !important;
     float: unset; }
     #primary-menu li .sub-menu .current_page_item {
-      background: #1E4F70; }
+      background: #1e4f70; }
       #primary-menu li .sub-menu .current_page_item a {
         color: #fff; }
     #primary-menu li .sub-menu li {
@@ -1980,7 +1974,7 @@ label[for='nav-trigger'] {
       transition: background 400ms linear;
       border-bottom: 1px solid #004280; }
       #primary-menu li .sub-menu li:hover {
-        background: #377CA8; }
+        background: #377ca8; }
         #primary-menu li .sub-menu li:hover a {
           color: #fff; }
       #primary-menu li .sub-menu li a {
@@ -2169,8 +2163,8 @@ label[for='nav-trigger'] {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    -o-object-position: 0px 2vw;
-       object-position: 0px 2vw;
+    -o-object-position: 0px 1vw;
+       object-position: 0px 1vw;
     margin: 0px;
     margin-left: -2px;
     -webkit-filter: brightness(100%);
@@ -2689,9 +2683,9 @@ label[for='nav-trigger'] {
           padding-left: 4vw;
           padding-right: 4vw; }
           .what-we-do-container .hexagon .hexagon-industry-container2 .industry2-container {
-            background: #377CA8 !important; }
+            background: #377ca8 !important; }
           .what-we-do-container .hexagon .hexagon-industry-container2 .industry3-container {
-            background: #4699CE !important; } }
+            background: #4699ce !important; } }
     .what-we-do-container .hexagon .hexagon-industry-container3 {
       height: 29%;
       width: 126%;
@@ -2714,7 +2708,7 @@ label[for='nav-trigger'] {
           padding-left: 4vw;
           padding-right: 4vw; }
           .what-we-do-container .hexagon .hexagon-industry-container3 .industry4-container {
-            background: #4699CE !important; } }
+            background: #4699ce !important; } }
     .what-we-do-container .hexagon .hexagon-industry-container4 {
       height: 21%;
       width: 100%;
@@ -2738,7 +2732,7 @@ label[for='nav-trigger'] {
                   justify-content: flex-end;
           padding-right: 4vw; }
           .what-we-do-container .hexagon .hexagon-industry-container4 .industry6-container {
-            background: #377CA8 !important; } }
+            background: #377ca8 !important; } }
     .what-we-do-container .hexagon .industry-link {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -4179,7 +4173,7 @@ p.is-active {
         color: #fff;
         text-align: left; }
         .cadsim-content .cadsim-banner-container .cadsim-title-content p a {
-          color: #7CDFE3; }
+          color: #7cdfe3; }
     .cadsim-content .cadsim-banner-container #flask {
       margin-left: 0px;
       margin-right: 0px; }

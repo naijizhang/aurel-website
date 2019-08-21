@@ -11,7 +11,7 @@ $color__text-main: #000;
 $color__background-screen: #fff;
 $color__text-screen: #21759b;
 
-$color__background-hr: rgb(54, 205, 211);//#ccc;
+$color__background-hr: rgb(54, 205, 211); //#ccc;
 $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 $color__border-abbr: #666;
@@ -28,50 +28,61 @@ $font__pre: 'Courier 10 Pitch', Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
 
-
 $color__teal: rgb(54, 205, 211);
-$color__light_teal: #7CDFE3;//rgb(100, 205, 211);
+$color__light_teal: #7cdfe3; //rgb(100, 205, 211);
 $color__deep_teal: rgb(60, 131, 135);
 $color__light_teal1: rgba(100, 205, 211, 1);
 $color__light_teal2: #6ac4cc;
 //Main colors
 $color__blue: rgb(0, 66, 128); //#16427d;
 //backgrounds
-$color__blue2: #1E4F70;//#0e59c2;
-$color__blue3: #377CA8;//#3873c1;
-$color__blue4: #4699CE;//#7393ba;
-$color__blue5: #57B9D3;//#8db2e3;
-$color__blue1: #84C6E8;//#3e6ba8;
+$color__blue2: #1e4f70; //#0e59c2;
+$color__blue3: #377ca8; //#3873c1;
+$color__blue4: #4699ce; //#7393ba;
+$color__blue5: #57b9d3; //#8db2e3;
+$color__blue1: #84c6e8; //#3e6ba8;
 $color__deep_blue: #23447f;
 $color__light_blue: #dfe9f6;
 
 //buttons
 $color__button_blue: #7b7c7c;
 $color__button_blue1: rgb(40, 117, 218);
-$color__fixed_contact_background:$color__button_blue1;
-$color__fixed_contact_background_hover:$color__blue4;
+$color__fixed_contact_background: $color__button_blue1;
+$color__fixed_contact_background_hover: $color__blue4;
 $color__green: #397c46;
 $color__light_green: rgb(121, 255, 147);
 
 //front-page colors
-$color__polygon1_blue: linear-gradient(to right, rgb(27,68,127) 0%, rgb(53,206,211) 100%);
-$color__polygon2_blue:linear-gradient(344.69deg, rgb(27,68,127) 55%, rgb(53,206,211) 100%);
-$color__polygon3_blue:linear-gradient(167.4deg, rgb(27,68,127) 73%, $color__light_teal2 100%);
-$color__industry:$color__blue;
-$color__bottom_polygons:$color__deep_blue;
-$color__linear_background:rgba(100,205,211, 0.2);
+$color__polygon1_blue: linear-gradient(
+  to right,
+  rgb(27, 68, 127) 0%,
+  rgb(53, 206, 211) 100%
+);
+$color__polygon2_blue: linear-gradient(
+  344.69deg,
+  rgb(27, 68, 127) 55%,
+  rgb(53, 206, 211) 100%
+);
+$color__polygon3_blue: linear-gradient(
+  167.4deg,
+  rgb(27, 68, 127) 73%,
+  $color__light_teal2 100%
+);
+$color__industry: $color__blue;
+$color__bottom_polygons: $color__deep_blue;
+$color__linear_background: rgba(100, 205, 211, 0.2);
 
 //header colors
-$color__header_text:$color__blue;
-$color__header_text_hover:$color__teal;
-$color__submenu_text:$color__blue;
-$color__submenu_background:$color__light_blue;
-$color__submenu_hover_text:#fff;
-$color__submenu_hover_background:$color__blue3;
+$color__header_text: $color__blue;
+$color__header_text_hover: $color__teal;
+$color__submenu_text: $color__blue;
+$color__submenu_background: $color__light_blue;
+$color__submenu_hover_text: #fff;
+$color__submenu_hover_background: $color__blue3;
 
 //widget
-$color__widget_background:$color__deep_blue;
-$color__widget_text:#fff;
+$color__widget_background: $color__deep_blue;
+$color__widget_text: #fff;
 $hover_widget_link: $color__light_teal;
 
 //Text
@@ -86,16 +97,7 @@ $mobile_heading2_size: 18px;
 
 // //new colors
 // $color_blue:rgb(0,66,128);
-$color_dark_grey:rgb(98,110,119);
-$color_medium_grey:rgb(120,144,156);
- $color_light_grey:rgb(172,179,181);
+$color_dark_grey: rgb(98, 110, 119);
+$color_medium_grey: rgb(120, 144, 156);
+$color_light_grey: rgb(172, 179, 181);
 // $color_turquoise:rgb(54,205,221);
-
-
-
-/****
-1. reverse footer  background color
-2. reduce size of everything , put everything in one screen 
-3. switch email and phone icon 
-4. first box background move monitor position
-***/

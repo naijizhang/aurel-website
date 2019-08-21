@@ -2526,8 +2526,10 @@ label[for='nav-trigger'] {
         width: 100%; } }
   .main-services-container .service-block1 {
     width: 50%;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), color-stop(24%, rgba(255, 255, 255, 0.65)), color-stop(50%, rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url("../../assets/images/CADSIMsoftware.png");
-    background: linear-gradient(rgba(0, 0, 0, 0.45) 0%, rgba(255, 255, 255, 0.65) 24%, rgba(0, 0, 0, 0.65) 50%, rgba(0, 0, 0, 0.65) 100%), url("../../assets/images/CADSIMsoftware.png");
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url("../../assets/images/CADSIMsoftware.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url("../../assets/images/CADSIMsoftware.png");
+    -webkit-filter: brightness(180%);
+            filter: brightness(180%);
     background-position: center, 0px -7px;
     background-repeat: repeat, no-repeat;
     background-size: cover, 135%;

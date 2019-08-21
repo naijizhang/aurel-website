@@ -3611,9 +3611,13 @@ p.is-active {
       color: #004280;
       border-bottom: 1px solid #36cdd3;
       width: 80%;
-      padding-bottom: 30px; }
+      padding-bottom: 30px;
+      border-bottom-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+      border-bottom: solid 8px #78909c; }
       @media (max-width: 740px) {
         .team-content #team-top-banner-container #team-page-title {
+          border-bottom-width: 5px;
           letter-spacing: 1px;
           font-size: 30px; } }
   .team-content h4 {

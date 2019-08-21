@@ -287,7 +287,11 @@
       border-bottom: 1px solid $color__teal;
       width: 80%;
       padding-bottom: 30px;
+      border-bottom-left-radius: 50%;//curve
+      border-bottom-right-radius: 50%;//curve
+      border-bottom: solid 8px $color_medium_grey;//curve
       @include mobile {
+        border-bottom-width: 5px;//curve
         letter-spacing: 1px;
         font-size: $mobile_heading1_size;
       }

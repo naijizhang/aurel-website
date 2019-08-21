@@ -303,7 +303,7 @@
       width: 55%;
       object-fit: contain;
       margin-bottom: 5px;
-     // filter: brightness(140%) drop-shadow(0px 0px 3px #fff);
+      // filter: brightness(140%) drop-shadow(0px 0px 3px #fff);
     }
     @include mobile {
       padding: 0px;
@@ -354,7 +354,12 @@
   .service-block1 {
     width: 50%;
     //flex-wrap: wrap;
-    background: linear-gradient(rgba(255, 255, 255,0.9) 0%,rgba(255, 255, 255,0.5) 30%,rgba(0, 0, 0,0.5) 40%, rgba(0, 0, 0, 0.75) 100%),
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.45) 0%,
+        rgba(255, 255, 255, 0.65) 24%,
+        rgba(0, 0, 0, 0.65) 50%,
+        rgba(0, 0, 0, 0.65) 100%
+      ),
       url('../../assets/images/CADSIMsoftware.png');
     background-position: center, 0px -7px;
     background-repeat: repeat, no-repeat;

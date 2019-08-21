@@ -2532,8 +2532,8 @@ label[for='nav-trigger'] {
     width: 50%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), color-stop(24%, rgba(255, 255, 255, 0.65)), color-stop(40%, rgba(72, 72, 72, 0.85)), to(rgba(0, 0, 0, 0.85))), url("../../assets/images/CADSIMsoftware.png");
-    background: linear-gradient(rgba(0, 0, 0, 0.45) 0%, rgba(255, 255, 255, 0.65) 24%, rgba(72, 72, 72, 0.85) 40%, rgba(0, 0, 0, 0.85) 100%), url("../../assets/images/CADSIMsoftware.png");
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.95)), color-stop(24%, rgba(255, 255, 255, 0.65)), color-stop(40%, rgba(142, 142, 142, 0.85)), to(rgba(0, 0, 0, 0.85))), url("../../assets/images/CADSIMsoftware.png");
+    background: linear-gradient(rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.65) 24%, rgba(142, 142, 142, 0.85) 40%, rgba(0, 0, 0, 0.85) 100%), url("../../assets/images/CADSIMsoftware.png");
     background-position: center, 0px -7px;
     background-repeat: repeat, no-repeat;
     background-size: cover, 135%;

@@ -3753,6 +3753,8 @@ p.is-active {
         width: 90%; } }
     .content-client-comments .wp-block-quote p {
       width: 85%; }
+  .content-client-comments .entry-title {
+    border-bottom: none; }
 
 .content-conference {
   max-width: 1024px;

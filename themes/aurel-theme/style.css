@@ -856,8 +856,8 @@ table {
                   transform: scale(1);
           margin-bottom: 30px; } }
     .get-contact-info:hover .button-icon-bottom {
-      -webkit-transform: scale(1.5);
-              transform: scale(1.5);
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
       margin-bottom: 0px;
       margin-left: 10px; }
       @media (max-width: 740px) {

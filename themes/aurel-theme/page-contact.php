@@ -10,12 +10,12 @@ get_header(); ?>
 
 <?php get_sidebar(); ?>
 
-<div id="primary" class="content-area content-contact">
+<div id="primary" class="content-area content-contact  content-all-page">
 	<main id="main" class="site-main" role="main">
 
 		<?php while (have_posts()) : the_post(); ?>
 
-			<?php get_template_part('template-parts/content-page'); ?>
+		<?php get_template_part('template-parts/content-page'); ?>
 
 		<?php endwhile; // End of the loop. 
 		?>

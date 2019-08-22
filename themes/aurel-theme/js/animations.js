@@ -56,8 +56,8 @@
     };
     const pageCategory = {
       about: 'about',
-      'aurel-team-page': 'about',
-      'client-list': 'about',
+      'aurel-team': 'about',
+      'clients': 'about',
       'client-comments': 'about',
       'consultant-links': 'about',
       'conference-papers': 'about',
@@ -69,7 +69,7 @@
       'dynamic-data-reconciliation': 'products',
       'product-tracking-2': 'products',
       // 'tech-corner':'products',
-      'newsletters-page': 'products',
+      'newsletters-2': 'products',
 
       'tech-corner': 'techCorner',
       'split-range-controllers': 'techCorner',
@@ -78,8 +78,8 @@
       'export-drawing-to-pdf': 'techCorner',
       'creating-computer-based-manuals': 'techCorner',
       'using-autotune': 'techCorner',
-      'using-the-compound-editor': 'techCorner',
-      'using-the-multi-doc-interface': 'techCorner',
+      'compound-editor': 'techCorner',
+      'multi-doc-interface': 'techCorner',
 
       services: 'services',
       training: 'services',
@@ -105,7 +105,7 @@
 
       'cadsim-plus': 'cadsimPlus',
       'module-libraries': 'cadsimPlus',
-      'add-on-module-libraries': 'cadsimPlus',
+      'optional-module-libraries': 'cadsimPlus',
       'ease-of-use': 'cadsimPlus',
       'pre-purchase-faqs': 'cadsimPlus',
       'sample-screenshots': 'cadsimPlus',
@@ -135,7 +135,7 @@
       'advanced-technologies': 'advanceTech',
       'stream-based-specifications': 'advanceTech',
       'living-drawings': 'advanceTech',
-      'open-simulation': 'advanceTech',
+      'open-architecture': 'advanceTech',
       smartcalc: 'advanceTech',
       'model-scoping': 'advanceTech'
     };

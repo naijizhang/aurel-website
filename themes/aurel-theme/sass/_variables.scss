@@ -35,14 +35,6 @@ $color__light_teal1: rgba(100, 205, 211, 1);
 $color__light_teal2: #6ac4cc;
 //Main colors
 $color__blue: rgb(0, 66, 128); //#16427d;
-//backgrounds
-$color__blue2: #1e4f70; //#0e59c2;
-$color__blue3: #377ca8; //#3873c1;
-$color__blue4: #4699ce; //#7393ba;
-$color__blue5: #57b9d3; //#8db2e3;
-$color__blue1: #84c6e8; //#3e6ba8;
-$color__deep_blue: #23447f;
-$color__light_blue: #dfe9f6;
 
 //buttons
 $color__button_blue: #7b7c7c;
@@ -102,6 +94,24 @@ $color_medium_grey: rgb(120, 144, 156);
 $color_light_grey: rgb(172, 179, 181);
 // $color_turquoise:rgb(54,205,221);
 
+
+//backgrounds
+// $color__blue2: #1e4f70; 
+// $color__blue3: #377ca8; 
+// $color__blue4: #4699ce;
+// $color__blue5: #57b9d3; 
+// $color__blue1: #84c6e8; 
+$color__blue2: $color__blue; 
+$color__blue3: $color_dark_grey; 
+$color__blue4: $color_medium_grey;
+$color__blue5: $color_light_grey; 
+$color__blue1: $color__teal; 
+
+
+
+
+$color__deep_blue: #23447f;
+$color__light_blue: #dfe9f6;
 
 /*
 1. reverse footer color 

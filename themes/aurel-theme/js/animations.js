@@ -56,7 +56,7 @@
     };
     const pageCategory = {
       about: 'about',
-      'aurel-team': 'about',
+      'aurel-team-page': 'about',
       'clients': 'about',
       'client-comments': 'about',
       'consultant-links': 'about',

@@ -24,7 +24,7 @@
 			<img class="software-logo" alt="home logo" src='<?php echo get_template_directory_uri() . '/assets/images/CADSIM-Plus_PrimaryLogo.png'; ?>'>
 		</a>
 		<div class="social-media-container">
-			<a class="link-googlePlus" href="https://youtube.com/">
+			<a class="link-googlePlus" href="https://www.youtube.com/channel/UC--bNftPX31Tuw1JtWQCQUQ">
 				<img class="googleplus-logo" alt="google plus logo" src='<?php echo get_template_directory_uri() . '/assets/icons/youtube.svg'; ?>'>
 			</a>
 			<a class="link-linkedin" href="https://www.linkedin.com/groups/4336849/profile">

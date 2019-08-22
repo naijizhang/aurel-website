@@ -14,6 +14,23 @@
       filter: none;
     }
   }
+  .as-background {
+    position: relative;
+    z-index: 0;
+   right: 15%;
+   margin-top: -15%;
+ 
+    opacity: 0.1;
+    display: flex;
+    justify-content: flex-end;
+    @include mobile {
+      display: none;
+    }
+    img {
+     
+      object-fit: contain;
+    }
+  }
 }
 
 .hero-title {
@@ -33,6 +50,7 @@
 .hero-image {
   margin: 0px auto;
   margin-top: -30px;
+  padding-bottom: 30px;
   width:100%;
   img {
     z-index: -1;

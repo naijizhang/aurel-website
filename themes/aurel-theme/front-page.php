@@ -72,7 +72,6 @@
                         </a>
                     </div>
                     <div class="big-curve1"><img alt="curved background" src='<?php echo get_template_directory_uri() . '/assets/images/curve-background1.svg'; ?>'></div>
-                    <h1 class="what-we-do">What we do?</h1>
                     <section class="section-what-we-do">
                         <div class="main-services-container">
                             <div class="each-services service-block1">

@@ -4151,6 +4151,9 @@ p.is-active {
   margin-right: auto; }
   .cadsim-content .float-right {
     margin-right: 10%; }
+    @media (max-width: 740px) {
+      .cadsim-content .float-right {
+        margin-right: 0; } }
   .cadsim-content .cadsim-banner-container {
     display: -webkit-box;
     display: -ms-flexbox;

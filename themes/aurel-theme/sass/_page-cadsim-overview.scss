@@ -363,6 +363,9 @@
   margin-right: auto;
   .float-right {
     margin-right: 10%;
+    @include mobile{
+      margin-right: 0;
+    }
   }
   .cadsim-banner-container {
     display: flex;

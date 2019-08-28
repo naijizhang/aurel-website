@@ -32,14 +32,14 @@
 //     box-shadow: 5px 0 15px -4px #000, -5px 0 8px -4px #000;
 //   }
 // }
-.carousel-indicators{
-  li{
+.carousel-indicators {
+  li {
     background-color: $color__blue !important;
   }
 }
 .slides-container {
   z-index: 1;
- 
+
   .each-slide-item {
     width: 100%;
     //height: 20vh;
@@ -55,112 +55,112 @@
       object-position: center;
     }
   }
-  .slide-item1 {
-    background: linear-gradient(
-        270deg,
-        rgba(54, 205, 211, 1) 0%,
-        rgba(255, 255, 255, 0) 50%,
-        rgba(0, 68, 128, 1) 100%
-      ),
-      linear-gradient(0deg, rgba(0, 0, 0, 0.29), rgba(0, 0, 0, 0.29)),
-      url('../../assets/images/CogenPipesBackground2.jpg');
-    background-size: cover cover cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    @include mobile {
-      flex-direction: column;
-    }
-    .slide1-hook {
-      margin-top: 30px;
-      width: 40%;
-      @include mobile {
-        width: 90%;
-      }
-      p {
-        //width: 50%;
-        color: #fff;
-        font-family: 'Poiret One';
-        font-size: 20px;
-        margin-left: 20%;
-        @include mobile {
-          width: 80%;
-          font-size: 20px;
-          line-height: 25px;
-          margin-top: 10px;
-          margin-bottom: 0px;
-          margin-left: auto;
-          margin-right: auto;
-        }
-      }
-    }
-    .slide1-bottom-content {
-      display: flex;
-      flex-direction: row;
-      height: 50%;
-      justify-content: flex-end;
-      align-items: flex-end;
-      width: 40%;
-      @include mobile {
-        height: auto;
-        width: 90%;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-      }
-      p {
-        color: #fff;
-        margin-bottom: 0px;
-        margin-right: 20px;
-        font-family: 'Poiret One';
-        font-size: 30px;
-        letter-spacing: 2px;
-        text-align: end;
-        @include mobile {
-          margin: 0px;
-          margin-top: 12%;
-          text-align: center;
-          font-size: 20px;
-        }
-      }
-      a {
-        margin-right: 20%;
-        @include mobile {
-          margin: 0px;
-        }
-        .software-logo {
-          width: 200px;
-          height: auto;
-          object-fit: contain;
-          // border-radius: 15px;
-          //border: 10px solid #fff;
-          // background: #fff;
-          filter: brightness(180%) drop-shadow(5px 5px 5px #fff);
-          transition: all 0.3s;
-          @include mobile {
-            width: 150px;
-            margin-top: 5px;
-          }
-          &:hover {
-            // box-shadow: 0px 0px 15px #bbbbbb;
+  // .slide-item1 {
+  //   background: linear-gradient(
+  //       270deg,
+  //       rgba(54, 205, 211, 1) 0%,
+  //       rgba(255, 255, 255, 0) 50%,
+  //       rgba(0, 68, 128, 1) 100%
+  //     ),
+  //     linear-gradient(0deg, rgba(0, 0, 0, 0.29), rgba(0, 0, 0, 0.29)),
+  //     url('../../assets/images/CogenPipesBackground2.jpg');
+  //   background-size: cover cover cover;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: space-around;
+  //   background-attachment: fixed;
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   display: flex;
+  //   flex-direction: row;
+  //   justify-content: center;
+  //   align-items: center;
+  //   @include mobile {
+  //     flex-direction: column;
+  //   }
+  //   .slide1-hook {
+  //     margin-top: 30px;
+  //     width: 40%;
+  //     @include mobile {
+  //       width: 90%;
+  //     }
+  //     p {
+  //       //width: 50%;
+  //       color: #fff;
+  //       font-family: 'Poiret One';
+  //       font-size: 20px;
+  //       margin-left: 20%;
+  //       @include mobile {
+  //         width: 80%;
+  //         font-size: 20px;
+  //         line-height: 25px;
+  //         margin-top: 10px;
+  //         margin-bottom: 0px;
+  //         margin-left: auto;
+  //         margin-right: auto;
+  //       }
+  //     }
+  //   }
+  //   .slide1-bottom-content {
+  //     display: flex;
+  //     flex-direction: row;
+  //     height: 50%;
+  //     justify-content: flex-end;
+  //     align-items: flex-end;
+  //     width: 40%;
+  //     @include mobile {
+  //       height: auto;
+  //       width: 90%;
+  //       flex-direction: column;
+  //       justify-content: flex-start;
+  //       align-items: center;
+  //     }
+  //     p {
+  //       color: #fff;
+  //       margin-bottom: 0px;
+  //       margin-right: 20px;
+  //       font-family: 'Poiret One';
+  //       font-size: 30px;
+  //       letter-spacing: 2px;
+  //       text-align: end;
+  //       @include mobile {
+  //         margin: 0px;
+  //         margin-top: 12%;
+  //         text-align: center;
+  //         font-size: 20px;
+  //       }
+  //     }
+  //     a {
+  //       margin-right: 20%;
+  //       @include mobile {
+  //         margin: 0px;
+  //       }
+  //       .software-logo {
+  //         width: 200px;
+  //         height: auto;
+  //         object-fit: contain;
+  //         // border-radius: 15px;
+  //         //border: 10px solid #fff;
+  //         // background: #fff;
+  //         filter: brightness(180%) drop-shadow(5px 5px 5px #fff);
+  //         transition: all 0.3s;
+  //         @include mobile {
+  //           width: 150px;
+  //           margin-top: 5px;
+  //         }
+  //         &:hover {
+  //           // box-shadow: 0px 0px 15px #bbbbbb;
 
-            filter: brightness(100%);
-            border-radius: 15px;
-            padding: 10px;
-            background: #fff;
-          }
-        }
-      }
-    }
-  }
+  //           filter: brightness(100%);
+  //           border-radius: 15px;
+  //           padding: 10px;
+  //           background: #fff;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
   .slide-item2 {
     //background: #000;
     //display: none;
@@ -171,7 +171,7 @@
   margin: 0px;
   //background: $color__polygon1_blue;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
@@ -183,6 +183,9 @@
   .what-we-do-container {
     position: relative;
     background: none;
+    margin: 0px;
+    width: 100%;
+    padding: 0px;
     .what-we-do-title {
       text-align: center;
       font-family: 'Lalezar';
@@ -190,22 +193,19 @@
       color: $color__blue;
       font-size: 35px;
       margin-top: 20px;
-      margin-bottom: 0px;
+      margin-bottom: 20px;
       background: transparent;
       max-width: 1280px;
       margin-left: auto;
       margin-right: auto;
       z-index: 3;
-      position: absolute;
-      top: 50px;
-      left: 15%;
+      // position: absolute;
+      // top: 50px;
+      // left: 15%;
       @include mobile {
         display: none;
       }
     }
-    margin: 0px;
-    width: 48%;
-    padding: 0px;
     p {
       font-size: 15px;
     }
@@ -215,41 +215,7 @@
     }
   }
 }
-// $polygon1_height: 150px;
-// .polygon1 {
-//   display: none;
-//   shape-outside: polygon(0 $polygon1_height, 50% 50px, 100% $polygon1_height);
-//   clip-path: polygon(0 $polygon1_height, 50% 50px, 100% $polygon1_height);
-//   height: $polygon1_height;
-//   width: 100%;
-//   background: #fff;
-//   //display: block;
-//   position: relative;
-//   top: 0px;
-//   max-width: 1280px;
-//   margin-left: auto;
-//   margin-right: auto;
-//   @include mobile {
-//     display: none;
-//   }
-// }
 
-// $polygon2_height: 150px;
-// .polygon2 {
-//   display: none;
-//   shape-outside: polygon(0 0, 50% 100px, 100% 0px);
-//   clip-path: polygon(0 0, 50% 100px, 100% 0px);
-//   height: $polygon2_height;
-//   width: 100%;
-//   background: #fff;
-//   margin-bottom: 40px;
-//   max-width: 1280px;
-//   margin-left: auto;
-//   margin-right: auto;
-//   @include mobile {
-//     display: none;
-//   }
-// }
 .what-we-do {
   text-align: center;
   font-family: 'Lalezar';
@@ -275,18 +241,18 @@
   }
 }
 .main-services-container {
-  width: 50%;
+  width: 100%;
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
-  background: #fff;
-  margin-top: 20px;
+  //background: #fff;
+  margin-top: 50px;
   margin-bottom: 50px;
   // margin-bottom: -20px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-wrap: nowrap;
   // padding-top: 0px;
   //box-shadow: 5px 0 15px -4px #bbb;
   z-index: 3;
@@ -295,16 +261,17 @@
     padding-top: 0px;
     width: 100%;
   }
+  .software-link {
+    width: 100%;
+  }
   .each-services {
-    padding: 15px;
-    // padding-top: 30px;
-    // padding-bottom: 30px;
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     box-shadow: 3px 0 10px #bbb;
-
+    background: #fff;
     .software-logo {
       width: 55%;
       object-fit: contain;
@@ -321,14 +288,15 @@
       padding-bottom: 30px;
     }
     h2 {
-      font-size: 20px;
+      font-size: 25px;
       text-align: left;
-      color: #fff;
+      color: $color__blue;
       font-weight: bold;
-      margin-bottom: 10px;
-      margin-top: 20px;
-      text-align: center;
+      margin: 0px;
+      padding-top: 20px;
+      padding-bottom: 20px;
 
+      text-align: center;
       @include mobile {
         margin-top: 40px;
         width: 70%;
@@ -343,97 +311,76 @@
       margin: 0px;
       margin-bottom: 10px;
       text-align: center;
-      color: #fff;
+      color: $color__blue;
       &:hover {
         text-decoration: underline;
       }
     }
   }
-  .other-services-container {
-    width: 100%;
+  .three-links-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    padding: 15px;
+    // padding-top: 15px;
+    // padding-bottom: 15px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
     @include mobile {
-      width: 100%;
+      flex-direction: column;
+    }
+    p {
+      display: inline-block;
+      //width: 150px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 18px;
+      @include mobile {
+        font-size: 15px;
+      }
     }
   }
-  .service-block1 {
-    width: 50%;
-    flex-wrap: wrap;
-    background: linear-gradient(
-        rgba(255, 255, 255, 0.95) 0%,
-        rgba(255, 255, 255, 0.65) 24%,
-        rgba(142, 142, 142, 0.85) 40%,
-        rgba(0, 0, 0, 0.85) 100%
-      ),
-      url('../../assets/images/CADSIMsoftware.png');
-      
-    // background: linear-gradient(
-    //     rgba(0, 0, 0, 0.8) 0%,
-    //     rgba(0, 0, 0, 0.8) 100%
-    //   ),
-    //   url('../../assets/images/CADSIMsoftware.png');
-    // filter: brightness(180%);
-    background-position: center, 0px -7px;
-    background-repeat: repeat, no-repeat;
-    background-size: cover, 135%;
-    justify-content: center;
-    margin-bottom: 20px;
-    //filter: brightness(120%);
-    @include mobile {
+  .service-block {
+    width: 100%;
+    min-width: 220px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    .white-block {
       width: 100%;
-      margin-bottom: 0px;
+      background: rgba(255, 255, 255, 0.7);
     }
-    h2 {
-      text-align: center;
-      //font-size: 35px;
-    }
-    .three-links-container {
-      display: flex;
-      flex-direction: column;
-      @include mobile {
-        flex-direction: column;
-      }
-      p {
-        display: inline-block;
-        width: 150px;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 15px;
-        @include mobile {
-          font-size: 15px;
-        }
-      }
-    }
+  }
+
+  .service-block1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%),
+      url('../../assets/images/CadsimPlus_SoftwareBox.png');
+    background-position: center, center 0;
+    background-repeat: repeat, no-repeat;
+    background-size: cover, 60%;
+
+    //filter: brightness(120%);
   }
   .service-block2 {
-    width: 50%;
-    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url('../../assets/images/modeling.png');
-    background-position: center, center;
-    background-repeat: repeat, no-repeat;
-    background-size: cover, cover;
-    margin-right: 20px;
-    h2 {
-      width: 80%;
-    }
-    @include mobile {
-      margin-right: 0px;
-    }
+    background: url('../../assets/images/modeling.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .service-block3 {
-    width: 50%;
-    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url('../../assets/images/onlineApplication.png');
-    background-position: center, center;
-    background-repeat: repeat, no-repeat;
-    background-size: cover, cover;
+    background: url('../../assets/images/onlineApplication.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 .what-we-do-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0px auto;
@@ -444,6 +391,13 @@
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  p {
+    width: 100%;
+    max-width: 1200px;
+    margin: 5px auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
   @include mobile {
     flex-direction: column;
   }
@@ -758,75 +712,75 @@
   }
 }
 
-.front-page-bottom-banner {
-  margin-top: 12vh;
-  margin-bottom: 0px;
-  display: none;
-  @include mobile {
-    margin-top: 0px;
-    height: 40vh;
-    margin-top: 30px;
-    margin-bottom: 80px;
-  }
-  .row-first {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    @include mobile {
-      position: relative;
-      justify-content: center;
-    }
-    .cadsim-logo-container {
-      width: 20%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      @include mobile {
-        position: absolute;
-        top: 0px;
-        width: auto;
-        height: 40vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      img {
-        object-fit: contain;
-        @include mobile {
-          width: 35vw;
-          height: 35vw;
-          padding: 10px;
-          background: #fff;
-          border-radius: 50%;
-          z-index: 100;
-          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
-        }
-      }
-    }
-  }
-  .row-second {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3vh;
-    @include mobile {
-      margin-top: 0px;
-      position: relative;
-      justify-content: center;
-    }
-    .polygon-container {
-      margin-left: 5vw;
-      margin-right: 5vw;
-      z-index: 5;
-      @include mobile {
-        margin-left: 0px;
-        margin-right: 0px;
-        margin: 10px;
-      }
-    }
-  }
-}
+// .front-page-bottom-banner {
+//   margin-top: 12vh;
+//   margin-bottom: 0px;
+//   display: none;
+//   @include mobile {
+//     margin-top: 0px;
+//     height: 40vh;
+//     margin-top: 30px;
+//     margin-bottom: 80px;
+//   }
+//   .row-first {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-around;
+//     @include mobile {
+//       position: relative;
+//       justify-content: center;
+//     }
+//     .cadsim-logo-container {
+//       width: 20%;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       @include mobile {
+//         position: absolute;
+//         top: 0px;
+//         width: auto;
+//         height: 40vh;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//       }
+//       img {
+//         object-fit: contain;
+//         @include mobile {
+//           width: 35vw;
+//           height: 35vw;
+//           padding: 10px;
+//           background: #fff;
+//           border-radius: 50%;
+//           z-index: 100;
+//           box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+//         }
+//       }
+//     }
+//   }
+//   .row-second {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//     align-items: center;
+//     margin-top: 3vh;
+//     @include mobile {
+//       margin-top: 0px;
+//       position: relative;
+//       justify-content: center;
+//     }
+//     .polygon-container {
+//       margin-left: 5vw;
+//       margin-right: 5vw;
+//       z-index: 5;
+//       @include mobile {
+//         margin-left: 0px;
+//         margin-right: 0px;
+//         margin: 10px;
+//       }
+//     }
+//   }
+// }
 
 .overlay {
   // position: absolute;
@@ -975,8 +929,80 @@ $polygon-color: $color__bottom_polygons;
   }
 }
 
+.banner-img {
+  width: 100%;
+  height: auto;
+}
+.industry-list-title {
+  position: relative;
+  z-index: 3;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.industry-list-container {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  .industry-link{
+    transition: 0.3s all;
+    &:hover{
+     // text-decoration-color: #fff;
+     text-decoration: none;
+     transform: scale(1.07);
+    }
+  }
+  .each-button {
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 16px;
+    // background: red;
 
-.banner-img{
-  width:100%;
-  height:auto;
+  }
+
+  #pulp {
+    background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
+      url('../../assets/industries/pulp.jpg');
+    background-position: cover, center;
+    background-size: cover, cover;
+  }
+  #forest {
+    background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
+      url('../../assets/industries/wood.png');
+    background-position: center;
+    background-size: cover;
+  }
+  #food {
+    background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
+      url('../../assets/industries/foodProcessing.png');
+    background-position: cover, center;
+    background-size: cover, cover;
+  }
+  #water {
+    background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
+      url('../../assets/industries/water.png');
+    background-position: cover, center;
+    background-size: cover, cover;
+  }
+  #mineral {
+    background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
+      url('../../assets/industries/mining.png');
+    background-position: cover, center;
+    background-size: cover, cover;
+  }
+  #research {
+    background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
+      url('../../assets/industries/research.png');
+    background-position: cover, center;
+    background-size: cover, cover;
+  }
 }

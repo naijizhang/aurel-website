@@ -4,10 +4,10 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <meta name="description" content="Aurel Systems Inc. Chemical process simulation software. Dynamic and steady-state process modeling. CADSIM Plus process engineering tools and services.">
     <meta name="keywords" content="chemical process simulation software,cadsim plus,chemical engineering software,process simulator,dynamic process modeling,process engineering,design,chemical simulator,optimization,dynamic data reconciliation,steady state simulation,pulp and paper,water balance,product tracking,heat and material balance">
-    
+
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -41,14 +41,19 @@
 
             <div id="primary" class="content-area content-home-page">
                 <main id="main" class="site-main" role="main">
-                    <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
-                        <ol class="carousel-indicators">
+                    <!-- <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel"> -->
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <!-- <ol class="carousel-indicators">
                             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                        </ol>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+                            <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
+                        </ol> -->
                         <div class="carousel-inner slides-container">
                             <div class="carousel-item active each-slide-item slide-item1">
-                                <div class="slide1-hook">
+                                <!-- <div class="slide1-hook">
                                     <p>Are you sure that the capital project that you are planning will provide the economic benefits that you need?</p>
                                     <p> What if you could look into the future and know for sure? </p>
                                 </div>
@@ -57,10 +62,24 @@
                                     <a class="software-link" href="<?php echo get_permalink(get_page_by_path("cadsim-plus")); ?>">
                                         <img class="software-logo" alt="home logo" src='<?php echo get_template_directory_uri() . '/assets/images/CADSIM-Plus_PrimaryLogo.png'; ?>'>
                                     </a>
-                                </div>
+                                </div> -->
+                                <img class="banner-img" alt="banner picture" src='<?php echo get_template_directory_uri() . '/assets/banners/banner1.png'; ?>'>
                             </div>
-                            <!-- <div class="carousel-item each-slide-item slide-item2">
-                </div> -->
+                            <div class="carousel-item each-slide-item slide-item2">
+                                <img class="banner-img" alt="banner picture" src='<?php echo get_template_directory_uri() . '/assets/banners/banner2.png'; ?>'>
+                            </div>
+                            <div class="carousel-item each-slide-item slide-item3">
+                                <img class="banner-img" alt="banner picture" src='<?php echo get_template_directory_uri() . '/assets/banners/banner3.png'; ?>'>
+                            </div>
+                            <div class="carousel-item each-slide-item slide-item4">
+                                <img class="banner-img" alt="banner picture" src='<?php echo get_template_directory_uri() . '/assets/banners/banner4.png'; ?>'>
+                            </div>
+                            <div class="carousel-item each-slide-item slide-item5">
+                                <img class="banner-img" alt="banner picture" src='<?php echo get_template_directory_uri() . '/assets/banners/banner5.png'; ?>'>
+                            </div>
+                            <div class="carousel-item each-slide-item slide-item6">
+                                <img class="banner-img" alt="banner picture" src='<?php echo get_template_directory_uri() . '/assets/banners/banner6.png'; ?>'>
+                            </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -71,7 +90,7 @@
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
-                    <div class="big-curve1"><img alt="curved background" src='<?php echo get_template_directory_uri() . '/assets/images/curve-background1.svg'; ?>'></div>
+                    <!-- <div class="big-curve1"><img alt="curved background" src='<?php //echo get_template_directory_uri() . '/assets/images/curve-background1.svg'; ?>'></div> -->
                     <section class="section-what-we-do">
                         <div class="main-services-container">
                             <div class="each-services service-block1">

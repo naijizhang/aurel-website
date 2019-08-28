@@ -9,7 +9,8 @@
 get_header(); ?>
 <?php get_sidebar(); ?>
 
-<div id="primary" class="content-area single-post-content">
+<div id="primary" class="content-area  content-all-page"> 
+	<!-- single-post-content -->
 	<main id="main" class="site-main" role="main">
 
 		<?php while (have_posts()) : the_post(); ?>

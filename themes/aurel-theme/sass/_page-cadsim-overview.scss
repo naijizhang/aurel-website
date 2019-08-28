@@ -416,7 +416,7 @@
     }
     .three-boxes-container {
       height: 300px;
-      width: 30%;
+      width: 25%;
       margin-top: auto;
       display: flex;
       flex-direction: row;
@@ -426,25 +426,34 @@
 
       .box {
         width: 40%;
-        height: 80%;
+        height: 90%;
       }
       #box1 {
-        background: #5bbcfc;
+        background: url("../../assets//images/CadsimPlus_SoftwareBox.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width:300px;
         position: absolute;
         top: 0px;
         left: 0px;
         z-index: 1;
+       // border: 1px solid;
       }
       #box2 {
         background: #bbb;
         z-index: 2;
+        display: none;
       }
       #box3 {
-        background: #fff;
+        background: url("../../assets//images/CadsimPlus_SoftwareBox.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width:300px;
         position: absolute;
         bottom: 0px;
         right: 0px;
         z-index: 3;
+       // border: 1px solid;
       }
     }
   }
@@ -466,11 +475,11 @@
 
     .box {
       width: 28%;
-      border: 3px solid $color__blue;
+      border: 3px solid $color_light_grey;
       transition: all 0.5s;
       box-shadow: 0px 5px 10px #bbb;
       &:hover{
-        border: 3px solid $color__teal;
+        border: 3px solid $color__blue;
       }
       .wp-block-image {
         margin-top: 0px;

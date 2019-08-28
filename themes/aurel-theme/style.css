@@ -1563,7 +1563,7 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  color: #7598c4;
+  color: #004280;
   width: 70%;
   margin-left: auto;
   margin-right: auto;
@@ -1592,7 +1592,7 @@ object {
         margin-left: auto;
         margin-right: auto; } }
     .contact-block .column h3 {
-      color: #7598c4;
+      color: #004280;
       letter-spacing: 1px;
       font-style: normal;
       margin-bottom: 10px;
@@ -1615,7 +1615,7 @@ object {
     height: 50px;
     margin-top: auto;
     margin-bottom: auto;
-    background: #6f99cd;
+    background: #004280;
     color: #fff;
     border-radius: 30px; }
     @media (max-width: 740px) {
@@ -1629,7 +1629,7 @@ object {
       margin-right: 10px; }
     .contact-block a:hover {
       text-decoration: none;
-      background: #7b7c7c; }
+      background: #36cdd3; }
 
 .content-version h3,
 .content-version h4,
@@ -2211,11 +2211,13 @@ label[for='nav-trigger'] {
   .carousel-indicators {
     display: none; } }
 
+.carousel-indicators li {
+  background-color: #004280 !important; }
+
 .slides-container {
   z-index: 1; }
   .slides-container .each-slide-item {
     width: 100%;
-    height: 20vh;
     min-height: 300px; }
     @media (max-width: 740px) {
       .slides-container .each-slide-item {
@@ -2348,9 +2350,6 @@ label[for='nav-trigger'] {
             border-radius: 15px;
             padding: 10px;
             background: #fff; }
-  .slides-container .slide-item2 {
-    background: #000;
-    display: none; }
 
 .section-what-we-do {
   position: relative;
@@ -2884,15 +2883,14 @@ label[for='nav-trigger'] {
         width: 33%;
         text-align: center;
         margin: 0;
-        margin-left: -10px;
+        margin-left: -20px;
         color: #004280;
         font-family: 'Lalezar';
-        font-size: 25px;
+        font-size: 30px;
         letter-spacing: 1px;
-        background: #dfe9f6;
         padding: 10px;
         border-radius: 20px;
-        opacity: 0.7; }
+        opacity: 1; }
   .what-we-do-container .right-column {
     width: 90%;
     z-index: 3; }
@@ -3188,6 +3186,10 @@ label[for='nav-trigger'] {
     resize: horizontal;
     -o-object-position: 0px -15vw;
        object-position: 0px -15vw; }
+
+.banner-img {
+  width: 100%;
+  height: auto; }
 
 .content-company-history {
   background: #004280;
@@ -3847,30 +3849,30 @@ p.is-active {
         width: 90%;
         margin-left: auto; } }
 
-.content-contact h3 {
-  width: 80%;
-  text-align: start;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  -webkit-filter: drop-shadow(0px 3px 3px #c4c4c4);
-          filter: drop-shadow(0px 3px 3px #c4c4c4); }
-  @media (max-width: 740px) {
-    .content-contact h3 {
-      font-size: 22px; } }
-
-.content-contact p:first-of-type {
+.content-contact {
   position: relative; }
-  .content-contact p:first-of-type img {
+  .content-contact h3 {
+    width: 80%;
+    text-align: start;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    -webkit-filter: drop-shadow(0px 3px 3px #c4c4c4);
+            filter: drop-shadow(0px 3px 3px #c4c4c4); }
+    @media (max-width: 740px) {
+      .content-contact h3 {
+        font-size: 22px; } }
+  .content-contact .as-background {
     width: 30%;
     height: auto;
     position: absolute;
-    top: 0%;
-    right: 30px;
-    border: 3px solid #004280;
-    border-radius: 20px;
-    padding: 10px; }
+    bottom: 10%;
+    right: 15%;
+    opacity: 0.2; }
+    .content-contact .as-background img {
+      width: 500px;
+      height: auto; }
     @media (max-width: 740px) {
-      .content-contact p:first-of-type img {
+      .content-contact .as-background {
         display: none; } }
 
 .newsletters-content {
@@ -4231,7 +4233,7 @@ p.is-active {
       margin-right: 0px; }
     .cadsim-content .cadsim-banner-container .three-boxes-container {
       height: 300px;
-      width: 30%;
+      width: 25%;
       margin-top: auto;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -4249,18 +4251,25 @@ p.is-active {
       position: relative; }
       .cadsim-content .cadsim-banner-container .three-boxes-container .box {
         width: 40%;
-        height: 80%; }
+        height: 90%; }
       .cadsim-content .cadsim-banner-container .three-boxes-container #box1 {
-        background: #5bbcfc;
+        background: url("../../assets//images/CadsimPlus_SoftwareBox.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 300px;
         position: absolute;
         top: 0px;
         left: 0px;
         z-index: 1; }
       .cadsim-content .cadsim-banner-container .three-boxes-container #box2 {
         background: #bbb;
-        z-index: 2; }
+        z-index: 2;
+        display: none; }
       .cadsim-content .cadsim-banner-container .three-boxes-container #box3 {
-        background: #fff;
+        background: url("../../assets//images/CadsimPlus_SoftwareBox.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 300px;
         position: absolute;
         bottom: 0px;
         right: 0px;
@@ -4285,13 +4294,13 @@ p.is-active {
         justify-content: space-around; }
     .cadsim-content .three-boxes-banner-container .box {
       width: 28%;
-      border: 3px solid #004280;
+      border: 3px solid #acb3b5;
       -webkit-transition: all 0.5s;
       transition: all 0.5s;
       -webkit-box-shadow: 0px 5px 10px #bbb;
               box-shadow: 0px 5px 10px #bbb; }
       .cadsim-content .three-boxes-banner-container .box:hover {
-        border: 3px solid #36cdd3; }
+        border: 3px solid #004280; }
       .cadsim-content .three-boxes-banner-container .box .wp-block-image {
         margin-top: 0px; }
       .cadsim-content .three-boxes-banner-container .box p {

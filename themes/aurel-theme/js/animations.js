@@ -92,7 +92,7 @@
       'data-reconciliation': 'onlineApps',
       'product-tracking': 'onlineApps',
       'energy-tracking': 'onlineApps',
-      'process-optimization':'onlineApps',
+      'real-time-optimization':'onlineApps',
 
       industries: 'industries',
       'pulp-paper': 'industries',

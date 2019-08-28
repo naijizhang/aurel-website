@@ -28,7 +28,7 @@
         $('.toggle-widget-button').css('height', '70px');
         $('.toggle-widget-button').css('width', '30px');
         $('.toggle-widget-button').css('margin-left', '0px');
-        $('.toggle-widget-button').css('background-color', '#397C46');
+        $('.toggle-widget-button').css('background-color', 'rgb(0, 66, 128)');
         $('.toggle-widget-button div').html('M<br>E<br>N<br>U');
       } else {
         $('.widget-area').css('visibility', 'visible');

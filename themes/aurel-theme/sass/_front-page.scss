@@ -945,16 +945,17 @@ $polygon-color: $color__bottom_polygons;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
-  .industry-link{
+  .industry-link {
     transition: 0.3s all;
-    &:hover{
-     // text-decoration-color: #fff;
-     text-decoration: none;
-     transform: scale(1.07);
+    &:hover {
+      // text-decoration-color: #fff;
+      text-decoration: none;
+      transform: scale(1.07);
     }
   }
   .each-button {
@@ -964,43 +965,53 @@ $polygon-color: $color__bottom_polygons;
     color: #fff;
     font-weight: bold;
     border-radius: 10px;
-    font-size: 16px;
+    font-size: 22px;
+    text-align: center;
     // background: red;
-
   }
-
+  .link30 {
+    width: 32%;
+    margin-bottom: 15px;
+  }
+  .link40 {
+    width: 42%;
+  }
+  .link25 {
+    width: 27%;
+  }
+  $filter_opticity:0.45;
   #pulp {
-    background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
+    background: linear-gradient(rgba(0, 0, 0, $filter_opticity) 0%, rgba(0, 0, 0, $filter_opticity) 100%),
       url('../../assets/industries/pulp.jpg');
     background-position: cover, center;
     background-size: cover, cover;
   }
   #forest {
-    background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
+    background: linear-gradient(rgba(0, 0, 0, $filter_opticity) 0%, rgba(0, 0, 0, $filter_opticity) 100%),
       url('../../assets/industries/wood.png');
     background-position: center;
     background-size: cover;
   }
   #food {
-    background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
+    background: linear-gradient(rgba(0, 0, 0, $filter_opticity) 0%, rgba(0, 0, 0, $filter_opticity) 100%),
       url('../../assets/industries/foodProcessing.png');
     background-position: cover, center;
     background-size: cover, cover;
   }
   #water {
-    background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
+    background: linear-gradient(rgba(0, 0, 0, $filter_opticity) 0%, rgba(0, 0, 0, $filter_opticity) 100%),
       url('../../assets/industries/water.png');
     background-position: cover, center;
     background-size: cover, cover;
   }
   #mineral {
-    background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
+    background: linear-gradient(rgba(0, 0, 0, $filter_opticity) 0%, rgba(0, 0, 0, $filter_opticity) 100%),
       url('../../assets/industries/mining.png');
     background-position: cover, center;
     background-size: cover, cover;
   }
   #research {
-    background: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
+    background: linear-gradient(rgba(0, 0, 0, $filter_opticity) 0%, rgba(0, 0, 0, $filter_opticity) 100%),
       url('../../assets/industries/research.png');
     background-position: cover, center;
     background-size: cover, cover;

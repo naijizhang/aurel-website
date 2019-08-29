@@ -2230,126 +2230,6 @@ label[for='nav-trigger'] {
          object-fit: cover;
       -o-object-position: center;
          object-position: center; }
-  .slides-container .slide-item1 {
-    background: -webkit-gradient(linear, right top, left top, from(#36cdd3), color-stop(50%, rgba(255, 255, 255, 0)), to(#004480)), -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.29)), to(rgba(0, 0, 0, 0.29))), url("../../assets/images/CogenPipesBackground2.jpg");
-    background: linear-gradient(270deg, #36cdd3 0%, rgba(255, 255, 255, 0) 50%, #004480 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.29), rgba(0, 0, 0, 0.29)), url("../../assets/images/CogenPipesBackground2.jpg");
-    background-size: cover cover cover;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    @media (max-width: 740px) {
-      .slides-container .slide-item1 {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column; } }
-    .slides-container .slide-item1 .slide1-hook {
-      margin-top: 30px;
-      width: 40%; }
-      @media (max-width: 740px) {
-        .slides-container .slide-item1 .slide1-hook {
-          width: 90%; } }
-      .slides-container .slide-item1 .slide1-hook p {
-        color: #fff;
-        font-family: 'Poiret One';
-        font-size: 20px;
-        margin-left: 20%; }
-        @media (max-width: 740px) {
-          .slides-container .slide-item1 .slide1-hook p {
-            width: 80%;
-            font-size: 20px;
-            line-height: 25px;
-            margin-top: 10px;
-            margin-bottom: 0px;
-            margin-left: auto;
-            margin-right: auto; } }
-    .slides-container .slide-item1 .slide1-bottom-content {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      height: 50%;
-      -webkit-box-pack: end;
-          -ms-flex-pack: end;
-              justify-content: flex-end;
-      -webkit-box-align: end;
-          -ms-flex-align: end;
-              align-items: flex-end;
-      width: 40%; }
-      @media (max-width: 740px) {
-        .slides-container .slide-item1 .slide1-bottom-content {
-          height: auto;
-          width: 90%;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-              -ms-flex-direction: column;
-                  flex-direction: column;
-          -webkit-box-pack: start;
-              -ms-flex-pack: start;
-                  justify-content: flex-start;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center; } }
-      .slides-container .slide-item1 .slide1-bottom-content p {
-        color: #fff;
-        margin-bottom: 0px;
-        margin-right: 20px;
-        font-family: 'Poiret One';
-        font-size: 30px;
-        letter-spacing: 2px;
-        text-align: end; }
-        @media (max-width: 740px) {
-          .slides-container .slide-item1 .slide1-bottom-content p {
-            margin: 0px;
-            margin-top: 12%;
-            text-align: center;
-            font-size: 20px; } }
-      .slides-container .slide-item1 .slide1-bottom-content a {
-        margin-right: 20%; }
-        @media (max-width: 740px) {
-          .slides-container .slide-item1 .slide1-bottom-content a {
-            margin: 0px; } }
-        .slides-container .slide-item1 .slide1-bottom-content a .software-logo {
-          width: 200px;
-          height: auto;
-          -o-object-fit: contain;
-             object-fit: contain;
-          -webkit-filter: brightness(180%) drop-shadow(5px 5px 5px #fff);
-                  filter: brightness(180%) drop-shadow(5px 5px 5px #fff);
-          -webkit-transition: all 0.3s;
-          transition: all 0.3s; }
-          @media (max-width: 740px) {
-            .slides-container .slide-item1 .slide1-bottom-content a .software-logo {
-              width: 150px;
-              margin-top: 5px; } }
-          .slides-container .slide-item1 .slide1-bottom-content a .software-logo:hover {
-            -webkit-filter: brightness(100%);
-                    filter: brightness(100%);
-            border-radius: 15px;
-            padding: 10px;
-            background: #fff; }
 
 .section-what-we-do {
   position: relative;
@@ -2357,10 +2237,10 @@ label[for='nav-trigger'] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto; }
@@ -2375,7 +2255,7 @@ label[for='nav-trigger'] {
     position: relative;
     background: none;
     margin: 0px;
-    width: 48%;
+    width: 100%;
     padding: 0px; }
     .section-what-we-do .what-we-do-container .what-we-do-title {
       text-align: center;
@@ -2384,15 +2264,12 @@ label[for='nav-trigger'] {
       color: #004280;
       font-size: 35px;
       margin-top: 20px;
-      margin-bottom: 0px;
+      margin-bottom: 20px;
       background: transparent;
       max-width: 1280px;
       margin-left: auto;
       margin-right: auto;
-      z-index: 3;
-      position: absolute;
-      top: 50px;
-      left: 15%; }
+      z-index: 3; }
       @media (max-width: 740px) {
         .section-what-we-do .what-we-do-container .what-we-do-title {
           display: none; } }
@@ -2426,12 +2303,11 @@ label[for='nav-trigger'] {
       margin-top: 0px; } }
 
 .main-services-container {
-  width: 50%;
+  width: 100%;
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
-  background: #fff;
-  margin-top: 20px;
+  margin-top: 50px;
   margin-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2440,11 +2316,10 @@ label[for='nav-trigger'] {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   z-index: 3; }
   @media (max-width: 740px) {
     .main-services-container {
@@ -2454,8 +2329,10 @@ label[for='nav-trigger'] {
               flex-direction: column;
       padding-top: 0px;
       width: 100%; } }
+  .main-services-container .software-link {
+    width: 100%; }
   .main-services-container .each-services {
-    padding: 15px;
+    width: 30%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2466,11 +2343,12 @@ label[for='nav-trigger'] {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-shadow: 3px 0 10px #bbb;
-            box-shadow: 3px 0 10px #bbb; }
+            box-shadow: 3px 0 10px #bbb;
+    background: #fff; }
     .main-services-container .each-services .software-logo {
       width: 55%;
       -o-object-fit: contain;
@@ -2495,12 +2373,13 @@ label[for='nav-trigger'] {
         height: auto;
         padding-bottom: 30px; } }
     .main-services-container .each-services h2 {
-      font-size: 20px;
+      font-size: 25px;
       text-align: left;
-      color: #fff;
+      color: #004280;
       font-weight: bold;
-      margin-bottom: 10px;
-      margin-top: 20px;
+      margin: 0px;
+      padding-top: 20px;
+      padding-bottom: 20px;
       text-align: center; }
       @media (max-width: 740px) {
         .main-services-container .each-services h2 {
@@ -2515,93 +2394,84 @@ label[for='nav-trigger'] {
       margin: 0px;
       margin-bottom: 10px;
       text-align: center;
-      color: #fff; }
+      color: #004280; }
       .main-services-container .each-services p:hover {
         text-decoration: underline; }
-  .main-services-container .other-services-container {
-    width: 100%;
+  .main-services-container .three-links-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row; }
-    @media (max-width: 740px) {
-      .main-services-container .other-services-container {
-        width: 100%; } }
-  .main-services-container .service-block1 {
-    width: 50%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.95)), color-stop(24%, rgba(255, 255, 255, 0.65)), color-stop(40%, rgba(142, 142, 142, 0.85)), to(rgba(0, 0, 0, 0.85))), url("../../assets/images/CADSIMsoftware.png");
-    background: linear-gradient(rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.65) 24%, rgba(142, 142, 142, 0.85) 40%, rgba(0, 0, 0, 0.85) 100%), url("../../assets/images/CADSIMsoftware.png");
-    background-position: center, 0px -7px;
-    background-repeat: repeat, no-repeat;
-    background-size: cover, 135%;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 15px;
+    width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 20px; }
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: auto;
+    margin-bottom: auto; }
     @media (max-width: 740px) {
-      .main-services-container .service-block1 {
-        width: 100%;
-        margin-bottom: 0px; } }
-    .main-services-container .service-block1 h2 {
-      text-align: center; }
-    .main-services-container .service-block1 .three-links-container {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column; }
+      .main-services-container .three-links-container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
+    .main-services-container .three-links-container p {
+      display: inline-block;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 18px; }
       @media (max-width: 740px) {
-        .main-services-container .service-block1 .three-links-container {
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-              -ms-flex-direction: column;
-                  flex-direction: column; } }
-      .main-services-container .service-block1 .three-links-container p {
-        display: inline-block;
-        width: 150px;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 15px; }
-        @media (max-width: 740px) {
-          .main-services-container .service-block1 .three-links-container p {
-            font-size: 15px; } }
+        .main-services-container .three-links-container p {
+          font-size: 15px; } }
+  .main-services-container .service-block {
+    width: 100%;
+    min-width: 220px;
+    height: 220px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    .main-services-container .service-block .white-block {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.7); }
+  .main-services-container .service-block1 {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url("../../assets/images/CadsimPlus_SoftwareBox.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%), url("../../assets/images/CadsimPlus_SoftwareBox.png");
+    background-position: center, center 0;
+    background-repeat: repeat, no-repeat;
+    background-size: cover, 60%; }
   .main-services-container .service-block2 {
-    width: 50%;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url("../../assets/images/modeling.png");
-    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../../assets/images/modeling.png");
-    background-position: center, center;
-    background-repeat: repeat, no-repeat;
-    background-size: cover, cover;
-    margin-right: 20px; }
-    .main-services-container .service-block2 h2 {
-      width: 80%; }
-    @media (max-width: 740px) {
-      .main-services-container .service-block2 {
-        margin-right: 0px; } }
+    background: url("../../assets/images/modeling.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
   .main-services-container .service-block3 {
-    width: 50%;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)), to(rgba(0, 0, 0, 0.65))), url("../../assets/images/onlineApplication.png");
-    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../../assets/images/onlineApplication.png");
-    background-position: center, center;
-    background-repeat: repeat, no-repeat;
-    background-size: cover, cover; }
+    background: url("../../assets/images/onlineApplication.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
 
 .what-we-do-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -2616,6 +2486,12 @@ label[for='nav-trigger'] {
   margin-left: auto;
   margin-right: auto;
   position: relative; }
+  .what-we-do-container p {
+    width: 100%;
+    max-width: 1200px;
+    margin: 5px auto;
+    padding-left: 30px;
+    padding-right: 30px; }
   @media (max-width: 740px) {
     .what-we-do-container {
       -webkit-box-orient: vertical;
@@ -2928,103 +2804,6 @@ label[for='nav-trigger'] {
       background-position: center;
       background-repeat: no-repeat; } }
 
-.front-page-bottom-banner {
-  margin-top: 12vh;
-  margin-bottom: 0px;
-  display: none; }
-  @media (max-width: 740px) {
-    .front-page-bottom-banner {
-      margin-top: 0px;
-      height: 40vh;
-      margin-top: 30px;
-      margin-bottom: 80px; } }
-  .front-page-bottom-banner .row-first {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
-    @media (max-width: 740px) {
-      .front-page-bottom-banner .row-first {
-        position: relative;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center; } }
-    .front-page-bottom-banner .row-first .cadsim-logo-container {
-      width: 20%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-      @media (max-width: 740px) {
-        .front-page-bottom-banner .row-first .cadsim-logo-container {
-          position: absolute;
-          top: 0px;
-          width: auto;
-          height: 40vh;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-pack: center;
-              -ms-flex-pack: center;
-                  justify-content: center;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center; } }
-      .front-page-bottom-banner .row-first .cadsim-logo-container img {
-        -o-object-fit: contain;
-           object-fit: contain; }
-        @media (max-width: 740px) {
-          .front-page-bottom-banner .row-first .cadsim-logo-container img {
-            width: 35vw;
-            height: 35vw;
-            padding: 10px;
-            background: #fff;
-            border-radius: 50%;
-            z-index: 100;
-            -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
-                    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25); } }
-  .front-page-bottom-banner .row-second {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 3vh; }
-    @media (max-width: 740px) {
-      .front-page-bottom-banner .row-second {
-        margin-top: 0px;
-        position: relative;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center; } }
-    .front-page-bottom-banner .row-second .polygon-container {
-      margin-left: 5vw;
-      margin-right: 5vw;
-      z-index: 5; }
-      @media (max-width: 740px) {
-        .front-page-bottom-banner .row-second .polygon-container {
-          margin-left: 0px;
-          margin-right: 0px;
-          margin: 10px; } }
-
 .overlay {
   background-color: #23447f;
   width: 100%;
@@ -3190,6 +2969,84 @@ label[for='nav-trigger'] {
 .banner-img {
   width: 100%;
   height: auto; }
+
+.industry-list-title {
+  position: relative;
+  z-index: 3;
+  font-weight: bold;
+  margin-top: 10px; }
+
+.industry-list-container {
+  position: relative;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px; }
+  .industry-list-container .industry-link {
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all; }
+    .industry-list-container .industry-link:hover {
+      text-decoration: none;
+      -webkit-transform: scale(1.07);
+              transform: scale(1.07); }
+  .industry-list-container .each-button {
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 22px;
+    text-align: center; }
+  .industry-list-container .link30 {
+    width: 32%;
+    margin-bottom: 15px; }
+  .industry-list-container .link40 {
+    width: 42%; }
+  .industry-list-container .link25 {
+    width: 27%; }
+  .industry-list-container #pulp {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url("../../assets/industries/pulp.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%), url("../../assets/industries/pulp.jpg");
+    background-position: cover, center;
+    background-size: cover, cover; }
+  .industry-list-container #forest {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url("../../assets/industries/wood.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%), url("../../assets/industries/wood.png");
+    background-position: center;
+    background-size: cover; }
+  .industry-list-container #food {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url("../../assets/industries/foodProcessing.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%), url("../../assets/industries/foodProcessing.png");
+    background-position: cover, center;
+    background-size: cover, cover; }
+  .industry-list-container #water {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url("../../assets/industries/water.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%), url("../../assets/industries/water.png");
+    background-position: cover, center;
+    background-size: cover, cover; }
+  .industry-list-container #mineral {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url("../../assets/industries/mining.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%), url("../../assets/industries/mining.png");
+    background-position: cover, center;
+    background-size: cover, cover; }
+  .industry-list-container #research {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url("../../assets/industries/research.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%), url("../../assets/industries/research.png");
+    background-position: cover, center;
+    background-size: cover, cover; }
 
 .content-company-history {
   background: #004280;

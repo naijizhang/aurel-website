@@ -2158,15 +2158,16 @@ label[for='nav-trigger'] {
                 filter: invert(1);
         height: 30px;
         width: 30px; }
-    #myFooter #footer-middle-column .footer-brief-description {
+    #myFooter #footer-middle-column .footer-tagline {
       z-index: 4;
-      font-size: 15px;
       margin-top: 20px;
-      color: #fff;
-      text-align: center;
-      font-family: 'UEFA Supercup'; }
+      -o-object-fit: contain;
+         object-fit: contain;
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto; }
       @media (max-width: 740px) {
-        #myFooter #footer-middle-column .footer-brief-description {
+        #myFooter #footer-middle-column .footer-tagline {
           display: none; } }
   #myFooter #footer-right-column {
     width: 20%;

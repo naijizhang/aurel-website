@@ -14,7 +14,7 @@
 		<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
 	</nav><!-- #footer-navigation -->
 	<div id="footer-middle-column">
-		<p class="footer-brief-description">BETTER INFORMATION >>> BETTER OPERATION</p>
+		<img class="footer-tagline" alt="tagline" src='<?php echo get_template_directory_uri() . '/assets/images/Tagline-White.png'; ?>'>
 		<div class="social-media-container">
 			<a class="link-googlePlus" href="https://www.youtube.com/channel/UC--bNftPX31Tuw1JtWQCQUQ">
 				<img class="googleplus-logo" alt="google plus logo" src='<?php echo get_template_directory_uri() . '/assets/icons/youtube.svg'; ?>'>

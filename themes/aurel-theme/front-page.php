@@ -167,22 +167,22 @@
 
                     <h2 class="industry-list-title">Industries we serve...</h2>
                     <div class="industry-list-container">
-                        <a class="industry-link" href="<?php echo get_permalink(get_page_by_path("pulp-paper")); ?>">
+                        <a class="industry-link link30" href="<?php echo get_permalink(get_page_by_path("pulp-paper")); ?>">
                             <div class="each-button" id="pulp">Pulp & Water</div>
                         </a>
-                        <a class="industry-link" href="<?php echo get_permalink(get_page_by_path("forest-products")); ?>">
+                        <a class="industry-link link30" href="<?php echo get_permalink(get_page_by_path("forest-products")); ?>">
                             <div class="each-button" id="forest">Forest Products</div>
                         </a>
-                        <a class="industry-link" href="<?php echo get_permalink(get_page_by_path("food-processing")); ?>">
+                        <a class="industry-link link30" href="<?php echo get_permalink(get_page_by_path("food-processing")); ?>">
                             <div class="each-button" id="food">Food Processing</div>
                         </a>
-                        <a class="industry-link" href="<?php echo get_permalink(get_page_by_path("water-waste-water")); ?>">
+                        <a class="industry-link link40" href="<?php echo get_permalink(get_page_by_path("water-waste-water")); ?>">
                             <div class="each-button" id="water">Water & Waste Water Treatment</div>
                         </a>
-                        <a class="industry-link" href="<?php echo get_permalink(get_page_by_path("mineral-processing")); ?>">
+                        <a class="industry-link link25" href="<?php echo get_permalink(get_page_by_path("mineral-processing")); ?>">
                             <div class="each-button" id="mineral">Mineral Processing</div>
                         </a>
-                        <a class="industry-link" href="<?php echo get_permalink(get_page_by_path("research-learning")); ?>">
+                        <a class="industry-link link25" href="<?php echo get_permalink(get_page_by_path("research-learning")); ?>">
                             <div class="each-button" id="research">Research & Learning</div>
                         </a>
                     </div>

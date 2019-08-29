@@ -17,7 +17,7 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
-    height: 100px;
+    height: 120px;
   }
   #footer-navigation {
     z-index: 4;
@@ -75,6 +75,7 @@
     @include mobile {
       order: 10;
       width: 80%;
+      height: 100%;
     }
     p {
       margin: 0px;
@@ -91,7 +92,7 @@
       display: flex;
       justify-content: center;
       @include mobile {
-        margin-top: 25px;
+        margin-top: auto;
         display: flex;
         justify-content: center;
       }
@@ -119,7 +120,8 @@
       margin-left: auto;
       margin-right: auto;
       @include mobile {
-        display: none;
+       // display: none;
+       width:80%;
       }
     }
   }

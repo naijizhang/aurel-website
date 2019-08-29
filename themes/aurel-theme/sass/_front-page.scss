@@ -203,7 +203,7 @@
       // top: 50px;
       // left: 15%;
       @include mobile {
-        display: none;
+        //display: none;
       }
     }
     p {
@@ -260,6 +260,7 @@
     flex-direction: column;
     padding-top: 0px;
     width: 100%;
+    margin-bottom: 20px;
   }
   .software-link {
     width: 100%;
@@ -272,6 +273,12 @@
     justify-content: flex-start;
     box-shadow: 3px 0 10px #bbb;
     background: #fff;
+    @include mobile {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+    }
     .software-logo {
       width: 55%;
       object-fit: contain;
@@ -353,6 +360,13 @@
     .white-block {
       width: 100%;
       background: rgba(255, 255, 255, 0.7);
+      @include mobile{
+        h2{
+          margin-top: 0px;
+          width:100%;
+        }
+      }
+      
     }
   }
 
@@ -956,6 +970,9 @@ $polygon-color: $color__bottom_polygons;
       // text-decoration-color: #fff;
       text-decoration: none;
       transform: scale(1.07);
+     @include mobile{
+       transform: none;
+     }
     }
   }
   .each-button {
@@ -972,46 +989,79 @@ $polygon-color: $color__bottom_polygons;
   .link30 {
     width: 32%;
     margin-bottom: 15px;
+    @include mobile{
+      width: 45%;
+      &:nth-of-type(3){
+        order: 5;
+        margin-top: 15px;
+      }
+    }
   }
   .link40 {
     width: 42%;
+    @include mobile{
+      width: 45%;
+      order: 6;
+      margin-top: 15px;
+    }
   }
   .link25 {
     width: 27%;
+    @include mobile{
+      width: 45%;
+    }
   }
-  $filter_opticity:0.45;
+  $filter_opticity: 0.45;
   #pulp {
-    background: linear-gradient(rgba(0, 0, 0, $filter_opticity) 0%, rgba(0, 0, 0, $filter_opticity) 100%),
+    background: linear-gradient(
+        rgba(0, 0, 0, $filter_opticity) 0%,
+        rgba(0, 0, 0, $filter_opticity) 100%
+      ),
       url('../../assets/industries/pulp.jpg');
     background-position: cover, center;
     background-size: cover, cover;
   }
   #forest {
-    background: linear-gradient(rgba(0, 0, 0, $filter_opticity) 0%, rgba(0, 0, 0, $filter_opticity) 100%),
+    background: linear-gradient(
+        rgba(0, 0, 0, $filter_opticity) 0%,
+        rgba(0, 0, 0, $filter_opticity) 100%
+      ),
       url('../../assets/industries/wood.png');
     background-position: center;
     background-size: cover;
   }
   #food {
-    background: linear-gradient(rgba(0, 0, 0, $filter_opticity) 0%, rgba(0, 0, 0, $filter_opticity) 100%),
+    background: linear-gradient(
+        rgba(0, 0, 0, $filter_opticity) 0%,
+        rgba(0, 0, 0, $filter_opticity) 100%
+      ),
       url('../../assets/industries/foodProcessing.png');
     background-position: cover, center;
     background-size: cover, cover;
   }
   #water {
-    background: linear-gradient(rgba(0, 0, 0, $filter_opticity) 0%, rgba(0, 0, 0, $filter_opticity) 100%),
+    background: linear-gradient(
+        rgba(0, 0, 0, $filter_opticity) 0%,
+        rgba(0, 0, 0, $filter_opticity) 100%
+      ),
       url('../../assets/industries/water.png');
     background-position: cover, center;
     background-size: cover, cover;
   }
   #mineral {
-    background: linear-gradient(rgba(0, 0, 0, $filter_opticity) 0%, rgba(0, 0, 0, $filter_opticity) 100%),
+    background: linear-gradient(
+        rgba(0, 0, 0, $filter_opticity) 0%,
+        rgba(0, 0, 0, $filter_opticity) 100%
+      ),
       url('../../assets/industries/mining.png');
     background-position: cover, center;
     background-size: cover, cover;
   }
   #research {
-    background: linear-gradient(rgba(0, 0, 0, $filter_opticity) 0%, rgba(0, 0, 0, $filter_opticity) 100%),
+    background: linear-gradient(
+        rgba(0, 0, 0, $filter_opticity) 0%,
+        rgba(0, 0, 0, $filter_opticity) 100%
+      ),
       url('../../assets/industries/research.png');
     background-position: cover, center;
     background-size: cover, cover;

@@ -2059,7 +2059,7 @@ label[for='nav-trigger'] {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      height: 100px; } }
+      height: 120px; } }
   #myFooter #footer-navigation {
     z-index: 4;
     width: 15%;
@@ -2119,7 +2119,8 @@ label[for='nav-trigger'] {
         -webkit-box-ordinal-group: 11;
             -ms-flex-order: 10;
                 order: 10;
-        width: 80%; } }
+        width: 80%;
+        height: 100%; } }
     #myFooter #footer-middle-column p {
       margin: 0px;
       color: #fff;
@@ -2139,7 +2140,7 @@ label[for='nav-trigger'] {
               justify-content: center; }
       @media (max-width: 740px) {
         #myFooter #footer-middle-column .social-media-container {
-          margin-top: 25px;
+          margin-top: auto;
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -2168,7 +2169,7 @@ label[for='nav-trigger'] {
       margin-right: auto; }
       @media (max-width: 740px) {
         #myFooter #footer-middle-column .footer-tagline {
-          display: none; } }
+          width: 80%; } }
   #myFooter #footer-right-column {
     width: 20%;
     display: -webkit-box;
@@ -2272,9 +2273,6 @@ label[for='nav-trigger'] {
       margin-left: auto;
       margin-right: auto;
       z-index: 3; }
-      @media (max-width: 740px) {
-        .section-what-we-do .what-we-do-container .what-we-do-title {
-          display: none; } }
     .section-what-we-do .what-we-do-container p {
       font-size: 15px; }
     @media (max-width: 740px) {
@@ -2330,7 +2328,8 @@ label[for='nav-trigger'] {
           -ms-flex-direction: column;
               flex-direction: column;
       padding-top: 0px;
-      width: 100%; } }
+      width: 100%;
+      margin-bottom: 20px; } }
   .main-services-container .software-link {
     width: 100%; }
   .main-services-container .each-services {
@@ -2351,6 +2350,12 @@ label[for='nav-trigger'] {
     -webkit-box-shadow: 3px 0 10px #bbb;
             box-shadow: 3px 0 10px #bbb;
     background: #fff; }
+    @media (max-width: 740px) {
+      .main-services-container .each-services {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px; } }
     .main-services-container .each-services .software-logo {
       width: 55%;
       -o-object-fit: contain;
@@ -2449,6 +2454,10 @@ label[for='nav-trigger'] {
     .main-services-container .service-block .white-block {
       width: 100%;
       background: rgba(255, 255, 255, 0.7); }
+      @media (max-width: 740px) {
+        .main-services-container .service-block .white-block h2 {
+          margin-top: 0px;
+          width: 100%; } }
   .main-services-container .service-block1 {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url("../../assets/images/CadsimPlus_SoftwareBox.png");
     background: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%), url("../../assets/images/CadsimPlus_SoftwareBox.png");
@@ -3003,6 +3012,10 @@ label[for='nav-trigger'] {
       text-decoration: none;
       -webkit-transform: scale(1.07);
               transform: scale(1.07); }
+      @media (max-width: 740px) {
+        .industry-list-container .industry-link:hover {
+          -webkit-transform: none;
+                  transform: none; } }
   .industry-list-container .each-button {
     padding: 20px;
     padding-top: 30px;
@@ -3015,10 +3028,28 @@ label[for='nav-trigger'] {
   .industry-list-container .link30 {
     width: 32%;
     margin-bottom: 15px; }
+    @media (max-width: 740px) {
+      .industry-list-container .link30 {
+        width: 45%; }
+        .industry-list-container .link30:nth-of-type(3) {
+          -webkit-box-ordinal-group: 6;
+              -ms-flex-order: 5;
+                  order: 5;
+          margin-top: 15px; } }
   .industry-list-container .link40 {
     width: 42%; }
+    @media (max-width: 740px) {
+      .industry-list-container .link40 {
+        width: 45%;
+        -webkit-box-ordinal-group: 7;
+            -ms-flex-order: 6;
+                order: 6;
+        margin-top: 15px; } }
   .industry-list-container .link25 {
     width: 27%; }
+    @media (max-width: 740px) {
+      .industry-list-container .link25 {
+        width: 45%; } }
   .industry-list-container #pulp {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url("../../assets/industries/pulp.jpg");
     background: linear-gradient(rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%), url("../../assets/industries/pulp.jpg");

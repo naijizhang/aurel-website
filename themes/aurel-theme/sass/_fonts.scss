@@ -71,3 +71,39 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'UEFA Supercup';
+  src: url('../../assets/fonts/UEFASupercup-Light.eot');
+  src: url('../../assets/fonts/UEFASupercup-Light.eot?#iefix') format('embedded-opentype'),
+      url('../../assets/fonts/UEFASupercup-Light.woff2') format('woff2'),
+      url('../../assets/fonts/UEFASupercup-Light.woff') format('woff'),
+      url('../../assets/fonts/UEFASupercup-Light.ttf') format('truetype'),
+      url('../../assets/fonts/UEFASupercup-Light.svg#UEFASupercup-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UEFA Supercup';
+  src: url('../../assets/fonts/UEFASupercup-Regular.eot');
+  src: url('../../assets/fonts/UEFASupercup-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../../assets/fonts/UEFASupercup-Regular.woff2') format('woff2'),
+      url('../../assets/fonts/UEFASupercup-Regular.woff') format('woff'),
+      url('../../assets/fonts/UEFASupercup-Regular.ttf') format('truetype'),
+      url('../../assets/fonts/UEFASupercup-Regular.svg#UEFASupercup-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UEFA Supercup';
+  src: url('../../assets/fonts/UEFASupercup-Bold.eot');
+  src: url('../../assets/fonts/UEFASupercup-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../../assets/fonts/UEFASupercup-Bold.woff2') format('woff2'),
+      url('../../assets/fonts/UEFASupercup-Bold.woff') format('woff'),
+      url('../../assets/fonts/UEFASupercup-Bold.ttf') format('truetype'),
+      url('../../assets/fonts/UEFASupercup-Bold.svg#UEFASupercup-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}

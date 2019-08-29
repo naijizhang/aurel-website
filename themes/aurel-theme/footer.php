@@ -15,12 +15,6 @@
 	</nav><!-- #footer-navigation -->
 	<div id="footer-middle-column">
 		<p class="footer-brief-description">BETTER INFORMATION >>> BETTER OPERATION</p>
-		<p class="copyright">&copy;2019 Aurel System Inc.</p>
-	</div>
-	<div id="footer-right-column">
-		<a class="software-link" href="<?php echo get_permalink(get_page_by_path("cadsim-plus")); ?>">
-			<img class="software-logo" alt="home logo" src='<?php echo get_template_directory_uri() . '/assets/images/CADSIM-Plus_PrimaryLogo.png'; ?>'>
-		</a>
 		<div class="social-media-container">
 			<a class="link-googlePlus" href="https://www.youtube.com/channel/UC--bNftPX31Tuw1JtWQCQUQ">
 				<img class="googleplus-logo" alt="google plus logo" src='<?php echo get_template_directory_uri() . '/assets/icons/youtube.svg'; ?>'>
@@ -29,6 +23,13 @@
 				<img class="linkedin-logo" alt="linkedin logo" src='<?php echo get_template_directory_uri() . '/assets/icons/linkedin.svg'; ?>'>
 			</a>
 		</div>
+		<p class="copyright">&copy;2019 Aurel System Inc.</p>
+	</div>
+	<div id="footer-right-column">
+		<a class="software-link" href="<?php echo get_permalink(get_page_by_path("cadsim-plus")); ?>">
+			<img class="software-logo" alt="home logo" src='<?php echo get_template_directory_uri() . '/assets/images/CADSIM-Plus_PrimaryLogo.png'; ?>'>
+		</a>
+
 
 	</div>
 

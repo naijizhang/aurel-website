@@ -274,6 +274,27 @@ th {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'UEFA Supercup';
+  src: url("../../assets/fonts/UEFASupercup-Light.eot");
+  src: url("../../assets/fonts/UEFASupercup-Light.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/UEFASupercup-Light.woff2") format("woff2"), url("../../assets/fonts/UEFASupercup-Light.woff") format("woff"), url("../../assets/fonts/UEFASupercup-Light.ttf") format("truetype"), url("../../assets/fonts/UEFASupercup-Light.svg#UEFASupercup-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'UEFA Supercup';
+  src: url("../../assets/fonts/UEFASupercup-Regular.eot");
+  src: url("../../assets/fonts/UEFASupercup-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/UEFASupercup-Regular.woff2") format("woff2"), url("../../assets/fonts/UEFASupercup-Regular.woff") format("woff"), url("../../assets/fonts/UEFASupercup-Regular.ttf") format("truetype"), url("../../assets/fonts/UEFASupercup-Regular.svg#UEFASupercup-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'UEFA Supercup';
+  src: url("../../assets/fonts/UEFASupercup-Bold.eot");
+  src: url("../../assets/fonts/UEFASupercup-Bold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/UEFASupercup-Bold.woff2") format("woff2"), url("../../assets/fonts/UEFASupercup-Bold.woff") format("woff"), url("../../assets/fonts/UEFASupercup-Bold.ttf") format("truetype"), url("../../assets/fonts/UEFASupercup-Bold.svg#UEFASupercup-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -2009,8 +2030,7 @@ label[for='nav-trigger'] {
                   filter: none; }
 
 #myFooter {
-  background: -webkit-gradient(linear, left top, right top, from(#1b447f), to(#35ced3));
-  background: linear-gradient(to right, #1b447f 0%, #35ced3 100%);
+  background: linear-gradient(164.77deg, #1b447f 18.23%, rgba(32, 96, 144, 0.796875) 37.46%, rgba(46, 169, 188, 0.268605) 72.58%, rgba(53, 206, 211, 0) 103.97%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2021,7 +2041,7 @@ label[for='nav-trigger'] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 200px;
+  height: 180px;
   margin-left: auto;
   margin-right: auto;
   position: relative; }
@@ -2107,12 +2127,44 @@ label[for='nav-trigger'] {
       margin-bottom: 10px;
       letter-spacing: 1px;
       font-size: 12px; }
+    #myFooter #footer-middle-column .social-media-container {
+      z-index: 4;
+      margin-top: auto;
+      margin-bottom: 10px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      @media (max-width: 740px) {
+        #myFooter #footer-middle-column .social-media-container {
+          margin-top: 25px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center; } }
+      #myFooter #footer-middle-column .social-media-container .link-googlePlus {
+        margin-right: 20px; }
+        #myFooter #footer-middle-column .social-media-container .link-googlePlus .googleplus-logo {
+          -webkit-filter: invert(1);
+                  filter: invert(1);
+          height: 30px;
+          width: 30px; }
+      #myFooter #footer-middle-column .social-media-container .link-linkedin .linkedin-logo {
+        -webkit-filter: invert(1);
+                filter: invert(1);
+        height: 30px;
+        width: 30px; }
     #myFooter #footer-middle-column .footer-brief-description {
       z-index: 4;
       font-size: 15px;
       margin-top: 20px;
-      color: gainsboro;
-      text-align: left; }
+      color: #fff;
+      text-align: center;
+      font-family: 'UEFA Supercup'; }
       @media (max-width: 740px) {
         #myFooter #footer-middle-column .footer-brief-description {
           display: none; } }
@@ -2138,57 +2190,6 @@ label[for='nav-trigger'] {
         margin-bottom: 20px;
         -webkit-filter: brightness(100%);
                 filter: brightness(100%); }
-    #myFooter #footer-right-column .social-media-container {
-      z-index: 4;
-      margin-top: 10px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
-      @media (max-width: 740px) {
-        #myFooter #footer-right-column .social-media-container {
-          margin-top: 25px;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-pack: center;
-              -ms-flex-pack: center;
-                  justify-content: center; } }
-      #myFooter #footer-right-column .social-media-container .link-googlePlus {
-        margin-right: 20px; }
-        #myFooter #footer-right-column .social-media-container .link-googlePlus .googleplus-logo {
-          -webkit-filter: invert(1);
-                  filter: invert(1);
-          height: 30px;
-          width: 30px; }
-      #myFooter #footer-right-column .social-media-container .link-linkedin .linkedin-logo {
-        -webkit-filter: invert(1);
-                filter: invert(1);
-        height: 30px;
-        width: 30px; }
-
-.big-curve2 {
-  height: 200px;
-  width: 100%;
-  z-index: 3;
-  position: absolute;
-  bottom: 0px; }
-  @media (max-width: 740px) {
-    .big-curve2 {
-      display: none; } }
-  .big-curve2 img {
-    height: 200px;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: 0px 1vw;
-       object-position: 0px 1vw;
-    margin: 0px;
-    margin-left: -2px;
-    -webkit-filter: brightness(100%);
-            filter: brightness(100%); }
 
 .cadsim-footer .software-logo {
   -webkit-filter: brightness(100%) !important;

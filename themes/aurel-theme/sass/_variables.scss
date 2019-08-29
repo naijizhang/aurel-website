@@ -37,19 +37,18 @@ $color__light_teal2: #6ac4cc;
 $color__blue: rgb(0, 66, 128); //#16427d;
 
 //backgrounds
-$color__blue2: #1e4f70; 
-$color__blue3: #377ca8; 
+$color__blue2: #1e4f70;
+$color__blue3: #377ca8;
 $color__blue4: #4699ce;
-$color__blue5: #57b9d3; 
-$color__blue1: #84c6e8; 
-// $color__blue2: $color__blue; 
-// $color__blue3: $color_dark_grey; 
+$color__blue5: #57b9d3;
+$color__blue1: #84c6e8;
+// $color__blue2: $color__blue;
+// $color__blue3: $color_dark_grey;
 // $color__blue4: $color_medium_grey;
-// $color__blue5: $color_light_grey; 
-// $color__blue1: $color__teal; 
+// $color__blue5: $color_light_grey;
+// $color__blue1: $color__teal;
 $color__deep_blue: #23447f;
 $color__light_blue: #dfe9f6;
-
 
 //buttons
 $color__button_blue: #7b7c7c;
@@ -74,6 +73,13 @@ $color__polygon3_blue: linear-gradient(
   167.4deg,
   rgb(27, 68, 127) 73%,
   $color__light_teal2 100%
+);
+$color__polygon4_blue: linear-gradient(
+  164.77deg,
+  #1b447f 18.23%,
+  rgba(32, 96, 144, 0.796875) 37.46%,
+  rgba(46, 169, 188, 0.268605) 72.58%,
+  rgba(53, 206, 211, 0) 103.97%
 );
 $color__industry: $color__blue;
 $color__bottom_polygons: $color__deep_blue;
@@ -108,8 +114,6 @@ $color_dark_grey: rgb(98, 110, 119);
 $color_medium_grey: rgb(120, 144, 156);
 $color_light_grey: rgb(172, 179, 181);
 // $color_turquoise:rgb(54,205,221);
-
-
 
 /*
 1. reverse footer color 

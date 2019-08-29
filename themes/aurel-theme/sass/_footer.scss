@@ -1,13 +1,13 @@
 #myFooter {
   //background: $color__teal;
-  background: $color__polygon1_blue;
+  background: $color__polygon4_blue;
   @include mobile {
     background: $color__polygon1_blue;
   }
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 200px;
+  height: 180px;
   //max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
@@ -84,13 +84,40 @@
       letter-spacing: 1px;
       font-size: 12px;
     }
+    .social-media-container {
+      z-index: 4;
+      margin-top: auto;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      @include mobile {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+      }
+      .link-googlePlus {
+        margin-right: 20px;
+        .googleplus-logo {
+          filter: invert(1);
+          height: 30px;
+          width: 30px;
+        }
+      }
+      .link-linkedin {
+        .linkedin-logo {
+          filter: invert(1);
+          height: 30px;
+          width: 30px;
+        }
+      }
+    }
     .footer-brief-description {
       z-index: 4;
       font-size: 15px;
       margin-top: 20px;
-      //color: $color_dark_grey;
-      color: $color__light_grey;
-      text-align: left;
+      color: #fff;
+      text-align: center;
+      font-family: 'UEFA Supercup';
       @include mobile {
         display: none;
       }
@@ -115,54 +142,28 @@
         filter: brightness(100%);
       }
     }
-    .social-media-container {
-      z-index: 4;
-      margin-top: 10px;
-      display: flex;
-      justify-content: center;
-      @include mobile {
-        margin-top: 25px;
-        display: flex;
-        justify-content: center;
-      }
-      .link-googlePlus {
-        margin-right: 20px;
-        .googleplus-logo {
-          filter: invert(1);
-          height: 30px;
-          width: 30px;
-        }
-      }
-      .link-linkedin {
-        .linkedin-logo {
-          filter: invert(1);
-          height: 30px;
-          width: 30px;
-        }
-      }
-    }
   }
 }
 
-.big-curve2 {
-  height: 200px;
-  width: 100%;
-  z-index: 3;
-  position: absolute;
-  bottom: 0px;
-  @include mobile {
-    display: none;
-  }
-  img {
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
-    object-position: 0px 1vw;
-    margin: 0px;
-    margin-left: -2px;
-    filter: brightness(100%);
-  }
-}
+// .big-curve2 {
+//   height: 200px;
+//   width: 100%;
+//   z-index: 3;
+//   position: absolute;
+//   bottom: 0px;
+//   @include mobile {
+//     display: none;
+//   }
+//   img {
+//     height: 200px;
+//     width: 100%;
+//     object-fit: cover;
+//     object-position: 0px 1vw;
+//     margin: 0px;
+//     margin-left: -2px;
+//     filter: brightness(100%);
+//   }
+// }
 
 .cadsim-footer {
   .software-logo {

@@ -1,9 +1,18 @@
 .content-conference {
-  max-width: 1024px;
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   .entry-title {
-    border-bottom: none;
+    //border-bottom: none;
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .entry-content{
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
   }
   p {
     margin-left: 11%;

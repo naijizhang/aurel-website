@@ -9,7 +9,7 @@
 get_header(); ?>
 
 <?php get_sidebar(); ?>
-<div id="primary" class="content-area content-client-comments">
+<div id="primary" class="content-area content-client-comments content-all-page">
 	<main id="main" class="site-main" role="main">
 
 		<?php while (have_posts()) : the_post(); ?>

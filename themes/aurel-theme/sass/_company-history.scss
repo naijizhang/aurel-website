@@ -5,11 +5,27 @@
     text-align: center;
     font-family: 'Lalezar';
     color: #fff;
+    font-size: 50px;
     padding-top: 150px;
-    padding-bottom: 150px;
+    padding-bottom: 0px;
     @include mobile {
       padding-top: 100px;
       padding-bottom: 50px;
+    }
+  }
+  .entry-title {
+    height:100px;
+    width:100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom: solid 8px #fff;
+    margin-bottom: 130px;
+    margin-top: -30px;
+    @include mobile {
+      border-bottom-width: 5px;
     }
   }
   h4 {
@@ -17,7 +33,6 @@
     margin-top: 100px;
   }
 }
-
 .company-history-container {
   max-width: 1280px;
   margin-left: auto;

@@ -12,6 +12,7 @@ get_header(); ?>
 
         <?php while (have_posts()) : the_post(); ?>
             <?php the_title('<h2>', '</h2>'); ?>
+            <h1 class="entry-title"></h1>
             <div class="company-history-container">
                 <?php the_content(); ?>
             </div>

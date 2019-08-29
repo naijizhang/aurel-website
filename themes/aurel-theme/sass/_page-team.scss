@@ -285,7 +285,8 @@
     #team-page-title {
       color: $color__blue;
       border-bottom: 1px solid $color__teal;
-      width: 80%;
+      width: 100%;
+      max-width: 1280px;
       padding-bottom: 30px;
       border-bottom-left-radius: 50%;//curve
       border-bottom-right-radius: 50%;//curve

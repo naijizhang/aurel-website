@@ -10,13 +10,11 @@
 
 </div><!-- #content -->
 <footer id="myFooter" class="site-footer" role="contentinfo">
-	<div class="big-curve2"><img alt="curved background" src='<?php echo get_template_directory_uri() . '/assets/images/curve-background2.svg'; ?>'></div>
-
 	<nav id="footer-navigation" role="navigation">
 		<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
 	</nav><!-- #footer-navigation -->
 	<div id="footer-middle-column">
-		<p class="footer-brief-description">Aurel offers software sales and training and a full line of services, along with custom unit module development. </p>
+		<p class="footer-brief-description">BETTER INFORMATION >>> BETTER OPERATION</p>
 		<p class="copyright">&copy;2019 Aurel System Inc.</p>
 	</div>
 	<div id="footer-right-column">

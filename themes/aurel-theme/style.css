@@ -765,8 +765,8 @@ table {
   margin-right: auto; }
 
 .get-contact-info {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  -webkit-box-shadow: 0px 0px 10px #bbb;
+          box-shadow: 0px 0px 10px #bbb;
   border-radius: 50px;
   border-bottom-right-radius: 0px;
   border-top-right-radius: 0px;
@@ -789,7 +789,7 @@ table {
           align-items: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  background: #2875da;
+  background: #004280;
   border: none; }
   .get-contact-info .contact-icon-container {
     display: -webkit-box;

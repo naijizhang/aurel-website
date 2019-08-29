@@ -11,7 +11,7 @@
 </div><!-- #content -->
 <footer id="myFooter" class="site-footer" role="contentinfo">
 	<nav id="footer-navigation" role="navigation">
-		<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
+		<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu',"depth"=>1)); ?>
 	</nav><!-- #footer-navigation -->
 	<div id="footer-middle-column">
 		<img class="footer-tagline" alt="tagline" src='<?php echo get_template_directory_uri() . '/assets/images/Tagline-White.png'; ?>'>

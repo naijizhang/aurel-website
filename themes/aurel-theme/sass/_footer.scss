@@ -25,6 +25,10 @@
     height: 100%;
     min-width: 200px;
     li {
+      margin-bottom: 15px;
+      &::before{
+        display: none;
+      }
       &:hover {
         .sub-menu {
           display: none !important;

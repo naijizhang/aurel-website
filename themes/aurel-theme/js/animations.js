@@ -16,6 +16,20 @@
       $('#online-application-link').attr('href', '');
     }
 
+    //mobile size menu
+    if ($(document).width() < 740) {
+      $('#mobile-menu > .menu-item-has-children > a').removeAttr('href');
+      $('.menu-item-has-children').on('click', event => {
+        const clickedElement = $(event.target);
+        const targetElement = clickedElement.closest('.menu-item-has-children');
+        if (targetElement.hasClass('expand-sub-menu')) {
+          targetElement.removeClass('expand-sub-menu');
+        } else {
+          targetElement.addClass('expand-sub-menu');
+        }
+      });
+    }
+
     //widget menu toggle
     $('.widget-area').after(
       "<div class='toggle-widget'><button class='toggle-widget-button'><div>HIDE</div></button></div>"
@@ -57,7 +71,7 @@
     const pageCategory = {
       about: 'about',
       'aurel-team-page': 'about',
-      'clients': 'about',
+      clients: 'about',
       'client-comments': 'about',
       'consultant-links': 'about',
       'conference-papers': 'about',
@@ -92,7 +106,7 @@
       'data-reconciliation': 'onlineApps',
       'product-tracking': 'onlineApps',
       'energy-tracking': 'onlineApps',
-      'real-time-optimization':'onlineApps',
+      'real-time-optimization': 'onlineApps',
 
       industries: 'industries',
       'pulp-paper': 'industries',
@@ -153,7 +167,6 @@
     // if (widgetCategory === 'techCorner') {
     //   $(widgetList['products']).css("display","block")
     // }
-    
 
     if ($(window).width() > 740) {
       //company history animation

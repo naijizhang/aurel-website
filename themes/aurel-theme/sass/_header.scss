@@ -104,32 +104,37 @@
   }
 }
 #mobile-menu {
+  margin: 0px;
+  padding: 0px;
   position: fixed;
+  margin-left: auto;
   top: 0px;
   right: 0px;
   width: 180px;
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.3s 0.1s;
-  margin: 0px;
-  padding: 0px;
+  height: 0px;
   display: block;
   flex-direction: column;
   list-style-type: none;
+
   li {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding-left: 30px;
-    border-bottom-width: 2px;
+    border-bottom-width: 1px;
     border-bottom-color: #fff;
     border-bottom-style: solid;
     width: 100%;
     margin-right: 0px;
+    height: auto;
+    //min-height: 50px;
 
     a {
       color: #fff;
-      font-size: 20px;
+      font-size: 16px;
       letter-spacing: 2px;
       font-family: 'Noto Sans';
       font-weight: bold;
@@ -137,6 +142,93 @@
         color: $color__light_teal;
         filter: none;
         opacity: 0.8;
+      }
+    }
+  }
+}
+#mobile-menu {
+  ul {
+    height: auto;
+  }
+  .sub-menu {
+    transition: all 0.5s;
+    max-height: 0px;
+    overflow: hidden;
+  }
+  li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    a {
+      line-height: 20px;
+      width: 100%;
+      height: 100%;
+      margin: 0px !important;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+  }
+  .expand-sub-menu {
+    .sub-menu {
+      max-height: 200px;
+      &:last-child{
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .menu-item-has-children {
+    a {
+      padding-bottom: 0px;
+    }
+    &:after {
+      content: ' +';
+      position: absolute;
+      right: 10px;
+      top: 5px;
+      font-size: 20px;
+      color: #fff;
+    }
+  }
+  li {
+    ul {
+      //display: none;
+      display: block;
+      margin: 0px;
+      padding: 0px;
+      padding-bottom: 10px;
+      .menu-item-has-children {
+        &:after {
+          content: none;
+        }
+      }
+      li {
+        //border: 5px solid red;
+        padding-left: 8px;
+        border-bottom: none;
+
+        a:before {
+          content: ' -';
+        
+        }
+        //height:30px;
+        a {
+          text-indent: -8px;
+          padding-left: 8px;
+          font-weight: 100;
+          font-size: 15px;
+          margin-top: auto;
+          margin-bottom: auto;
+          text-align: left;
+          padding-bottom: 0px;
+        }
+      }
+      ul {
+        position: inherit;
+        display: none;
+        margin: 0px;
+        padding: 0px;
       }
     }
   }

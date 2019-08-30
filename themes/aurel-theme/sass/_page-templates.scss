@@ -88,7 +88,7 @@
     margin-left: auto;
     margin-right: auto;
     color: #fff;
-    opacity: 0.8;
+    opacity: 1;
     background: $color__blue;
     border-radius: 8px;
     border: none;
@@ -100,7 +100,7 @@
 
     &:hover {
       background: $color__button_blue;
-      opacity: 1;
+      opacity: 0.8;
       p:after {
         border-right-color: $color__blue;
         opacity: 1;

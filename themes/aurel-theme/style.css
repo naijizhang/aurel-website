@@ -1504,7 +1504,7 @@ object {
     margin-left: auto;
     margin-right: auto;
     color: #fff;
-    opacity: 0.8;
+    opacity: 1;
     background: #004280;
     border-radius: 8px;
     border: none; }
@@ -1515,7 +1515,7 @@ object {
         margin-right: auto !important; } }
     .qa-container .item-toggle-button:hover {
       background: #7b7c7c;
-      opacity: 1; }
+      opacity: 0.8; }
       .qa-container .item-toggle-button:hover p:after {
         border-right-color: #004280;
         opacity: 1; }

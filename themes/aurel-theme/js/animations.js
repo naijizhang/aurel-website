@@ -16,6 +16,13 @@
       $('#online-application-link').attr('href', '');
     }
 
+    // $('.item-toggle-button').click(function() {
+    //   if ( !$(this).next().hasClass('show') ) {
+    //     $(this).parent().children('.collapse.show').collapse('show');
+    //   }
+    //   $(this).next().collapse('toggle');
+    // });
+
     //mobile size menu
     if ($(document).width() < 740) {
       $('#mobile-menu > .menu-item-has-children > a').removeAttr('href');

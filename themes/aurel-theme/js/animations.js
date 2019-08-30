@@ -151,7 +151,7 @@
       'software-updates': 'support',
       'maintenance-support': 'support',
       'update-report': 'support',
-      'faq-hasp': 'support',
+      'faq': 'support',
 
       'advanced-technologies': 'advanceTech',
       'stream-based-specifications': 'advanceTech',

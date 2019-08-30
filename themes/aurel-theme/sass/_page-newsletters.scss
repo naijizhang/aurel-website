@@ -2,13 +2,36 @@
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
+  .entry-title{
+    display: none;
+  }
   .cadsimulator-logo {
-    margin-left: 10%;
+    margin-left: auto;
+    margin-right: auto;
     object-fit: contain;
-    width: 25%;
+    width: 80%;
+    max-width: 1280;
     height: auto;
+   display: flex;
+   justify-content: center;
+  }
+  .entry-title-helper {
+    height:100px;
+    width:100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom: solid 8px #78909c;
+    margin-bottom: 70px;
+    margin-top: -80px;
     @include mobile {
-      width: 50%;
+      border-bottom-width: 5px;
+      width:90%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
     }
   }
   .newsletters-container {
@@ -27,17 +50,58 @@
       .newsletter-toggle-button {
         width: 100%;
         background: $color__blue;
-        opacity: 0.8;
+        opacity: 1;
         &:hover,
         &:focus {
           color: #fff;
-          background: $color__button_blue;
+          background: $color__blue3;
           outline: none;
+          opacity: 0.8;
+        }
+        p {
+          text-align: left;
+          margin-bottom: 10px;
         }
       }
       .card-body {
         margin-top: 10px;
         width: 100%;
+      }
+      &:nth-child(6n + 2) {
+        .newsletter-toggle-button {
+          background: $color__blue2;
+          margin-right: auto;
+        }
+      }
+      &:nth-child(6n + 3) {
+        .newsletter-toggle-button {
+          background: $color__blue3;
+          margin-right: auto;
+        }
+      }
+      &:nth-child(6n + 4) {
+        .newsletter-toggle-button {
+          background: $color__blue4;
+          margin-right: auto;
+        }
+      }
+      &:nth-child(6n + 5) {
+        .newsletter-toggle-button {
+          background: $color__blue5;
+          margin-right: auto;
+        }
+      }
+      &:nth-child(6n) {
+        .newsletter-toggle-button {
+          opacity: 0.95;
+          background: $color__blue1;
+        }
+      }
+      &:nth-child(6n + 1) {
+        .newsletter-toggle-button {
+          background: $color__blue;
+          margin-right: auto;
+        }
       }
     }
   }

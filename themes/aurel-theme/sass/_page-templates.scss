@@ -274,12 +274,13 @@
     .faq-toggle-button {
       width: 100%;
       background: $color__blue;
-      opacity: 0.8;
+      opacity: 1;
       &:hover,
       &:focus {
         color: #fff;
-        background: $color__button_blue;
+        background: $color__blue3;
         outline: none;
+        opacity: 0.8;
       }
       p {
         text-align: left;
@@ -289,6 +290,42 @@
     .card-body {
       margin-top: 10px;
       width: 100%;
+    }
+    &:nth-child(6n + 2) {
+      .faq-toggle-button {
+        background: $color__blue2;
+        margin-right: auto;
+      }
+    }
+    &:nth-child(6n + 3) {
+      .faq-toggle-button {
+        background: $color__blue3;
+        margin-right: auto;
+      }
+    }
+    &:nth-child(6n + 4) {
+      .faq-toggle-button {
+        background: $color__blue4;
+        margin-right: auto;
+      }
+    }
+    &:nth-child(6n + 5) {
+      .faq-toggle-button {
+        background: $color__blue5;
+        margin-right: auto;
+      }
+    }
+    &:nth-child(6n) {
+      .faq-toggle-button {
+        opacity: 0.95;
+        background: $color__blue1;
+      }
+    }
+    &:nth-child(6n + 1) {
+      .faq-toggle-button {
+        background: $color__blue;
+        margin-right: auto;
+      }
     }
   }
 }

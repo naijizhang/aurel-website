@@ -120,7 +120,7 @@
       max-height: 1000px;
       &:last-child {
         margin-bottom: 10px;
-        a{
+        a {
           overflow: visible;
         }
       }
@@ -226,7 +226,13 @@ label[for='nav-trigger'] {
 .nav-trigger + label {
   transition: right 0.5s ease-in-out;
 }
-#site-navigation {
+
+@include mobile{
+  #site-navigation{
+    display: none;
+  }
+}
+@media (min-width: 740px) {
   .menu-primary-container > ul {
     width: auto;
     padding: 0px;

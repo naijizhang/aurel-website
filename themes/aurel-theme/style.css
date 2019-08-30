@@ -3831,6 +3831,9 @@ p.is-active {
     .content-client-list ul li {
       width: 50%;
       text-align: center; }
+      .content-client-list ul li::before {
+        content: none;
+        background: none; }
       @media (max-width: 740px) {
         .content-client-list ul li {
           width: 100%; } }

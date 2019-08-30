@@ -361,6 +361,7 @@ label[for='nav-trigger'] {
       position: absolute;
       top: $header_height;
       margin: 0px;
+      margin-left: -100px;
       li {
         display: inline-block;
         width: 230px;
@@ -368,6 +369,7 @@ label[for='nav-trigger'] {
         display: list-item;
         position: relative;
         ul {
+          margin: 0px;
           li {
             border-left: 2px solid #fff;
             position: relative;

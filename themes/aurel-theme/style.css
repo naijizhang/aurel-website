@@ -423,7 +423,6 @@ ul {
   margin: 10px auto;
   padding-left: 20px; }
   ul li {
-    text-indent: -12px;
     margin-bottom: 10px; }
     ul li:before {
       content: '';
@@ -1193,6 +1192,8 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   z-index: 99999; }
+  .widget-area ul li {
+    text-indent: -12px; }
   .widget-area h2 {
     margin-top: 10px;
     margin-bottom: 10px; }
@@ -2126,7 +2127,7 @@ label[for='nav-trigger'] {
     #primary-menu ul .menu-item-has-children:after {
       content: ' >';
       position: absolute;
-      right: 2px;
+      right: 8px;
       top: 10px;
       font-size: 20px;
       color: #36cdd3; }
@@ -3847,7 +3848,16 @@ p.is-active {
     border: 5px solid #004280;
     border-radius: 30px;
     margin-bottom: 30px;
-    width: 80%; }
+    width: 80%;
+    -webkit-box-shadow: 2px 3px 10px #bbb;
+            box-shadow: 2px 3px 10px #bbb; }
+    .content-client-comments .wp-block-quote:nth-of-type(odd) {
+      margin-left: 50px;
+      background: rgba(0, 66, 128, 0.1); }
+      .content-client-comments .wp-block-quote:nth-of-type(odd) p {
+        color: #545454; }
+    .content-client-comments .wp-block-quote:nth-of-type(even) {
+      margin-right: 50px; }
     @media (max-width: 740px) {
       .content-client-comments .wp-block-quote {
         width: 90%; } }

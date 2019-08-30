@@ -9,6 +9,18 @@
     border-radius: 30px;
     margin-bottom: 30px;
     width: 80%;
+    box-shadow: 2px 3px 10px #bbb;
+    &:nth-of-type(odd){
+      margin-left: 50px;
+      background: rgba(0, 66, 128,0.1);
+      
+      p{
+        color: rgb(84, 84, 84);
+      }
+    }
+    &:nth-of-type(even){
+      margin-right: 50px;
+    }
     @include mobile {
       width: 90%;
     }

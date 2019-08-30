@@ -642,7 +642,8 @@ blockquote {
   position: relative; }
   @media (max-width: 740px) {
     blockquote {
-      max-width: 100%; } }
+      max-width: 100%;
+      margin-top: 0px; } }
   blockquote p {
     display: inline;
     font-size: 16px;
@@ -1257,7 +1258,7 @@ a {
     .widget-area ul li {
       width: 70%;
       margin: 0px;
-      margin-bottom: 15px; }
+      margin-bottom: 10px; }
       @media (max-width: 740px) {
         .widget-area ul li {
           width: auto;
@@ -1279,7 +1280,8 @@ a {
         transition: 0.5s; }
         @media (max-width: 740px) {
           .widget-area ul li a {
-            color: #fff; } }
+            color: #fff;
+            margin-right: 10px; } }
         .widget-area ul li a:hover {
           color: #7cdfe3;
           border-bottom: 1px solid #7cdfe3; }
@@ -1922,8 +1924,8 @@ object {
   height: auto; }
 
 #mobile-menu .sub-menu {
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   max-height: 0px;
   overflow: hidden; }
 
@@ -1938,6 +1940,8 @@ object {
           flex-direction: column;
   margin: 0px;
   padding: 0px; }
+  #mobile-menu li:before {
+    background: none; }
   #mobile-menu li a {
     line-height: 20px;
     width: 100%;
@@ -1947,9 +1951,11 @@ object {
     padding-bottom: 10px; }
 
 #mobile-menu .expand-sub-menu .sub-menu {
-  max-height: 200px; }
+  max-height: 1000px; }
   #mobile-menu .expand-sub-menu .sub-menu:last-child {
     margin-bottom: 10px; }
+    #mobile-menu .expand-sub-menu .sub-menu:last-child a {
+      overflow: visible; }
 
 #mobile-menu .menu-item-has-children a {
   padding-bottom: 0px; }
@@ -1982,7 +1988,7 @@ object {
       margin-top: auto;
       margin-bottom: auto;
       text-align: left;
-      padding-bottom: 0px; }
+      padding-bottom: 20px; }
   #mobile-menu li ul ul {
     position: inherit;
     display: none;
@@ -2029,7 +2035,7 @@ label[for='nav-trigger'] {
   -webkit-transition: right 0.5s ease-in-out;
   transition: right 0.5s ease-in-out; }
 
-.menu-primary-container > ul {
+#site-navigation .menu-primary-container > ul {
   width: auto;
   padding: 0px;
   display: -webkit-box;
@@ -2046,16 +2052,16 @@ label[for='nav-trigger'] {
   margin-top: auto;
   margin-bottom: auto; }
   @media (max-width: 740px) {
-    .menu-primary-container > ul {
+    #site-navigation .menu-primary-container > ul {
       display: none; } }
-  .menu-primary-container > ul li {
+  #site-navigation .menu-primary-container > ul li {
     margin: 0px;
     padding-right: 10px;
     padding-left: 10px;
     height: 100%; }
-    .menu-primary-container > ul li:before {
-      background-image: none; }
-    .menu-primary-container > ul li ul li {
+    #site-navigation .menu-primary-container > ul li:before {
+      background: none; }
+    #site-navigation .menu-primary-container > ul li ul li {
       height: auto;
       padding-left: 0px;
       padding-right: 0px;
@@ -2063,7 +2069,10 @@ label[for='nav-trigger'] {
       -webkit-transition: background 400ms linear;
       transition: background 400ms linear;
       border-bottom: 1px solid #004280; }
-      .menu-primary-container > ul li ul li a {
+      @media (max-width: 740px) {
+        #site-navigation .menu-primary-container > ul li ul li {
+          background: none; } }
+      #site-navigation .menu-primary-container > ul li ul li a {
         width: 100%;
         height: 100%;
         line-height: 50px;
@@ -2080,12 +2089,12 @@ label[for='nav-trigger'] {
         letter-spacing: 0px;
         font-size: 15px;
         font-weight: bold; }
-        .menu-primary-container > ul li ul li a:hover {
+        #site-navigation .menu-primary-container > ul li ul li a:hover {
           -webkit-filter: none;
                   filter: none; }
-    .menu-primary-container > ul li:last-child {
+    #site-navigation .menu-primary-container > ul li:last-child {
       margin-bottom: 0px; }
-    .menu-primary-container > ul li a {
+    #site-navigation .menu-primary-container > ul li a {
       text-decoration: none;
       font-family: 'Lalezar';
       font-size: 18px;
@@ -2093,7 +2102,7 @@ label[for='nav-trigger'] {
       -webkit-transition: 0.5s;
       transition: 0.5s;
       color: #004280; }
-      .menu-primary-container > ul li a:hover {
+      #site-navigation .menu-primary-container > ul li a:hover {
         color: #36cdd3;
         -webkit-filter: drop-shadow(5px 5px 10px #36cdd3);
                 filter: drop-shadow(5px 5px 10px #36cdd3); }

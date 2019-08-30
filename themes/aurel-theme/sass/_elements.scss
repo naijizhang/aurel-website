@@ -73,10 +73,10 @@ ul {
       height: 12px;
       width: 12px;
       background: url('../../assets/icons/Arrow_Turquoise2.png');
-      background-size: contain;
+      background-size: 100%;
       background-repeat: no-repeat;
       background-position: center;
-      filter: brightness(90%);
+      filter: brightness(100%);
     }
     margin-bottom: 10px;
     &:last-child {

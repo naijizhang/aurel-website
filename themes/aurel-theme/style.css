@@ -431,11 +431,11 @@ ul {
       height: 12px;
       width: 12px;
       background: url("../../assets/icons/Arrow_Turquoise2.png");
-      background-size: contain;
+      background-size: 100%;
       background-repeat: no-repeat;
       background-position: center;
-      -webkit-filter: brightness(90%);
-              filter: brightness(90%); }
+      -webkit-filter: brightness(100%);
+              filter: brightness(100%); }
     ul li:last-child {
       margin-bottom: 20px; }
 

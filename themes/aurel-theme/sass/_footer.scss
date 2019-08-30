@@ -15,6 +15,11 @@
   padding-left: 10px;
   padding-right: 10px;
   //box-shadow: 5px 0 15px 0px #bbb, -5px 0 8px 0px #bbb;
+  ul{
+    li{
+      text-indent: 0px;
+    }
+  }
   @include mobile {
     flex-direction: column;
     width: 100%;

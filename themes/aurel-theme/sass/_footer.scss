@@ -1,5 +1,6 @@
 #myFooter {
   //background: $color__teal;
+  width:100%;
   background: $color__polygon4_blue;
   @include mobile {
     background: $color__polygon1_blue;
@@ -128,6 +129,7 @@
       margin-top: 20px;
       object-fit: contain;
       width:60%;
+      max-width: 400px;
       margin-left: auto;
       margin-right: auto;
       @include mobile {
@@ -149,6 +151,7 @@
       }
       .software-logo {
         width: 80%;
+        max-width: 300px;
         //border-radius: 15px;
         // border: 10px solid #fff;
         margin-bottom: 20px;

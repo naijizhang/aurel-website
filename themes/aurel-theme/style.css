@@ -2175,6 +2175,7 @@ label[for='nav-trigger'] {
               left: 208px; }
 
 #myFooter {
+  width: 100%;
   background: linear-gradient(164.77deg, #1b447f 18.23%, rgba(32, 96, 144, 0.796875) 37.46%, rgba(46, 169, 188, 0.268605) 72.58%, rgba(53, 206, 211, 0) 103.97%);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2318,6 +2319,7 @@ label[for='nav-trigger'] {
       -o-object-fit: contain;
          object-fit: contain;
       width: 60%;
+      max-width: 400px;
       margin-left: auto;
       margin-right: auto; }
       @media (max-width: 740px) {
@@ -2342,6 +2344,7 @@ label[for='nav-trigger'] {
           display: none; } }
       #myFooter #footer-right-column .software-link .software-logo {
         width: 80%;
+        max-width: 300px;
         margin-bottom: 20px;
         -webkit-filter: brightness(100%);
                 filter: brightness(100%); }
@@ -3756,7 +3759,10 @@ p.is-active {
     width: 90%; } }
 
 .content-about-page {
-  position: relative; }
+  position: relative;
+  max-width: 2000px;
+  margin-left: auto;
+  margin-right: auto; }
   .content-about-page .hero-title {
     color: #004280; }
     @media (max-width: 740px) {
@@ -3770,21 +3776,29 @@ p.is-active {
       -webkit-filter: none;
               filter: none; }
   .content-about-page .as-background {
-    position: relative;
+    position: absolute;
+    bottom: 0px;
+    right: 15vw;
     z-index: 0;
-    right: 15%;
-    margin-top: -15%;
+    width: 25vw;
+    max-width: 500px;
+    max-height: 30vh;
     opacity: 0.1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end; }
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
     @media (max-width: 740px) {
       .content-about-page .as-background {
         display: none; } }
     .content-about-page .as-background img {
+      width: 100%;
+      height: 100%;
       -o-object-fit: contain;
          object-fit: contain; }
 

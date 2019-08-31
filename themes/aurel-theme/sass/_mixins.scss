@@ -17,3 +17,8 @@
 	  @content;
 	}
   }
+  @mixin superWide {
+	@media (min-width: 1280px) {
+	  @content;
+	}
+  }

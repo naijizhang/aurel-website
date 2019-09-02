@@ -3844,13 +3844,15 @@ p.is-active {
         flex-wrap: wrap; }
     .content-client-list ul li {
       width: 50%;
-      text-align: center; }
+      text-align: left;
+      padding-left: 100px; }
       .content-client-list ul li::before {
         content: none;
         background: none; }
       @media (max-width: 740px) {
         .content-client-list ul li {
-          width: 100%; } }
+          width: 100%;
+          padding-left: 0px; } }
 
 .content-client-comments {
   max-width: 1280px;

@@ -7,13 +7,16 @@
     flex-wrap: wrap;
     li {
       width: 50%;
-      text-align: center;
+      //text-align: center;
+      text-align: left;
+      padding-left: 100px;
       &::before {
         content: none;
         background: none;
       }
       @include mobile {
         width: 100%;
+        padding-left: 0px;
       }
     }
   }

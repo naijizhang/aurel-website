@@ -18,6 +18,92 @@ get_header(); ?>
 
 		<?php endwhile; // End of the loop. 
 		?>
+
+
+
+		<div class="request-container">
+			<article class="each-block">
+				<a class="btn btn-primary faq-toggle-button" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+					Request a Quote
+				</a>
+				<div class="collapse multi-collapse" id="multiCollapseExample1">
+					<div class="card card-body">
+						<form id="contact-form">
+							<div>
+								<input id="checkbox-cadsim" type="checkbox" name="item" value="CADSIM-Plus">
+								<label for="checkbox-cadsim">CADSIM Plus</label>
+							</div>
+							<div>
+								<input id="checkbox-cadsim-run" type="checkbox" name="item" value="CADSIM-Plus-Runtime">
+								<label for="checkbox-cadsim-run">CADSIM Plus Runtime</label>
+							</div>
+							<div>
+								<input id="checkbox-purchase" type="checkbox" name="item" value="Purchase">
+								<label for="checkbox-purchase">Purchase</label>
+							</div>
+							<div>
+								<input id="checkbox-lease" type="checkbox" name="item" value="Lease">
+								<label for="checkbox-lease">Lease</label>
+							</div>
+
+							<p>Optional libraries:</p>
+							<div>
+								<input id="checkbox-fiber" type="checkbox" name="libraries" value="Fiber">
+								<label for="checkbox-fiber">Fiber</label>
+							</div>
+							<div>
+								<input id="checkbox-power" type="checkbox" name="libraries" value="Power">
+								<label for="checkbox-power">Power</label>
+							</div>
+							<div>
+								<input id="checkbox-mineral" type="checkbox" name="libraries" value="Mineral">
+								<label for="checkbox-mineral">Mineral</label>
+							</div>
+							<div>
+								<input id="checkbox-HPG" type="checkbox" name="libraries" value="Hydrocarbon Process Group">
+								<label for="checkbox-HPG">Hydrocarbon Process Group</label>
+							</div>
+							<div>
+								<input id="checkbox-HPDB" type="checkbox" name="libraries" value="Hydrocarbon Properties Data Base">
+								<label for="checkbox-HPDB">Hydrocarbon Properties Data Base</label>
+							</div>
+							<div>
+								<input id="checkbox-AAU" type="checkbox" name="libraries" value="AutoCAD Annotation Utility">
+								<label for="checkbox-AAU">AutoCAD Annotation Utility</label>
+							</div>
+
+							<div>
+								<label for="licences">Number of Licences (1-10):</label>
+								<input type="number" id="licences" name="licences" min="1" max="10">
+							</div>
+
+							<div>
+								<label for="name">Name:</label>
+								<input type="text" id="name" name="name">
+							</div>
+							<div>
+								<label for="company">Company:</label>
+								<input type="text" id="company" name="company">
+							</div>
+							<div>
+								<label for="email">Email:</label>
+								<input type="text" id="email" name="email">
+							</div>
+							<div>
+								<label for="country">Country:</label>
+								<input type="text" id="country" name="country">
+							</div>
+							<div>
+								<label for="comments">Comments:</label>
+								<textarea id="comments" rows="4" cols="50"></textarea>
+							</div>
+
+							<input id="contact-submit" type="button" value="Submit">
+						</form>
+					</div>
+				</div>
+			</article>
+		</div>
 		<button type="button" class="btn btn-primary get-contact-info" data-toggle="modal" data-target="#exampleModal">
 			<div class="contact-icon-container">
 				<img class="button-icon-top" alt="contact us" src='<?php echo get_template_directory_uri() . '/assets/icons/mail.svg'; ?>' />

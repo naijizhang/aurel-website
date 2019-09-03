@@ -226,7 +226,7 @@
         $('#mobile-menu').css('opacity', '1');
       }
     };
-    $('input[type=checkbox]').on('click', function() {
+    $('#nav-trigger').on('click', function() {
       toggle();
     });
 

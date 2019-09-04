@@ -1455,6 +1455,10 @@ object {
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto; }
+  .qa-container ul li::before {
+    content: none;
+    display: none;
+    background: none; }
   .qa-container article {
     position: relative; }
   .qa-container .new-badge {
@@ -1734,7 +1738,14 @@ object {
   padding-left: none; }
   .list-container ul li {
     width: 33%;
-    text-align: center; }
+    text-align: left;
+    padding-left: 70px; }
+    @media (max-width: 740px) {
+      .list-container ul li {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0px; } }
 
 .screenshots-container {
   width: 80%;
@@ -4606,16 +4617,6 @@ p.is-active {
     .cadsim-content .as-background img {
       -o-object-fit: contain;
          object-fit: contain; }
-  .cadsim-content .contact-block {
-    position: relative;
-    z-index: 2;
-    margin-left: 10%;
-    width: 60%; }
-    @media (max-width: 740px) {
-      .cadsim-content .contact-block {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto; } }
 
 .cadsim-footer {
   width: 100%;

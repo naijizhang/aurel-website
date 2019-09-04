@@ -3966,6 +3966,112 @@ p.is-active {
       .content-contact .as-background {
         display: none; } }
 
+.red {
+  color: red; }
+
+.request-container {
+  width: 80%;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto; }
+  .request-container .faq-toggle-button {
+    outline: none;
+    border: 3px solid #004280;
+    color: #004280;
+    background: #fff;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
+    .request-container .faq-toggle-button:hover {
+      color: #fff;
+      background: #004280;
+      outline: none; }
+    .request-container .faq-toggle-button:focus {
+      outline: none; }
+  .request-container .card-body {
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.5); }
+    .request-container .card-body #contact-form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      padding-left: 10%;
+      padding-right: 10%;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
+      .request-container .card-body #contact-form #libarary-text {
+        width: 100%;
+        text-align: left;
+        margin: 0px;
+        margin-top: 15px;
+        margin-bottom: 10px; }
+      .request-container .card-body #contact-form .item50 {
+        width: 40%;
+        padding-left: 20px;
+        padding-right: 20px; }
+      .request-container .card-body #contact-form .item20 {
+        width: 20%;
+        padding-left: 20px;
+        padding-right: 20px; }
+      .request-container .card-body #contact-form .item60 {
+        width: 60%;
+        padding-left: 20px;
+        padding-right: 20px; }
+      .request-container .card-body #contact-form .item70 {
+        width: 60%;
+        padding-left: 0px;
+        padding-right: 20px; }
+      .request-container .card-body #contact-form .long-text {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .request-container .card-body #contact-form .long-text input {
+          width: 100%;
+          margin-left: 10px;
+          margin-right: 10px;
+          margin-bottom: 10px; }
+      .request-container .card-body #contact-form .library-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        padding-left: 10%;
+        padding-right: 10%; }
+      .request-container .card-body #contact-form .comment-container {
+        width: 100%; }
+    .request-container .card-body #contact-submit {
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      background: #004280;
+      color: #fff; }
+      .request-container .card-body #contact-submit:hover {
+        outline: none; }
+      .request-container .card-body #contact-submit:focus {
+        outline: none; }
+
 .newsletters-content {
   max-width: 1280px;
   margin-left: auto;

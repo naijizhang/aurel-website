@@ -2426,7 +2426,8 @@ label[for='nav-trigger'] {
       @media (min-width: 1800px) {
         .slides-container .slide-item1 .slide1-hook {
           width: 20%;
-          top: 80px; } }
+          top: 70px;
+          left: 20%; } }
       .slides-container .slide-item1 .slide1-hook p {
         color: #fff;
         font-family: 'UEFA Supercup';

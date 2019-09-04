@@ -53,31 +53,37 @@
                         </ol> -->
                         <div class="carousel-inner slides-container">
                             <div class="carousel-item active each-slide-item slide-item1">
-                             <div class="slide1-hook">
-                                 <p class="paragraph1">
-                                    "Is our capital project going to provide the economic benefits we need?"
-                                 </p>
-                                 <p class="paragraph2">
-                                    Look into the future and find out with <span class="tear">CADSIM Plus</span>.
-                                 </p>
-                             </div>
-                                
-                                <img class="banner-img" alt="banner picture" src='<?php echo get_template_directory_uri() . '/assets/banners/Banner1B.png'; ?>'>
+                                <a class="software-link" href="<?php echo get_permalink(get_page_by_path("cadsim-plus")); ?>">
+                                    <div class="slide1-hook">
+                                        <p class="paragraph1">
+                                            "Is our capital project going to provide the economic benefits we need?"
+                                        </p>
+                                        <p class="paragraph2">
+                                            Look into the future and find out with <span class="tear">CADSIM Plus</span>.
+                                        </p>
+                                    </div>
+                                    <img class="banner-img" alt="banner picture" src='<?php echo get_template_directory_uri() . '/assets/banners/Banner1B.png'; ?>'>
+                                </a>
                             </div>
                             <!-- <div class="carousel-item each-slide-item slide-item2">
-                                <img class="banner-img" alt="banner picture" src='<?php //echo get_template_directory_uri() . '/assets/banners/banner2.png'; ?>'>
+                                <img class="banner-img" alt="banner picture" src='<?php //echo get_template_directory_uri() . '/assets/banners/banner2.png'; 
+                                                                                    ?>'>
                             </div>
                             <div class="carousel-item each-slide-item slide-item3">
-                                <img class="banner-img" alt="banner picture" src='<?php //echo get_template_directory_uri() . '/assets/banners/banner3.png'; ?>'>
+                                <img class="banner-img" alt="banner picture" src='<?php //echo get_template_directory_uri() . '/assets/banners/banner3.png'; 
+                                                                                    ?>'>
                             </div>
                             <div class="carousel-item each-slide-item slide-item4">
-                                <img class="banner-img" alt="banner picture" src='<?php //echo get_template_directory_uri() . '/assets/banners/banner4.png'; ?>'>
+                                <img class="banner-img" alt="banner picture" src='<?php //echo get_template_directory_uri() . '/assets/banners/banner4.png'; 
+                                                                                    ?>'>
                             </div>
                             <div class="carousel-item each-slide-item slide-item5">
-                                <img class="banner-img" alt="banner picture" src='<?php //echo get_template_directory_uri() . '/assets/banners/banner5.png'; ?>'>
+                                <img class="banner-img" alt="banner picture" src='<?php //echo get_template_directory_uri() . '/assets/banners/banner5.png'; 
+                                                                                    ?>'>
                             </div>
                             <div class="carousel-item each-slide-item slide-item6">
-                                <img class="banner-img" alt="banner picture" src='<?php //echo get_template_directory_uri() . '/assets/banners/banner6.png'; ?>'>
+                                <img class="banner-img" alt="banner picture" src='<?php //echo get_template_directory_uri() . '/assets/banners/banner6.png'; 
+                                                                                    ?>'>
                             </div> -->
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

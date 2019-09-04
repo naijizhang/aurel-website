@@ -548,17 +548,17 @@
       object-fit: contain;
     }
   }
-  .contact-block {
-    position: relative;
-    z-index: 2;
-    margin-left: 10%;
-    width: 60%;
-    @include mobile {
-      width: 80%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
+  // .contact-block {
+  //   position: relative;
+  //   z-index: 2;
+  //   margin-left: 10%;
+  //   width: 60%;
+  //   @include mobile {
+  //     width: 80%;
+  //     margin-left: auto;
+  //     margin-right: auto;
+  //   }
+  // }
 }
 
 .cadsim-footer {

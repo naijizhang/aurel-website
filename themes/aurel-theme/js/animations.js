@@ -9,6 +9,93 @@
     //     $('.Volleyball-menu p').removeClass('orange-underscore');
     //   });
 
+    //contact form functionality
+    $('#contact-submit').click(() => {
+      let products = [];
+      let payment=[];
+      let libraries = [];
+      let numLicences;
+      let name;
+      let company;
+      let country;
+      let email;
+      let comments;
+      if ($('#checkbox-cadsim').prop('checked') == true) {
+        products.push('CADSIM Plus');
+      }
+      if ($('#checkbox-cadsim-run').prop('checked') == true) {
+        products.push('CADSIM Plus Runtime');
+      }
+      //console.log('products', products);
+      if ($('#checkbox-purchase').prop('checked') == true) {
+        payment.push('Purchase');
+      }
+      if ($('#checkbox-lease').prop('checked') == true) {
+        payment.push('Lease');
+      }
+      //console.log('payment', payment);
+      if ($('#checkbox-fiber').prop('checked') == true) {
+        libraries.push('Fiber');
+      }
+      if ($('#checkbox-power').prop('checked') == true) {
+        libraries.push('Power');
+      }
+      if ($('#checkbox-mineral').prop('checked') == true) {
+        libraries.push('Mineral');
+      }
+      if ($('#checkbox-HPG').prop('checked') == true) {
+        libraries.push('Hydrocarbon Process Group');
+      }
+      if ($('#checkbox-HPDB').prop('checked') == true) {
+        libraries.push('Hydrocarbon Properties Data Base');
+      }
+      if ($('#checkbox-AAU').prop('checked') == true) {
+        libraries.push('AutoCAD Annotation Utility');
+      }
+      //console.log('libraries', libraries);
+      numLicences = $('#licences').val();
+      //console.log('numLicences', numLicences);
+      name = $('#name').val();
+      //console.log('name', name);
+      company = $('#company').val();
+      //console.log('company', company);
+      email = $('#email').val();
+      //console.log('email', email);
+      country = $('#country').val();
+      //console.log('country', country);
+      comments = $('#comments').val();
+      //console.log('comments', comments);
+
+      let alertMessage=[];
+      if(products.length==0){
+        alertMessage.push(`Please select at least one product in "CADSIM Plus" and "CADSIM Plus Runtime".`);
+      }
+      if(payment.length==0){
+        alertMessage.push(`Please select at least one payment method in "Purchase" and "Lease".`);
+      }
+      if(numLicences==""){
+        alertMessage.push(`"Number of Licences" is required.`);
+      }
+      if(name==""){
+        alertMessage.push(`"Name" is required.`);
+      }
+      if(country==""){
+        alertMessage.push(`"Country" is required.`);
+      }
+      if(email==""){
+        alertMessage.push(`"Email" is required.`);
+      }
+      if(alertMessage.length>0){
+        alert(alertMessage.join("\n"));
+        return;
+      }
+      //%0D%0A  line break
+      //%20     space
+      window.location.href =
+        'mailto:mail@aurelsystems.com?subject=*Request%20a%20Quote&body='+`Products: ${products.join(", ")}%0D%0APayment: ${payment.join(", ")}%0D%0AOptional Libraries: ${libraries.join(", ")}%0D%0ANumber of Licences: ${numLicences}%0D%0AName: ${name}%0D%0ACompany: ${company}%0D%0AEmail: ${email}%0D%0ACountry: ${country}%0D%0AComments: ${comments}`;
+        $("#thanksModal").modal('show');
+    });
+
     if ($(document).width() > 740) {
       $('#software-overview-link').attr('href', '');
       $('#training-link').attr('href', '');

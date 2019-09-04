@@ -98,7 +98,7 @@ get_header(); ?>
 								<textarea id="comments" rows="4" cols="50"></textarea>
 							</div>
 
-							<input id="contact-submit" type="button" value="Submit" data-toggle="modal" data-target="#thanksModal">
+							<input id="contact-submit" type="button" value="Submit">
 						</form>
 					</div>
 				</div>
@@ -135,24 +135,6 @@ get_header(); ?>
 						<a href="tel:6042997707">
 							<button type="button" class="btn btn-primary">Call</button>
 						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="modal fade" id="thanksModal" tabindex="-1" role="dialog" aria-labelledby="thanksModalLabel" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="thanksModalLabel">Aurel Systems Inc.</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body">
-						Thanks for contacting us. Have a nice day!
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 					</div>
 				</div>
 			</div>

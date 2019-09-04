@@ -161,9 +161,76 @@
   //     }
   //   }
   // }
-  .slide-item2 {
-    //background: #000;
-    //display: none;
+  .slide-item1 {
+    height: 300px;
+    position: relative;
+    @include mobile{
+      height:250px;
+    }
+    @include wide {
+      height: 400px;
+    }
+    @include superWide {
+      height: 500px;
+    }
+    .slide1-hook {
+      position: absolute;
+      top: 30px;
+      left: 200px;
+      width: 300px;
+     // width:22%;
+      @include mobile{
+        width:80%;
+        left: 10%;
+      }
+      @include wide{
+        width: 350px;
+      }
+      @include superWide{
+        width:20%;
+        top: 80px;
+      }
+      p {
+        color: #fff;
+        font-family: 'UEFA Supercup';
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-size: 20px;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        @include mobile{
+        font-size: 20px;
+        }
+        @include wide{
+          font-size: 25px;
+        }
+        @include superWide{
+  
+        }
+      }
+      .paragraph2{
+        color: $color__teal;
+        span{
+          color: #fff;
+        }
+      }
+    }
+    img {
+      object-fit: cover;
+      object-position: 0 100%;
+      height: 100%;
+      width: 100%;
+      @include mobile{
+        object-fit: cover;
+        }
+        @include wide{
+  
+        }
+        @include superWide{
+  
+        }
+    }
   }
 }
 .section-what-we-do {
@@ -360,13 +427,12 @@
     .white-block {
       width: 100%;
       background: rgba(255, 255, 255, 0.7);
-      @include mobile{
-        h2{
+      @include mobile {
+        h2 {
           margin-top: 0px;
-          width:100%;
+          width: 100%;
         }
       }
-      
     }
   }
 
@@ -970,9 +1036,9 @@ $polygon-color: $color__bottom_polygons;
       // text-decoration-color: #fff;
       text-decoration: none;
       transform: scale(1.07);
-     @include mobile{
-       transform: none;
-     }
+      @include mobile {
+        transform: none;
+      }
     }
   }
   .each-button {
@@ -989,9 +1055,9 @@ $polygon-color: $color__bottom_polygons;
   .link30 {
     width: 32%;
     margin-bottom: 15px;
-    @include mobile{
+    @include mobile {
       width: 45%;
-      &:nth-of-type(3){
+      &:nth-of-type(3) {
         order: 5;
         margin-top: 15px;
       }
@@ -999,7 +1065,7 @@ $polygon-color: $color__bottom_polygons;
   }
   .link40 {
     width: 42%;
-    @include mobile{
+    @include mobile {
       width: 45%;
       order: 6;
       margin-top: 15px;
@@ -1007,7 +1073,7 @@ $polygon-color: $color__bottom_polygons;
   }
   .link25 {
     width: 27%;
-    @include mobile{
+    @include mobile {
       width: 45%;
     }
   }

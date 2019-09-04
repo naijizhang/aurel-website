@@ -178,6 +178,7 @@
       'product-tracking-2': 'products',
       // 'tech-corner':'products',
       'newsletters-2': 'products',
+      'cadsim-plus-runtime':'products',
 
       'tech-corner': 'techCorner',
       'split-range-controllers': 'techCorner',

@@ -45,8 +45,8 @@ function aurel_get_newsletters()
 function aurel_get_updates()
 {
 	$args = array(
-		'post_type' => 'post', 'posts_per_page' => -1,   'orderby' => 'date',
-		'order'   => 'DEC', 'category_name' => 'new-features',
+		'post_type' => 'version_history', 'posts_per_page' => -1,   'orderby' => 'date',
+		'order'   => 'DEC', 
 	);
 	$updates = get_posts($args);
 	return $updates;

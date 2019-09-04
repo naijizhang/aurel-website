@@ -46,7 +46,7 @@ q {
 }
 
 hr {
-  background-color: $color__background-hr;
+  background-color: #bbb;
   border: 0;
   height: 1px;
   margin-bottom: $base__space-unit;
@@ -194,6 +194,16 @@ figure .wp-block-image {
     margin-bottom: 20px;
    // margin-top: 20px;
   }
+  @include superWide{
+    width:41vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-right: 0px;
+    a{
+      margin-right: auto;
+    }
+  }
   img {
     object-fit: contain;
   }
@@ -213,6 +223,16 @@ figure .wp-block-image {
     width: 100%;
     max-width: 100%;
     margin-bottom: 20px;
+  }
+  @include superWide{
+    width:41vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: 0px;
+    a{
+      margin-left: auto;
+    }
   }
   img {
     object-fit: contain;
@@ -326,7 +346,7 @@ blockquote {
 
 .wp-block-separator {
   margin: 0px auto;
-  width: 80%;
+  width: 100%;
 }
 h1,
 h2,

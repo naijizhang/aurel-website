@@ -2160,7 +2160,7 @@ label[for='nav-trigger'] {
       margin-left: -100px; }
       #primary-menu li ul li {
         display: inline-block;
-        width: 230px;
+        width: 250px;
         float: none;
         display: list-item;
         position: relative; }
@@ -2170,9 +2170,9 @@ label[for='nav-trigger'] {
             border-left: 2px solid #fff;
             position: relative;
             top: -66px;
-            left: 210px; }
+            left: 230px; }
             #primary-menu li ul li ul li ul li {
-              left: 208px; }
+              left: 228px; }
 
 #myFooter {
   width: 100%;

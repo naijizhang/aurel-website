@@ -238,7 +238,7 @@
       support: 'support',
       'software-updates': 'support',
       'maintenance-support': 'support',
-      'update-report': 'support',
+      'version-history': 'support',
       'faq': 'support',
 
       'advanced-technologies': 'advanceTech',

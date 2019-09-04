@@ -42,4 +42,12 @@ function aurel_get_newsletters()
 	$newsletters = get_posts($args);
 	return $newsletters;
 }
-
+function aurel_get_updates()
+{
+	$args = array(
+		'post_type' => 'post', 'posts_per_page' => -1,   'orderby' => 'date',
+		'order'   => 'DEC', 'category_name' => 'new-features',
+	);
+	$updates = get_posts($args);
+	return $updates;
+}

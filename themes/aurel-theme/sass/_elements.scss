@@ -182,7 +182,7 @@ figure .wp-block-image {
   margin-left: 1em;
   margin-bottom: 1em;
   max-width: 50%;
-  margin-right: 20%;
+  margin-right: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -193,6 +193,9 @@ figure .wp-block-image {
     max-width: 100%;
     margin-bottom: 20px;
    // margin-top: 20px;
+  }
+  @include wide{
+    margin-right: 20%;
   }
   @include superWide{
     width:41vw;

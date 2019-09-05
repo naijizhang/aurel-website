@@ -74,7 +74,7 @@ get_header(); ?>
                     </div>
                 </div>
             </div>
-            <div class='references'>
+            <!-- <div class='references'>
                 <p class="reference-title">Icon References</p>
                 <div class='references-text'>
                     <div>Gold Bar Icons made by <a href="https://www.flaticon.com/authors/prettycons" title="prettycons">prettycons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
@@ -82,7 +82,7 @@ get_header(); ?>
                     <div>Tree Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
                     <div>Other Icons are from Ionicons</div>
                 </div>
-            </div>
+            </div> -->
             <p>In addition to the industries listed above, CADSIM Plus has been used for a huge variety of puposes. Our generic modules in the&nbsp;<a href="https://www.aurelsystems.com/module-libraries/">Standard Library</a>&nbsp;(bundled with every copy of CADSIM Plus) includes units that can be adapted for any number of applications. Our software has even been used to model the flow of dollars in a financial model of the banking system!</p>
             <p>If it can flow through a pipe (and even if it can't) CADSIM Plus can be used to model it.</p>
 

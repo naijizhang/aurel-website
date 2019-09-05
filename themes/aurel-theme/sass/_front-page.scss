@@ -178,7 +178,7 @@
       top: 30px;
       left: 14%;
       width: 300px;
-      width:50%;
+      width: 50%;
       @include mobile {
         width: 80%;
         left: 10%;
@@ -212,13 +212,13 @@
       .paragraph2 {
         color: $color__teal;
         line-height: 40px;
-        #software-slide1{
+        #software-slide1 {
           transition: all 0.3s;
-          &:hover{
+          &:hover {
             text-decoration: none;
-           font-size: 27px;
+            font-size: 27px;
           }
-          
+
           span {
             padding: 8px;
             border-radius: 10px;
@@ -226,7 +226,6 @@
             color: #fff;
           }
         }
-       
       }
     }
     img {
@@ -255,25 +254,25 @@
     @include superWide {
       height: 500px;
     }
-    #slide2-software-box{
-      width:300px;
-      height:90%;
+    #slide2-software-box {
+      width: 300px;
+      height: 90%;
       position: absolute;
       right: 13%;
       top: 0px;
       z-index: 3;
-      background:url("../../assets/images/CadsimPlus_SoftwareBox.png");
+      background: url('../../assets/images/CadsimPlus_SoftwareBox.png');
       background-position: center;
       background-size: cover;
-      @include mobile{
-       background-size: contain;
-       right:10px;
-       height: 70%;
-       width:200px;
-       background-repeat: no-repeat;
+      @include mobile {
+        background-size: contain;
+        right: 10px;
+        height: 70%;
+        width: 200px;
+        background-repeat: no-repeat;
       }
       @include superWide {
-        right:22%;
+        right: 22%;
       }
     }
     .slide1-hook {
@@ -288,7 +287,7 @@
       }
       @include wide {
         width: 100%;
-        br{
+        br {
           //display: none;
         }
       }
@@ -322,28 +321,27 @@
           // margin-left: 24%;
           // margin-right: auto;
         }
-        #software-slide1{
+        #software-slide1 {
           transition: all 0.3s;
-          &:hover{
+          &:hover {
             text-decoration: none;
-           font-size: 30px;
-           @include mobile {
             font-size: 30px;
-          }
-          @include wide {
-            font-size: 40px;
-          }
+            @include mobile {
+              font-size: 30px;
+            }
+            @include wide {
+              font-size: 40px;
+            }
           }
           span {
             padding: 8px;
             padding-left: 15px;
             padding-right: 15px;
             border-radius: 10px;
-            background:$color__teal;
+            background: $color__teal;
             color: #fff;
           }
         }
-       
       }
     }
     img {
@@ -587,13 +585,13 @@
   }
 }
 .what-we-do-container {
-  display: flex;
+  // display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0px auto;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 50px;
+  padding-bottom: 100px;
   background: #fff;
   max-width: 1280px;
   margin-left: auto;
@@ -741,6 +739,7 @@
           padding-right: 10px;
         }
         transition: 0.3s ease-in-out;
+        z-index: 9999;
         &:hover {
           width: 250px;
           border-radius: 60px;
@@ -990,40 +989,40 @@
 //   }
 // }
 
-.overlay {
-  // position: absolute;
-  // bottom: 0;
-  // left: 0;
-  // right: 0;
-  background-color: $color__deep_blue;
-  //overflow: hidden;
-  width: 100%;
-  //height: 0;
-  transition: 0.5s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  @include mobile {
-    display: none;
-  }
-  a {
-    color: #fff;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0px;
-    font-size: 11px;
-    padding-left: 5%;
-    padding-right: 5%;
-    text-align: center;
-    margin-bottom: 5px;
-    transition: all 300ms;
-    font-size: 10px;
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
-}
+// .overlay {
+//   // position: absolute;
+//   // bottom: 0;
+//   // left: 0;
+//   // right: 0;
+//   background-color: $color__deep_blue;
+//   //overflow: hidden;
+//   width: 100%;
+//   //height: 0;
+//   transition: 0.5s ease;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   @include mobile {
+//     display: none;
+//   }
+//   a {
+//     color: #fff;
+//     margin-left: auto;
+//     margin-right: auto;
+//     margin-bottom: 0px;
+//     font-size: 11px;
+//     padding-left: 5%;
+//     padding-right: 5%;
+//     text-align: center;
+//     margin-bottom: 5px;
+//     transition: all 300ms;
+//     font-size: 10px;
+//     &:hover {
+//       transform: scale(1.1);
+//     }
+//   }
+// }
 
 @include mobile {
   #polygon-block1 {

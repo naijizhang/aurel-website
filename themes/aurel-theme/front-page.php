@@ -53,22 +53,31 @@
                         </ol> -->
                         <div class="carousel-inner slides-container">
                             <div class="carousel-item active each-slide-item slide-item1">
-                                <a class="software-link" href="<?php echo get_permalink(get_page_by_path("cadsim-plus")); ?>">
-                                    <div class="slide1-hook">
-                                        <p class="paragraph1">
-                                            "Is our capital project going to provide the economic benefits we need?"
-                                        </p>
-                                        <p class="paragraph2">
-                                            Look into the future and find out with <span class="tear">CADSIM Plus</span>.
-                                        </p>
-                                    </div>
-                                    <img class="banner-img" alt="banner picture" src='<?php echo get_template_directory_uri() . '/assets/banners/Banner1B.png'; ?>'>
-                                </a>
+
+                                <div class="slide1-hook">
+                                    <p class="paragraph1">
+                                        "Is our capital project going to provide the economic benefits we need?"
+                                    </p>
+                                    <p class="paragraph2">
+                                        Look into the future <br>and find out with <a id="software-slide1" href="<?php echo get_permalink(get_page_by_path("cadsim-plus")); ?>"><span class="tear">CADSIM Plus</span> </a>
+                                    </p>
+                                </div>
+                                <img class="banner-img" alt="banner picture" src='<?php echo get_template_directory_uri() . '/assets/banners/Banner1B.png'; ?>'>
+
                             </div>
-                            <!-- <div class="carousel-item each-slide-item slide-item2">
-                                <img class="banner-img" alt="banner picture" src='<?php //echo get_template_directory_uri() . '/assets/banners/banner2.png'; 
-                                                                                    ?>'>
+                            <div class="carousel-item each-slide-item slide-item2">
+                                <div class="slide1-hook">
+                                    <p class="paragraph1">
+                                       Announcing<br>CADSIM Plus Version 3.3
+                                    </p>
+                                    <p class="paragraph2">
+                                       <a id="software-slide1" href="<?php echo get_permalink(get_page_by_path("new-in-v3.3")); ?>"><span class="tear">WHAT'S NEW</span> </a>
+                                    </p>
+                                </div>
+                                <div id="slide2-software-box"></div>
+                                <img class="banner-img" alt="banner picture" src='<?php echo get_template_directory_uri() . '/assets/banners/Banner2A.png'; ?>'>
                             </div>
+                            <!-- 
                             <div class="carousel-item each-slide-item slide-item3">
                                 <img class="banner-img" alt="banner picture" src='<?php //echo get_template_directory_uri() . '/assets/banners/banner3.png'; 
                                                                                     ?>'>

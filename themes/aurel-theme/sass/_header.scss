@@ -258,8 +258,7 @@ label[for='nav-trigger'] {
         display: block;
         height: 100%;
         width: 100%;
-        white-space: normal;
-        line-height: 40px;
+        white-space: normal !important;
       }
       ul {
         li {
@@ -408,4 +407,12 @@ label[for='nav-trigger'] {
       }
     }
   }
+}
+.menu-item-805,.menu-item-438{
+  a{
+    line-height: 30px !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+ 
 }

@@ -160,7 +160,8 @@
       cadsimPlus: '#nav_menu-8',
       support: '#nav_menu-9',
       versions: '#nav_menu-10',
-      advanceTech: '#nav_menu-11'
+      advanceTech: '#nav_menu-11',
+      advanceModeling: '#nav_menu-12'
     };
     const pageCategory = {
       about: 'about',
@@ -192,10 +193,11 @@
 
       services: 'services',
       training: 'services',
-      'process-modeling': 'services',
-      'custom-modules': 'services',
-      'dcs-check-out': 'services',
-      'operator-training-simulators': 'services',
+
+      'process-modeling': 'advanceModeling',
+      'custom-modules': 'advanceModeling',
+      'dcs-check-out': 'advanceModeling',
+      'operator-training-simulators': 'advanceModeling',
 
       'process-digital-twin': 'digitalTwin',
       'data-reconciliation': 'digitalTwin',

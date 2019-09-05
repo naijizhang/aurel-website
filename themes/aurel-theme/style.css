@@ -1332,7 +1332,11 @@ a {
 #nav_menu-8,
 #nav_menu-9,
 #nav_menu-10,
-#nav_menu-11 {
+#nav_menu-11,
+#nav_menu-12,
+#nav_menu-13,
+#nav_menu-14,
+#nav_menu-15 {
   display: none; }
 
 #go-back-button {
@@ -2116,8 +2120,7 @@ label[for='nav-trigger'] {
         display: block;
         height: 100%;
         width: 100%;
-        white-space: normal;
-        line-height: 40px; }
+        white-space: normal !important; }
       .menu-primary-container > ul li ul li {
         height: auto;
         padding-left: 0px;
@@ -2222,6 +2225,11 @@ label[for='nav-trigger'] {
             left: 230px; }
             #primary-menu li ul li ul li ul li {
               left: 228px; }
+
+.menu-item-805 a, .menu-item-438 a {
+  line-height: 30px !important;
+  padding-top: 10px;
+  padding-bottom: 10px; }
 
 #myFooter {
   width: 100%;

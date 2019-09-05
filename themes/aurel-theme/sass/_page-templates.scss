@@ -450,3 +450,56 @@
 .content-hero{
   position: relative;
 }
+
+//product page boxes banner
+.three-boxes-banner-container {
+  max-width: 1080px;
+  margin: 80px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  .box {
+    width: 28%;
+    border: 3px solid $color_light_grey;
+    transition: all 0.3s;
+    box-shadow: 0px 5px 5px #bbb;
+    &:hover{
+      border: 3px solid $color__blue;
+      transform: scale(1.03);
+    }
+    .wp-block-image {
+      margin-top: 0px;
+     
+      img{
+        object-fit: contain;
+        padding-top: 30px;
+        padding-left: 70px;
+        padding-right: 70px;
+      }
+    }
+    p {
+      font-size: 20px;
+      margin: 10px auto;
+      text-align: center;
+      color: $color__blue;
+      font-weight: bold;
+    }
+    a {
+      display: block;
+      width:60%;
+      text-align: center;
+      border: 3px solid $color__blue;
+      color: $color__blue;
+      margin: 10px auto;
+      transition: 0.3s all;
+      margin-bottom: 20px;
+      &:hover{
+        color: #fff;
+        background: $color__blue;
+        border: 3px solid $color__blue;
+        text-decoration: none;
+      }
+    }
+  }
+}

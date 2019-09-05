@@ -72,7 +72,17 @@ $color__polygon2_blue: linear-gradient(
 $color__polygon3_blue: linear-gradient(
   175deg,
   rgb(27, 68, 127) 63%,
-  rgb(255,255,255) 90%
+  rgb(255, 255, 255) 90%
+);
+$color__polygon2_grey: linear-gradient(
+  359deg,
+  $color__blue4 10%,
+  #fff 70%
+);
+$color__polygon3_grey: linear-gradient(
+  179deg,
+  $color__blue4 50%,
+  $color__blue3 90%
 );
 $color__polygon4_blue: linear-gradient(
   164.77deg,

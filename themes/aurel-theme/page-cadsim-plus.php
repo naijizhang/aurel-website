@@ -48,9 +48,9 @@
                         </div>
 
                         <div class="three-boxes-container">
-                            <div id="box1" class="box"></div>
+                            <!-- <div id="box1" class="box"></div> -->
                             <div id="box2" class="box"></div>
-                            <div id="box3" class="box"></div>
+                            <!-- <div id="box3" class="box"></div> -->
                         </div>
                     </section>
                     <div class="cadsim-banner-helper"></div>

@@ -2112,6 +2112,12 @@ label[for='nav-trigger'] {
       height: 100%; }
       .menu-primary-container > ul li:before {
         background: none; }
+      .menu-primary-container > ul li a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        white-space: normal;
+        line-height: 40px; }
       .menu-primary-container > ul li ul li {
         height: auto;
         padding-left: 0px;

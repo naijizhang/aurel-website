@@ -254,6 +254,13 @@ label[for='nav-trigger'] {
       padding-right: 10px;
       padding-left: 10px;
       height: 100%;
+      a{
+        display: block;
+        height: 100%;
+        width: 100%;
+        white-space: normal;
+        line-height: 40px;
+      }
       ul {
         li {
           height: auto;

@@ -42,7 +42,7 @@
 
 .hero-title {
   position: absolute;
-  top: 7vh;
+  top: 100px;
   width: 100vw;
   max-width: 100%;
   text-align: center;
@@ -63,7 +63,7 @@
     z-index: -1;
     width: 100%;
     //max-width: 1280px;
-    height: 25vh;
+    height: 300px;
     object-fit: cover;
     object-position: center;
     opacity: 1;

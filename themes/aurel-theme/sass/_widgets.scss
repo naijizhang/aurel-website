@@ -240,14 +240,14 @@ $widget_width: 180px;
   margin-right: auto;
   color: #fff;
   box-shadow: none;
-  background: $color__polygon2_blue;
+  background: $color__polygon5_blue;
   margin-bottom: 20px;
   transition: background 0.5s;
   @include mobile{
     display: none;
   }
   &:hover {
-    background: $color__button_blue1;
+    background: $color__blue3;
   }
   &:focus{
     outline:none;

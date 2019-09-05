@@ -4691,7 +4691,7 @@ p.is-active {
            object-fit: contain;
         margin-left: 5%;
         margin-bottom: 20px;
-        margin-top: 100px; }
+        margin-top: 50px; }
       @media (max-width: 740px) {
         .cadsim-content .cadsim-banner-container .cadsim-title-content {
           width: 80%;
@@ -4707,14 +4707,15 @@ p.is-active {
       .cadsim-content .cadsim-banner-container .cadsim-title-content p {
         width: 90%;
         color: #fff;
-        text-align: left; }
+        text-align: left;
+        margin-bottom: -50px; }
         .cadsim-content .cadsim-banner-container .cadsim-title-content p a {
           color: #7cdfe3; }
     .cadsim-content .cadsim-banner-container #flask {
       margin-left: 0px;
       margin-right: 0px; }
     .cadsim-content .cadsim-banner-container .three-boxes-container {
-      height: 250px;
+      height: 200px;
       width: 20%;
       max-width: 500px;
       margin-top: auto;

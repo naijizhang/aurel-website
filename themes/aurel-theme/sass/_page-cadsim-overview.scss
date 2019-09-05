@@ -387,7 +387,7 @@
         object-fit: contain;
         margin-left: 5%;
         margin-bottom: 20px;
-        margin-top: 100px;
+        margin-top: 50px;
         //filter: brightness(200%);
       }
       @include mobile {
@@ -407,6 +407,7 @@
         width: 90%;
         color: #fff;
         text-align: left;
+        margin-bottom: -50px;
         a {
           color: $color__light_teal;
         }
@@ -417,7 +418,7 @@
       margin-right: 0px;
     }
     .three-boxes-container {
-      height: 250px;
+      height: 200px;
       width: 20%;
       max-width: 500px;
       margin-top: auto;

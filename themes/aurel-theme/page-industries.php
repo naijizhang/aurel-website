@@ -8,12 +8,21 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area content-all-page">
+<div id="primary" class="content-area content-all-page content-industry-overview">
     <main id="main" class="site-main" role="main">
 
-        <?php while (have_posts()) : the_post(); ?>
 
-            <?php get_template_part('template-parts/content-page'); ?>
+
+        <?php while (have_posts()) : the_post(); ?>
+        <section class="cadsim-banner-container">
+            <?php the_title('<h1 class="inductry-overview-title">', '</h1>'); ?>
+        </section>
+        <div class="cadsim-banner-helper"></div>
+        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+            <div class="entry-content">
+                <?php the_content(); ?>
+            </div><!-- .entry-content -->
+        </article><!-- #post-## -->
 
         <?php endwhile; // End of the loop. 
         ?>

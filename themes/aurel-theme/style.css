@@ -4807,3 +4807,27 @@ p.is-active {
 #industries-hexagon {
   margin-left: auto;
   margin-right: auto; }
+
+.content-industry-overview .cadsim-banner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: linear-gradient(355.69deg, #1b447f 55%, #35ced3 100%); }
+  .content-industry-overview .cadsim-banner-container .inductry-overview-title {
+    color: #fff;
+    margin-top: 150px;
+    margin-bottom: 0px; }
+
+.content-industry-overview .cadsim-banner-helper {
+  width: 100vw;
+  height: 150px;
+  background: linear-gradient(170deg, #1b447f 73%, #6ac4cc 100%);
+  border-bottom-right-radius: 50% 80%;
+  border-bottom-left-radius: 50% 80%; }

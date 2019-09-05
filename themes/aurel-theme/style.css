@@ -1349,7 +1349,7 @@ a {
   color: #fff;
   -webkit-box-shadow: none;
           box-shadow: none;
-  background: linear-gradient(355deg, #1b447f 35%, white 76%);
+  background: linear-gradient(355.69deg, #1b447f 55%, #35ced3 100%);
   margin-bottom: 20px;
   -webkit-transition: background 0.5s;
   transition: background 0.5s; }
@@ -1357,7 +1357,7 @@ a {
     #go-back-button {
       display: none; } }
   #go-back-button:hover {
-    background: #2875da; }
+    background: #377ca8; }
   #go-back-button:focus {
     outline: none; }
 
@@ -1859,6 +1859,59 @@ object {
 
 .content-hero {
   position: relative; }
+
+.three-boxes-banner-container {
+  max-width: 1080px;
+  margin: 80px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .three-boxes-banner-container .box {
+    width: 28%;
+    border: 3px solid #acb3b5;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-box-shadow: 0px 5px 5px #bbb;
+            box-shadow: 0px 5px 5px #bbb; }
+    .three-boxes-banner-container .box:hover {
+      border: 3px solid #004280;
+      -webkit-transform: scale(1.03);
+              transform: scale(1.03); }
+    .three-boxes-banner-container .box .wp-block-image {
+      margin-top: 0px; }
+      .three-boxes-banner-container .box .wp-block-image img {
+        -o-object-fit: contain;
+           object-fit: contain;
+        padding-top: 30px;
+        padding-left: 70px;
+        padding-right: 70px; }
+    .three-boxes-banner-container .box p {
+      font-size: 20px;
+      margin: 10px auto;
+      text-align: center;
+      color: #004280;
+      font-weight: bold; }
+    .three-boxes-banner-container .box a {
+      display: block;
+      width: 60%;
+      text-align: center;
+      border: 3px solid #004280;
+      color: #004280;
+      margin: 10px auto;
+      -webkit-transition: 0.3s all;
+      transition: 0.3s all;
+      margin-bottom: 20px; }
+      .three-boxes-banner-container .box a:hover {
+        color: #fff;
+        background: #004280;
+        border: 3px solid #004280;
+        text-decoration: none; }
 
 .fixed-header-logged {
   top: 32px; }
@@ -4618,8 +4671,9 @@ p.is-active {
             justify-content: center;
     background: linear-gradient(355deg, #1b447f 35%, white 76%); }
     .cadsim-content .cadsim-banner-container .cadsim-title-content {
-      width: 40%;
+      width: 50%;
       max-width: 750px;
+      padding-right: 20px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -4660,8 +4714,8 @@ p.is-active {
       margin-left: 0px;
       margin-right: 0px; }
     .cadsim-content .cadsim-banner-container .three-boxes-container {
-      height: 300px;
-      width: 25%;
+      height: 250px;
+      width: 20%;
       max-width: 500px;
       margin-top: auto;
       display: -webkit-box;
@@ -4685,77 +4739,20 @@ p.is-active {
         width: 100%;
         height: 120%;
         margin-bottom: -50px; }
-      .cadsim-content .cadsim-banner-container .three-boxes-container #box1 {
-        background: url("../../assets//images/CadsimPlus_SoftwareBox.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 300px;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        z-index: 1; }
       .cadsim-content .cadsim-banner-container .three-boxes-container #box2 {
         background: #bbb;
         background: url("../../assets//images/CadsimPlus_SoftwareBox.png");
         background-size: contain;
         background-repeat: no-repeat;
+        background-position: center;
         width: 400px;
         z-index: 2; }
-      .cadsim-content .cadsim-banner-container .three-boxes-container #box3 {
-        background: url("../../assets//images/CadsimPlus_SoftwareBox.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 300px;
-        position: absolute;
-        bottom: 0px;
-        right: 0px;
-        z-index: 3; }
   .cadsim-content .cadsim-banner-helper {
     width: 100vw;
     height: 150px;
     background: linear-gradient(175deg, #1b447f 63%, white 90%);
     border-bottom-right-radius: 50% 80%;
     border-bottom-left-radius: 50% 80%; }
-  .cadsim-content .three-boxes-banner-container {
-    max-width: 1080px;
-    margin: 80px auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
-    .cadsim-content .three-boxes-banner-container .box {
-      width: 28%;
-      border: 3px solid #acb3b5;
-      -webkit-transition: all 0.5s;
-      transition: all 0.5s;
-      -webkit-box-shadow: 0px 5px 10px #bbb;
-              box-shadow: 0px 5px 10px #bbb; }
-      .cadsim-content .three-boxes-banner-container .box:hover {
-        border: 3px solid #004280; }
-      .cadsim-content .three-boxes-banner-container .box .wp-block-image {
-        margin-top: 0px; }
-      .cadsim-content .three-boxes-banner-container .box p {
-        font-size: 15px;
-        margin: 10px auto;
-        text-align: center; }
-      .cadsim-content .three-boxes-banner-container .box a {
-        display: block;
-        width: 60%;
-        text-align: center;
-        border: 3px solid #004280;
-        color: #004280;
-        margin: 10px auto;
-        -webkit-transition: 0.5s all;
-        transition: 0.5s all; }
-        .cadsim-content .three-boxes-banner-container .box a:hover {
-          color: #fff;
-          background: #36cdd3;
-          border: 3px solid #36cdd3; }
   .cadsim-content article {
     max-width: 1280px;
     margin-left: auto;
@@ -4855,6 +4852,177 @@ p.is-active {
     margin-bottom: 0px; }
 
 .content-industry-overview .cadsim-banner-helper {
+  width: 100vw;
+  height: 150px;
+  background: linear-gradient(170deg, #1b447f 73%, #6ac4cc 100%);
+  border-bottom-right-radius: 50% 80%;
+  border-bottom-left-radius: 50% 80%; }
+
+.cadsim-runtime-content {
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto; }
+  .cadsim-runtime-content .float-right {
+    margin-right: 10%; }
+    @media (max-width: 740px) {
+      .cadsim-runtime-content .float-right {
+        margin-right: 0; } }
+  .cadsim-runtime-content .cadsim-banner-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: linear-gradient(359deg, #4699ce 10%, #fff 70%); }
+    .cadsim-runtime-content .cadsim-banner-container .cadsim-title-content {
+      width: 40%;
+      max-width: 750px;
+      padding-right: 20px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      margin-bottom: -50px; }
+      .cadsim-runtime-content .cadsim-banner-container .cadsim-title-content .software-logo {
+        width: 60%;
+        min-width: 200px;
+        -o-object-fit: contain;
+           object-fit: contain;
+        margin-bottom: 0px;
+        margin-top: 70px;
+        margin-left: auto;
+        margin-right: 20%; }
+      @media (max-width: 740px) {
+        .cadsim-runtime-content .cadsim-banner-container .cadsim-title-content {
+          width: 80%;
+          padding-right: 0px; } }
+      .cadsim-runtime-content .cadsim-banner-container .cadsim-title-content .entry-header .entry-title {
+        border: none;
+        text-align: left;
+        padding-bottom: 0px;
+        color: #fff; }
+        @media (max-width: 740px) {
+          .cadsim-runtime-content .cadsim-banner-container .cadsim-title-content .entry-header .entry-title {
+            text-align: center; } }
+      .cadsim-runtime-content .cadsim-banner-container .cadsim-title-content h1 {
+        width: 60%;
+        color: #fff;
+        text-align: center;
+        font-weight: bold;
+        font-size: 40px;
+        font-family: 'UEFA Supercup';
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: 20%; }
+        .cadsim-runtime-content .cadsim-banner-container .cadsim-title-content h1 a {
+          color: #7cdfe3; }
+    .cadsim-runtime-content .cadsim-banner-container .three-boxes-container {
+      height: 200px;
+      width: 20%;
+      max-width: 500px;
+      margin-top: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      position: relative; }
+      @media (max-width: 740px) {
+        .cadsim-runtime-content .cadsim-banner-container .three-boxes-container {
+          display: none; } }
+      .cadsim-runtime-content .cadsim-banner-container .three-boxes-container .box {
+        width: 100%;
+        height: 100%;
+        margin-bottom: -100px; }
+      .cadsim-runtime-content .cadsim-banner-container .three-boxes-container #box2 {
+        background: #bbb;
+        background: url("../../assets//images/CadsimPlusRuntime_SoftwareBox-Medium Grey.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 400px;
+        z-index: 2; }
+  .cadsim-runtime-content .cadsim-banner-helper {
+    width: 100vw;
+    height: 150px;
+    background: linear-gradient(179deg, #4699ce 50%, #377ca8 90%);
+    border-bottom-right-radius: 50% 80%;
+    border-bottom-left-radius: 50% 80%; }
+  .cadsim-runtime-content article {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px; }
+  .cadsim-runtime-content .qa-container {
+    -webkit-box-shadow: 0px 0px 15px #bbb;
+            box-shadow: 0px 0px 15px #bbb;
+    margin-top: 100px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 2;
+    background: #fff; }
+    @media (max-width: 740px) {
+      .cadsim-runtime-content .qa-container {
+        -webkit-box-shadow: 0px 0px 5px #bbb;
+                box-shadow: 0px 0px 5px #bbb; } }
+    .cadsim-runtime-content .qa-container article {
+      margin-top: 0px; }
+
+.content-research .cadsim-banner-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: linear-gradient(355.69deg, #1b447f 55%, #35ced3 100%); }
+  .content-research .cadsim-banner-container .research-title {
+    color: #fff;
+    margin: 0px;
+    margin-top: auto;
+    margin-bottom: 10px;
+    margin-right: 0px; }
+    @media (max-width: 740px) {
+      .content-research .cadsim-banner-container .research-title {
+        padding-top: 50px;
+        margin-top: 100px; } }
+    @media (min-width: 1400px) {
+      .content-research .cadsim-banner-container .research-title {
+        margin-right: 50px; } }
+    @media (min-width: 1800px) {
+      .content-research .cadsim-banner-container .research-title {
+        margin-right: 100px; } }
+  .content-research .cadsim-banner-container .flask-container {
+    margin-bottom: -80px; }
+
+.content-research .cadsim-banner-helper {
   width: 100vw;
   height: 150px;
   background: linear-gradient(170deg, #1b447f 73%, #6ac4cc 100%);

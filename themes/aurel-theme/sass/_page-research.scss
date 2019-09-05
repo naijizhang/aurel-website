@@ -1,0 +1,39 @@
+
+.content-research{
+    .cadsim-banner-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      background: $color__polygon5_blue;
+      .research-title{
+        color: #fff;
+        margin: 0px;
+        margin-top: auto;
+        margin-bottom: 10px;
+        margin-right: 0px;
+        @include mobile{
+            padding-top:50px;
+            margin-top: 100px;
+   
+        }
+        @include wide{
+            margin-right: 50px;
+        }
+        @include superWide{
+            margin-right: 100px;
+        }
+       
+      }
+      .flask-container{
+        margin-bottom: -80px;
+      }
+    }
+    .cadsim-banner-helper {
+      width: 100vw;
+      height: 150px;
+      background: $color__polygon6_blue;
+      border-bottom-right-radius: 50% 80%;
+      border-bottom-left-radius: 50% 80%;
+    }
+  }
+  

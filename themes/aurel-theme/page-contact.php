@@ -14,7 +14,7 @@ get_header(); ?>
 
 		<?php while (have_posts()) : the_post(); ?>
 
-		<?php get_template_part('template-parts/content-page'); ?>
+			<?php get_template_part('template-parts/content-page'); ?>
 
 		<?php endwhile; // End of the loop. 
 		?>
@@ -155,7 +155,7 @@ get_header(); ?>
 						</button>
 					</div>
 					<div class="modal-body">
-						Thanks for contacting us. Have a nice day!
+						Thank you for your request! We will get back to you shortly.
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

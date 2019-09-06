@@ -1988,6 +1988,9 @@ object {
       @media (max-width: 740px) {
         .site-header .header-container .logo-link {
           margin-left: 0px; } }
+      @media (min-width: 1400px) {
+        .site-header .header-container .logo-link {
+          margin-left: 350px; } }
       @media (min-width: 1800px) {
         .site-header .header-container .logo-link {
           margin-left: 0px;
@@ -2304,7 +2307,7 @@ label[for='nav-trigger'] {
             #primary-menu li ul li ul li ul li {
               left: 228px; }
 
-.menu-item-805 a, .menu-item-438 a {
+.menu-item-805 a, .menu-item-438 a, .menu-item-839 a {
   line-height: 30px !important;
   padding-top: 10px;
   padding-bottom: 10px; }
@@ -2918,9 +2921,9 @@ label[for='nav-trigger'] {
   .main-services-container .service-block1 {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1))), url("../../assets/images/CadsimPlus_SoftwareBox.png");
     background: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%), url("../../assets/images/CadsimPlus_SoftwareBox.png");
-    background-position: center, center 0;
+    background-position: center, center 15px;
     background-repeat: repeat, no-repeat;
-    background-size: cover, 60%; }
+    background-size: cover, 40%; }
   .main-services-container .service-block2 {
     background: url("../../assets/images/modeling.png");
     background-position: center;

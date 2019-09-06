@@ -830,6 +830,9 @@ table {
       flex-wrap: nowrap;
   background: #004280;
   border: none; }
+  @media (max-width: 740px) {
+    .get-contact-info {
+      padding: 5px; } }
   .get-contact-info .contact-icon-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -857,11 +860,14 @@ table {
       margin-bottom: 50px; }
       @media (max-width: 740px) {
         .get-contact-info .contact-icon-container .button-icon-top {
-          width: 50px;
-          height: 50px;
+          width: 30px;
+          height: 30px;
           margin-bottom: auto;
           margin-top: auto;
-          margin-bottom: 30px; } }
+          margin-bottom: 30px;
+          margin: 10px;
+          margin-right: 0px;
+          margin-bottom: 0px; } }
     .get-contact-info .contact-icon-container .button-icon-bottom {
       width: 30px;
       height: 30px;
@@ -873,10 +879,12 @@ table {
               transform: scaleX(-1); }
       @media (max-width: 740px) {
         .get-contact-info .contact-icon-container .button-icon-bottom {
-          width: 50px;
-          height: 50px;
+          width: 30px;
+          height: 30px;
           margin-bottom: auto;
-          margin-top: auto; } }
+          margin-top: auto;
+          margin: 10px;
+          margin-right: 0px; } }
     .get-contact-info .contact-icon-container .contact-hint {
       font-size: 13px;
       position: absolute;
@@ -886,6 +894,7 @@ table {
       margin: auto 0; }
       @media (max-width: 740px) {
         .get-contact-info .contact-icon-container .contact-hint {
+          display: none;
           left: 0px; } }
   .get-contact-info .contact-fixed-text {
     width: 140px;
@@ -908,13 +917,13 @@ table {
       margin-left: 10px; }
       @media (max-width: 740px) {
         .get-contact-info:hover .button-icon-top {
-          width: 50px;
-          height: 50px;
+          width: 35px;
+          height: 35px;
           margin-bottom: auto;
-          margin-top: auto;
+          margin-top: 10px;
           -webkit-transform: scale(1);
                   transform: scale(1);
-          margin-bottom: 30px; } }
+          margin-bottom: 10px; } }
     .get-contact-info:hover .button-icon-bottom {
       -webkit-transform: scale(1.2);
               transform: scale(1.2);
@@ -922,9 +931,9 @@ table {
       margin-left: 10px; }
       @media (max-width: 740px) {
         .get-contact-info:hover .button-icon-bottom {
-          width: 50px;
-          height: 50px;
-          margin-bottom: auto;
+          width: 35px;
+          height: 35px;
+          margin-bottom: 10px;
           margin-top: auto;
           -webkit-transform: scale(1);
                   transform: scale(1); } }
@@ -2710,24 +2719,41 @@ label[for='nav-trigger'] {
         margin: 0px; }
         @media (max-width: 740px) {
           .slides-container .slide-item1 .slide1-hook p {
-            font-size: 20px; } }
+            font-size: 16px;
+            line-height: 20px; } }
         @media (min-width: 1400px) {
           .slides-container .slide-item1 .slide1-hook p {
             font-size: 25px; } }
       .slides-container .slide-item1 .slide1-hook .paragraph2 {
         color: #36cdd3;
         line-height: 40px; }
+        @media (max-width: 740px) {
+          .slides-container .slide-item1 .slide1-hook .paragraph2 {
+            line-height: 20px; } }
         .slides-container .slide-item1 .slide1-hook .paragraph2 #software-slide1 {
           -webkit-transition: all 0.3s;
           transition: all 0.3s; }
           .slides-container .slide-item1 .slide1-hook .paragraph2 #software-slide1:hover {
             text-decoration: none;
             font-size: 27px; }
+            @media (max-width: 740px) {
+              .slides-container .slide-item1 .slide1-hook .paragraph2 #software-slide1:hover {
+                font-size: 20px; } }
+          .slides-container .slide-item1 .slide1-hook .paragraph2 #software-slide1 br {
+            display: none; }
+            @media (max-width: 740px) {
+              .slides-container .slide-item1 .slide1-hook .paragraph2 #software-slide1 br {
+                display: block; } }
           .slides-container .slide-item1 .slide1-hook .paragraph2 #software-slide1 span {
             padding: 8px;
             border-radius: 10px;
             background: #78909c;
             color: #fff; }
+            @media (max-width: 740px) {
+              .slides-container .slide-item1 .slide1-hook .paragraph2 #software-slide1 span {
+                padding: 6px;
+                line-height: 30px;
+                font-size: 15px; } }
     .slides-container .slide-item1 img {
       -o-object-fit: cover;
          object-fit: cover;
@@ -2759,14 +2785,22 @@ label[for='nav-trigger'] {
       top: 0px;
       z-index: 3;
       background: url("../../assets/images/CadsimPlus_SoftwareBox.png");
-      background-position: center;
-      background-size: cover; }
+      background-position: center 70%;
+      background-size: 50%;
+      background-repeat: no-repeat; }
       @media (max-width: 740px) {
         .slides-container .slide-item2 #slide2-software-box {
           background-size: contain;
           right: 10px;
           height: 70%;
           width: 200px;
+          background-repeat: no-repeat;
+          background-size: 30%;
+          display: none; } }
+      @media (min-width: 1400px) {
+        .slides-container .slide-item2 #slide2-software-box {
+          background-position: center 70%;
+          background-size: 70%;
           background-repeat: no-repeat; } }
       @media (min-width: 1800px) {
         .slides-container .slide-item2 #slide2-software-box {
@@ -2814,7 +2848,7 @@ label[for='nav-trigger'] {
             font-size: 30px; }
             @media (max-width: 740px) {
               .slides-container .slide-item2 .slide1-hook .paragraph2 #software-slide1:hover {
-                font-size: 30px; } }
+                font-size: 20px; } }
             @media (min-width: 1400px) {
               .slides-container .slide-item2 .slide1-hook .paragraph2 #software-slide1:hover {
                 font-size: 40px; } }
@@ -2825,6 +2859,9 @@ label[for='nav-trigger'] {
             border-radius: 10px;
             background: #36cdd3;
             color: #fff; }
+            @media (max-width: 740px) {
+              .slides-container .slide-item2 .slide1-hook .paragraph2 #software-slide1 span {
+                font-size: 18px; } }
     .slides-container .slide-item2 img {
       -o-object-fit: cover;
          object-fit: cover;
@@ -4413,6 +4450,10 @@ p.is-active {
       -webkit-box-pack: start;
           -ms-flex-pack: start;
               justify-content: flex-start; }
+      @media (max-width: 740px) {
+        .request-container .card-body #contact-form {
+          padding-left: 5%;
+          padding-right: 5%; } }
       .request-container .card-body #contact-form #libarary-text {
         width: 100%;
         text-align: left;
@@ -4475,7 +4516,11 @@ p.is-active {
             -webkit-box-pack: justify;
                 -ms-flex-pack: justify;
                     justify-content: space-between;
-            margin-bottom: 10px; } }
+            margin-bottom: 10px; }
+            .request-container .card-body #contact-form .item70 input {
+              border: 1px solid #bbb;
+              border-radius: 3px;
+              height: 30px; } }
       .request-container .card-body #contact-form .long-text {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -4902,9 +4947,13 @@ p.is-active {
         margin-left: 5%;
         margin-bottom: 20px;
         margin-top: 50px; }
+        @media (max-width: 740px) {
+          .cadsim-content .cadsim-banner-container .cadsim-title-content .software-logo {
+            margin-bottom: 50px;
+            margin-top: 70px; } }
       @media (max-width: 740px) {
         .cadsim-content .cadsim-banner-container .cadsim-title-content {
-          width: 80%;
+          width: 90%;
           padding-right: 0px; } }
       .cadsim-content .cadsim-banner-container .cadsim-title-content .entry-header .entry-title {
         border: none;
@@ -4964,6 +5013,9 @@ p.is-active {
     background: linear-gradient(175deg, #1b447f 63%, white 90%);
     border-bottom-right-radius: 50% 80%;
     border-bottom-left-radius: 50% 80%; }
+    @media (max-width: 740px) {
+      .cadsim-content .cadsim-banner-helper {
+        background: #004280; } }
   .cadsim-content article {
     max-width: 1280px;
     margin-left: auto;

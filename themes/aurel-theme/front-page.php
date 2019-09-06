@@ -59,7 +59,7 @@
                                         "Is our capital project going to provide the economic benefits we need?"
                                     </p>
                                     <p class="paragraph2">
-                                        Look into the future <br>and find out with <a id="software-slide1" href="<?php echo get_permalink(get_page_by_path("cadsim-plus")); ?>"><span class="tear">CADSIM Plus</span> </a>
+                                        Look into the future <br>and find out with <a id="software-slide1" href="<?php echo get_permalink(get_page_by_path("cadsim-plus")); ?>"><br><span class="tear">CADSIM Plus</span> </a>
                                     </p>
                                 </div>
                                 <img class="banner-img" alt="banner picture" src='<?php echo get_template_directory_uri() . '/assets/banners/Banner1B.png'; ?>'>
@@ -71,7 +71,7 @@
                                        Announcing<br>CADSIM Plus Version 3.3
                                     </p>
                                     <p class="paragraph2">
-                                       <a id="software-slide1" href="<?php echo get_permalink(get_page_by_path("new-in-v3.3")); ?>"><span class="tear">WHAT'S NEW</span> </a>
+                                       <a id="software-slide1" href="<?php echo get_permalink(get_page_by_path("new-in-v3.3",OBJECT, "post")); ?>"><span class="tear">WHAT'S NEW</span> </a>
                                     </p>
                                 </div>
                                 <div id="slide2-software-box"></div>

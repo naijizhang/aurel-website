@@ -454,6 +454,9 @@ table {
   flex-wrap: nowrap;
   background: $color__fixed_contact_background;
   border: none;
+  @include mobile{
+    padding: 5px;
+  }
   .contact-icon-container {
     display: flex;
     flex-direction: column;
@@ -468,11 +471,14 @@ table {
       transform: scaleX(-1);
       margin-bottom: 50px;
       @include mobile {
-        width: 50px;
-        height: 50px;
+        width: 30px;
+        height: 30px;
         margin-bottom: auto;
         margin-top: auto;
         margin-bottom: 30px;
+        margin: 10px;
+        margin-right: 0px;
+        margin-bottom: 0px;
       }
     }
     .button-icon-bottom{
@@ -482,10 +488,13 @@ table {
       transition: all 0.5s;
       transform: scaleX(-1);
       @include mobile {
-        width: 50px;
-        height: 50px;
+        width: 30px;
+        height: 30px;
         margin-bottom: auto;
         margin-top: auto;
+        margin: 10px;
+        margin-right: 0px;
+        
       }
     }
     .contact-hint {
@@ -497,7 +506,7 @@ table {
       margin-bottom: 10px;
       margin: auto 0;
       @include mobile {
-        //display: none;
+        display: none;
         left: 0px;
       }
     }
@@ -521,12 +530,12 @@ table {
       margin-bottom: 10px;
       margin-left: 10px;
       @include mobile{
-        width: 50px;
-        height: 50px;
+        width: 35px;
+        height: 35px;
         margin-bottom: auto;
-        margin-top: auto;
+        margin-top: 10px;
         transform: scale(1);
-        margin-bottom: 30px;
+        margin-bottom: 10px;
       }
     }
     .button-icon-bottom{
@@ -534,9 +543,9 @@ table {
       margin-bottom: 0px;
       margin-left: 10px;
       @include mobile{
-        width: 50px;
-        height: 50px;
-        margin-bottom: auto;
+        width: 35px;
+        height: 35px;
+        margin-bottom: 10px;
         margin-top: auto;
         transform: scale(1);
       }

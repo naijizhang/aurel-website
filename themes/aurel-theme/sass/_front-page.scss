@@ -201,7 +201,8 @@
         padding: 0px;
         margin: 0px;
         @include mobile {
-          font-size: 20px;
+          font-size: 16px;
+          line-height: 20px;
         }
         @include wide {
           font-size: 25px;
@@ -212,18 +213,36 @@
       .paragraph2 {
         color: $color__teal;
         line-height: 40px;
+        @include mobile {
+          line-height: 20px;
+          //text-align: center;
+        }
         #software-slide1 {
           transition: all 0.3s;
           &:hover {
             text-decoration: none;
             font-size: 27px;
+            @include mobile {
+              font-size: 20px;
+            }
           }
-
+          br {
+            display: none;
+            @include mobile {
+              display: block;
+            }
+          }
           span {
             padding: 8px;
             border-radius: 10px;
             background: $color_medium_grey;
             color: #fff;
+            @include mobile {
+              padding: 6px;
+             line-height: 30px;
+             font-size: 15px;
+
+            }
           }
         }
       }
@@ -262,13 +281,21 @@
       top: 0px;
       z-index: 3;
       background: url('../../assets/images/CadsimPlus_SoftwareBox.png');
-      background-position: center;
-      background-size: cover;
+      background-position: center 70%;
+      background-size: 50%;
+      background-repeat: no-repeat;
       @include mobile {
         background-size: contain;
         right: 10px;
         height: 70%;
         width: 200px;
+        background-repeat: no-repeat;
+        background-size: 30%;
+        display: none;
+      }
+      @include wide {
+        background-position: center 70%;
+        background-size: 70%;
         background-repeat: no-repeat;
       }
       @include superWide {
@@ -327,7 +354,7 @@
             text-decoration: none;
             font-size: 30px;
             @include mobile {
-              font-size: 30px;
+              font-size: 20px;
             }
             @include wide {
               font-size: 40px;
@@ -340,6 +367,9 @@
             border-radius: 10px;
             background: $color__teal;
             color: #fff;
+            @include mobile {
+              font-size: 18px;
+            }
           }
         }
       }

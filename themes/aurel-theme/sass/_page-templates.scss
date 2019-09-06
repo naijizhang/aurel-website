@@ -598,6 +598,10 @@
       width:60%;
       padding-left: 0px;
       padding-right: 20px;
+      @include mobile{
+        width:100%;
+        padding-right: 0px;
+      }
     }
     .long-text{
       display: flex;

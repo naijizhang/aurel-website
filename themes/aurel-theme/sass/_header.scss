@@ -52,7 +52,7 @@
         margin-left: 0px;
       }
       @include wide{
-        
+        margin-left: 350px;
       }
       @include superWide{
 
@@ -432,7 +432,7 @@ label[for='nav-trigger'] {
     }
   }
 }
-.menu-item-805,.menu-item-438{
+.menu-item-805,.menu-item-438,.menu-item-839{
   a{
     line-height: 30px !important;
     padding-top: 10px;

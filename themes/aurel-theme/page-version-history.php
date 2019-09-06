@@ -12,7 +12,7 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 
 		<header class="entry-header">
-			<h1 class="entry-title">Version History</h1>
+			<h1 class="entry-title">Past Updates & Fixes</h1>
 		</header><!-- .page-header -->
 		<p class="archive-description">This is a comprehensive list of CADSIM Plus software feature updates and fixes, by version number:</p>
 		<div class="qa-container remove-margin">

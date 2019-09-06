@@ -4513,14 +4513,12 @@ p.is-active {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            -webkit-box-pack: justify;
-                -ms-flex-pack: justify;
-                    justify-content: space-between;
             margin-bottom: 10px; }
             .request-container .card-body #contact-form .item70 input {
               border: 1px solid #bbb;
               border-radius: 3px;
-              height: 30px; } }
+              height: 30px;
+              margin-left: 3px; } }
       .request-container .card-body #contact-form .long-text {
         display: -webkit-box;
         display: -ms-flexbox;

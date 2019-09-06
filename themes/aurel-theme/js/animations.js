@@ -12,7 +12,7 @@
     //contact form functionality
     $('#contact-submit').click(() => {
       let products = [];
-      let payment=[];
+      let payment = [];
       let libraries = [];
       let numLicences;
       let name;
@@ -66,34 +66,89 @@
       comments = $('#comments').val();
       //console.log('comments', comments);
 
-      let alertMessage=[];
-      if(products.length==0){
-        alertMessage.push(`Please select at least one product in "CADSIM Plus" and "CADSIM Plus Runtime".`);
+      let alertMessage = [];
+      if (products.length == 0) {
+        alertMessage.push(
+          `Please select at least one product in "CADSIM Plus" and "CADSIM Plus Runtime".`
+        );
       }
-      if(payment.length==0){
-        alertMessage.push(`Please select at least one payment method in "Purchase" and "Lease".`);
+      if (payment.length == 0) {
+        alertMessage.push(
+          `Please select at least one payment method in "Purchase" and "Lease".`
+        );
       }
-      if(numLicences==""){
+      if (numLicences == '') {
         alertMessage.push(`"Number of Licences" is required.`);
       }
-      if(name==""){
+      if (name == '') {
         alertMessage.push(`"Name" is required.`);
       }
-      if(country==""){
+      if (company == '') {
+        alertMessage.push(`"Company" is required.`);
+      }
+      if (country == '') {
         alertMessage.push(`"Country" is required.`);
       }
-      if(email==""){
+      if (email == '') {
         alertMessage.push(`"Email" is required.`);
       }
-      if(alertMessage.length>0){
-        alert(alertMessage.join("\n"));
+      if (alertMessage.length > 0) {
+        alert(alertMessage.join('\n'));
         return;
       }
       //%0D%0A  line break
       //%20     space
       window.location.href =
-        'mailto:mail@aurelsystems.com?subject=*Request%20a%20Quote&body='+`Products: ${products.join(", ")}%0D%0APayment: ${payment.join(", ")}%0D%0AOptional Libraries: ${libraries.join(", ")}%0D%0ANumber of Licences: ${numLicences}%0D%0AName: ${name}%0D%0ACompany: ${company}%0D%0AEmail: ${email}%0D%0ACountry: ${country}%0D%0AComments: ${comments}`;
-        $("#thanksModal").modal('show');
+        'mailto:mail@aurelsystems.com?subject=*Request%20a%20Quote&body=' +
+        `Products: ${products.join(', ')}%0D%0APayment: ${payment.join(
+          ', '
+        )}%0D%0AOptional Libraries: ${libraries.join(
+          ', '
+        )}%0D%0ANumber of Licences: ${numLicences}%0D%0AName: ${name}%0D%0ACompany: ${company}%0D%0AEmail: ${email}%0D%0ACountry: ${country}%0D%0AComments: ${comments}`;
+      $('#thanksModal').modal('show');
+    });
+
+    //demo form functionality
+    $('#demo-submit').click(() => {
+      let name;
+      let company;
+      let country;
+      let email;
+      let comments;
+      name = $('#name').val();
+      //console.log('name', name);
+      company = $('#company').val();
+      //console.log('company', company);
+      email = $('#email').val();
+      //console.log('email', email);
+      country = $('#country').val();
+      //console.log('country', country);
+      comments = $('#comments').val();
+      //console.log('comments', comments);
+
+      let alertMessage = [];
+      if (name == '') {
+        alertMessage.push(`"Name" is required.`);
+      }
+      if (company == '') {
+        alertMessage.push(`"Company" is required.`);
+      }
+      if (country == '') {
+        alertMessage.push(`"Country" is required.`);
+      }
+      if (email == '') {
+        alertMessage.push(`"Email" is required.`);
+      }
+      if (alertMessage.length > 0) {
+        alert(alertMessage.join('\n'));
+        return;
+      }
+      //%0D%0A  line break
+      //%20     space
+      window.location.href =
+        'mailto:mail@aurelsystems.com?subject=*Request%20a%20Demo&body=' +
+        `Name: ${name}%0D%0ACompany: ${company}%0D%0AEmail: ${email}%0D%0ACountry: ${country}%0D%0AComments: ${comments}`;
+      $('#demoThanksModal').modal('show');
     });
 
     if ($(document).width() > 740) {
@@ -178,7 +233,7 @@
       'dynamic-data-reconciliation': 'products',
       'product-tracking-2': 'products',
       // 'tech-corner':'products',
-      'cadsim-plus-runtime':'products',
+      'cadsim-plus-runtime': 'products',
 
       'tech-corner': 'techCorner',
       'split-range-controllers': 'techCorner',
@@ -246,7 +301,7 @@
       'maintenance-support': 'support',
       'version-history': 'support',
       'newsletters-2': 'support',
-      'faq': 'support',
+      faq: 'support',
       //training: 'support',
       'downloads-resources': 'support',
 

@@ -178,7 +178,6 @@
       'dynamic-data-reconciliation': 'products',
       'product-tracking-2': 'products',
       // 'tech-corner':'products',
-      'newsletters-2': 'products',
       'cadsim-plus-runtime':'products',
 
       'tech-corner': 'techCorner',
@@ -246,7 +245,10 @@
       'software-updates': 'support',
       'maintenance-support': 'support',
       'version-history': 'support',
+      'newsletters-2': 'support',
       'faq': 'support',
+      //training: 'support',
+      'downloads-resources': 'support',
 
       'advanced-technologies': 'advanceTech',
       'stream-based-specifications': 'advanceTech',

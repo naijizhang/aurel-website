@@ -1688,7 +1688,9 @@ object {
     margin-bottom: auto;
     background: #004280;
     color: #fff;
-    border-radius: 30px; }
+    border-radius: 30px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
     @media (max-width: 740px) {
       .contact-block a {
         width: 60%;
@@ -1912,6 +1914,48 @@ object {
         background: #004280;
         border: 3px solid #004280;
         text-decoration: none; }
+
+.content-faq .cadsim-plus-logo img {
+  -o-object-fit: contain;
+     object-fit: contain; }
+
+.two-button-container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1024px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .two-button-container a {
+    width: 45%; }
+    .two-button-container a:hover {
+      text-decoration: none; }
+      .two-button-container a:hover .each-button {
+        color: #fff;
+        background: #004280;
+        border: 3px solid #004280; }
+    .two-button-container a .each-button {
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      color: #004280;
+      background: #fff;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 5px;
+      padding-right: 5px;
+      border: 3px solid #004280;
+      border-radius: 20px; }
+      @media (max-width: 740px) {
+        .two-button-container a .each-button {
+          border-radius: 20px; } }
 
 .fixed-header-logged {
   top: 32px; }

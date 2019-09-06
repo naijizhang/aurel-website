@@ -20,9 +20,9 @@
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
-  ul{
-    li{
-      &::before{
+  ul {
+    li {
+      &::before {
         content: none;
         display: none;
         background: none;
@@ -232,10 +232,11 @@
     height: 50px;
     margin-top: auto;
     margin-bottom: auto;
-    background:  $color__blue;//#6f99cd;
+    background: $color__blue; //#6f99cd;
     color: #fff;
     //color: $color__blue;
     border-radius: 30px;
+    transition: all 0.3s;
     @include mobile {
       width: 60%;
       margin-left: auto;
@@ -248,7 +249,7 @@
     }
     &:hover {
       text-decoration: none;
-      background:  $color__teal; 
+      background: $color__teal;
     }
   }
 }
@@ -356,8 +357,8 @@
       width: 33%;
       text-align: left;
       padding-left: 70px;
-      @include mobile{
-        width:80%;
+      @include mobile {
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
         padding-left: 0px;
@@ -441,13 +442,12 @@
   }
 }
 
-
-.content-404{
+.content-404 {
   margin-top: 15vh;
   margin-bottom: auto;
 }
 
-.content-hero{
+.content-hero {
   position: relative;
 }
 
@@ -464,14 +464,14 @@
     border: 3px solid $color_light_grey;
     transition: all 0.3s;
     box-shadow: 0px 5px 5px #bbb;
-    &:hover{
+    &:hover {
       border: 3px solid $color__blue;
       transform: scale(1.03);
     }
     .wp-block-image {
       margin-top: 0px;
-     
-      img{
+
+      img {
         object-fit: contain;
         padding-top: 30px;
         padding-left: 70px;
@@ -487,18 +487,63 @@
     }
     a {
       display: block;
-      width:60%;
+      width: 60%;
       text-align: center;
       border: 3px solid $color__blue;
       color: $color__blue;
       margin: 10px auto;
       transition: 0.3s all;
       margin-bottom: 20px;
-      &:hover{
+      &:hover {
         color: #fff;
         background: $color__blue;
         border: 3px solid $color__blue;
         text-decoration: none;
+      }
+    }
+  }
+}
+
+.content-faq {
+  .cadsim-plus-logo {
+    img {
+      object-fit: contain;
+    }
+  }
+}
+
+.two-button-container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  a {
+    width: 45%;
+   
+    &:hover {
+      text-decoration: none;
+      .each-button {
+        color: #fff;
+        background: $color__blue;
+        border: 3px solid $color__blue;
+      }
+    }
+    .each-button {
+      transition: all 0.3s;
+      color: $color__blue;
+        background: #fff;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 5px;
+      padding-right: 5px;
+      border: 3px solid $color__blue;
+      border-radius: 20px;
+      @include mobile {
+        border-radius: 20px;
       }
     }
   }

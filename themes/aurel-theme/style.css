@@ -1964,6 +1964,11 @@ object {
         .two-button-container a .each-button {
           border-radius: 20px; } }
 
+.text-left {
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 10px; }
+
 .fixed-header-logged {
   top: 32px; }
   @media screen and (max-width: 782px) {

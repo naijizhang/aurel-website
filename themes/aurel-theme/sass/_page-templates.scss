@@ -506,6 +506,12 @@
 
 .content-faq {
   .cadsim-plus-logo {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+    margin-top: 50px;
+    margin-bottom: -40px;
     img {
       object-fit: contain;
     }
@@ -522,7 +528,7 @@
   justify-content: space-around;
   a {
     width: 45%;
-   
+
     &:hover {
       text-decoration: none;
       .each-button {
@@ -534,7 +540,7 @@
     .each-button {
       transition: all 0.3s;
       color: $color__blue;
-        background: #fff;
+      background: #fff;
       text-align: center;
       padding-top: 10px;
       padding-bottom: 10px;

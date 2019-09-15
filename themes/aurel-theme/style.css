@@ -2702,10 +2702,9 @@ label[for='nav-trigger'] {
           left: 10%; } }
       @media (min-width: 1400px) {
         .slides-container .slide-item1 .slide1-hook {
-          width: 30%; } }
+          width: 50%; } }
       @media (min-width: 1800px) {
         .slides-container .slide-item1 .slide1-hook {
-          width: 25%;
           top: 70px;
           left: 22%; } }
       .slides-container .slide-item1 .slide1-hook p {
@@ -2726,34 +2725,53 @@ label[for='nav-trigger'] {
             font-size: 25px; } }
       .slides-container .slide-item1 .slide1-hook .paragraph2 {
         color: #36cdd3;
-        line-height: 40px; }
+        line-height: 20px; }
         @media (max-width: 740px) {
           .slides-container .slide-item1 .slide1-hook .paragraph2 {
-            line-height: 20px; } }
+            line-height: 15px; } }
+        @media (min-width: 1400px) {
+          .slides-container .slide-item1 .slide1-hook .paragraph2 {
+            line-height: 35px; } }
+        @media (min-width: 1800px) {
+          .slides-container .slide-item1 .slide1-hook .paragraph2 {
+            line-height: 25px; } }
         .slides-container .slide-item1 .slide1-hook .paragraph2 #software-slide1 {
           -webkit-transition: all 0.3s;
           transition: all 0.3s; }
           .slides-container .slide-item1 .slide1-hook .paragraph2 #software-slide1:hover {
-            text-decoration: none;
-            font-size: 27px; }
-            @media (max-width: 740px) {
-              .slides-container .slide-item1 .slide1-hook .paragraph2 #software-slide1:hover {
-                font-size: 20px; } }
-          .slides-container .slide-item1 .slide1-hook .paragraph2 #software-slide1 br {
-            display: none; }
-            @media (max-width: 740px) {
-              .slides-container .slide-item1 .slide1-hook .paragraph2 #software-slide1 br {
-                display: block; } }
+            text-decoration: none; }
+            .slides-container .slide-item1 .slide1-hook .paragraph2 #software-slide1:hover span {
+              font-size: 30px; }
+              @media (max-width: 740px) {
+                .slides-container .slide-item1 .slide1-hook .paragraph2 #software-slide1:hover span {
+                  font-size: 20px; } }
+              @media (min-width: 1400px) {
+                .slides-container .slide-item1 .slide1-hook .paragraph2 #software-slide1:hover span {
+                  font-size: 40px; } }
+              @media (min-width: 1800px) {
+                .slides-container .slide-item1 .slide1-hook .paragraph2 #software-slide1:hover span {
+                  font-size: 40px; } }
           .slides-container .slide-item1 .slide1-hook .paragraph2 #software-slide1 span {
+            -webkit-transition: all 0.3s;
+            transition: all 0.3s;
             padding: 8px;
             border-radius: 10px;
             background: #78909c;
-            color: #fff; }
+            color: #fff;
+            font-size: 20px;
+            line-height: 20px; }
             @media (max-width: 740px) {
               .slides-container .slide-item1 .slide1-hook .paragraph2 #software-slide1 span {
-                padding: 6px;
-                line-height: 30px;
-                font-size: 15px; } }
+                padding: 8px;
+                line-height: 35px;
+                font-size: 20px; } }
+            @media (min-width: 1400px) {
+              .slides-container .slide-item1 .slide1-hook .paragraph2 #software-slide1 span {
+                font-size: 35px;
+                line-height: 35px; } }
+            @media (min-width: 1800px) {
+              .slides-container .slide-item1 .slide1-hook .paragraph2 #software-slide1 span {
+                font-size: 35px; } }
     .slides-container .slide-item1 img {
       -o-object-fit: cover;
          object-fit: cover;
@@ -2914,7 +2932,8 @@ label[for='nav-trigger'] {
       margin-right: auto;
       z-index: 3; }
     .section-what-we-do .what-we-do-container p {
-      font-size: 15px; }
+      font-size: 15px;
+      text-align: center; }
     @media (max-width: 740px) {
       .section-what-we-do .what-we-do-container {
         width: 100%;
@@ -3418,6 +3437,8 @@ label[for='nav-trigger'] {
         opacity: 1; }
   .what-we-do-container .right-column {
     width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     z-index: 3; }
     @media (max-width: 740px) {
       .what-we-do-container .right-column {

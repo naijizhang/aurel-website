@@ -56,10 +56,10 @@
 
                                 <div class="slide1-hook">
                                     <p class="paragraph1">
-                                        "Is our capital project going to provide the economic benefits we need?"
+                                        "Is our capital project going to provide <br>the economic benefits we need?"
                                     </p>
                                     <p class="paragraph2">
-                                        Look into the future <br>and find out with <a id="software-slide1" href="<?php echo get_permalink(get_page_by_path("cadsim-plus")); ?>"><br><span class="tear">CADSIM Plus</span> </a>
+                                        Look into the future and find out with <br><a id="software-slide1" href="<?php echo get_permalink(get_page_by_path("cadsim-plus")); ?>"><br><span class="tear">CADSIM Plus</span> </a>
                                     </p>
                                 </div>
                                 <img class="banner-img" alt="banner picture" src='<?php echo get_template_directory_uri() . '/assets/banners/Banner1B.png'; ?>'>
@@ -182,7 +182,7 @@
                     <h2 class="industry-list-title">Industries we serve...</h2>
                     <div class="industry-list-container">
                         <a class="industry-link link30" href="<?php echo get_permalink(get_page_by_path("pulp-paper")); ?>">
-                            <div class="each-button" id="pulp">Pulp & Water</div>
+                            <div class="each-button" id="pulp">Pulp & Paper</div>
                         </a>
                         <a class="industry-link link30" href="<?php echo get_permalink(get_page_by_path("forest-products")); ?>">
                             <div class="each-button" id="forest">Forest Products</div>

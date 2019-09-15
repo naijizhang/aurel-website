@@ -68,10 +68,10 @@
                             <div class="carousel-item each-slide-item slide-item2">
                                 <div class="slide1-hook">
                                     <p class="paragraph1">
-                                       Announcing<br>CADSIM Plus Version 3.3
+                                        Announcing<br>CADSIM Plus Version 3.3
                                     </p>
                                     <p class="paragraph2">
-                                       <a id="software-slide1" href="<?php echo get_permalink(get_page_by_path("new-in-v3.3",OBJECT, "post")); ?>"><span class="tear">WHAT'S NEW</span> </a>
+                                        <a id="software-slide1" href="<?php echo get_permalink(get_page_by_path("new-in-v3.3", OBJECT, "post")); ?>"><span class="tear">WHAT'S NEW</span> </a>
                                     </p>
                                 </div>
                                 <div id="slide2-software-box"></div>
@@ -138,11 +138,13 @@
                                 </div>
                             </div>
                             <div class="each-services">
-                                <div class="service-block service-block2">
-                                    <div class="white-block">
-                                        <h2>Advanced Modeling Services</h2>
+                                <a class="software-link" href="<?php echo get_permalink(get_page_by_path("process-modeling")); ?>">
+                                    <div class="service-block service-block2">
+                                        <div class="white-block">
+                                            <h2>Advanced Modeling Services</h2>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                                 <div class="three-links-container">
                                     <a href="<?php echo get_permalink(get_page_by_path("process-modeling")); ?>">
                                         <p>Custom Modeling Assistance</p>
@@ -157,11 +159,13 @@
                             </div>
 
                             <div class="each-services">
-                                <div class="service-block service-block3">
-                                    <div class="white-block">
-                                        <h2>Process Digital Twin</h2>
+                                <a class="software-link" href="<?php echo get_permalink(get_page_by_path("process-digital-twin")); ?>">
+                                    <div class="service-block service-block3">
+                                        <div class="white-block">
+                                            <h2>Process Digital Twin</h2>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                                 <div class="three-links-container">
                                     <a href="<?php echo get_permalink(get_page_by_path("dynamic-data-reconciliation")); ?>">
                                         <p>Dynamic Data Reconciliation</p>

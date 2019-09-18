@@ -4281,7 +4281,8 @@ p.is-active {
   @media (max-width: 740px) {
     .hero-title {
       letter-spacing: 1px;
-      font-size: 40px; } }
+      font-size: 40px;
+      top: 110px; } }
 
 .hero-image {
   margin: 0px auto;

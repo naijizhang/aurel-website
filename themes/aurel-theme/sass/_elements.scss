@@ -242,13 +242,17 @@ figure .wp-block-image {
   }
 }
 .normal-image {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1024px;
   img {
-    margin-left: 20%;
+    //margin-left: 20%;
     object-fit: contain;
   }
   @include mobile {
-    margin: 0px;
-    width: 100%;
+    //margin: 0px;
+    width: 80%;
     margin-bottom: 20px;
   }
 }

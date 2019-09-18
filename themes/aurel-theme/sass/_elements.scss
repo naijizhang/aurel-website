@@ -608,3 +608,12 @@ table {
     text-align: right;
   }
 }
+
+#post-231{
+  @include superWide{
+    .float-right{
+      width: 45vw;
+    }
+  }
+  
+}

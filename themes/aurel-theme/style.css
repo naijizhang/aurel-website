@@ -2065,6 +2065,98 @@ object {
   #demo-submit:focus {
     outline: none; }
 
+.post-746 h3 {
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 15px; }
+  @media (max-width: 740px) {
+    .post-746 h3 {
+      text-align: center; } }
+
+.new-feature-33 .section {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1024px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  @media (max-width: 740px) {
+    .new-feature-33 .section {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+  .new-feature-33 .section .column h3 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 15px; }
+    @media (max-width: 740px) {
+      .new-feature-33 .section .column h3 {
+        text-align: center; } }
+  .new-feature-33 .section .column p {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; }
+
+.new-feature-33 .section1 {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1024px; }
+  .new-feature-33 .section1 h3 {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 15px; }
+    @media (max-width: 740px) {
+      .new-feature-33 .section1 h3 {
+        text-align: center; } }
+  .new-feature-33 .section1 p {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto; }
+  .new-feature-33 .section1 .float-right {
+    width: auto;
+    margin-right: 10%;
+    margin-top: -30px; }
+    @media (max-width: 740px) {
+      .new-feature-33 .section1 .float-right {
+        margin-top: 0px;
+        margin-bottom: 10px; } }
+
+.new-feature-33 .two-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+  @media (max-width: 740px) {
+    .new-feature-33 .two-column {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+  .new-feature-33 .two-column li {
+    width: 30%; }
+    @media (max-width: 740px) {
+      .new-feature-33 .two-column li {
+        width: 80%; } }
+
 .fixed-header-logged {
   top: 32px; }
   @media screen and (max-width: 782px) {

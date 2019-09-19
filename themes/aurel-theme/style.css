@@ -1699,7 +1699,8 @@ object {
       text-transform: capitalize; }
     .contact-block .column p {
       margin-bottom: 10px; }
-  .contact-block a, .contact-block button {
+  .contact-block a,
+  .contact-block button {
     font-family: 'Noto Sans';
     font-size: 18px;
     -webkit-box-shadow: none;
@@ -1723,18 +1724,22 @@ object {
     border-radius: 30px;
     -webkit-transition: all 0.3s;
     transition: all 0.3s; }
-    .contact-block a:focus, .contact-block button:focus {
+    .contact-block a:focus,
+    .contact-block button:focus {
       outline: none; }
     @media (max-width: 740px) {
-      .contact-block a, .contact-block button {
+      .contact-block a,
+      .contact-block button {
         width: 60%;
         margin-left: auto;
         margin-right: auto; } }
-    .contact-block a .cheatbox-logo, .contact-block button .cheatbox-logo {
+    .contact-block a .cheatbox-logo,
+    .contact-block button .cheatbox-logo {
       width: 30px;
       height: 30px;
       margin-right: 10px; }
-    .contact-block a:hover, .contact-block button:hover {
+    .contact-block a:hover,
+    .contact-block button:hover {
       text-decoration: none;
       background: #36cdd3; }
 
@@ -1908,6 +1913,18 @@ object {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
+  @media (max-width: 740px) {
+    .three-boxes-banner-container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
   .three-boxes-banner-container .box {
     width: 28%;
     border: 3px solid #acb3b5;
@@ -1915,6 +1932,10 @@ object {
     transition: all 0.3s;
     -webkit-box-shadow: 0px 5px 5px #bbb;
             box-shadow: 0px 5px 5px #bbb; }
+    @media (max-width: 740px) {
+      .three-boxes-banner-container .box {
+        width: 50%;
+        margin-bottom: 30px; } }
     .three-boxes-banner-container .box:hover {
       border: 3px solid #004280;
       -webkit-transform: scale(1.03);

@@ -223,7 +223,8 @@
       margin-bottom: 10px;
     }
   }
-  a,button {
+  a,
+  button {
     font-family: 'Noto Sans';
     font-size: 18px;
     box-shadow: none;
@@ -240,7 +241,7 @@
     //color: $color__blue;
     border-radius: 30px;
     transition: all 0.3s;
-    &:focus{
+    &:focus {
       outline: none;
     }
     @include mobile {
@@ -464,12 +465,21 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  @include mobile {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   .box {
     width: 28%;
     border: 3px solid $color_light_grey;
     transition: all 0.3s;
     box-shadow: 0px 5px 5px #bbb;
+    @include mobile {
+      width:50%;
+      margin-bottom: 30px;
+    }
     &:hover {
       border: 3px solid $color__blue;
       transform: scale(1.03);
@@ -646,13 +656,12 @@
     text-align: left;
     margin-top: 30px;
     margin-bottom: 15px;
-    @include mobile{
+    @include mobile {
       text-align: center;
     }
   }
 }
 .new-feature-33 {
-  
   .section {
     width: 80%;
     margin-left: auto;
@@ -660,7 +669,7 @@
     max-width: 1024px;
     display: flex;
     flex-direction: row;
-    @include mobile{
+    @include mobile {
       flex-direction: column;
     }
     .column {
@@ -670,7 +679,7 @@
         margin-right: auto;
         margin-top: 30px;
         margin-bottom: 15px;
-        @include mobile{
+        @include mobile {
           text-align: center;
         }
       }
@@ -692,7 +701,7 @@
       margin-right: auto;
       margin-top: 30px;
       margin-bottom: 15px;
-      @include mobile{
+      @include mobile {
         text-align: center;
       }
     }
@@ -705,23 +714,23 @@
       width: auto;
       margin-right: 10%;
       margin-top: -30px;
-      @include mobile{
+      @include mobile {
         margin-top: 0px;
         margin-bottom: 10px;
       }
     }
   }
-  .two-column{
+  .two-column {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    @include mobile{
+    @include mobile {
       flex-direction: column;
     }
-    li{
+    li {
       width: 30%;
-      @include mobile{
+      @include mobile {
         width: 80%;
       }
     }
@@ -729,13 +738,13 @@
 }
 
 //consultant links page
-.page-id-70{
-  p{
+.page-id-70 {
+  p {
     padding-left: 100px;
-    @include normal{
+    @include normal {
       padding-left: 50px;
     }
-    @include mobile{
+    @include mobile {
       padding-left: 0px;
     }
   }

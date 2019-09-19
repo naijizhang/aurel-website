@@ -33,34 +33,36 @@
       flex-direction: row;
       padding-left: 20px;
     }
-    @include wide{
-      
+    @include wide {
     }
-    @include superWide{
+    @include superWide {
       flex-direction: row;
       justify-content: space-around;
-
     }
     .logo-link {
       display: flex;
       align-items: center;
       width: 230px;
       height: 40px;
-      margin-left: 150px;
+      margin-left: auto;
       margin-right: 15px;
-      @include mobile{
+      padding-right: 15px;
+      @include mobile {
         margin-left: 0px;
       }
-      @include wide{
+      @include normal{
+        padding-right: 0px;
+      }
+      @include wide {
         margin-left: 350px;
       }
-      @include superWide{
-
+      @include superWide {
         margin-left: 0px;
         margin-right: 0px;
-
       }
       .site-logo {
+        height: 100%;
+        min-width: 100px;
         object-fit: contain;
         filter: drop-shadow(5px 5px 5px #bbb);
       }
@@ -251,8 +253,8 @@ label[for='nav-trigger'] {
   transition: right 0.5s ease-in-out;
 }
 
-@include mobile{
-  #site-navigation{
+@include mobile {
+  #site-navigation {
     display: none;
   }
 }
@@ -278,7 +280,11 @@ label[for='nav-trigger'] {
       padding-right: 10px;
       padding-left: 10px;
       height: 100%;
-      a{
+      @include normal {
+        padding-right: 5px;
+        padding-left: 5px;
+      }
+      a {
         display: block;
         height: 100%;
         width: 100%;
@@ -432,11 +438,12 @@ label[for='nav-trigger'] {
     }
   }
 }
-.menu-item-805,.menu-item-438,.menu-item-839{
-  a{
+.menu-item-805,
+.menu-item-438,
+.menu-item-839 {
+  a {
     line-height: 30px !important;
     padding-top: 10px;
     padding-bottom: 10px;
   }
- 
 }

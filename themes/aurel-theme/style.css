@@ -2172,6 +2172,15 @@ object {
       .new-feature-33 .two-column li {
         width: 80%; } }
 
+.page-id-70 p {
+  padding-left: 100px; }
+  @media (max-width: 1080px) {
+    .page-id-70 p {
+      padding-left: 50px; } }
+  @media (max-width: 740px) {
+    .page-id-70 p {
+      padding-left: 0px; } }
+
 .fixed-header-logged {
   top: 32px; }
   @media screen and (max-width: 782px) {

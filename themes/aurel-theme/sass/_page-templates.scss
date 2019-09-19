@@ -727,3 +727,16 @@
     }
   }
 }
+
+//consultant links page
+.page-id-70{
+  p{
+    padding-left: 100px;
+    @include normal{
+      padding-left: 50px;
+    }
+    @include mobile{
+      padding-left: 0px;
+    }
+  }
+}

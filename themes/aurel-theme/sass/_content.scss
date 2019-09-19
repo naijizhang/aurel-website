@@ -8,8 +8,10 @@
   bottom: 100%;
   right: 0;
   transition: right 0.5s ease-in-out;
-  background:#ffffff;
-  flex:1;
+  background: #ffffff;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Posts and pages */
@@ -58,6 +60,7 @@
   display: block;
 }
 
-.content-area{
+.content-area {
   padding-bottom: 50px;
+  flex: 1;
 }

@@ -17,6 +17,11 @@
 	  @content;
 	}
   }
+  @mixin normal {
+	@media (max-width: 1080px) {
+	  @content;
+	}
+  }
   @mixin wide {
 	@media (min-width: 1400px) {
 	  @content;

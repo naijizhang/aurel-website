@@ -1,40 +1,46 @@
+.content-research {
+  .cadsim-banner-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: $color__polygon5_blue;
 
-.content-research{
-    .cadsim-banner-container {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      background: $color__polygon5_blue;
-      .research-title{
-        color: #fff;
-        margin: 0px;
-        margin-top: auto;
-        margin-bottom: 30px;
-        margin-right: 0px;
-        @include mobile{
-            padding-top:50px;
-            margin-top: 100px;
-   
-        }
-        @include wide{
-            margin-right: 50px;
-        }
-        @include superWide{
-            margin-right: 100px;
-            margin-bottom: 10px;
-        }
-       
+    @include normal {
+      padding-left: 100px;
+    }
+    @include mobile {
+      padding-left: 0px;
+    }
+    .research-title {
+      color: #fff;
+      margin: 0px;
+      margin-top: auto;
+      margin-bottom: 30px;
+      margin-right: 0px;
+      @include mobile {
+        padding-top: 50px;
+        margin-top: 100px;
       }
-      .flask-container{
-        margin-bottom: -90px;
+      @include wide {
+        margin-right: 50px;
+      }
+      @include superWide {
+        margin-right: 100px;
+        margin-bottom: 10px;
       }
     }
-    .cadsim-banner-helper {
-      width: 100vw;
-      height: 150px;
-      background: $color__polygon6_blue;
-      border-bottom-right-radius: 50% 80%;
-      border-bottom-left-radius: 50% 80%;
+    .flask-container {
+      margin-bottom: -90px;
+      @include normal {
+        transform: scale(0.5);
+      }
     }
   }
-  
+  .cadsim-banner-helper {
+    width: 100vw;
+    height: 150px;
+    background: $color__polygon6_blue;
+    border-bottom-right-radius: 50% 80%;
+    border-bottom-left-radius: 50% 80%;
+  }
+}

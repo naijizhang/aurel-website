@@ -676,6 +676,9 @@ blockquote {
   margin-right: auto;
   margin: 20px auto;
   position: relative; }
+  @media (max-width: 1080px) {
+    blockquote {
+      width: 90%; } }
   @media (max-width: 740px) {
     blockquote {
       max-width: 100%;
@@ -1696,7 +1699,9 @@ object {
       font-style: normal;
       margin-bottom: 10px;
       margin-top: 10px;
-      text-transform: capitalize; }
+      text-transform: capitalize;
+      width: 80%;
+      text-align: left; }
     .contact-block .column p {
       margin-bottom: 10px; }
   .contact-block a,
@@ -1820,6 +1825,11 @@ object {
     width: 33%;
     text-align: left;
     padding-left: 70px; }
+    @media (max-width: 1080px) {
+      .list-container ul li {
+        width: 50%;
+        margin-right: auto;
+        padding-left: 0px; } }
     @media (max-width: 740px) {
       .list-container ul li {
         width: 80%;
@@ -1829,6 +1839,7 @@ object {
 
 .screenshots-container {
   width: 80%;
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   display: -webkit-box;
@@ -2218,6 +2229,84 @@ object {
     width: 85%;
     margin-left: auto;
     margin-right: auto; } }
+
+@media (min-width: 1800px) {
+  #post-509 .float-right {
+    width: 35vw; } }
+
+.entry-content .text-left {
+  width: 80%; }
+
+@media (min-width: 1800px) {
+  #post-475 .float-right {
+    width: 44vw; } }
+
+@media (min-width: 1800px) {
+  #post-132 .float-right {
+    width: 34vw; } }
+
+@media (min-width: 1800px) {
+  #post-242 .float-right {
+    width: 38vw; } }
+
+@media (min-width: 1400px) {
+  .page-id-9 .float-right {
+    margin-right: 18%; } }
+
+@media (min-width: 1800px) {
+  .page-id-9 .float-right {
+    margin-right: 0px; } }
+
+@media (min-width: 1800px) {
+  #post-280 .float-right {
+    width: 35vw; } }
+
+#post-302 h2 {
+  font-family: 'Lalezar';
+  font-size: 35px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  letter-spacing: 1px; }
+  #post-302 h2:nth-of-type(2) {
+    margin-top: 100px;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05); }
+
+#post-302 .float-right:nth-of-type(2) {
+  margin-right: 13%; }
+  @media (max-width: 740px) {
+    #post-302 .float-right:nth-of-type(2) {
+      margin-right: 0px; } }
+  @media (min-width: 1800px) {
+    #post-302 .float-right:nth-of-type(2) {
+      width: 35vw;
+      margin-right: 0px; } }
+
+@media (min-width: 1800px) {
+  .page-id-276 .float-right {
+    width: 37vw; } }
+
+@media (max-width: 740px) {
+  .page-id-276 .align-left {
+    text-align: center;
+    margin-bottom: 15px; } }
+
+@media (min-width: 1400px) {
+  #post-238 .float-right {
+    margin-right: 17%; } }
+
+@media (min-width: 1800px) {
+  #post-238 .float-right {
+    margin-right: 0px; } }
+
+.postid-240 .float-right:nth-of-type(1) {
+  margin-top: -60px; }
+  @media (max-width: 1080px) {
+    .postid-240 .float-right:nth-of-type(1) {
+      margin-top: 0px; } }
+
+.page-id-134 .contact-block {
+  width: 85%; }
 
 .fixed-header-logged {
   top: 32px; }
@@ -2814,7 +2903,8 @@ label[for='nav-trigger'] {
 .content-home-page {
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 0px; }
+  padding-bottom: 0px;
+  width: 100%; }
   @media (max-width: 740px) {
     .content-home-page {
       -webkit-box-shadow: none;
@@ -3507,7 +3597,7 @@ label[for='nav-trigger'] {
         .what-we-do-container .hexagon .industry-link .industry-logo-container:hover {
           width: 250px;
           border-radius: 60px;
-          z-index: 9999;
+          z-index: 99999;
           -webkit-box-shadow: 0px 0px 15px #4d4d4d;
                   box-shadow: 0px 0px 15px #4d4d4d; }
           .what-we-do-container .hexagon .industry-link .industry-logo-container:hover .industry-logo {
@@ -3603,6 +3693,10 @@ label[for='nav-trigger'] {
         padding: 10px;
         border-radius: 20px;
         opacity: 1; }
+        @media (max-width: 1080px) {
+          .what-we-do-container .hexagon .position-helper-container p {
+            font-size: 25px;
+            color: #4699ce; } }
   .what-we-do-container .right-column {
     width: 90%;
     margin-left: auto;
@@ -4416,7 +4510,7 @@ p.is-active {
   .content-about-page .as-background {
     position: absolute;
     bottom: 0px;
-    right: 15vw;
+    right: 0vw;
     z-index: 0;
     width: 25vw;
     max-width: 500px;
@@ -5469,7 +5563,8 @@ p.is-active {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background: linear-gradient(359deg, #4699ce 10%, #fff 70%); }
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, #4699ce), color-stop(70%, #fff));
+    background: linear-gradient(360deg, #4699ce 10%, #fff 70%); }
     .cadsim-runtime-content .cadsim-banner-container .cadsim-title-content {
       width: 40%;
       max-width: 750px;
@@ -5551,6 +5646,7 @@ p.is-active {
         background-repeat: no-repeat;
         background-position: center;
         width: 400px;
+        height: 240px;
         z-index: 2; }
   .cadsim-runtime-content .cadsim-banner-helper {
     width: 100vw;
@@ -5594,6 +5690,12 @@ p.is-active {
       -ms-flex-pack: center;
           justify-content: center;
   background: linear-gradient(355.69deg, #1b447f 55%, #35ced3 100%); }
+  @media (max-width: 1080px) {
+    .content-research .cadsim-banner-container {
+      padding-left: 100px; } }
+  @media (max-width: 740px) {
+    .content-research .cadsim-banner-container {
+      padding-left: 0px; } }
   .content-research .cadsim-banner-container .research-title {
     color: #fff;
     margin: 0px;
@@ -5613,6 +5715,10 @@ p.is-active {
         margin-bottom: 10px; } }
   .content-research .cadsim-banner-container .flask-container {
     margin-bottom: -90px; }
+    @media (max-width: 1080px) {
+      .content-research .cadsim-banner-container .flask-container {
+        -webkit-transform: scale(0.5);
+                transform: scale(0.5); } }
 
 .content-research .cadsim-banner-helper {
   width: 100vw;

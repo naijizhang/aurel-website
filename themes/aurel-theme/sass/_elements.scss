@@ -66,7 +66,7 @@ ul {
   margin: 10px auto;
   padding-left: 20px;
   li {
-    &:before{
+    &:before {
       content: '';
       display: inline-block;
       height: 12px;
@@ -138,19 +138,19 @@ h1 {
   font-size: 50px;
   max-width: 1280px;
 }
-h2{
+h2 {
   text-align: center;
-  margin:30px auto;
+  margin: 30px auto;
   max-width: 1280px;
 }
-.card{
-  h2{
+.card {
+  h2 {
     margin-top: 0px;
   }
 }
-.content-company-history{
-  h2{
-    margin:0 auto;
+.content-company-history {
+  h2 {
+    margin: 0 auto;
   }
 }
 .entry-header {
@@ -192,18 +192,18 @@ figure .wp-block-image {
     width: 100%;
     max-width: 100%;
     margin-bottom: 20px;
-   // margin-top: 20px;
+    // margin-top: 20px;
   }
-  @include wide{
+  @include wide {
     margin-right: 20%;
   }
-  @include superWide{
-    width:41vw;
+  @include superWide {
+    width: 41vw;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     margin-right: 0px;
-    a{
+    a {
       margin-right: auto;
     }
   }
@@ -227,13 +227,13 @@ figure .wp-block-image {
     max-width: 100%;
     margin-bottom: 20px;
   }
-  @include superWide{
-    width:41vw;
+  @include superWide {
+    width: 41vw;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     margin-left: 0px;
-    a{
+    a {
       margin-left: auto;
     }
   }
@@ -297,6 +297,10 @@ blockquote {
   margin-right: auto;
   margin: 20px auto;
   position: relative;
+  @include normal {
+    width: 90%;
+  }
+
   @include mobile {
     max-width: 100%;
     margin-top: 0px;
@@ -311,7 +315,7 @@ blockquote {
     padding: 15px;
     width: auto;
     max-width: 90%;
-    &:nth-of-type(2){
+    &:nth-of-type(2) {
       padding-top: 0px;
       margin-top: 0px;
     }
@@ -462,7 +466,7 @@ table {
   flex-wrap: nowrap;
   background: $color__fixed_contact_background;
   border: none;
-  @include mobile{
+  @include mobile {
     padding: 5px;
   }
   .contact-icon-container {
@@ -489,7 +493,7 @@ table {
         margin-bottom: 0px;
       }
     }
-    .button-icon-bottom{
+    .button-icon-bottom {
       width: 30px;
       height: 30px;
       object-fit: contain;
@@ -502,7 +506,6 @@ table {
         margin-top: auto;
         margin: 10px;
         margin-right: 0px;
-        
       }
     }
     .contact-hint {
@@ -533,11 +536,11 @@ table {
     background: $color__fixed_contact_background_hover;
     right: 0px;
     border: none;
-    .button-icon-top{
+    .button-icon-top {
       transform: scale(1.2);
       margin-bottom: 10px;
       margin-left: 10px;
-      @include mobile{
+      @include mobile {
         width: 35px;
         height: 35px;
         margin-bottom: auto;
@@ -546,11 +549,11 @@ table {
         margin-bottom: 10px;
       }
     }
-    .button-icon-bottom{
+    .button-icon-bottom {
       transform: scale(1.2);
       margin-bottom: 0px;
       margin-left: 10px;
-      @include mobile{
+      @include mobile {
         width: 35px;
         height: 35px;
         margin-bottom: 10px;
@@ -559,10 +562,10 @@ table {
       }
     }
     .contact-hint {
-     visibility: hidden;
-     @include mobile{
-       visibility: visible;
-     }
+      visibility: hidden;
+      @include mobile {
+        visibility: visible;
+      }
     }
     @include mobile {
       right: -140px;
@@ -574,7 +577,6 @@ table {
   &:visited {
     outline: none;
   }
-  
 }
 .modal-body {
   padding-left: 30px;
@@ -590,21 +592,21 @@ table {
   }
 }
 
-.references{
-  @include mobile{
+.references {
+  @include mobile {
     display: none;
   }
-  &:hover{
-    .references-text{
+  &:hover {
+    .references-text {
       visibility: visible !important;
     }
   }
-  p{
+  p {
     font-size: 12px;
     color: #c4c4c4;
     text-align: right;
   }
-  .references-text{
+  .references-text {
     visibility: hidden;
     font-size: 8px;
     margin-left: auto;
@@ -613,11 +615,10 @@ table {
   }
 }
 
-#post-231{
-  @include superWide{
-    .float-right{
+#post-231 {
+  @include superWide {
+    .float-right {
       width: 45vw;
     }
   }
-  
 }

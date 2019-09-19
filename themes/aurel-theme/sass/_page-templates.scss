@@ -218,6 +218,8 @@
       margin-bottom: 10px;
       margin-top: 10px;
       text-transform: capitalize;
+      width: 80%;
+      text-align: left;
     }
     p {
       margin-bottom: 10px;
@@ -360,10 +362,18 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding-left: none;
+    //justify-content: flex-start;
     li {
       width: 33%;
       text-align: left;
       padding-left: 70px;
+
+      @include normal {
+        width: 50%;
+        //margin-left: auto;
+        margin-right: auto;
+        padding-left: 0px;
+      }
       @include mobile {
         width: 80%;
         margin-left: auto;
@@ -376,6 +386,7 @@
 
 .screenshots-container {
   width: 80%;
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -656,7 +667,7 @@
     text-align: left;
     margin-top: 30px;
     margin-bottom: 15px;
-    width:80%;
+    width: 80%;
     @include mobile {
       text-align: center;
     }
@@ -759,5 +770,144 @@
       margin-left: auto;
       margin-right: auto;
     }
+  }
+}
+
+//open architecture
+#post-509 {
+  .float-right {
+    @include superWide {
+      width: 35vw;
+    }
+  }
+}
+
+.entry-content {
+  .text-left {
+    width: 80%;
+  }
+}
+
+//ease of use
+#post-475 {
+  @include superWide {
+    .float-right {
+      width: 44vw;
+    }
+  }
+}
+
+//tips and trics
+#post-132 {
+  @include superWide {
+    .float-right {
+      width: 34vw;
+    }
+  }
+}
+//use compound editor
+#post-242 {
+  @include superWide {
+    .float-right {
+      width: 38vw;
+    }
+  }
+}
+
+//service overview
+.page-id-9 {
+  .float-right {
+    @include wide {
+      margin-right: 18%;
+    }
+    @include superWide {
+      margin-right: 0px;
+    }
+  }
+}
+
+//custom models
+#post-280 {
+  @include superWide {
+    .float-right {
+      width: 35vw;
+    }
+  }
+}
+
+//product energy tracking
+//use compound editor
+#post-302 {
+  h2 {
+    font-family: 'Lalezar';
+    font-size: 35px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    &:nth-of-type(2) {
+      margin-top: 100px;
+      transform: scale(1.05);
+    }
+  }
+  .float-right {
+    &:nth-of-type(2) {
+      margin-right: 13%;
+      @include mobile{
+        margin-right: 0px;
+      }
+      @include superWide {
+        width: 35vw;
+        margin-right: 0px;
+      }
+    }
+  }
+}
+
+//training
+.page-id-276 {
+  .float-right {
+    
+    @include superWide {
+      width: 37vw;
+    }
+  }
+  .align-left{
+    @include mobile{
+      text-align: center;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+//computer based manuals
+#post-238 {
+  @include wide {
+    .float-right {
+     margin-right: 17%;
+    }
+  }
+  @include superWide{
+    .float-right{
+      margin-right: 0px;
+    }
+  }
+}
+
+//autotune
+.postid-240{
+  .float-right{
+    &:nth-of-type(1){
+      margin-top: -60px;
+      @include normal{
+        margin-top: 0px;
+      }
+    }
+  }
+}
+
+//newsletter
+.page-id-134{
+  .contact-block{
+    width:85%;
   }
 }

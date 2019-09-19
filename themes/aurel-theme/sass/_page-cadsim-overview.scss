@@ -554,3 +554,123 @@
    }
   }
 }
+
+.modal-body {
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.5);
+
+  #contact-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: flex-start;
+   
+      padding-left: 5%;
+      padding-right: 5%;
+   
+    #libarary-text {
+      width: 100%;
+      text-align: left;
+      margin: 0px;
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+    .item50 {
+      width: 40%;
+      padding-left: 20px;
+      padding-right: 20px;
+    
+        width: 100%;
+        padding: 0px;
+        padding-left: 10%;
+        padding-right: 10%;
+        display: flex;
+        input {
+          margin-top: 5px;
+        }
+      
+    }
+    .item20 {
+      width: 20%;
+      padding-left: 20px;
+      padding-right: 20px;
+     
+        width: 100%;
+        padding: 0px;
+        display: flex;
+        input {
+          margin-top: 5px;
+        }
+      
+    }
+    .item60 {
+      width: 60%;
+      padding-left: 20px;
+      padding-right: 20px;
+   
+        width: 100%;
+        padding-right: 0px;
+        display: flex;
+        padding: 0px;
+        input {
+          margin-top: 5px;
+        }
+      
+    }
+    .item70 {
+      width: 60%;
+      padding-left: 0px;
+      padding-right: 20px;
+    
+        width: 100%;
+        padding-right: 0px;
+        display: flex;
+        //justify-content: space-between;
+        margin-bottom: 10px;
+        input {
+          border: 1px solid #bbb;
+          border-radius: 3px;
+          height: 30px;
+          margin-left: 3px;
+        }
+      
+    }
+    .long-text {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      input {
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+    }
+    .library-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+    .comment-container {
+      width: 100%;
+    }
+  }
+  #contact-submit {
+    box-shadow: none;
+    background: $color__blue;
+    margin-bottom: 30px;
+    color: #fff;
+    &:hover {
+      outline: none;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}

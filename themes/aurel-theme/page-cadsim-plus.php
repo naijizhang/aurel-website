@@ -36,7 +36,7 @@
         <div id="content" class="site-content site-cadsim">
 
 
-           
+
 
             <div id="primary" class="content-area cadsim-content">
                 <main id="main" class="site-main" role="main">
@@ -57,11 +57,11 @@
 
                     <?php while (have_posts()) : the_post(); ?>
 
-                    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                        <div class="entry-content">
-                            <?php the_content(); ?>
-                        </div><!-- .entry-content -->
-                    </article><!-- #post-## -->
+                        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                            <div class="entry-content">
+                                <?php the_content(); ?>
+                            </div><!-- .entry-content -->
+                        </article><!-- #post-## -->
 
                     <?php endwhile; // End of the loop. 
                     ?>
@@ -97,6 +97,102 @@
                                         <button type="button" class="btn btn-primary">Call</button>
                                     </a>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="quoteModal" tabindex="-1" role="dialog" aria-labelledby="quoteModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Get a quote...</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <form id="contact-form">
+                                        <p id="libarary-text">Please select all that apply...</p>
+                                        <div id="group-cadsim" class="item50">
+                                            <input id="checkbox-cadsim" type="checkbox" name="item" value="CADSIM-Plus">
+                                            <label for="checkbox-cadsim">CADSIM Plus</label>
+                                        </div>
+                                        <div id="group-cadsim-run" class="item50">
+                                            <input id="checkbox-cadsim-run" type="checkbox" name="item" value="CADSIM-Plus-Runtime">
+                                            <label for="checkbox-cadsim-run">CADSIM Plus Runtime</label>
+                                        </div>
+                                        <div id="group-purchase" class="item50">
+                                            <input id="checkbox-purchase" type="checkbox" name="item" value="Purchase">
+                                            <label for="checkbox-purchase">Purchase</label>
+                                        </div>
+                                        <div id="group-lease" class="item50">
+                                            <input id="checkbox-lease" type="checkbox" name="item" value="Lease">
+                                            <label for="checkbox-lease">Lease</label>
+                                        </div>
+
+                                        <p id="libarary-text">Optional libraries:</p>
+                                        <div class="library-container">
+                                            <div class="item20">
+                                                <input id="checkbox-fiber" type="checkbox" name="libraries" value="Fiber">
+                                                <label for="checkbox-fiber">Fiber</label>
+                                            </div>
+                                            <div class="item20">
+                                                <input id="checkbox-power" type="checkbox" name="libraries" value="Power">
+                                                <label for="checkbox-power">Power</label>
+                                            </div>
+                                            <div class="item20">
+                                                <input id="checkbox-mineral" type="checkbox" name="libraries" value="Mineral">
+                                                <label for="checkbox-mineral">Mineral</label>
+                                            </div>
+                                            <div class="item60">
+                                                <input id="checkbox-HPG" type="checkbox" name="libraries" value="Hydrocarbon Process Group">
+                                                <label for="checkbox-HPG">Hydrocarbon Process Group</label>
+                                            </div>
+                                            <div class="item60">
+                                                <input id="checkbox-HPDB" type="checkbox" name="libraries" value="Hydrocarbon Properties Data Base">
+                                                <label for="checkbox-HPDB">Hydrocarbon Properties Data Base</label>
+                                            </div>
+                                            <div class="item60">
+                                                <input id="checkbox-AAU" type="checkbox" name="libraries" value="AutoCAD Annotation Utility">
+                                                <label for="checkbox-AAU">AutoCAD Annotation Utility</label>
+                                            </div>
+                                        </div>
+                                        <div class="item70">
+                                            <label for="licences">Number of Licences (1-10):</label>
+                                            <input type="number" id="licences" name="licences" min="1" max="10">
+                                            <span class="red">*</span>
+                                        </div>
+
+                                        <div class="item70 long-text">
+                                            <label for="name">Name:</label>
+                                            <input type="text" id="name" name="name">
+                                            <span class="red">*</span>
+                                        </div>
+                                        <div class="item70 long-text">
+                                            <label for="company">Company:</label>
+                                            <input type="text" id="company" name="company">
+                                            <span class="red">*</span>
+                                        </div>
+                                        <div class="item70 long-text">
+                                            <label for="email">Email:</label>
+                                            <input type="text" id="email" name="email">
+                                            <span class="red">*</span>
+                                        </div>
+                                        <div class="item70 long-text">
+                                            <label for="country">Country:</label>
+                                            <input type="text" id="country" name="country">
+                                            <span class="red">*</span>
+                                        </div>
+                                        <div class="comment-container">
+                                            <label for="comments">Comments:</label>
+                                            <textarea id="comments" rows="4" cols="50"></textarea>
+                                        </div>
+
+                                        <input id="contact-submit" type="button" value="Submit" data-toggle="modal">
+                                    </form>
+                                </div>
+
+
                             </div>
                         </div>
                     </div>

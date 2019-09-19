@@ -281,17 +281,22 @@
       height: auto;
       object-fit: contain;
       margin: 80px auto;
+      @include mobile {
+        margin: 40px auto;
+      }
     }
     #team-page-title {
       color: $color__blue;
       border-bottom: 1px solid $color__teal;
-      width: 100%;
+      //width: 100%;
       max-width: 1280px;
       padding-bottom: 30px;
       border-bottom-left-radius: 50%;//curve
       border-bottom-right-radius: 50%;//curve
       border-bottom: solid 8px $color_medium_grey;//curve
+      width: 90%;
       @include mobile {
+       
         border-bottom-width: 5px;//curve
         letter-spacing: 1px;
         font-size: $mobile_heading1_size;

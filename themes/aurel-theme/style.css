@@ -690,6 +690,9 @@ blockquote {
     padding: 15px;
     width: auto;
     max-width: 90%; }
+    blockquote p:nth-of-type(2) {
+      padding-top: 0px;
+      margin-top: 0px; }
     @media (max-width: 740px) {
       blockquote p {
         width: 90%;
@@ -1686,7 +1689,11 @@ object {
       text-transform: capitalize; }
     .contact-block .column p {
       margin-bottom: 10px; }
-  .contact-block a {
+  .contact-block a, .contact-block button {
+    font-family: 'Noto Sans';
+    font-size: 18px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1706,16 +1713,18 @@ object {
     border-radius: 30px;
     -webkit-transition: all 0.3s;
     transition: all 0.3s; }
+    .contact-block a:focus, .contact-block button:focus {
+      outline: none; }
     @media (max-width: 740px) {
-      .contact-block a {
+      .contact-block a, .contact-block button {
         width: 60%;
         margin-left: auto;
         margin-right: auto; } }
-    .contact-block a .cheatbox-logo {
+    .contact-block a .cheatbox-logo, .contact-block button .cheatbox-logo {
       width: 30px;
       height: 30px;
       margin-right: 10px; }
-    .contact-block a:hover {
+    .contact-block a:hover, .contact-block button:hover {
       text-decoration: none;
       background: #36cdd3; }
 
@@ -2233,11 +2242,15 @@ object {
               align-items: center;
       width: 230px;
       height: 40px;
-      margin-left: 150px;
-      margin-right: 15px; }
+      margin-left: auto;
+      margin-right: 15px;
+      padding-right: 15px; }
       @media (max-width: 740px) {
         .site-header .header-container .logo-link {
           margin-left: 0px; } }
+      @media (max-width: 1080px) {
+        .site-header .header-container .logo-link {
+          padding-right: 0px; } }
       @media (min-width: 1400px) {
         .site-header .header-container .logo-link {
           margin-left: 350px; } }
@@ -2246,6 +2259,8 @@ object {
           margin-left: 0px;
           margin-right: 0px; } }
       .site-header .header-container .logo-link .site-logo {
+        height: 100%;
+        min-width: 100px;
         -o-object-fit: contain;
            object-fit: contain;
         -webkit-filter: drop-shadow(5px 5px 5px #bbb);
@@ -2446,7 +2461,13 @@ label[for='nav-trigger'] {
       padding-left: 10px;
       height: 100%; }
       .menu-primary-container > ul li:before {
-        background: none; }
+        background: none; } }
+    @media (min-width: 740px) and (max-width: 1080px) {
+      .menu-primary-container > ul li {
+        padding-right: 5px;
+        padding-left: 5px; } }
+
+@media (min-width: 740px) {
       .menu-primary-container > ul li a {
         display: block;
         height: 100%;
@@ -2557,7 +2578,9 @@ label[for='nav-trigger'] {
             #primary-menu li ul li ul li ul li {
               left: 228px; }
 
-.menu-item-805 a, .menu-item-438 a, .menu-item-839 a {
+.menu-item-805 a,
+.menu-item-438 a,
+.menu-item-839 a {
   line-height: 30px !important;
   padding-top: 10px;
   padding-bottom: 10px; }
@@ -2793,7 +2816,7 @@ label[for='nav-trigger'] {
       top: 30px;
       left: 14%;
       width: 300px;
-      width: 50%; }
+      width: 80%; }
       @media (max-width: 740px) {
         .slides-container .slide-item1 .slide1-hook {
           width: 80%;
@@ -4255,15 +4278,18 @@ p.is-active {
       -o-object-fit: contain;
          object-fit: contain;
       margin: 80px auto; }
+      @media (max-width: 740px) {
+        .team-content #team-top-banner-container .wp-block-image {
+          margin: 40px auto; } }
     .team-content #team-top-banner-container #team-page-title {
       color: #004280;
       border-bottom: 1px solid #36cdd3;
-      width: 100%;
       max-width: 1280px;
       padding-bottom: 30px;
       border-bottom-left-radius: 50%;
       border-bottom-right-radius: 50%;
-      border-bottom: solid 8px #78909c; }
+      border-bottom: solid 8px #78909c;
+      width: 90%; }
       @media (max-width: 740px) {
         .team-content #team-top-banner-container #team-page-title {
           border-bottom-width: 5px;
@@ -4420,6 +4446,9 @@ p.is-active {
         .content-client-list ul li {
           width: 100%;
           padding-left: 0px; } }
+      @media (max-width: 1080px) {
+        .content-client-list ul li {
+          padding-left: 50px; } }
 
 .content-client-comments {
   max-width: 1280px;
@@ -4446,7 +4475,7 @@ p.is-active {
       margin-right: 50px; }
     @media (max-width: 740px) {
       .content-client-comments .wp-block-quote {
-        width: 90%; } }
+        width: 80%; } }
     .content-client-comments .wp-block-quote p {
       width: 85%; }
 
@@ -5205,6 +5234,129 @@ p.is-active {
       margin-right: auto;
       -o-object-fit: contain;
          object-fit: contain; } }
+
+.modal-body {
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.5); }
+  .modal-body #contact-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-left: 10%;
+    padding-right: 10%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-left: 5%;
+    padding-right: 5%; }
+    .modal-body #contact-form #libarary-text {
+      width: 100%;
+      text-align: left;
+      margin: 0px;
+      margin-top: 15px;
+      margin-bottom: 10px; }
+    .modal-body #contact-form .item50 {
+      width: 40%;
+      padding-left: 20px;
+      padding-right: 20px;
+      width: 100%;
+      padding: 0px;
+      padding-left: 10%;
+      padding-right: 10%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .modal-body #contact-form .item50 input {
+        margin-top: 5px; }
+    .modal-body #contact-form .item20 {
+      width: 20%;
+      padding-left: 20px;
+      padding-right: 20px;
+      width: 100%;
+      padding: 0px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .modal-body #contact-form .item20 input {
+        margin-top: 5px; }
+    .modal-body #contact-form .item60 {
+      width: 60%;
+      padding-left: 20px;
+      padding-right: 20px;
+      width: 100%;
+      padding-right: 0px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 0px; }
+      .modal-body #contact-form .item60 input {
+        margin-top: 5px; }
+    .modal-body #contact-form .item70 {
+      width: 60%;
+      padding-left: 0px;
+      padding-right: 20px;
+      width: 100%;
+      padding-right: 0px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 10px; }
+      .modal-body #contact-form .item70 input {
+        border: 1px solid #bbb;
+        border-radius: 3px;
+        height: 30px;
+        margin-left: 3px; }
+    .modal-body #contact-form .long-text {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .modal-body #contact-form .long-text input {
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px; }
+    .modal-body #contact-form .library-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      padding-left: 10%;
+      padding-right: 10%; }
+    .modal-body #contact-form .comment-container {
+      width: 100%; }
+  .modal-body #contact-submit {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background: #004280;
+    margin-bottom: 30px;
+    color: #fff; }
+    .modal-body #contact-submit:hover {
+      outline: none; }
+    .modal-body #contact-submit:focus {
+      outline: none; }
 
 #what-we-do-industries {
   width: 100%;

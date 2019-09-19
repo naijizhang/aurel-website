@@ -29,6 +29,7 @@ get_header(); ?>
 				<div class="collapse multi-collapse" id="multiCollapseExample1">
 					<div class="card card-body">
 						<form id="contact-form">
+						<p id="libarary-text">Please select all that apply...</p>
 							<div id="group-cadsim" class="item50">
 								<input id="checkbox-cadsim" type="checkbox" name="item" value="CADSIM-Plus">
 								<label for="checkbox-cadsim">CADSIM Plus</label>

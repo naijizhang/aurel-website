@@ -2212,6 +2212,12 @@ object {
     .page-id-70 p {
       padding-left: 0px; } }
 
+@media (max-width: 740px) {
+  #post-746 .aligncenter {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto; } }
+
 .fixed-header-logged {
   top: 32px; }
   @media screen and (max-width: 782px) {

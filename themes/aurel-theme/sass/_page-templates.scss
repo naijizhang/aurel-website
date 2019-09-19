@@ -477,7 +477,7 @@
     transition: all 0.3s;
     box-shadow: 0px 5px 5px #bbb;
     @include mobile {
-      width:50%;
+      width: 50%;
       margin-bottom: 30px;
     }
     &:hover {
@@ -746,6 +746,17 @@
     }
     @include mobile {
       padding-left: 0px;
+    }
+  }
+}
+
+//new in v3.3
+#post-746 {
+  @include mobile {
+    .aligncenter {
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }

@@ -2312,6 +2312,20 @@ object {
   margin-left: auto;
   margin-right: auto; }
 
+.digital-twin-hook {
+  text-align: center;
+  font-style: italic;
+  font-size: 25px;
+  margin-bottom: 50px; }
+  @media (max-width: 740px) {
+    .digital-twin-hook {
+      font-size: 18px; } }
+
+.digital-twin-content h3 {
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 15px; }
+
 .fixed-header-logged {
   top: 32px; }
   @media screen and (max-width: 782px) {

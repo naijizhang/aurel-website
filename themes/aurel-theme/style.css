@@ -5210,6 +5210,9 @@ p.is-active {
         -ms-flex-pack: center;
             justify-content: center;
     background: linear-gradient(355deg, #1b447f 35%, white 76%); }
+    @media (min-width: 1800px) {
+      .cadsim-content .cadsim-banner-container {
+        background: linear-gradient(357deg, #1b447f 35%, white 76%); } }
     .cadsim-content .cadsim-banner-container .cadsim-title-content {
       width: 50%;
       max-width: 750px;
@@ -5301,6 +5304,9 @@ p.is-active {
     @media (max-width: 740px) {
       .cadsim-content .cadsim-banner-helper {
         background: #004280; } }
+    @media (min-width: 1800px) {
+      .cadsim-content .cadsim-banner-helper {
+        background: linear-gradient(175deg, #1b447f 63%, white 90%); } }
   .cadsim-content article {
     max-width: 1280px;
     margin-left: auto;

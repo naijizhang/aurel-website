@@ -381,6 +381,9 @@
     @include mobile {
       //background: $color__polygon1_blue;
     }
+    @include superWide {
+      background: $color__polygon22_blue;
+    }
     .cadsim-title-content {
       width: 50%;
       max-width: 750px;
@@ -468,6 +471,9 @@
     border-bottom-left-radius: 50% 80%;
     @include mobile{
       background: $color__blue;
+    }
+    @include superWide {
+      background: $color__polygon33_blue;
     }
   }
 

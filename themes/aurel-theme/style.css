@@ -2308,6 +2308,10 @@ object {
 .page-id-134 .contact-block {
   width: 85%; }
 
+.content-404 #flask {
+  margin-left: auto;
+  margin-right: auto; }
+
 .fixed-header-logged {
   top: 32px; }
   @media screen and (max-width: 782px) {

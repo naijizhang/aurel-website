@@ -940,5 +940,31 @@
     @include superWide{
       width: 44vw;
     }
+    img{
+      max-width:350px;
+    }
+  }
+}
+
+//standard module library
+.postid-471{
+  #multiCollapse2{
+    li{
+      position: relative;
+      em{
+        position: absolute;
+        top: 2px;
+        font-size: 10px;
+        background: #cc313e;
+        color: #fff;
+        padding: 2px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 20px;
+        //margin-left: -5px;
+        font-style: normal;
+      }
+    }
+   
   }
 }

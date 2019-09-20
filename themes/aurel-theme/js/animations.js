@@ -230,7 +230,7 @@
 
       products: 'products',
       //'cadsim-plus':'products',
-      'dynamic-data-reconciliation': 'products',
+      //'dynamic-data-reconciliation': 'products',
       'product-tracking-2': 'products',
       // 'tech-corner':'products',
       'cadsim-plus-runtime': 'products',
@@ -254,7 +254,7 @@
       'operator-training-simulators': 'advanceModeling',
 
       'process-digital-twin': 'digitalTwin',
-      'data-reconciliation': 'digitalTwin',
+      'dynamic-data-reconciliation': 'digitalTwin',
       'product-tracking': 'digitalTwin',
       // 'energy-tracking': 'digitalTwin',
       'real-time-optimization': 'digitalTwin',

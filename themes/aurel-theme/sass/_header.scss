@@ -62,6 +62,12 @@
       //   margin-left: 0px;
       //   margin-right: 0px;
       // }
+      @include normal{
+        display: none;
+      }
+      @include mobile{
+        display: flex;
+      }
       .site-logo {
         height: 100%;
         min-width: 100px;
@@ -351,6 +357,8 @@ label[for='nav-trigger'] {
 
 #primary-menu {
   position: relative;
+  padding-right: 260px;
+  padding-left: 25px;
   a {
     display: block;
     margin: 0px;

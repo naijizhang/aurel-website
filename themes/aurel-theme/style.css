@@ -2341,12 +2341,11 @@ object {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -2377,23 +2376,7 @@ object {
           -ms-flex-align: center;
               align-items: center;
       width: 230px;
-      height: 40px;
-      margin-left: auto;
-      margin-right: 15px;
-      padding-right: 15px; }
-      @media (max-width: 740px) {
-        .site-header .header-container .logo-link {
-          margin-left: 0px; } }
-      @media (max-width: 1080px) {
-        .site-header .header-container .logo-link {
-          padding-right: 0px; } }
-      @media (min-width: 1400px) {
-        .site-header .header-container .logo-link {
-          margin-left: 350px; } }
-      @media (min-width: 1800px) {
-        .site-header .header-container .logo-link {
-          margin-left: 0px;
-          margin-right: 0px; } }
+      height: 40px; }
       .site-header .header-container .logo-link .site-logo {
         height: 100%;
         min-width: 100px;

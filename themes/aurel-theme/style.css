@@ -2939,8 +2939,8 @@ label[for='nav-trigger'] {
       width: 80%; }
       @media (max-width: 740px) {
         .slides-container .slide-item1 .slide1-hook {
-          width: 80%;
-          left: 10%; } }
+          width: 90%;
+          left: 5%; } }
       @media (min-width: 1400px) {
         .slides-container .slide-item1 .slide1-hook {
           width: 50%; } }
@@ -2959,7 +2959,7 @@ label[for='nav-trigger'] {
         margin: 0px; }
         @media (max-width: 740px) {
           .slides-container .slide-item1 .slide1-hook p {
-            font-size: 16px;
+            font-size: 13px;
             line-height: 20px; } }
         @media (min-width: 1400px) {
           .slides-container .slide-item1 .slide1-hook p {

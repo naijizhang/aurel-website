@@ -5721,6 +5721,9 @@ p.is-active {
                 box-shadow: 0px 0px 5px #bbb; } }
     .cadsim-runtime-content .qa-container article {
       margin-top: 0px; }
+  .cadsim-runtime-content h3 {
+    margin-top: 50px;
+    margin-bottom: 25px; }
 
 .content-research .cadsim-banner-container {
   display: -webkit-box;

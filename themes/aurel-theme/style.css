@@ -2681,6 +2681,8 @@ label[for='nav-trigger'] {
       top: 70px;
       margin: 0px;
       margin-left: -100px; }
+      #primary-menu li ul #menu-item-431 {
+        padding-right: 15px; }
       #primary-menu li ul li {
         display: inline-block;
         width: 250px;

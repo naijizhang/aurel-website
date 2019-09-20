@@ -416,9 +416,12 @@ label[for='nav-trigger'] {
       top: $header_height;
       margin: 0px;
       margin-left: -100px;
+      #menu-item-431{
+        padding-right: 15px;
+      }
       li {
         display: inline-block;
-        width: 250px;
+        width: 250px;//
         float: none;
         display: list-item;
         position: relative;
@@ -428,10 +431,10 @@ label[for='nav-trigger'] {
             border-left: 2px solid #fff;
             position: relative;
             top: -66px;
-            left: 230px;
+            left: 230px;//
             ul {
               li {
-                left: 228px;
+                left: 228px;//
               }
             }
           }

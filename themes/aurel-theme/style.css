@@ -2347,6 +2347,10 @@ object {
     border-radius: 20px;
     font-style: normal; }
 
+#quoteModal {
+  height: 80vh;
+  top: 15vh; }
+
 .fixed-header-logged {
   top: 32px; }
   @media screen and (max-width: 782px) {

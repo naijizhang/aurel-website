@@ -3099,7 +3099,7 @@ label[for='nav-trigger'] {
       top: 0px;
       z-index: 3;
       background: url("../../assets/images/CadsimPlus_SoftwareBox.png");
-      background-position: center 70%;
+      background-position: center 45%;
       background-size: 50%;
       background-repeat: no-repeat; }
       @media (max-width: 825px) {
@@ -3107,10 +3107,11 @@ label[for='nav-trigger'] {
           background-size: contain;
           right: 10px;
           height: 70%;
-          width: 200px;
+          width: 40%;
+          margin-top: 20px;
           background-repeat: no-repeat;
-          background-size: 30%;
-          display: none; } }
+          background-size: 40%;
+          background-position: 63% 0%; } }
       @media (min-width: 1400px) {
         .slides-container .slide-item2 #slide2-software-box {
           background-position: center 50%;
@@ -3118,7 +3119,8 @@ label[for='nav-trigger'] {
           background-repeat: no-repeat; } }
       @media (min-width: 1800px) {
         .slides-container .slide-item2 #slide2-software-box {
-          right: 22%; } }
+          right: 22%;
+          background-position: center 33%; } }
     .slides-container .slide-item2 .slide1-hook {
       position: absolute;
       top: 30px;
@@ -3146,7 +3148,7 @@ label[for='nav-trigger'] {
         margin: 0px; }
         @media (max-width: 825px) {
           .slides-container .slide-item2 .slide1-hook p {
-            font-size: 20px; } }
+            font-size: 15px; } }
         @media (min-width: 1400px) {
           .slides-container .slide-item2 .slide1-hook p {
             font-size: 35px; } }

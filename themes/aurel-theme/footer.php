@@ -23,7 +23,7 @@
 				<img class="linkedin-logo" alt="linkedin logo" src='<?php echo get_template_directory_uri() . '/assets/icons/linkedin.svg'; ?>'>
 			</a>
 		</div>
-		<p class="copyright">&copy;2019 Aurel System Inc.</p>
+		<p class="copyright">&copy;2019 Aurel Systems Inc.</p>
 	</div>
 	<div id="footer-right-column">
 		<a class="software-link" href="<?php echo get_permalink(get_page_by_path("cadsim-plus")); ?>">

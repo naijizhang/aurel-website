@@ -108,7 +108,7 @@
                                                                                     ?>'></div> -->
                     <section class="section-what-we-do">
                         <div class="what-we-do-container">
-                            <h1 class="what-we-do-title">What we do?</h1>
+                            <h1 class="what-we-do-title">What we do:</h1>
                             <div class="right-column">
                                 <p>Aurel Systems has been providing dynamic chemical process simulation software tools and services to chemical engineers for 30+ years.</p>
                                 <p>Our CADSIM Plus process simulation tools and services can help you design, investigate, improve, operate and optimize a new or existing process.</p>
@@ -183,7 +183,7 @@
                     </section>
 
 
-                    <h2 class="industry-list-title">Industries we serve...</h2>
+                    <h1 class="industry-list-title">Industries we serve...</h1>
                     <div class="industry-list-container">
                         <a class="industry-link link30" href="<?php echo get_permalink(get_page_by_path("pulp-paper")); ?>">
                             <div class="each-button" id="pulp">Pulp & Paper</div>

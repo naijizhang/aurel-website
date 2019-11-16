@@ -3230,8 +3230,23 @@ label[for='nav-trigger'] {
       margin-right: auto;
       z-index: 3; }
     .section-what-we-do .what-we-do-container p {
-      font-size: 15px;
-      text-align: center; }
+      font-size: 18px;
+      text-align: center;
+      line-height: 23px; }
+      @media (min-width: 1200px) {
+        .section-what-we-do .what-we-do-container p {
+          padding-left: 0px;
+          padding-right: 0px;
+          width: 100%;
+          max-width: 100%;
+          margin-left: 0px;
+          margin-right: 0px; } }
+      @media (min-width: 1400px) {
+        .section-what-we-do .what-we-do-container p {
+          width: 100%;
+          max-width: 100%;
+          margin-left: 0px;
+          margin-right: 0px; } }
     @media (max-width: 825px) {
       .section-what-we-do .what-we-do-container {
         width: 100%;
@@ -3738,7 +3753,7 @@ label[for='nav-trigger'] {
             font-size: 25px;
             color: #4699ce; } }
   .what-we-do-container .right-column {
-    width: 90%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     z-index: 3; }
@@ -3908,7 +3923,9 @@ label[for='nav-trigger'] {
   position: relative;
   z-index: 3;
   font-weight: bold;
-  margin-top: 10px; }
+  margin-top: 10px;
+  font-size: 35px;
+  letter-spacing: 3px; }
 
 .industry-list-container {
   position: relative;

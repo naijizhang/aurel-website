@@ -1728,7 +1728,8 @@ object {
     color: #fff;
     border-radius: 30px;
     -webkit-transition: all 0.3s;
-    transition: all 0.3s; }
+    transition: all 0.3s;
+    padding: 0px; }
     .contact-block a:focus,
     .contact-block button:focus {
       outline: none; }

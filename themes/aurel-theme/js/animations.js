@@ -343,13 +343,16 @@
       const elemInView = $('.in-view');
       $(window).scroll(function() {
         let yPos = $(window).scrollTop();
+        console.log("y Position",yPos);
+        if(yPos>1860){
 
+        }
         $.each(elemInView, function(index, value) {
-          if (yPos > value.offsetTop - 400 && yPos < value.offsetTop - 210) {
+          if (yPos > value.offsetTop - 500 && yPos < value.offsetTop - 80) {
             console.log(value.offsetTop);
             $(this).addClass('is-active');
           } else {
-            $(this).removeClass('is-active');
+            //$(this).removeClass('is-active');
           }
         });
       });

@@ -83,7 +83,9 @@ ul {
     }
   }
 }
-
+.content-area ul li,.content-area ol li{
+  text-indent: -12px;
+}
 ol {
   list-style: decimal;
   width: 80%;

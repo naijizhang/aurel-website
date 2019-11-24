@@ -441,6 +441,18 @@ ul {
 .content-area ul li, .content-area ol li {
   text-indent: -12px; }
 
+#post-128 .card ul li::before, #post-302 .card ul li::before {
+  content: '';
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  background: url("../../assets/icons/Arrow_Turquoise2.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%); }
+
 ol {
   list-style: decimal;
   width: 80%;

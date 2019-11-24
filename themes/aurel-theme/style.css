@@ -2337,9 +2337,10 @@ object {
 .digital-twin-content .float-right img {
   max-width: 350px; }
 
-.postid-471 #multiCollapse2 li {
-  position: relative; }
-  .postid-471 #multiCollapse2 li em {
+.postid-471 .multi-collapse li {
+  position: relative;
+  text-indent: 0px; }
+  .postid-471 .multi-collapse li em {
     position: absolute;
     top: 2px;
     font-size: 10px;

@@ -2153,8 +2153,13 @@ object {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; } }
+  .new-feature-33 .section .column:first-child {
+    padding-right: 40px; }
+    @media (max-width: 825px) {
+      .new-feature-33 .section .column:first-child {
+        padding-right: 0px; } }
   .new-feature-33 .section .column h3 {
-    width: 90%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
@@ -2166,6 +2171,8 @@ object {
     width: 90%;
     margin-left: auto;
     margin-right: auto; }
+  .new-feature-33 .section .column ul {
+    width: 100%; }
 
 .new-feature-33 .section1 {
   width: 80%;
@@ -2173,7 +2180,7 @@ object {
   margin-right: auto;
   max-width: 1024px; }
   .new-feature-33 .section1 h3 {
-    width: 95%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
@@ -2182,17 +2189,20 @@ object {
       .new-feature-33 .section1 h3 {
         text-align: center; } }
   .new-feature-33 .section1 p {
-    width: 95%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto; }
+  .new-feature-33 .section1 ul {
+    width: 100%; }
   .new-feature-33 .section1 .float-right {
     width: auto;
     margin-right: 10%;
-    margin-top: -30px; }
+    margin-top: -10px; }
     @media (max-width: 825px) {
       .new-feature-33 .section1 .float-right {
         margin-top: 0px;
-        margin-bottom: 10px; } }
+        margin-bottom: 10px;
+        margin-right: -20px; } }
 
 .new-feature-33 .two-column {
   display: -webkit-box;

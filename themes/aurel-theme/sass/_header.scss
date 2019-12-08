@@ -62,17 +62,33 @@
       //   margin-left: 0px;
       //   margin-right: 0px;
       // }
-      @include normal{
-        display: none;
-      }
-      @include mobile{
-        display: flex;
-      }
       .site-logo {
+        //display: none;
         height: 100%;
         min-width: 100px;
         object-fit: contain;
         filter: drop-shadow(5px 5px 5px #bbb);
+      }
+      .site-logo-tablet{
+        display: none;
+      }
+      @include normal{
+        //display: none;
+        .site-logo{
+          display: block;
+        }
+        .site-logo-tablet{
+          display: none;
+        }
+      }
+      @include mobile{
+        display: flex;
+        .site-logo{
+          display: block;
+        }
+        .site-logo-tablet{
+          display: none;
+        }
       }
     }
     .site-navigation {

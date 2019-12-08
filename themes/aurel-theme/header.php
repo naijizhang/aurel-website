@@ -27,6 +27,7 @@
 			<div class="header-container">
 				<a class="logo-link" href="<?php echo get_home_url(); ?>">
 					<img class="site-logo" alt="home logo" src='<?php echo get_template_directory_uri() . '/assets/images/Aurel_Logo-1.png'; ?>'>
+					<img class="site-logo-tablet" alt="home logo" src='<?php echo get_template_directory_uri() . '/assets/icons/Aurel_Logo.png'; ?>'>
 				</a>
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html('Primary Menu'); ?></button> -->

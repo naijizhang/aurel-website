@@ -304,7 +304,7 @@ label[for='nav-trigger'] {
           padding-left: 0px;
           padding-right: 0px;
           background: $color__submenu_background;
-          transition: background 400ms linear;
+          transition: all 400ms ease-in-out;
           border-bottom: 1px solid $color__blue;
           @include mobile {
             background: none;
@@ -312,8 +312,10 @@ label[for='nav-trigger'] {
           a {
             width: 100%;
             height: 100%;
-            line-height: 50px;
-            margin-top: -25px !important;
+            @include mobile {
+              line-height: 50px;
+              margin-top: -25px !important;
+            }
 
             color: $color__submenu_text;
             //padding: 15px;
@@ -356,24 +358,28 @@ label[for='nav-trigger'] {
 }
 
 #primary-menu {
-  position: relative;
-  padding-right: 260px;
-  padding-left: 25px;
+ position: relative;
   a {
-    display: block;
-    margin: 0px;
+    // display: block;
+    // margin: 0px;
   }
   ul {
     position: relative;
     .menu-item-has-children {
       &:after {
-        content: ' >';
+        content: ' +';
         position: absolute;
         right: 8px;
         top: 10px;
         font-size: 20px;
         color: $color__teal;
       }
+      // .menu-item-has-children{
+      //   &:after {
+      //     top: 10px;
+      //     color: $color__teal;
+      //   }
+      // }
     }
     .current_page_item,
     .current-menu-item {
@@ -383,7 +389,7 @@ label[for='nav-trigger'] {
     .current-menu-item > a {
       color: #fff !important;
     }
-
+//hover colors
     li {
       &:hover {
         background: $color__submenu_hover_background;
@@ -392,14 +398,16 @@ label[for='nav-trigger'] {
         }
         ul {
           li {
+            background:  $color__submenu_hover_background;////////////////
             a {
-              color: $color__submenu_text;
+              color: $color__submenu_hover_text;
             }
             &:hover > a {
               color: $color__submenu_hover_text;
             }
             ul {
               li {
+                background: $color__blue1;///////////////
                 a {
                   color: $color__submenu_text;
                 }
@@ -410,39 +418,113 @@ label[for='nav-trigger'] {
       }
     }
   }
-
+ 
+  //hover extend animations
   li {
+//header top links
+
     display: inline-block;
-    &:hover > ul {
-      display: inherit;
+    //display: block;
+    // height: 50px;
+    ul{
+      li{
+       // max-height: 50px;
+       // padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &::before{
+          width: 0px;
+          height: 0px;
+        }
+        a{
+          padding-top: 12.5px;
+          padding-bottom: 12.5px;
+          width: 100%;
+        }
+      }
     }
+   
+  }
+  .menu-item-has-children {
+    .sub-menu{
+      width: 100%;
+    }
+    //1sr layer sub-menus
     ul {
       position: relative;
       display: none;
-      //display: inherit;
+      //display: inherit;///////////////////////header main menu
       position: absolute;
       top: $header_height;
       margin: 0px;
       margin-left: -100px;
+      overflow: hidden;
       #menu-item-431{
         padding-right: 15px;
       }
       li {
-        display: inline-block;
+        //display: inline-block;
         width: 250px;//
         float: none;
-        display: list-item;
         position: relative;
+      }
+      .menu-item-has-children {
+        //2rd layer menu
         ul {
           margin: 0px;
+          position: relative; 
+          top: 0px;
+          padding-left: 0px;
+          display: block;/////////////////////sub-menu
+          //visibility: hidden;////////////////
+          max-height: 0px;
+          transition: max-height 0.8s ease-in-out;
+          //overflow: hidden;
+          //display: inherit;
+          
           li {
-            border-left: 2px solid #fff;
+            border-left: 10px solid $color__blue1;
             position: relative;
-            top: -66px;
-            left: 230px;//
+            //border-bottom: none;
+            border-bottom-color:  $color__blue1;
+            padding-right: 20px;            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            a{
+              text-align: right;
+              height: auto;
+            }
+            &:last-child{
+              border-bottom: none;
+            }
+          }
+
+          .menu-item-has-children{
+          //3rd layer menu
             ul {
+              width: 240px;
+              margin-right: -20px;
+              position: relative; 
+              top: 0px;
+              padding-left: 0px;
+              margin-left: 0px;
+              border-right: 10px solid $color__blue2;
+              //padding-right: 5px;
+              font-size: 15px !important;
               li {
-                left: 228px;//
+                width: 100%;
+                border-left: none;
+                position: relative;
+                border-bottom: none;
+                padding-right: 0px;   
+                a{
+                 
+                }
+
+                //left: 228px;//
               }
             }
           }
@@ -460,3 +542,71 @@ label[for='nav-trigger'] {
     padding-bottom: 10px;
   }
 }
+
+
+
+
+#primary-menu >li {
+  //background: red;
+  &:hover>ul{
+   
+     // display: inherit;
+      //display: block;
+
+      .menu-item-has-children{
+
+        &:hover{
+          //height:auto;
+          max-height: auto;
+          //background: orange;
+        }
+      &:hover>ul{
+        //visibility: visible;
+        max-height: auto;
+      }
+
+    }
+
+   
+  } 
+  
+}
+
+#primary-menu {
+   //hover extend animations
+   li:hover >ul {
+    //hover header top links
+      display: inherit;
+   }
+   .menu-item-has-children {
+     //1sr layer sub-menus
+     &:hover>ul{
+       
+      max-height: 1000px !important;
+     }
+     ul {
+      
+       li {
+        
+       }
+       .menu-item-has-children {
+         //2rd layer menu
+         ul {
+         
+           li {
+           
+             
+           }
+ 
+           .menu-item-has-children{
+           //3rd layer menu
+             ul {
+            
+          
+             }
+           }
+         }
+       }
+     }
+   }
+ }
